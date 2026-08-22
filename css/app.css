@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lyrics {
+  white-space: pre-line;
+}
+
+.page-enter {
+  animation: pageEnter 0.2s ease-out;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-bar {
+  animation: loadingBar 1.5s infinite ease-in-out;
+}
+
+@keyframes loadingBar {
+  0% {
+    width: 0;
+    transform: translateX(0);
+  }
+
+  50% {
+    width: 70%;
+  }
+
+  100% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
+
+::selection {
+  background: #a7f3d0;
+  color: #064e3b;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(71 85 105);
+}
+
+.nav-link:hover {
+  background: rgb(241 245 249);
+  color: rgb(5 150 105);
+}
+
+.dark .nav-link {
+  color: rgb(203 213 225);
+}
+
+.dark .nav-link:hover {
+  background: rgb(30 41 59);
+  color: rgb(52 211 153);
+}
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(226 232 240);
+  background: white;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.action-button:hover {
+  border-color: rgb(167 243 208);
+  background: rgb(236 253 245);
+}
+
+.dark .action-button {
+  border-color: rgb(30 41 59);
+  background: rgb(2 6 23);
+}
+
+.dark .action-button:hover {
+  background: rgb(2 44 34);
+}
+
+@media print {
+  header,
+  footer,
+  .print-hidden {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  #lyrics {
+    max-width: none !important;
+    color: black !important;
+  }
+}
