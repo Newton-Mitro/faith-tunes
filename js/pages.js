@@ -788,7 +788,7 @@ function searchPage() {
                         : emptyState(
                             query
                               ? "No songs matched your search."
-                              : "Start typing to search the song library.",
+                              : "Start typing to search the faith tunes.",
                           )
                     }
 

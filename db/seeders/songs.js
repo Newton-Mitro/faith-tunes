@@ -1,530 +1,7629 @@
 const { SONG_BOOKS, CATEGORIES } = require("../constants");
 
 const songs = [
-  // =========================================================
-  // BOOK: CHRISTIAN HYMN BOOK
-  // =========================================================
+  // Imported from the legacy Bengali song collection.
 
   {
     id: 1,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
     categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
-    number: "001",
-    title: "Come, Let Us Worship",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Come, let us worship the Lord today,
-Come with our hearts and sing and pray.
-Together we gather in His holy name,
-Giving Him glory and endless praise.`,
+    number: "১",
+    title: "এস, এস, প্রাণের যীশু",
+    author: "মধুসূধন সরকার",
+    language: "Bengali",
+    lyrics: `এস, এস, প্রাণের যীশু আজ তোমারে পূজিব ;<br>
+মোহন মূরতি হেরে, প্রেম রসে মাতিব।। <br><br>
+
+১। <br>
+ভকতিপূর্ণ অন্তরে, পূজিব নাথ তোমারে;<br>
+রাখিব হৃদি মাঝারে, প্রাণের আশা মিটাব ।। <br><br>
+
+২। <br>
+রাখি হৃদি সিংহাসনে, সেবিব তোমায় যতনে ;<br>
+প্রীতি-পুষ্প ও চরণে, দিয়া সদা সাজাব।। <br><br>
+
+৩।<br>
+তব সহবাসে রব, তোমা বিনা না জানিব ; <br>
+গুণ-গান গেয়ে তব, এ জীবন যাপিব ।<br>
+`,
   },
 
   {
     id: 2,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.JESUS_CHRIST,
-    number: "002",
-    title: "Jesus, Our Lord",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Jesus, our Lord, our hope and King,
-To You our hearts will ever sing.
-Your love has saved us from our sin,
-Your grace has made us whole again.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২",
+    title: "এস হে করুণাময়",
+    author: "ঈশান চন্দ্র দাস",
+    language: "Bengali",
+    lyrics: `এস হে করুণাময়, বিরাজ হৃদয়াসনে,<br>
+পূজিতে তোমারে আজি, বাসনা সবার মনে। <br><br>
+
+১।<br>
+তব দাস দাসী যত, হইয়াছি সমবেত ;<br>
+তৃপ্ত কর সবে পিতঃ, মনোমত আশীষদানে। <br><br>
+
+২।<br>
+অর্পিতে পদে তোমার, আনিয়াছি উপহার ; <br>
+ভকতি-কুসুম-হার, লহ নাথ নিজ গুণে।<br>
+
+`,
   },
 
   {
     id: 3,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.LIFE_OF_CHRIST,
-    number: "003",
-    title: "Follow His Steps",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Follow the steps of Jesus our Lord,
-Listen closely to His word.
-Serve with love and walk in grace,
-Seeking always His holy face.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "3",
+    title: "এস হে ত্রাণেশ্বর",
+    author: "সত্যেন্দ্র কুমার মুখোপাধ্যায়",
+    language: "Bengali",
+    lyrics: `এস হে ত্রাণেশ্বর, আমার এ হৃদয় মাঝে ;
+ভকতি পুষ্পে পূজিব, ঐ যুগল চরণ রাজে। 
+
+১। 
+মন প্রাণ সমর্পিয়ে, অশ্রুজল মিশাইয়ে ;
+রাখিব তোমায় যীশু, মম অন্তর মাঝে। 
+
+২। 
+না ছাড়িব তোমায় যীশু, বিশ্বারাধ্যে বিশ্ব-বিভু ; 
+সপিব এ দেহ খানি, তব ঐ পদ পঙ্কজে। 
+
+৩। 
+দীনজনে দয়া করে, রাখিও চরণে ধরে ; 
+দেখ হে অন্তিমে মোরে, সে ঘোর আঁধার মাঝে।
+`,
   },
 
   {
     id: 4,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.DEATH_OF_CHRIST,
-    number: "004",
-    title: "At the Cross",
-    author: "Unknown",
-    language: "English",
-    lyrics: `At the cross we see His love,
-Love that came from God above.
-Jesus gave His life for me,
-Through His sacrifice we are free.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৪",
+    title: "ভকত-রঞ্জন, করি আগমন",
+    author: "- অমৃতলাল নাথ",
+    language: "Bengali",
+    lyrics: `ভকত-রঞ্জন, করি আগমন, আমোদিত কর হৃদয়-কানন, 
+প্রেমের মরতি, দেখায়ে অন্তরে, প্রকাশ স্বর্গীয় বিমল কিরণ।
+
+১।।
+হৃদি-উপবনে কুসুমরাশি, প্রেম ভক্তি প্রীতি মধুর-হাসি ; 
+তোমার বিহনে, ফুটিবে কেমনে, প্রস্ফুটিত কর দিয়ে দরশন।
+
+২।
+যাত-কুসুম মুকুলে, বহাও প্রেমের বসন্ত অনিলে, 
+সৌরভে তাহার, মাতুক অন্তর, করুক সবার হৃদয়-তোষণ।
+
+৩। 
+সুললিত মধুমাখা প্রেম-গান, সুমধুর প্রেম-ভ্রমর-গুজন,
+মানস-মোহন, কোকিল-কুজন, শুনাও আসিয়ে ঈশ্বর নন্দন।
+`,
   },
 
   {
     id: 5,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.RESURRECTION,
-    number: "005",
-    title: "Christ Has Risen",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Christ has risen, death is gone,
-Darkness fades before the dawn.
-He is living, He is King,
-Let the church His praises sing.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৫",
+    title: "যীশু এস আমার অন্তরে",
+    author: "রামচরণ ঘোষ",
+    language: "Bengali",
+    lyrics: `যীশু এস আমার অন্তরে, জুড়াব প্রাণ তোমারে হেরে।। 
+
+১।  তোমার মোহন মূরতি হেরে, যাবে দুঃখ অন্তরে। | 
+২। আমার তাপিত প্রাণ শীতল হবে, পেলে তোমায় অন্তরে।
+৩। তোমার বিচ্ছেদে নরক যাতনা, ভোগে পাপী অন্তরে।
+৪। তোমার দর্শনে মন মোহিত থাকে, এস আমার অন্তরে। | 
+৫। তোমার সহবাসে স্বর্গ-সুখ, হয় এই সংসারে। 
+৬। যীশু, তুমি যথা স্বর্গ তথা, এস আমার অন্তরে।
+`,
   },
 
   {
     id: 6,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.SECOND_COMING,
-    number: "006",
-    title: "He Will Come Again",
-    author: "Unknown",
-    language: "English",
-    lyrics: `He will come again in glory,
-Every nation shall behold.
-Keep your hearts prepared and faithful,
-Trust the promise we were told.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৬",
+    title: "কোথা প্রভু, কোথা প্রভু",
+    author: "সত্যেন্দ্রকুমার মুখোপাধ্যায়\n",
+    language: "Bengali",
+    lyrics: `কোথা প্রভু, কোথা প্রভু, কোথা আছ গোপনে, 
+ঝরিতেছে আঁখি বারি, দিবানিশি বিজনে।।
+
+১।
+কলুষিত হৃদয় লয়ে, দিন যায় বোঝা বয়ে,
+কে দেখে বারেক চেয়ে, করুণা নয়নে। 
+
+২। 
+সরমে হয়েছি সারা, হৃদয় পাষাণ পারা :
+কেহ যে দেয় না সাড়া, নীরস জীবনে।
+
+৩। 
+দাড়ায়ে তোমার দ্বারে, ডাকিতেছি জোড়-করে : 
+দেখা দেও দয়া করে, দীন হীন জনে।
+`,
   },
 
   {
     id: 7,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.HOLY_SPIRIT,
-    number: "007",
-    title: "Spirit of God",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Spirit of God, come near,
-Fill our hearts and calm our fear.
-Guide us in the path of truth,
-Give us strength and heavenly hope.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৭",
+    title: "কাতর হইয়া, নাথ",
+    author: "অমৃত লাল নাথ",
+    language: "Bengali",
+    lyrics: `কাতর হইয়া, নাথ, এসেছি তব দ্বারে,
+উলঙ্গ ভিখারী, প্রায়, করুণা পাবার তরে। 
+
+১। 
+প্রেম-আলিঙ্গন দানে নিবাও হৃদি হুতাশনে,
+রাখ, নাথ, সযতনে শ্রান্ত শির বক্ষোপরে । 
+
+২। 
+তব প্রেমে, দয়াময়, পূর্ণ কর এ হৃদয়;
+আসি সম্মুখে দাঁড়াও, দেখি রূপ নয়ন ভরে। 
+
+৩। 
+মম প্রতি হও সদয়, বিদীর্ণ হ’তেছে হৃদয়। 
+হৃদি মাঝে হও উদয়, নাশ পাপ অন্ধকারে।।
+`,
   },
 
   {
     id: 8,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.SALVATION,
-    number: "008",
-    title: "Saved by Grace",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Saved by grace and washed clean,
-Through the blood of Christ our King.
-Now we walk in freedom's way,
-Thanking God for every day.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৮",
+    title: "যীশু মশীহ্ সভায় আসি",
+    author: "গুরুদাস সরকার",
+    language: "Bengali",
+    lyrics: `যীশু মশীহ্ সভায় আসি পুরাও মনের বাসনা ;
+তব আত্মা দানে দীনগণে, কর শক্তি চালনা। 
+
+১। 
+তব নিরূপিত বাক্য, মন প্রাণে করে ঐক্য ;
+তাহা পাঠে মন পুলকিত, সদা পাই সান্ত্বনা।। 
+
+২।
+যােয়েল ভক্তের ছিল বাণী, আত্মা পাবে সকল প্রাণী, 
+বালক যুবা কিম্বা প্রাচীন, পাবে মনে সান্ত্বনা। 
+
+৩।
+পেন্তিকস্তে আত্মার বর্ষণ, হয়েছিল যেরূপ তখন ;
+সেরূপ দেখাও মোদের এখন, করি এই প্রার্থনা। 
+
+৪। 
+মোরা হব খ্রীষ্টের প্রজা, তিনি হবেন মোদের রাজা;
+নূতন রাজ্যের হব প্রজা, আনন্দ আর ধরে না।
+
+`,
   },
 
   {
     id: 9,
-    songBookId: SONG_BOOKS.CHRISTIAN_HYMN_BOOK,
-    categoryId: CATEGORIES.GRACE,
-    number: "009",
-    title: "Amazing Grace",
-    author: "Traditional",
-    language: "English",
-    lyrics: `Amazing grace has found my heart,
-God's mercy gives a brand new start.
-His love has called me from the night,
-And led me into saving light.`,
-  },
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৯",
+    title: "হে যীশু ঈশ্বর, করুণা আকর",
+    author: "বিপিনবিহারী সরকার",
+    language: "Bengali",
+    lyrics: `হে যীশু ঈশ্বর, করুণা আকর, কর দয়া আজ দীনে। 
 
-  // =========================================================
-  // BOOK: BANGLA CHRISTIAN SONGS
-  // =========================================================
+১। আমরা সকলে, তব পদতলে, আছি চেয়ে তব মুখ-পানে। 
+২। পিতার আলয়ে, গমন সময়ে, পড়ে তব প্রেম-কথা মনে। 
+৩। শান্তি আত্মা দানে, তুষিবে এ দীনে, কর পূর্ণ আশা এই ক্ষণে।। 
+৪। চির আশা-ভূমি, এস যীশু তুমি, কর বাস আমাদের মনে। 
+৫। পাইলে তোমারে, দুঃখ যাবে দূরে, কবে নাথ আসিবে' ভূবনে। 
+৬। প্রার্থনাতে রত, রাখহ জাগ্রত, কর একীভূত তব সনে। 
+৭। দূত অগ্নি সাথে, আসি মেঘ-রথে, দেও দেখা তব প্রেমিক জনে।
+`,
+  },
 
   {
     id: 10,
     songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
-    categoryId: CATEGORIES.FAITH,
-    number: "001",
-    title: "Walk by Faith",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Walk by faith and not by sight,
-Trust the Lord through every night.
-He will guide your path each day,
-Follow Him and do not stray.`,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১০",
+    title: "কর করুণা, কর নাথ করুণা",
+    author: "- হৃদয় নাথ চাকলাদার",
+    language: "Bengali",
+    lyrics: `কর করুণা, কর নাথ করুণা,
+যীশু হে করুণানিধি বিতর করুণা-কণা। 
+
+১। 
+পাপ-বিনাশন, পতিত-পাবন,
+অনন্ত জীবন, পাপী-তাপীর সান্তনা । 
+
+২। জীবন-আকর, হে ত্রাণ ভাস্কর,
+নাশি মোহ-তমোরাশি, হৃদে থাক, এ বাসনা। 
+
+৩। 
+দয়ার আকর, কর দয়া কর, 
+জ্বালাও আত্মার আলো নির্বাণ হতে দিও না।
+`,
   },
 
   {
     id: 11,
     songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
-    categoryId: CATEGORIES.HOPE,
-    number: "002",
-    title: "Hope Will Rise",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Hope will rise with every dawn,
-When the darkest night is gone.
-Keep your eyes upon the light,
-God will make the future bright.`,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১১",
+    title: "এলেম তব দ্বারে, ভিক্ষার ঝুলি",
+    author: "- গগন চন্দ্র দত্ত ",
+    language: "Bengali",
+    lyrics: `এলেম তব দ্বারে, ভিক্ষার ঝুলি প্রভু দেও পূরে ; 
+মোদের যত প্রয়োজন, আছে তব ভান্ডারে
+
+১। 
+যীশুর রক্তে ক্রীত ধন, আছে সব অগণন,
+কর আজি বিতরণ, নির্ধনে দয়া করে। 
+
+২। 
+দুঃখী কাঙ্গাল যত জন, কর তাদের ধনবান;
+হয়ে প্রফুল্লিত মন, প্রশংসে তোমারে। 
+
+৩। 
+ধনবান হব বলে, এসেছি মোরা সকলে; 
+দয়ার ভান্ডার দেও হে খুলে, তপ্ত কর দান করে।
+`,
   },
 
   {
     id: 12,
     songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
-    categoryId: CATEGORIES.CHRISTIAN_LIFE,
-    number: "003",
-    title: "A Life for Christ",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Every day I live for Christ,
-Following His way of life.
-Let my words and actions show,
-That His love within me grows.`,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১২",
+    title: "ওগো শান্তিদাতা দয়াল প্রভু",
+    author: "- অতুল চন্দ্র বল।\n",
+    language: "Bengali",
+    lyrics: `ওগো শান্তিদাতা দয়াল প্রভু
+এস নাথ এস দয়াময় । 
+তোমারই আসার আশাতে হেথায়।
+সমবেত হয়েছি সবায় ।।
+
+১। 
+তৃষিত চাতক প্রায় পিপাসিত প্রাণ 
+পাইতে তোমারে আজি হে মহিয়ান 
+দীনহীন অভাজনে দেহ দরশন।
+প্রেমময় হইয়া সদয় ।
+
+২। 
+পূজিব তোমার ঐ অভয় চরণ
+হৃদয়েতে ধরি হৃদয় রতন
+ভকতি অর্ঘ্য এ ভিখারীর ধন।  
+দিতেছি তোমার সেবায় ।
+`,
   },
 
   {
     id: 13,
     songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
-    categoryId: CATEGORIES.SERVICE,
-    number: "004",
-    title: "Here I Am",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Here I am, Lord, send me,
-Use my hands to serve for Thee.
-Give me courage, give me grace,
-Let me serve in every place.`,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৩",
+    title: "মনের আনন্দে আজ ডাকি তোমারে",
+    author: "- প্রিয়নাথ বৈরাগী",
+    language: "Bengali",
+    lyrics: `মনের আনন্দে আজ ডাকি তোমারে। 
+ওহে যীশু দয়াময়, যারা তোমার দয়া পায়,
+| তারা ধন্য হয় এই সংসারে ।। 
+
+১। 
+আমার নয়নের জল, তুমি কখন এসে মুছে দিলে 
+এখন যে দিকেতে চাই, সুখের কুল কিনারা নাই,
+আমি জানি না দয়াল । 
+সংসার ভরা সুখের জোয়ারে।
+
+২। 
+আমার জীর্ণ তরী-মাঝে কখন এসে দাঁড়ালে হে।
+তুমি ভবের কান্ডারী। 
+এখন নাই আর কোনও ভয়, ঐ যে সামনে দেখা যায়,
+তোমার সোনার পুরী অদূরে। 
+
+৩। 
+শুনি চারিদিকে, তোমার মধুর নামের মঙ্গল ধ্বনি
+(কেবল) থেকে থেকে 
+আমি ভরিয়া পরাণ, গা’ব যীশু নামে গান
+বড় আশা আছে অন্তরে। 
+
+৪। 
+করি এই প্রার্থনা, তুমি থেকো সদা হৃদয় মাঝে দয়াল, '
+দূরে যেও না। 
+আমার নাই সাধন ভজন, দিও নিজ গুণে চরণ, 
+চরণ ছাড়া করোনা মোরে ।
+`,
   },
 
   {
     id: 14,
     songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
-    categoryId: CATEGORIES.WITNESS,
-    number: "005",
-    title: "Tell the World",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Tell the world about His love,
-Tell the story from above.
-Jesus came to save the lost,
-He has paid the greatest cost.`,
-  },
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৪",
+    title: "(প্রভু) থেকো না লুকিয়ে আড়ালে ",
+    author: "- অতুল চন্দ্র বল",
+    language: "Bengali",
+    lyrics: `(প্রভু) থেকো না লুকিয়ে আড়ালে 
+মোরা এসেছি সকলে তব গৃহতলে
+পূজিব তোমারে বলে ।। 
 
-  // =========================================================
-  // BOOK: BANGLA CHORUS SONGS
-  // =========================================================
+১। 
+এস প্রভু অনাথ নাথ।
+পজব তোমায় মনের মত
+মোদের সব আয়োজন বৃথা হবে আজি 
+তুমি হেথা না আসিলে । 
+
+২। 
+কি দিয়ে পূজিব তোমা 
+নাইকো মণি-মুক্তা-সোনা
+তোমায় অর্ঘ্য দিব ভক্তি রতন। 
+অশ্রুধারা ঢেলে ।
+
+৩। 
+মোরা আতি অভাজন
+না জানি সাধন ভজন
+তুমি শিখাও তোমার আরাধনা
+(দূরে) থেক না অবোধ বলে ।
+
+
+`,
+  },
 
   {
     id: 15,
-    songBookId: SONG_BOOKS.BANGLA_CHORUS_SONGS,
-    categoryId: CATEGORIES.CHORUS,
-    number: "001",
-    title: "Sing Hallelujah",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Sing Hallelujah, praise the Lord,
-Sing together with one accord.
-Lift your voice and sing His name,
-Yesterday, today, the same.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৫",
+    title: "আনন্দলোকে মঙ্গলালোকে বিরাজ",
+    author: "-রবীন্দ্রনাথ ঠাকুর",
+    language: "Bengali",
+    lyrics: `আনন্দলোকে মঙ্গলালোকে বিরাজ, সত্যসুন্দর ।
+
+মহিমা তব উদ্ভাসিত মহাগগনমাঝে। 
+বিশ্বজগত মণিভূষণ বেষ্টিত চরণে ॥ 
+
+গ্রহতারক চন্দ্ৰতপন ব্যাকুল দ্রুত বেগে 
+করিছে পান, করিছে স্নান অক্ষয় কিরণে ॥ 
+
+ধরণী’পর ঝরে নিঝর, মোহন মধু শোভা 
+ফুলপল্লব-গীতগন্ধ-সুন্দর-বরণে ॥ 
+
+বহে জীবন রজনীদিন চিরনূতনধারা। 
+করুণা তব অবিশ্রাম জনমে মরণে ॥
+
+স্নেহ প্রেম দয়া ভক্তি কোমল করে প্রাণ, 
+কত সান্ত্বন কর বর্ষণ সন্তাপহরণে ॥ 
+
+জগতে তব কী মহোৎসব, বন্দন করে বিশ্ব 
+শ্ৰীসম্পদ ভূমাস্পদ নির্ভয়শরণে ॥
+`,
   },
 
   {
     id: 16,
-    songBookId: SONG_BOOKS.BANGLA_CHORUS_SONGS,
-    categoryId: CATEGORIES.PRAISE,
-    number: "002",
-    title: "Praise the Lord",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Praise the Lord with all your heart,
-Sing His glory from the start.
-Lift your voice and sing today,
-Praise the Lord in every way.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "16",
+    title: "প্রাণের যীশু, যীশু যীশু",
+    author: "- রাজন ফকীর",
+    language: "Bengali",
+    lyrics: `প্রাণের যীশু, যীশু যীশু, বলে ডাক 
+(তুমি) ডাক একবার প্রাণ খুলে।
+
+১। আহা এই দন্ডে যীশু তোমায় সাজাইবেন প্রেম ফুলে। 
+২। আহা যীশু চুম্বন করে তোমায় লবেন নিজ কোলে তুলে। 
+৩। আহা তুমি হৃদে দেখবে সদা শান্তি নদী উথলে। 
+৪। আহা যীশুর চুম্বন পেয়ে আমি সব পাপ গিয়েছি ভুলে।
+`,
   },
 
   {
     id: 17,
-    songBookId: SONG_BOOKS.BANGLA_CHORUS_SONGS,
-    categoryId: CATEGORIES.WORSHIP,
-    number: "003",
-    title: "We Worship You",
-    author: "Unknown",
-    language: "English",
-    lyrics: `We worship You, we honor You,
-Our hearts belong to You.
-Holy God, receive our praise,
-We will serve You all our days.`,
-  },
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৭",
+    title: "এস প্রিয় বর, নিখিল ঈশ্বর",
+    author: "-অজ্ঞাত জাত",
+    language: "Bengali",
+    lyrics: `এস প্রিয় বর, নিখিল ঈশ্বর
+পর চারুহার যতনে। 
 
-  // =========================================================
-  // BOOK: NEW GENERATION SONGS
-  // =========================================================
+১। 
+স্নিগ্ধ শিশির সিক্ত
+শ্বেত কুসুম সুরভী 
+রাশি রাশি বিকশিত কাননে
+এস--- 
+
+২। 
+তোমার রচিত বন,
+এ পত্র সম কিশলয় 
+মন্দ মধুর প্রিয়, কম্পিত মলয়।
+অঙ্গ ভঙ্গিমা মধুময়- (২) 
+
+৩। 
+কোকিলার বেনুগান
+অলির আকুল তান। 
+তুমি সান্ধ্য কিরণ রূপী 
+নিখিল শয়নে।
+`,
+  },
 
   {
     id: 18,
-    songBookId: SONG_BOOKS.NEW_GENERATION_SONGS,
-    categoryId: CATEGORIES.YOUTH,
-    number: "001",
-    title: "Young and Faithful",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Young and faithful, strong and true,
-We will live our lives for You.
-With our hearts and minds renewed,
-We will follow Jesus through.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৮",
+    title: "প্রশংস দয়াল ঈশ্বরে ",
+    author: "",
+    language: "Bengali",
+    lyrics: `প্রশংস দয়াল ঈশ্বরে 
+প্রশংস ভবে সব তারে 
+প্রশংস দিব্যগণে তায় 
+প্রশংস পিতা পুত্ৰাত্মায় ।`,
   },
 
   {
     id: 19,
-    songBookId: SONG_BOOKS.NEW_GENERATION_SONGS,
-    categoryId: CATEGORIES.CONTEMPORARY,
-    number: "002",
-    title: "You Are With Me",
-    author: "Unknown",
-    language: "English",
-    lyrics: `You are with me every day,
-You are near me when I pray.
-Through the mountains, through the storm,
-Your great love keeps me warm.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৯",
+    title: "(বল) পবিত্র, পবিত্র, পবিত্রময় পিতা",
+    author: "- রাজন ফকীর",
+    language: "Bengali",
+    lyrics: `১। 
+(বল) পবিত্র, পবিত্র, পবিত্রময় পিতা,
+পবিত্র, পবিত্র, পুত্র ও আত্মা, 
+(সদা) সৰ্বকাল, চিরকাল পিতা প্রভুরই ধন্য
+পবিত্র আত্মা ও যীশুরই ধন্য। 
+
+২। 
+(কর) গৌরব, গৌরব, জগৎময় সবে গাও
+প্রশংসা, প্রশংসা, প্রাণ খুলে গাও, 
+(সদা) ধন্যবাদ, ধন্যবাদ, গাও আরও উচ্চনাদ,
+জয়ধ্বনি দিয়ে পাপ কর ভেদ। 
+
+৩। 
+(আমি) কাদিব, হাসিব, সর্বাবস্থায় নাচিব,
+মরণে, জীবনে, যীশু পূজিব; 
+(মোর) নিঃশ্বাসে, প্রশ্বাসে, যীশুর সাথে বেড়াব,
+চাখিব, মাখিব, নাহি ছাড়িব ।।
+
+৪। 
+(কভু) চায় না আর, মন আমার, জগতের কিছু আর,
+একদৃষ্টে দেখি ঐ যীশুর উপর ; 
+সদা যীশু জয়, জীবনময়, আসে জোয়ার বানের ন্যায়, 
+মোর আত্মা তাঁর ঢেউয়ে ক্রমেই ঊর্ধ্বে ধায়।
+`,
   },
 
   {
     id: 20,
-    songBookId: SONG_BOOKS.NEW_GENERATION_SONGS,
-    categoryId: CATEGORIES.MISSION,
-    number: "003",
-    title: "Send Us Out",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Send us out to serve Your name,
-Share Your love and tell Your fame.
-Across the nations, near and far,
-Let us shine like morning stars.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২০",
+    title: "সবে বল যীশু জয়",
+    author: "- অমৃতলাল নাথ\n",
+    language: "Bengali",
+    lyrics: `সবে বল যীশু জয়, যত দিন দেহে প্রাণ রয়। 
+
+১। 
+কাপায়ে মেদিনী, স্বরগ পাতাল সুগভীর জয় নাদে,
+স্থাবর জঙ্গম, ভূধর সাগর, একতানে সবে গাও, যীশু জয় । 
+
+২। 
+যাহার করুণা, স্বরগ কবাট, দুরন্ত কলুষহারী,
+হিমা গরমা, ঘরে ঘরে গাও তারে, যীশু জয়।
+
+৩। 
+মরণ যাতনা, পরলোক ভয়, যে জন সদা সংহারে।
+সবে মিলে তারে, মাতি প্রেমানন্দে, প্রশংস বলে যীশু মৃত্যুঞ্জয় । 
+
+৪। 
+কাঁপুক দেবল, শুনুক বিদল, দেখুক স্বরগ, দূত, 
+নরকযোগ্য, মানবনিকর, গাহিছে পেয়ে ত্রাণ, যীশু জয় ।।
+`,
   },
 
   {
     id: 21,
-    songBookId: SONG_BOOKS.NEW_GENERATION_SONGS,
-    categoryId: CATEGORIES.EVANGELISM,
-    number: "004",
-    title: "Share the Good News",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Share the good news everywhere,
-Tell the world that Jesus cares.
-There is hope for everyone,
-Through the love of God's own Son.`,
-  },
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২১",
+    title: "সৰ্ব্বজন কর ধন্য গান",
+    author: "- রাজন ফকীর",
+    language: "Bengali",
+    lyrics: `সৰ্ব্বজন কর ধন্য গান, অদ্য কি শুভদিন,
+(সবে) ধরি যীশুর চরণ।)। 
 
-  // =========================================================
-  // BOOK: WORSHIP AND PRAISE
-  // =========================================================
+১। 
+বাঁধ আত্মা মন কোমর, পুণ্য আত্মায় দৃঢ় ধর,
+পাপ রেখ না দূর কর, (যীশু) মোদের সভায় থাকিবেন। 
+
+২। 
+এ সভা জীবিত প্রভুর, সৰ্ব্বজন দেখ পিতার,
+হস্ত মোদের শিরোপর, (তাই), আনন্দ হয় বরিষণ। 
+
+৩। 
+ঢাল প্রাণ সবে একসাথে, বিনতি ও প্রার্থনাতে, 
+পূর্ণ ধ্যান দেও ক্রুশ যীশুতে, (এস) হও আগুনে দ্বিগুণ।
+`,
+  },
 
   {
     id: 22,
-    songBookId: SONG_BOOKS.WORSHIP_AND_PRAISE,
-    categoryId: CATEGORIES.THANKSGIVING,
-    number: "001",
-    title: "Thank You Lord",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Thank You Lord for every day,
-For Your love that lights our way.
-For the blessings we receive,
-Teach us always to believe.`,
-  },
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "22",
+    title: "হে পিতঃ করি, তব প্রশংসা গান",
+    author: "অনুবাদ- যাকোব বিশ্বাস",
+    language: "Bengali",
+    lyrics: `We praise Thee O God.
+Christ in Song 396
 
-  // =========================================================
-  // BOOK: CHRISTMAS SONGS
-  // =========================================================
+১। 
+হে পিতঃ করি, তব প্রশংসা গান,
+নিজ পুত্রে ভবে করিলে সম্প্রদান। 
+
+ধ্রুবক- 
+হাল্লেলুয়া, তোমার গৌরব! হাল্লেলুয়া আমেন, | 
+হাল্লেলুয়া, তোমার গৌরব! উজ্জীবিত হোক মন।। 
+
+২। 
+গাই তব সঙ্গীত, পুণ্য আত্মার কারণ:
+ত্রাণকৰ্ত্তায় যিনি করিলেন প্রদর্শন।
+
+৩। 
+সব গৌরব স্তুতি, হত মেষশাবকের, ।
+লন যিনি শিরে, সব পাপ তাপ মানবের। 
+
+৪। 
+উজ্জীবিত হোক মন, হৃদয় প্রেমপূর্ণ হোক।
+প্রেম হুতাশনে উদ্দীপ্ত হোক্ সব লোক। 
+
+৫। 
+উজ্জীবিত হোক মন, জাগাও সুপ্ত জনে; 
+খ্ৰীষ্ট চরণ তলে সব আইসুক এক্ষণে।
+`,
+  },
 
   {
     id: 23,
-    songBookId: SONG_BOOKS.CHRISTMAS_SONGS,
-    categoryId: CATEGORIES.CHRISTMAS,
-    number: "001",
-    title: "The King Is Born",
-    author: "Unknown",
-    language: "English",
-    lyrics: `The King is born,
-The Savior has come.
-Heaven rejoices,
-God's will is done.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "23",
+    title: "তুমি ধন্য, তুমি ধন্য",
+    author: "- চন্দ্রকুমার সরকার ",
+    language: "Bengali",
+    lyrics: `তুমি ধন্য, তুমি ধন্য, মানব পাপ-তাপ-হারী, 
+মানব তারণ, করিলে সাধন, বহু দুঃখ ধরি
+তোমায় প্রণিপাত করি। 
+
+১। 
+সংসার সম্পদ জন, বিদ্যা বুদ্ধি আদি ধন, 
+বিফল সকল, মানব-সন্তাপ, করিতে হরণ,
+বিনা তব শান্তি ধন। 
+
+২। 
+(তব) অপার প্রেম-সলিলে, ভকতিভরে ডুবিলে, 
+দুঃখ যায়, সুখ উপজয়, নিবায় পাপ অনলে,
+তৃপ্ত মন শান্তিজলে । 
+
+৩। 
+তুমি পরম সুন্দর, তোমার মহিমা সুন্দর, 
+প্রেম সুন্দর, করুণা সুন্দর, সুন্দর সকলি তোমার,
+তোমায় হেরি বারে বার। 
+
+
+`,
   },
 
   {
     id: 24,
-    songBookId: SONG_BOOKS.CHRISTMAS_SONGS,
-    categoryId: CATEGORIES.ADVENT,
-    number: "002",
-    title: "Prepare the Way",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Prepare the way, the Savior comes,
-The promised King has come.
-Let every heart be ready now,
-And praise the Holy One.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৪",
+    title: "তোমার জয় হউক জয় হউক",
+    author: "- প্রিয়নাথ বৈরাগী",
+    language: "Bengali",
+    lyrics: `তোমার জয় হউক জয় হউক হে মহারাজ,
+হউক মহিমা কীৰ্ত্তন মহীতলে।। 
+ভবে যত নর-নারী এসে সারি সারি,
+অন লুটাক তোমার ঐ চরণতলে। 
+
+১। 
+বসে স্বর্গের সিংহাসনে, চেয়ে আছ জগৎ পানে; 
+কোথায় কে কাদে অভাজন, করে হাত প্রসারণ,
+কর হে ধারণ তুলে কোলে। 
+
+২। 
+মুছাও পাপীর নয়নের জল, কে আছে আর এমন দয়াল; 
+তুমি ধন্য হে গুণধাম, ধন্য ঐ যীশু নাম, 
+নাই এমন নাম আর ভূ-মন্ডলে।
+`,
   },
 
   {
     id: 25,
-    songBookId: SONG_BOOKS.CHRISTMAS_SONGS,
-    categoryId: CATEGORIES.BIRTH_OF_CHRIST,
-    number: "003",
-    title: "Bethlehem's Child",
-    author: "Unknown",
-    language: "English",
-    lyrics: `In Bethlehem a child was born,
-The promised Savior came.
-The angels sang across the night,
-And glorified His name.`,
-  },
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৫",
+    title: "আমি “যীশু যীশু” বলে যবে",
+    author: "বিন্দুনাথ সরকার।",
+    language: "Bengali",
+    lyrics: `আমি “যীশু যীশু” বলে যবে ডাকি তোমায়,
+তুমি সাড়া দিও প্রাণে, ওহে দয়াময় । 
 
-  // =========================================================
-  // BOOK: PRAYER AND DEVOTION
-  // =========================================================
+১। 
+দিও তোমার পাদপদ্ম, হে মম পরমারাধ্য,
+শুদ্ধ হয় যেন চিত্ত-পদধুলায়। 
+
+২। 
+তোমার শ্রীমুখের জ্যোতি, দেখিতে দিও শকতি,
+সন্দেহ ভীতি যেন দূরে পলায়। 
+
+৩। 
+বায়ু-বিকম্পিত-নল-সম, এ চিত্ত চঞ্চল, 
+দিও প্রাণে বল, তোমার সেবায়।
+`,
+  },
 
   {
     id: 26,
-    songBookId: SONG_BOOKS.PRAYER_AND_DEVOTION,
-    categoryId: CATEGORIES.PRAYER,
-    number: "001",
-    title: "Hear Our Prayer",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Hear our prayer, O Lord,
-Listen to our cry.
-Give us strength and courage,
-Stay forever by our side.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "26",
+    title: "প্রশংস, প্রশংস, যীশু পুণ্য",
+    author: "- Fanny J. Crosby. \nঅনুবাদ- সন্তোষ কুমার হালদার\n",
+    language: "Bengali",
+    lyrics: `Praise Him praise Him
+Church Hymnal 645
+
+১। 
+প্রশংস, প্রশংস, যীশু পুণ্য পরিত্রাতা ;
+বিশ্ব গাও, (তার) অপূর্ব প্রেম বার্তা ; 
+প্রশংস, প্রশংস, মহিমার উচ্চ করূবগণ ; 
+হোক মহিমা, গৌরব পূর্ণ পুণ্য নাম। 
+পালক যীশু, রক্ষিবেন স্বীয় মেষগণে ;
+বহেন তিনি বাহুতে অনুক্ষণ। 
+
+ধুয়াঃ 
+প্রশংস, প্রশংস, যীশু পুণ্য পরিত্রাতা ;
+প্রশংস, প্রশংস, আনন্দে গাহ গান। 
+
+২। 
+প্রশংস, প্রশংস, যীশু পুণ্য পরিত্রাতা ;
+মমাদের পাপে বহিলেন ক্রুশ ব্যথা ; 
+তিনি শৈল, পরিত্রাণের চির আশা ; 
+প্রশংস, গাহ, যীশু ক্রুশ মণি ; 
+গাও, সঙ্গীত, যীশু দুঃখ বহনকারী ;
+চিরস্থায়ী প্রেম, অসীম, অটল । 
+
+৩। 
+প্রশংস, প্রশংস, যীশু পুণ্য পরিত্রাতা ;
+স্বর্গ, তরোণ, গাহিছে হোশান্না ; 
+যীশু ত্রাতা রাজত্ব করেন চিরকাল ; 
+(দেও) কিরীট ; কিরীট ; দর্শক-যাজক-রাজা ; 
+খ্রীষ্ট আসছেন বিশ্ব বিজয়ী রাজন ; 
+মহিমা গৌরব যুগে যুগে তাহার ।
+`,
   },
 
   {
     id: 27,
-    songBookId: SONG_BOOKS.PRAYER_AND_DEVOTION,
-    categoryId: CATEGORIES.MORNING,
-    number: "002",
-    title: "New Morning",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Every morning brings new grace,
-Every day we seek His face.
-Yesterday has gone away,
-God will guide us through today.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "27",
+    title: "পুণ্য পুণ্য পুণ্য সর্বশক্তিমান",
+    author: "- Reginald Heber (1826)\nঅনুবাদ- জে, এ, ডি, ম্যাকডনান্ড (১৮৮৬)",
+    language: "Bengali",
+    lyrics: `Holy, Holy, Holy! Lord God Almighty!
+Church Hymnal 73
+
+১. <br>
+পুণ্য পুণ্য পুণ্য সর্বশক্তিমান, 
+প্রাত:স্তবে গাই সবে তব গুণচয়।।<br>
+পুণ্য পুণ্য পুণ্য সর্ব জ্যোতিষ্মন, 
+পিতা, পুত্র আত্মা, ঈশ্বর দয়াময় ! <br>
+
+২. <br>
+পুণ্য পুণ্য পুণ্য স্বর্গে সাধু যত, 
+সুখে গৌরব-মুকুট রাখে চরণে তোমার;<br>
+করূব সরাফ সর্বে বন্দে অবিরত, 
+ধরণী পূর্ণ গৌরবে অপার । <br>
+
+৩. <br>
+পুণ্য পুণ্য পুণ্য অন্ধকারাবৃত, 
+প্রভা যাহার, মানব চক্ষে সহ্য নাহি হয় ;<br>
+তুমি মাত্র পুণ্য, তুমি অবিকৃত, 
+তুমি সর্বদর্শী, সর্ব প্রেমময়। <br>
+
+৪. <br>
+পুণ্য পুণ্য পুণ্য সর্বশক্তিমান, 
+প্রাণী মাত্রে গাহে সদা তব গুণচয় ;<br>
+তব দাস ও দাসী মিলায় স্তুতি গান, 
+পিতা, পুত্র, আত্মা, ত্রিত্ব দয়াময়।।<br>
+`,
   },
 
   {
     id: 28,
-    songBookId: SONG_BOOKS.PRAYER_AND_DEVOTION,
-    categoryId: CATEGORIES.EVENING,
-    number: "003",
-    title: "Evening Prayer",
-    author: "Unknown",
-    language: "English",
-    lyrics: `As the evening shadows fall,
-Lord, we hear Your gentle call.
-Thank You for this peaceful day,
-Keep us safely through the night.`,
-  },
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৮",
+    title: "হোক যীশু নামের সমাদর",
+    author: "এডওয়ার্ড গেরোনেট ( অনুবাদ: যাকোব কান্তিনাথ বিশ্বস )",
+    language: "Bengali",
+    lyrics: `(১)<br>
+হোক যীশু নামের সমাদর,<br>
+দূত করুক প্রণিপাত;<br>
+স্তব কর তাঁহার নিরন্তর,<br>
+দেও মুকুট শিরে তাঁর।<br><br>
 
-  // =========================================================
-  // BOOK: CHURCH OF BANGLADESH HYMNS
-  // =========================================================
+(২)<br>
+হে তূরীধারী করুবগণ,<br>
+প্রণমো বারংবর,<br>
+যাঁর সৃষ্টি আমরা সর্বজন,<br>
+দেও মুকুট শিরে তারে।<br><br>
+
+(৩)<br>
+হে আদম-বংশের মুক্ত নর<br>
+পুণ্যবান রক্তে যাঁর,<br>
+সেই ত্রাতার কর সমাদর<br>
+দেও মুকুট শিরে তারে।<br><br>
+
+(৪)<br>
+হে প্রত্যেক বংশ, প্রত্যেক জাত,<br>
+এই ভুবন মাঝার,<br>
+তাঁর কাছে কর জানুপাত,<br>
+দেও মুকুট শিরে তারে।
+`,
+  },
 
   {
     id: 29,
-    songBookId: SONG_BOOKS.CHURCH_OF_BANGLADESH_HYMNS,
-    categoryId: CATEGORIES.CHURCH,
-    number: "001",
-    title: "One Church, One Lord",
-    author: "Unknown",
-    language: "English",
-    lyrics: `One Church, one Lord, one faith,
-One body gathered in His name.
-Together we will serve and love,
-Giving glory to our God above.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "29",
+    title: "আকাশে চন্দ্র তারা",
+    author: "",
+    language: "Bengali",
+    lyrics: `আকাশে চন্দ্র তারা, বন গিরি নদী ধারা<br>
+তোমার মহিমা গায় প্রভু, তোমার মহিমা গায়।।<br>
+তুমি যে বিশ্বজুড়ে, রয়েছো সবার সুরে,<br>
+নিখিল মানব সবে তোমার শরণ চায়।<br>
+তুমি অনন্ত, তবু তুমি ধরা দাও,<br>
+প্রেমের আসনে চরণ ফেলিয়া যাও।<br>
+তোমার করুণা লভি, পেয়েছি মোরা যে সবাই,<br>
+অলখ হতে গো তুমি জীবন ভর সুধায়।।
+`,
   },
 
   {
     id: 30,
-    songBookId: SONG_BOOKS.CHURCH_OF_BANGLADESH_HYMNS,
-    categoryId: CATEGORIES.COMMUNION,
-    number: "002",
-    title: "At the Table",
-    author: "Unknown",
-    language: "English",
-    lyrics: `At the table we remember,
-Jesus gave His life for all.
-Bread and cup proclaim His mercy,
-Through His grace we hear His call.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩০",
+    title: "(ভাই) আনন্দে যীশু নাম",
+    author: "- মধুসুদন সরকার",
+    language: "Bengali",
+    lyrics: `(ভাই) আনন্দে যীশু নাম হৃদয় খুলে বল,
+(যীশু প্রেম হৃদয় খুলে বল)। 
+
+১। 
+রাজার রাজা প্রভুর প্রভু স্বর্গে যিনি ছিল,
+সে এই নরক যােগ্য নরের তরে এ ভবে আইল। 
+
+২।
+দীনবেশে দেশে দেশে ত্রাণধন বিলাল,
+দিল অন্ধকে নয়ন—কত মুতে বাচাইল । 
+
+৩। 
+শত্রুর লাঞ্ছনা, কত যাতনা সহিল,
+প্রভুর হস্তে বেঁধে, কোড়া মেরে মুখে থুথু দিল। 
+
+৪। 
+দু’জন চোরের মধ্যে তারে ক্রুশে টাঙ্গাইল,
+নিষ্ঠুর সেনাগণে বর্শা হানে তার কুক্ষিতে মারিল।
+
+৫। 
+আমার পাপের জন্য যে জন প্রাণ দিল,
+আমি তারে ভাল না বাসিয়া কারে বাসি ভাল। | 
+
+৬।
+যার প্রেম জলে মন হৃদয় ভিজিল, 
+এই নিরস বৃক্ষেতে কত সুফল ফলিল। 
+
+৭।
+ওহে খ্ৰীষ্টভক্ত দল শাস্ত্র লয়ে চল। 
+ও সেই প্রেমময়ের প্রেমের কথা সর্বদেশে বল।
+`,
   },
 
   {
     id: 31,
-    songBookId: SONG_BOOKS.CHURCH_OF_BANGLADESH_HYMNS,
-    categoryId: CATEGORIES.BAPTISM,
-    number: "003",
-    title: "New Life in Christ",
-    author: "Unknown",
-    language: "English",
-    lyrics: `New life in Christ, a life made new,
-Walking in faith and trusting You.
-Buried with Christ and raised to live,
-By Your grace new hope You give.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩১",
+    title: "ভুবন ভরা বীণা বাজায়",
+    author: "সন্তোষকুমার পাত্র",
+    language: "Bengali",
+    lyrics: `ভুবন ভরা বীণা বাজায়<br>
+পুণ্য তোমার নাম।<br>
+সুন্দর হে - তোমায় নমি,<br>
+পুণ্য তোমার নাম।<br><br>
+চন্দ্র গ্রহ তারায় তারায়<br>
+অসীম সুখে সে সুর লুটায়,<br>
+কুঞ্জে পাতায় দোল দিয়ে যায়<br>
+পুণ্য তোমার নাম।<br><br>
+দুঃখ-সুখ ঝঙ্কারে যে<br>
+তোমার তালে তালে<br>
+জীবন-মরণ বন্দী হেথায়<br>
+কালের অন্তরালে।<br><br>
+দাও পরিচয় সব অজানায়<br>
+আঘাত হান পাষাণ হিয়ায়,<br>
+সবার মাঝে ধন্য হউক,<br>
+পুণ্য তোমার নাম।<br>
+`,
   },
 
   {
     id: 32,
-    songBookId: SONG_BOOKS.CHURCH_OF_BANGLADESH_HYMNS,
-    categoryId: CATEGORIES.MARRIAGE,
-    number: "004",
-    title: "Bless This Union",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Bless this union, Lord above,
-Fill this home with faithful love.
-Guide their journey through the years,
-Walk beside them through their joys and tears.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩২",
+    title: "মধুমাখা যীশু নাম গাও রে",
+    author: "গগনচন্দ্র দত্ত",
+    language: "Bengali",
+    lyrics: `মধুমাখা যীশু নাম গাও রে;<br>
+গাও ঘরে ঘরে নগরে নগরে।<br><br>
+
+(১)<br>
+এ ভবের আশা যিনি, স্বর্গের আনন্দ-ভূমি;<br>
+যে নামে সকল দূঃখ হরে।<br><br>
+
+(২)<br>
+যে নামের মাহাত্মগুণে, শান্তি পায় ভক্তগণে;<br>
+দুঃখী জনে সুখী হয় অন্তরে।<br><br>
+
+(৩)<br>
+আইলে আসন্ন কাল, যীশু নামই মহাবল;<br>
+যে নামে মৃত্যু-নদী পার করে।<br>
+`,
   },
 
   {
     id: 33,
-    songBookId: SONG_BOOKS.CHURCH_OF_BANGLADESH_HYMNS,
-    categoryId: CATEGORIES.FUNERAL,
-    number: "005",
-    title: "Rest in God's Care",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Rest in God's eternal care,
-His loving presence will be there.
-Though we mourn and say goodbye,
-Hope remains beyond the sky.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩৩",
+    title: "যীশু খ্রীষ্ট নাম গাও রে বদনে",
+    author: "ঈশান চন্দ্র দাস",
+    language: "Bengali",
+    lyrics: `যীশু খ্রীষ্ট নাম গাও রে বদনে,<br>
+গাও রে বদনে, নাম লও রে বদনে।<br><br>
+
+(১)<br>
+(যে নাম)     যোগী ঋষি মুণিগণ নাহি পায় ধ্যানে,<br>
+যোগী ঋষিগণ রে, যোগী ঋষিগণ -২<br>
+যে নাম না পায়, ধ্যানে রে -২<br>
+যীশু নাম নাম রে -২<br><br>
+
+(২)<br>
+(ও ভাই)      হেন সুধাময় নাম নাহি ত্রিভুবনে,<br>
+ত্রিভুবনে নাহি রে, যীশু নাম সুধা -২<br>
+হৃদয় ভরে পিয় রে যীশু নাম সুধা -২<br>
+যীশু নাম নাম রে, সুধাময় নাম -২<br><br>
+
+(৩)<br>
+(ও ভাই)     দুঃখ-তাপ দুরে যায় এ নাম শ্রবণে,<br>
+দঃখ যায় দূরে রে, যীশু নাম শুনে -২<br>
+প্রাণ শীতল হবে রে, যীশু নাম শুনে -২<br>
+যীশু নাম নাম রে, মধুময় নাম -২<br><br>
+
+(৪)<br>
+(এ নাম)     ধ্যান কর দিবানিশি শয়নে স্বপনে,<br>
+হৃদে স্মরণ কর রে, দিবানিশি ও নাম -২<br>
+দিবানিশি স্মর রে, শয়নে স্বপনে -২<br>
+যীশু নাম নাম রে, দিবানিশি লও -২<br>
+`,
   },
 
   {
     id: 34,
-    songBookId: SONG_BOOKS.CHURCH_OF_BANGLADESH_HYMNS,
-    categoryId: CATEGORIES.FAREWELL,
-    number: "006",
-    title: "Until We Meet Again",
-    author: "Unknown",
-    language: "English",
-    lyrics: `Until we meet again,
-May God's peace remain.
-Wherever life may lead,
-His grace will meet our need.`,
-  },
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩৪",
+    title: "সকল ধন্যবাদ মহিমা",
+    author: "জয়নাথ অধিকারী",
+    language: "Bengali",
+    lyrics: `সকল ধন্যবাদ মহিমা গৌরব তোমার,  <br>
+জয় হোক  জয় হোক যীশু<br>
+জয় হোক তোমার,<br>
+প্রশংসা পরাক্রম প্রতাপ তোমার,<br>
+জয় হোক  জয় হোক যীশু<br>
+জয় হোক তোমার।<br><br>
 
-  // =========================================================
-  // BOOK: CHILDREN CHRISTIAN SONGS
-  // =========================================================
+১। <br>
+জঘন্য পাপী আমি অতি দুরাচার,<br>
+প্রেমে তরালে মোরে প্রেম অবতার,<br>
+প্রেমের অবতার, তুমি দয়ার অবতার,<br>
+জয় হোক  জয় হোক যীশু<br>
+জয় হোক তোমার।<br><br>
+
+২। <br>
+রো হ’তে আরোগ্য করলে মহিমা তোমার,<br>
+সম্পদে বিপদে সহায় হয়েছ আমার,<br>
+দয়ার উপর দয়া কত, পেয়েছি তোমার,<br>
+জয় হোক  জয় হোক যীশু<br>
+জয় হোক তোমার।<br><br>
+
+৩। <br>
+পথে ঘাটে মাঠে বান্ধব হয়েছে আমার,<br>
+দেখেছি দেখেছি তোমার প্রেম ব্যবহার,<br>
+অনুগ্রহ করিয়াছ কত শত বার,<br>
+জয় হোক  জয় হোক যীশু<br>
+জয় হোক তোমার।<br><br>
+
+৪। <br>
+যুগে যুগে জয়গান আর স্তুতি তোমার,<br>
+জীবন্ত বাক্য আর শক্তি তোমার,<br>
+শক্তিহীনে দাও হে প্রভু শক্তি তোমার<br>
+দুর্বলকে ধরে রেখ মিনতি আমার ।<br>
+`,
+  },
 
   {
     id: 35,
-    songBookId: SONG_BOOKS.CHILDREN_CHRISTIAN_SONGS,
-    categoryId: CATEGORIES.CHILDREN,
-    number: "001",
-    title: "Jesus Loves Me",
-    author: "Traditional",
-    language: "English",
-    lyrics: `Jesus loves me every day,
-He is with me when I pray.
-I will follow where He leads,
-He will meet my every need.`,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "35",
+    title: "ঘটে যা ঘটুক তোমার জীবনে",
+    author: "",
+    language: "Bengali",
+    lyrics: `কীর্তনাঙ্গ খেমটা
+ঘটে যা ঘটুক তোমার জীবনে বল ধন্য যীশু ! বল রাত্র দিনে, সর্বক্ষণে ধন্য যীশু ! ধন্য যীশু! ধন্য যীশু !
+১। আসিলে সুখের সময়, এ সংসার আনন্দময়,
+তুমি মহানন্দে খুলে হৃদয়, বল—জয় জয় ধন্য যীশু ! ২। আসিলে ব্যথা বেদনা, হাহাকার দুঃখ, ক্রন্দন;
+তুমি সেই শ্রীচরণ করে স্মরণ, বল—জয় জয় ধন্য যীশু !
+৩। আসিলে সুখের জোয়ার, ভরে যায় তোমার ভান্ডার;
+গােলায় ধন-ধান্য ধরে না আর, বল—জয় জয় ধন্য যীশু। ৪। যখন হয় শূন্য দুই হাত; দুঃখের রাত হয় না প্রভাত।
+তুমি উর্ধ্বে তুলে সেই শূন্য হাত; বল—জয় জয় ধন্য যীশু।। ৫। দুঃখ সুখ আঁধার আলো, জীবনের সাদা কালাে।
+নিয়ে দুঃখ সুখ, আর মন্দ ভাল, বল—জয় জয় ধন্য যীশু। ৬। সুখ দুঃখের উর্ধ্বে থেকে, তার দিকে দৃষ্টি রেখে, বল দুঃখে সুখে হাস্য মুখে, জয় জয় জয় ধন্য যীশু।
+-প্রিয়নাথ বৈরাগী`,
+  },
+
+  {
+    id: 36,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "36",
+    title: "আমার ত্রাণ, তোমারি দান",
+    author: "",
+    language: "Bengali",
+    lyrics: `খাম্বাজ-একতালা। - সুর- আমারি গেছে পালিছ...
+। আমার ত্রাণ, তোমারি দান, তুমি ধন্য, ধন্য হে ; দিয়েছ প্রাণ, কিনেছ ত্রাণ, তুমি ধন্য, ধন্য হে ; আমারি কারণ, ভূবন-কানন, করেছ রসাল সুফলে শে কুসুম সজ্ঞাত বন উপবন ; তুমি ধন্য, ধন্য হে!
+১।
+যা কিছু তোমারি, করেছ আমারি, ধরণী অথবা স্বরগ মাঝারি; তুমিও আমারি, আমিও তোমারি, তুমি ধন্য ধন্য হে! তোমারি চরণ, দিবারে শরণ, রেখেছ তোমারি প্রেমেতে মগন ; আরাে ভাবী আশা ভরা মম মন, তুমি ধন্য, ধন্য হে!`,
+  },
+
+  {
+    id: 37,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩৭",
+    title: "এমন মধু মাখা ঐ যীশু নাম\n",
+    author: "প্রিয়নাথ বৈরাগী",
+    language: "Bengali",
+    lyrics: `এমন মধুমাখা ঐ যীশু নাম<br>
+ঐ নাম বল মহানন্দে নিশি ভোরে।<br>
+হবে রসনা পবিত্র, শুদ্ধ হবে চিত্ত<br>
+কেবলমাত্র ঐ নামের জোরে।<br><br>
+
+১।<br>
+কতকাল তোর গেছে অমনি<br>
+এমনি সুখের দিন যামিনী!<br>
+কত সুখের নিশিভোর কেটে গেছে তোর<br>
+আছিলি বিভোর ঘুমের ঘোরে।<br><br>
+
+২।<br>
+গেছে সে দিন দিয়া ফাঁকি,<br>
+বেশী দিন আর নাই রে বাকী<br>
+আছে বাকী যে কয় দিন সেই দিনের একদিন<br>
+মুক্তির শুভ দিন এসেছে রে!<br><br>
+
+৩।<br>
+জেগে ওঠ “যীশু” বলে,<br>
+মনের দুয়ার দেও রে খুলে;<br>
+দেখ, রাজরাজেশ্বর ঈশ্বরকুমার<br>
+দাঁড়ায়ে তোমার গৃহদ্বারে।<br><br>
+
+৪।<br>
+মুক্তিধন সে নিয়া হতে, <br>
+আছে তোমার অপেক্ষাতে,<br>
+মায়া ঘুমে অচেতন ছিলি রে যখন,<br>
+ডেকেছে তখন বারে বারে।<br><br>
+
+৫।<br>
+নয়ন জলে ধোও তাঁর চরণ,<br>
+হৃদয়ে লও করে বরণ;<br>
+তোর হবে রে মোচন, এ ভবের বন্ধন,<br>
+পাবি মুক্তি ধন যীশুর বরে।
+`,
+  },
+
+  {
+    id: 38,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩৮",
+    title: "ভোর হইল ভানু প্রকাশিল",
+    author: "গগনচন্দ্র দত্ত",
+    language: "Bengali",
+    lyrics: `ভোর হইল ভানু প্রকাশিল<br>
+উঠ যীশু গুণ গাও রে<br>
+জোড়-করে, যীশু পদে ধ’রে,<br>
+সঙ্গীতে পূজহ তাঁহারে।<br><br>
+
+১।<br>
+মধুর স্বরে পাখী শাখী পরে,<br>
+আনন্দে বিভুগুণ গায় রে;<br>
+উঠ উঠ সব, অলস মানব,<br>
+স্তব কর ত্রাণ-নাথ যীশুর রে।<br><br>
+
+২।<br>
+মুদিয়া নয়ন, পাপে অচেতন,<br>
+থাকিবে কত কাল হায় রে<br>
+অন্তর আঁধার, করহ অন্তর,<br>
+যীশু সত্য ভানু হেরে।
+`,
+  },
+
+  {
+    id: 39,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩৯",
+    title: "গাও রে প্রভাতে যীশু সংকীর্তন",
+    author: "বিন্দুনাথ সরকার",
+    language: "Bengali",
+    lyrics: `গাও রে প্রভাতে যীশু সঙ্কীর্তন,<br>
+রসনাতে যীশূ নাম কর উচ্চারণ,<br>
+( হৃদয় খুলে ডাক রে রসনাতে, দয়াল নাম নাম রে )।<br><br>
+
+১।<br>
+জ্বলন্ত অনল প্রায়,<br>
+রাঙ্গা রবি ঐ উদয়,<br>
+অন্ধকার ভয়েতে পলায় হে;<br>
+উঠ ভ্রাতা-ভগ্নী সব,<br>
+দে স্বর্গীয় গৌরব,<br>
+হৃদয় আকাশে উদয়, স্বর্গীয় তপন,<br>
+( দিব্যচক্ষে দেখ রে, হৃদয়েতে - যীশুরুপ রে )।<br><br>
+
+২।<br>
+জয় যীশু জয় জয়,<br>
+সৃজন-পালন-লয়,<br>
+সর্বমূলাধার যীশু নাথ হে;<br>
+ভ্রাতা, ভগ্নী, সবে মিলে<br>
+উল্লাসে হৃদয় খুলে<br>
+যীশু যীশু বলে, সবে কর আবাহন<br>
+( মনের ক্ষুধা যাবে রে যীশু বলে, প্রাণ শীতল হবে রে )।
+`,
+  },
+
+  {
+    id: 40,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৪০",
+    title: "তুমি নিশি ভোরে এসো প্রভু",
+    author: "প্রিয়নাথ বৈরাগী",
+    language: "Bengali",
+    lyrics: `তুমি নিশি ভোরে এস প্রভু মোর প্রাণে,<br>
+এস মোর প্রাণে, নিশি অবসানে।<br><br>
+
+১।<br>
+সুখ- শয্যায় তব চরণে, ছিলাম ঘুমে অচেতনে,<br>
+তুমি হয়ে প্রহরী সারা নিশি ভরি,<br>
+প্রভু, রক্ষা করেছ এই দীনহীনে।<br><br>
+
+২।<br>
+প্রতি ভোরে, তোমার করুণা, নিত্য নূতন তার নাই তুলনা<br>
+পেয়ে তোমার দয়া, আমার চিত্ত কায়া,<br>
+উঠুক আনন্দে মাতিয়া গুণ গানে।
+`,
+  },
+
+  {
+    id: 41,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৪১",
+    title: "হে প্রভু প্রাতে শুন তুমি",
+    author: "",
+    language: "Bengali",
+    lyrics: `Lord In The Moming Thou Shalt Hear
+Church Hymnal 30
+১। হে প্রভু প্রাতে শুন তুমি, মম প্রার্থনা,
+তোমায় করি এ বিনতি ও আখি উত্তোলন। ২। যে গিরি যীশু আরােহণ করেন ভক্তের কারণ,
+করিতে পিতার গােচর, মোদের সব আবেদন।
+৩। আত্মা রাখুন আমার চরণ ধাৰ্ম্মিকতার পথে।
+মোর সব পথ হোক, সদা সবল, তোমার সাক্ষাতে। ৪। তব নাম ভয়কারীজনের পূরিবে মনােরথ, ঈশ্বর তাহার সাধুজনে দিবেন দয়া নিশ্চিত।
+- Isaac Watts Tr- সন্তোষ কুমার হালদার`,
+  },
+
+  {
+    id: 42,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "42",
+    title: "উদিল তপন তমোবিনাশন",
+    author: "যাকোব বিশ্বাস",
+    language: "Bengali",
+    lyrics: `উদিল তপন তমোবিনাশন;<br>
+জাগ, জাগ ওরে মন।<br><br>
+
+( ১ )<br>
+আঁধার ঘুঁচিল, আলোক ব্যাপিল,<br>
+পুলকিত হইল ভুবন।<br><br>
+
+( ২ )<br>
+বৃক্ষে পাখী সব করে বিভু-স্তব;<br>
+সে ধ্বনিতে জুড়ায় শ্রাবন।<br><br>
+
+( ৩ )<br>
+তুমিও, হে মন, কর সঙ্কীর্তন,<br>
+ভক্তি-পুষ্পে সেব সে চরণ।<br><br>
+
+( ৪ )<br>
+নিদ্রা-নিমগন থাক যবে মন,<br>
+যীশু করেন তোমায় সুরক্ষণ।<br><br>
+
+( ৫ )<br>
+ওহে প্রেমাকর, স্বর্গ-দিবাকর,<br>
+মম সহ রহ অনুক্ষণ।<br><br>
+
+( ৬ )<br>
+স্বগীয় কিরণে, আত্মা বরিষণে<br>
+দীপ্ত কর দাসের জীবন।
+`,
+  },
+
+  {
+    id: 43,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৪৩",
+    title: "দিবসের হইল অন্ত",
+    author: "( আদি ) এইচ. এফ. লাইট\n( অনুবাদ ) আর. পি. গ্রীভস \n",
+    language: "Bengali",
+    lyrics: `১।<br>
+দিবসের হইল অন্ত, প্রভু হে,<br>
+না ছেড়ো তুমি আপন ভৃত্যকে,<br>
+যদিও অন্য সঙ্গী নাহি রয়,<br>
+মোর সাথে থাক যীশু দয়াময়।<br><br>
+
+২।<br>
+এ মর্তজীবন চলে বেগবান,<br>
+ও ক্ষণেক পরে হইবে অবসান,<br>
+সংসারে দিখি কিছু নিত্য নাই;<br>
+মোর সঙ্গে থাক, যীশু নিত্যস্থায়ী।<br><br>
+
+৩।<br>
+তোমাকে চাহি প্রভু সর্বদা;<br>
+সকল পরীক্ষায় করিবে রক্ষা;<br>
+তব সম নাই রক্ষাকারী আর<br>
+মোর সঙ্গে থাক হে মঙ্গলধারা।<br><br>
+
+৪।<br>
+দুঃখেও আমার হবে না বিষাদ<br>
+করিলে তুমি আমায় আশীর্বাদ;<br>
+নাই মৃত্যুতে নাই পরলোকে ভয়<br>
+তোমাকে পাইলে, যীশু প্রেমময়।<br><br>
+
+৫।<br>
+পাপিষ্ঠ আমি ধরি তব ক্রুশ,<br>
+মার্জনা কর মম পাপ ও দোষ;<br>
+দিন যামিনী, হে পভু, সঙ্গী হও,<br>
+ও শেষে তব স্বর্গ-জ্যোতি: দাও।
+`,
+  },
+
+  {
+    id: 44,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "44",
+    title: "ঐ দেখ বেলা ডুবে যায়-রে",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল-কাহারবা ঐ দেখ বেলা ডুবে যায়-রে
+আধার আসিবে ঘিরে সন্ধ্যা বেলায়। ১। আঁকাশে উঠিয়া চাঁদ তারা গুলি হায়
+সাজায়ে ধরনি তল করে আলোময় ।
+সারাটি নিশি তারা থাকে পাহারায়। ২। গভীর নিশিতে হয়ে নিদ্রা মগন
+ভূতলে মানব প্রাণী রহে অচেতন ।
+বহিয়া পবন রাখে বাচায়ে সবায়।। ৩। সৃজন কারণ তার কি উদার প্রাণ
+ধনী বা ভিখারী সবে দেখে সে সমান। কিছু নাহি ভয় তার থাক সাধনায়।
+- অতুল চন্দ্র বল`,
+  },
+
+  {
+    id: 45,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "45",
+    title: "হে প্রাণের ভানু ত্রাতাবর",
+    author: "",
+    language: "Bengali",
+    lyrics: `Sun of My Soul, O Saviour Dear
+Church Hymnal 321 ১। হে প্রাণের ভানু ত্রাতাবর, রও আমার কাছে নিরন্তর,
+নাই নিশা সঙ্কট কদাচন, দেও যদি তব দরশন।। ২। একান্ত নয়ন হয় যখন, হে প্রভু নিদ্রা নিমগণ।
+মোর শেষ চিন্তা তুমিই হও, নিজ বক্ষে আমায় বিশ্রাম দেও। ৩। রও প্রাতঃ সন্ধ্যা আমার সাথ, নাই জীবন তোমা বিনা নাথ!
+রও সাথে যখন রাত্রি হয়, হয় তোমা বিনা মরতে ভয়। ৪। আজ কোন ভক্ত যদি ক্ষীণ, হয় যদি ভ্রান্ত বিশ্বাসহীন
+নাথ তারে আশীষ দে ও ত্বরায়, না যেন পাপে নিদ্রা যায়।
+৫। দেও আশীষ যখন জাগ্রত হই, আর যতিন এভাবে রই
+নাথ, শেষে তব প্রেমেতে, নিমগ্ন হই স্বর্গেতে।
+অনুবাদ- অজ্ঞাত`,
+  },
+
+  {
+    id: 46,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "46",
+    title: "বরষ আশীষ বারি",
+    author: "",
+    language: "Bengali",
+    lyrics: `সাহানা- কাওয়ালী ।।
+বরষ আশীষ বারি; (এখন) অবিরত ধারে যীশু, সবার উপরি৷৷ ১। কি উপহার দিব আজি গুণধাম,
+(আমরা) এনেছি ভগন চিত্ত, লহ পাপহারি৷৷
+২। জ্বাল প্রেম-অগ্নি সকল হৃদয়ে,
+(সবে) পর-সেবা তরে যেন প্রাণ দিতে পারি। ৩। তব বলে কর সবে বলবান,
+- (মোরা) জীবন সংগ্রামে যেন জয়ী হতে পারি। ৪। পূর্ণ কর সবে পবিত্র আত্মায়, (যেন) পৃথিবীকে তব প্রেমে মাতাইতে পারি।
+- রসময় বিশ্বাস (১৯০৭)`,
+  },
+
+  {
+    id: 47,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "47",
+    title: "পুণ্যেতে এই বেলা",
+    author: "",
+    language: "Bengali",
+    lyrics: `মিশ্র ঝিঝিট - একতালা। পুণ্যেতে এই বেলা, পূর্ণ কর হে হৃদয়-থালা, অধােমুখে ধরি চরণ, (কিছু) না হয় দাও পদ-ধূ
+১। যীশু! এই মনস্কাম, পাই যেন পরাক্রম,
+মনের মত করে তােল, (হব) গুরুর স ২। ছাড়িব না কোনমতে দিব না হে তোমায় যে
+শিখাও, যীশু, ধরে হাতে (স্বর্গ) দূতগত
+", (হব) গুরুর সমান চেলা।
+(গ) দূতগণের খেলা।
+৩। যেমন দূতে ডাকে তোমায়, তেমন গান শুনাও আমায়, গাব নাম প্রশংসা জয়, (যীশু) যথা লোকের মেলা।
+I - রাজেন্দ্রলাল মুখোপাধ্যায় (১৮৯২)`,
+  },
+
+  {
+    id: 48,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "48",
+    title: "চাহিতে দিয়াছ সকল, প্রভু",
+    author: "",
+    language: "Bengali",
+    lyrics: `রাগিনী মুলতান - তাল আড়াঠেকা।
+চাহিতে দিয়াছ সকল, প্রভু! ১। এই সে ইন্দ্রিয়গণ, সাধিতেছে প্রয়োজন ;
+দিয়াছ প্রার্থনা বিনা, উপযুক্ত বুদ্ধিবল । ২। সঞ্চার না হতে আমি, সৃজন করিলে তুমি ;
+মাতার হৃদয়ে স্তন, মধুর অনিল জল। ৩। না গড়িতে এ রসনা, গড়িলে সুমিষ্ট নানা ;
+ফল শস্য যত কিছু, নিবারিতে ক্ষুধানল । ৪। এ পাষাণ অন্তরে, তোমারে পাবার তরে ; অযাচিত কৃপা গুণে, রােপিয়াছ জ্ঞানবল।
+- রাজা রামমোহন রায়।`,
+  },
+
+  {
+    id: 49,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "49",
+    title: "মানি আমি মানি প্রভু",
+    author: "",
+    language: "Bengali",
+    lyrics: `বেহাগ-একতালা। মানি আমি মানি প্রভু, সকলই করিতে পার,
+পৃথিবী স্বর্গের মাঝে, তব শক্তির নাইকো পার । ১। পশ্চাতে ফরৌণের দল, সম্মুখে সুফ-সাগর-জল,
+হইল যাকোব তব কৃপায়, পদব্রজে সাগর পার । ২। যবে যাকোব প্রান্তরেতে, আতুর ক্ষুধা তৃষ্ণাতে,
+পাথর যােগায় জল, আকাশ যােগায় আহার । ৩। এলে যবে এ ভুবনে, তুচ্ছ করি জ্ঞানবানে, বেছে নিলে ধীবরগণে, ত্রাণ-জ্ঞান করলে প্রচার।
+- মথুরানাথ বসু (১৮৭৪)`,
+  },
+
+  {
+    id: 50,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "50",
+    title: "বল জগতে আনন্দ সমাচার",
+    author: "দেবেন্দ্রনাথ চট্রোপাধ্যায়   ",
+    language: "Bengali",
+    lyrics: `বল জগতে আনন্দ-সমাচার  <br>
+হবে হবে রে পাপীর উদ্ধার।   <br><br>
+
+১।<br>
+দেখ জ্ঞানের চক্ষেতে, বিধির বিধান মতে,   <br>
+খ্রীষ্ট যীশু জন্মিলেন এই ধরাতে     <br>
+পাপী তরে যাবে কৃপায় তাঁর।   <br><br>
+
+২।<br>
+স্বর্গদূতেরা সব গায়, অতি মধুর ভাষায়    <br>
+শান্তি-প্রীতি মানবেতে হউক ধরায়,   <br>
+বাঁধ পরস্পরে প্রেমে তাঁর।    <br><br>
+
+৩।<br>
+মেরী জননীর কোলে, এক ক্ষুদ্র গোশালে    <br>
+যাব-পাত্রে সেই শিশু আশ্রয় নিলে,    <br>
+জগৎ ভেসে গেল কৃপায় তাঁর।    <br><br>
+
+৪।<br>
+পাপী কে কোথায় আছ, আজ ছুটিয়া এস,  <br>
+হিংসা দ্বেষ ভুলে গিয়ে তাঁর চরণে বস,  <br>
+হোক প্রেমে প্রেমে একাকার। 
+`,
+  },
+
+  {
+    id: 51,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৫১",
+    title: "জয় জগদীশ সুত যীশু প্রেমময়",
+    author: "বিন্দুনাথ সরকার ",
+    language: "Bengali",
+    lyrics: `জয় জগদীশ-সুত যীশু প্রেমময়,<br>
+ঘোষিছে অমরবৃন্দ সদা তব জয়।    <br><br>
+
+১।<br><br>
+প্রীতি নর- সন্তানেতে, শান্তি হইল পৃথিবীতে, <br>
+মহিমা ঊর্ধ্ব লোকেতে, জয় জয় জয়।    <br><br>
+
+২।<br><br>
+গাও সবে তালে তালে, যীশু যীশু যীশু বলে’     <br>
+নর-নারী সবে মিলে, বল যীশু জয়।    <br><br>
+
+৩।<br><br>
+হাল্লেলুয়া উচ্চরবে প্রশংস তাঁহাকে সবে,    <br>
+হোশান্না, ঈশ্বর- সুতে, জয় জয় জয়। 
+`,
+  },
+
+  {
+    id: 52,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "52",
+    title: "গােয়াল ঘরে উনি কে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr- Who is He in younder stall? ১। গােয়াল ঘরে উনি কে, শুয়ে যাব পাত্রেতে? ধ্রুবক- উনি যীশু মুক্তিদাতা, উনি যীশু আমার ত্রাতা;
+চল সবে শীঘ্র যাই, পূজা করি তাঁহার পায়। ২। ছুতার ঘরে ছেলে কে, ব্যস্ত পিতার কাৰ্যেতে? ৩। গিরি, পরে বসে কে, শিক্ষা দিচ্ছেন সকলকে? ৪। নায়িন দ্বারে উনি কে, বাঁচাইছেন মরাকে? ৫। বলিরূপে উনি কে, ঝুলেন ক্রুশের উপরে? ৬। হাতে পায়ে বিদ্ধ কে, উঠেন কবর হইতে? ৭। পিতার পার্শ্বে উনি কে, বসে আছেন গৌরবে? ৮। আবার আসবেন উনি কে, স্বর্গে নিতে ধার্মিককে?
+R. R. Hanby |
+Tr.- জে, এ, ডি, ম্যাকডােনাল্ড(১৮৮৬)`,
+  },
+
+  {
+    id: 53,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৫৩",
+    title: "শুন স্বর্গদূতের রব, নবজাত রাজার",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।<br>
+শুন স্বর্গদূতের রব, নবজাত রাজার স্তব;<br>
+ঊর্দ্ধে প্রভুর মহিমা, ভূতলে প্রসন্নতা।<br>
+উঠ সর্ব জাতিগণ, হর্ষে কর আরাধন,<br>
+কথা করিও প্রচার, ঈশ্বর হইলেন অবতার।<br><br>
+
+ধূয়াঃ<br>
+শুন স্বর্গদূতের রব, নবজাত রাজার স্তব ।।<br><br>
+
+২।<br>
+যিনি স্বর্গে পূজিত, সদাকাল বিরাজিত,<br>
+তিনি পূর্ণ সময়ে, জন্মেন এই জগতে;<br>
+নিতে পাপ ও দুঃখভার, হইলেন তিনি নরাকার,<br>
+মর্তলোকে মর্ত সাথ, প্রবাস করেন যীশু নাথ।<br><br>
+
+৩।<br>
+আইস ধন্য শান্তিরাজ, সিদ্ধ কর তব কাজ,<br>
+তুমি সত্য দিবাকর, ধর্মভারু মনোহর;<br>
+আপন মহা বলেতে, ধ্বংস কর সর্পকে,<br>
+নর-বংশে রাজ্য লও, মৃত্যু নাশি জীবন দেও ।।<br>
+`,
+  },
+
+  {
+    id: 54,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৫৪",
+    title: "উড়াও বিজয় পতাকা জয় যীশু",
+    author: "অনুকূল চন্দ্র ঘোষ  ",
+    language: "Bengali",
+    lyrics: `উড়াও বিজয়-পতাকা জয় যীশু ব’লে <br>
+( আজি) মহোল্লাসে, হেসে হেসে সকলে মিলে।   <br><br>
+
+(১) <br>
+বৈৎলেহমের আকাশে, ধর্ম-সূর্য উঠেছে   <br>
+(তাঁর) জ্যোতির প্রভায় জাগ্রত হয় জ্যোতিষী দলে।     <br><br>
+
+(২) <br>
+পরম পিতা প্রেমময় পাঠালেন প্রিয় তনয়,    <br>
+( হবে) মহাশান্তি, প্রেম-প্রীতি জগতীতলে।    <br><br>
+
+(৩) <br>
+স্বর্গ দূতে মিলে গায়, ধন্য ধন্য দয়াময়,    <br>
+( এস) দূতের সাথে প্রেমে মেতে, গাহি সকলে।    <br><br>
+
+(৪) <br>
+যীশু প্রেম অবতার, যীশু প্রেমের পারাবার,   <br>
+এস দলাদলি, সকল ভূলি, শ্রী-যীশু ব’লে। <br><br>
+
+(৫) <br>
+ধন্য ঈশ-নন্দন, পাপ-তাপ-হরণ,   <br>
+(বল) ধন্য যীশু, ধন্য যীশু, দুই বাহু তুলে।  
+`,
+  },
+
+  {
+    id: 55,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "55",
+    title: "প্রাচ্যের তিন পন্ডিত সুজন",
+    author: "",
+    language: "Bengali",
+    lyrics: `To "We three kings. of Orient are"
+_CH, 107. G. 22 বার ১। প্রাচ্যের তিন পন্ডিত সুজন। 18। সঙ্গে লয়ে অর্ঘ্য ধন।
+* [ ভ্রমি বহুদেশ, উৎস, গিরি, তারকা সাথ। ধুয়া- ও-ও কি অপূৰ্ব্ব তারকা, রাজকীয় মহিমাজ্জ্বল
+| চালাও মোদের অবিরত সে পূর্ণ জ্যোতিৰ্ম্ময়ে। ২। বৈৎলেহমে ভূমিষ্ঠ রাজ, কনক দিব কিরীটে
+অসীম চিরস্থায়ী তিনি, রাজা মোদের উপর। ৩। কুন্দুরু হে আছে আমার, দিব রাজায় উপহার
+প্রার্থনা ও স্তুতিগানে, পূজি ঈশ পিতায়। ৪। গন্ধরস সুষমা মোর, দুঃখ বিষাদ মৃত্যুর আঁধার,
+কঠোর শিলা সমাধিতে, দিবে শ্বাস জীবনের। ৫। মহিমা তাঁর কর দর্শন, প্রভু, ঈশ্বর, ত্রাণধন। হাল্লেলুয়া, হাল্লেলুয়া, বিশ্বে গাও বারতা।
+John H. Hopkins(1857) PEPSE
+Tr. - সন্তোষ কুমার হালদার `,
+  },
+
+  {
+    id: 56,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "56",
+    title: "নিঝুম রাত, পূত রাত",
+    author: "",
+    language: "Bengali",
+    lyrics: `"Silent Night, Holy Night"
+C. H. 102, G. 20 ১। নিঝুম রাত, পূত রাত, ৩। নিঝুম-রাত, পূত রাত,
+স্তব্ধ ধীর উজ্জ্বল পথ; প্রেম হ’ল প্রতিভাত। মাতৃক্রোড়েতে যীশু!
+সমুজ্জলি মুখ জ্যোতি সুশান্ত কোমল শিশু,
+ঘোষে মুক্তি নর প্রতি শােয়া শান্তিতে।
+যীশুর জন্মেতে।।
+২। নিঝুম রাত, পূত রাত
+রাত হ’ল সুপ্রভাত। শুনল রাখাল দূত গান, হাল্লেলুয়া মধু তান খ্রীষ্টের জন্মেতে।।
+৪। নিঝুম রাত, পূত রাত।
+| তারা, কর রশ্মি পাত। দূত সাথে তুলি তান। হাল্লেলুয়া গাহি গান ত্রাতার জনেতে ।
+- Joseph Mohr (1818) Tr:- সুরেন্দ্র নাথ দাশ`,
+  },
+
+  {
+    id: 57,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "57",
+    title: "এস ভক্ত বৃন্দ, কর জয়ধ্বনি",
+    author: "",
+    language: "Bengali",
+    lyrics: `গীত ১০০ঃ৪ চ
+প চ । O Come All Ye Faithful | CH 105 Bd ১। এস ভক্ত বৃন্দ, কর জয়ধ্বনি,
+এস হে সবে যাই বৈৎলেহমে । ত
+এস, হেরি তায়, জাত দূত-রাজায়। । ধুয়া- এস, পূজি তাহারে
+এস,- পূজি তাহারে, এস,- পূজি তাহারে, খ্রীষ্টেরে।।
+৩। গাও, হে স্বর্গ-দূতগণ! দীপ্তি হইতে দীপ্তি;
+মহানন্দে গাও হে, গাও সবে উৰ্দ্ধ স্বর্গবাসীগণ। ঈশ্বরের গৌরব সর্বোপরি স্বর্গ, এস, পূজি..
+২। ঈশ্বর হইতে ঈশ্বর।
+কুমারীর গর্ভ ঘৃণা করেন নাই যথার্থ ঈশ্বর, জাত, নহে সৃষ্ট, এস, পূজি......
+৪। যীশু, প্রণাম তোমায়,হইলে ভবে জাত
+যীশু, চিরদিন তোমার গৌরব হউক। | পিতার যে বাক্য,মাংসে হন প্রত্যক্ষ;
+সব হউক।
+এস, পূজি.....
+Origin. Lation Ir. Frederick Oakelev (1841),
+(1841),and ohters. Tr.. যাকোব বিশ্বাস`,
+  },
+
+  {
+    id: 58,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৫৮",
+    title: "মহানন্দে কর সংকীর্তন\n",
+    author: "শলোমন বিশ্বাস",
+    language: "Bengali",
+    lyrics: `মহানন্দে কর সঙ্কীর্তন, (যীশু নামে)   <br>
+আজি নব সাজে, নব তেজে , জয় জয় বল ভ্রাতৃগণ।<br><br>
+
+১। <br>
+যীশুর মহা কৃপাবরে বেঁচে আছি এ বৎসরে,<br>
+এখন ধন্যবাদ কর তাঁরে, হয়ে পুলকিত মন।<br><br>
+
+২। <br>
+যীশুর ইচ্ছা অনুসারে, সমাগত এ বাসরে,<br>
+আজি পুলকে পূরিত হয়ে, ধন্য ধন্য করে মন।<br><br>
+
+৩। <br>
+বল সবে ধন্য ধন্য, প্রেমময় পিতা ধন্য,<br>
+আরও যীশু ধন্য, যীশু ধন্য, ধন্য ধন্য সদাত্মন।<br><br>
+
+৪।<br>
+প্রেমানন্দে ভ্রাতৃগণে, এসো জয় সঙ্কীর্তনে,<br>
+সবে ধন্য ধন্য ধন্য রবে, পূর্ণ কর এ ভুবন।<br><br>
+
+৫। <br>
+উচ্চ নাদে জয় জয় রবে, জানাও নগরবাসী সবে,<br>
+বল যীশুই পরিত্রাতা ভবে, পূজ তাঁহার শ্রীচরণ।<br>
+`,
+  },
+
+  {
+    id: 59,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৫৯",
+    title: "জয় প্রভু যীশু, জয় প্রভু যীশু",
+    author: "সন্তোষ কুমার পাত্র",
+    language: "Bengali",
+    lyrics: `জয় প্রভু যীশু , জয় প্রভু যীশু, জয় সত্য সনাতন।<br>
+জগত-তারণ, কারণ কারণ, আইলে এ মর্ত ভুবন।।<br><br>
+
+১। <br>
+অদ্ভুত মহিমা জগতে প্রকাশিলে, কে পারে করিতে বর্ণন?<br>
+সহস্র রসনা করিলেও ঘোষণা, শেষ না হবে কখন।<br><br>
+
+২।<br>
+ভকত প্রাণ ভকত জ্ঞান, ভকতের অমূল্য ধন;<br>
+পতিত পাবন, ভকত ভূষণ, ধন্য ঈশ্বর নন্দন।।<br>
+`,
+  },
+
+  {
+    id: 60,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৬০",
+    title: "আজ শুভ বড়দিন ভাই",
+    author: "সুনীল কুমার সরকার",
+    language: "Bengali",
+    lyrics: `আজ শুভ বড়দিন ভাই, আজ শুভ বড়দিন,    <br>
+খ্রীষ্ট যীশু এলেন ভবে, ছেড়ে স্বর্গের সিংহাসন।    <br> <br>
+
+(১) <br><
+চেয়ে দেখ বৈৎলেহমে, গোয়াল ঘরে, মেরীর কোলে,    <br>
+যাবপাত্রে আছেন শুয়ে, পাপীদের মুক্তির কারণ।    <br> <br>
+
+(২) <br>
+স্বর্গদূত নেচে নেচে, সংবাদ দিল রাখালগণে,    <br>
+তারা দেখে পন্ডিতগণে, আসে করিতে দর্শন।    <br> <br>
+
+(৩) <br>
+পাপের  সকল দন্ড- নিতে, এলেন যীশু অবনীতে,    <br>
+যীশুর রক্তে ধৌত হয়ে, কর তাঁহার নাম কীর্তন।    <br> <br>
+
+(৪) <br>
+ধন্য যীশু বল সবে, মহোল্লাসে উচ্চরবে,    <br>
+হাল্লেলূয়া স্তবে পূর্ণ কর ত্রিভুবন।  <br>
+`,
+  },
+
+  {
+    id: 61,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "61",
+    title: "জন্মেছেন আজ ঈশ-কুমার দায়ূদ পুরে",
+    author: "সুলােচনা নাথ",
+    language: "Bengali",
+    lyrics: `আশা ভৈরবী- একতালা 
+    জন্মেছেন আজ ঈশ-কুমার দায়ূদ পুরে।
+চল, চল, চল সবে যাই হেরে আসি সেই শিশুরে। ১। উধ্বে ঈশ্বরের মহিমা, শান্তি পৃথিবীতে,
+গাইছে করূবকুল মধুর স্বরেতে, বিরাজ করুক প্রীতি মানব মাঝারে।
+২। রাখালেরা শুনি, সেই দূতের বাণী,
+মনে মনে অতি বিস্ময় মানি, . চলিল ত্রাণ-কুসুম হেরিবার তরে। ৩। জ্যোতির্বিদ পন্ডিতগণে, অভিজ্ঞান হেরে
+এল অচিরে দেখতে শিশু যীশুরে,
+(এসে) কনক কুন্দুরু দ্বারা সেবিল তারে। ৪। স্বর্গ পৃথ্বী যে রাজারে ধরিতে নারে,
+সেই ত্রাণরাজ আজ ঐ গােয়াল ঘরে, চীরবাসে ভূষিত হাড়ঙ্গ মাঝারে।
+`,
+  },
+
+  {
+    id: 62,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "62",
+    title: "দেখ এসে, কি ফুল ফুটেছে",
+    author: "",
+    language: "Bengali",
+    lyrics: `জিবি বাউল-খেমটা 
+    দেখ এসে, কি ফুল ফুটেছে। ১। ওরে রাখালরা দেখ এসে তােরা।
+ত্রাণ-পদ্ম ফুলের তােড়া পাপ জলে ফুটেছে। ২। স্বর্গবাহিনী করে জয়ধ্বনি,
+ঐ শুন প্রতিধ্বনি হৃদয় তারে বাজিছে। ৩। ধন্য মরিয়ম, ধন্য বৈৎলেহম,
+সফল তাদের জীবন, হাতে চাদ পেয়েছে।
+- বিজয় নাথ সরকার।`,
+  },
+
+  {
+    id: 63,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৬৩",
+    title: "প্রীতি কুসুমে, ভক্তি চন্দনে",
+    author: "রসময় বিশ্বাস  ",
+    language: "Bengali",
+    lyrics: `প্রীতি-কুসুমে, ভক্তি-চন্দনে, চল পূজি নব রাজারে,    <br>
+তৃণ শয়নে বৈৎলেহমে, পাইতে সে নব ত্রাতারে।    <br><br>
+
+(১) <br>
+দূত সবে মিলে, আকাশের কোলে দেব-ভাষে  করে বন্দনা,   <br>
+‘‘শান্তি এ ভবে, প্রীতি মানবে ঊর্ধ্বলোকে ঈশ মহিমা।’’ <br><br>
+
+(২) <br>
+প্রাচ্য গগনে, তারা দরশনে জ্ঞানীজন তাঁর উদ্দেশ্যে ধায়;   <br>
+হেন গন্ধরস, কুন্দুরু সুবাস, রাখিল তাঁর দু’টি রাঙ্গা পায়।    <br><br>
+
+(৩) <br>
+ভাবিছ পি পাপী, হ’য়ে অনুতাপী রাখ হৃদে ইম্মানূয়েলে;    <br>
+অন্য কার কাছে ত্রাণ নাহি আছে, জানিও নিশ্চিত ভুবনে।  
+`,
+  },
+
+  {
+    id: 64,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৬৪",
+    title: "দায়ূদ নগর ঐ যে দেখা যায়",
+    author: "",
+    language: "Bengali",
+    lyrics: `দায়ূদ নগর ঐ যে দেখা যায়।<br>
+মোরা এসেছি নিকটে তার, বেশী দূর নাহি আর,<br>
+যাবি যদি চলে আয়।।<br><br>
+
+১।<br>
+দূতের মুখে পেলাম সংবাদ,<br>
+এবার পূর্ণ হবে অন্তরের সাধ গো, ভাইরে,<br>
+হলেন জগৎ পিতা অনুকুল, ভব জলে পাবি কূল<br>
+পাতকী কুল নিরূপায়।<br><br>
+
+২।<br>
+মেষপাল নিয়ে ছিলাম জেগে,<br>
+মোরা অন্ধকারময় নিশিযোগে গো, ভাইরে,<br>
+ঘটল কি ঘটনা অকস্মৎ, করে দেখি দৃষ্টিপাত<br>
+আলোকে সব আলোকময়।<br><br>
+
+৩।<br>
+স্বর্গের পুরুষ বিদ্যুৎ বরণ,<br>
+কিবা অনিন্দ্যরূপ চন্দ্রবদন গো, ভাইরে,<br>
+হয়ে ভয়ে প্রায় অচেতন, শুনেছিলাম তাঁর বচন,<br>
+শুনিলে তা প্রাণ জুড়ায়।<br><br>
+
+৪।<br>
+ভয় নাই, ভয় নাই, শোন কথা<br>
+ভবে জন্মেছেন আজ জগত্রাতা গো, ভাইরে।<br>
+করে যীশু মোশী নাম ধারণ, তরাবেন পাপীজন,<br>
+রবে না আর শমন ভয়।<br><br>
+
+৫।<br>
+শুনতে পেলাম বীণার ধ্বনি,<br>
+তাতে বেজে উঠল কি রাগিণী গো, ভাইরে।<br>
+এলেন শান্তিরাজ এ সংসারে, আনন্দ নগরে<br>
+জয় হউক! জয় হউক! পিতার জয়।।<br>
+`,
+  },
+
+  {
+    id: 65,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "65",
+    title: "শিশু যীশু জনমিল",
+    author: "",
+    language: "Bengali",
+    lyrics: `যােহন ৩ঃ১৯
+১। শিশু যীশু জনমিল, ৩। দেখ! দেখ! রাখালেরে,
+২ যিহূদা-কুলে,
+আশ্চর্য হয়ে, মন মেরীর কোলে,
+আছে চাহিয়ে শিশু যীশু জনমিল।
+দেখ! দেখ! রাখালে রে। ২। শুন! শুন! দূতে কি গায়! ৪। হের! হের! জ্যোতিষগণে ঈশ্বরের প্রীতি, |
+“তারা দেখিয়ে মানবে শান্তি,
+আসিছে ধেয়ে শুন! শুন! দূতে কি গায়। হের! হের! জ্যোতিষগণ।
+৫। চল, চল শিশু সবে
+যীশুকে দেখব, আনন্দে ভাসব, চল, চল শিশু সবে।
+- বিজয় নাথ সরকার (১৮৯২)`,
+  },
+
+  {
+    id: 66,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "66",
+    title: "হাল্লেলুইয়া জয়গান গাহরে বদনে",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল- কাহারবা। 
+    হাল্লেলুইয়া জয়গান গাহরে বদনে।
+জন্মেছেন যীশু বেথেলপুরে। তােরা দেখবি কে ছুটে আয়, নররূপে দয়াময়।
+উদয় গােয়াল ঘরে রে।।
+১। বর্ণনাতীত তার অপরূপ কান্তি,
+স্বর্গেতে মহিমা পৃথিবীতে শান্তি | (তাই) দূতনরে মিলে গায় জয় যীশু জয় জয়,
+| জয় যীশু জয় বলরে । ২। রাখালেরা এল সব দেখিতে তাহারে
+পন্ডিতগণ তাঁরা আকাশে দেখেরে তারা তারা দেখে চলিল যীশুকে পাইল
+(কিছু) উপহার দিল তাহারে। ৩। (চল) আমরাও ছুটে যাই দেখিতে যীশুরে
+কে কি নিবি দিতে উপহার তাহারে, (মোর) আর কিছু নাহি ধন দিব তাই প্রাণ মন। শ্ৰীযীশুর চরণেরে।
+- অতুল চন্দ্র বল ।`,
+  },
+
+  {
+    id: 67,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৬৭",
+    title: "কে এলাে নিঝুম রাতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `কে এলাে নিঝুম রাতে ফুল ফোটে গােশালায়। ভ্রমরা ছুটে আয়। লােভে মধু আহরিতে
+কে এলাে নিঝুম রাতে ২। রাখালেরা মেষ রাখে ৩। পূরব পন্ডিতগণ নিশীতে মাঠে থাকে লয়ে মণি কাঞ্চন। এলাে তারে দেখিতে
+এলাে তারে প্রণমীতে। ৪। হলাে কীর আগমন?।
+পুলকে এ ভুবন ভরিলাে আলোতে। |
+- অতুল চন্দ্র বল`,
+  },
+
+  {
+    id: 68,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "68",
+    title: "পবিত্রতায় ফুটেছে আজ",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+পবিত্রতায় ফুটেছে আজ ত্রাণ-ফুল হয়নি আর হবে না এ সমতুল ভবে চাহে না যে পরিত্রাণ বােঝে না সে ফুলের ঘ্রাণ। যে গন্ধে মেতেছে দেব দূত কুল। হয়নি আর হবে না এ সমতুল। দূতের ইঙ্গিতে রাখালে চৌকিতে ধায় নতুন তারা পন্ডিতে লুটায় প্রভু যীশুর পায়, যীশু নামে মুক্ত দুঃখী জন মহা জ্ঞানী মহাজন
+| 0 অভিমানে মনের গর্বে করে ভুল। হয়নি আর ---।।
+- অজ্ঞাত`,
+  },
+
+  {
+    id: 69,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৬৯",
+    title: "কত অপরুপ কার্য, যীশু কৈলেন",
+    author: "বেণীমোহন বিশ্বাস",
+    language: "Bengali",
+    lyrics: `কত অপরুপ কার্য, যীশু কৈলেন এ জগতে।    <br>
+স্ররষ্টা হয়ে সৃষ্টারুপে, অবতার নর- দেহেতে।<br><br>
+
+১। <br>
+অন্ধ-খঞ্জ-নুলা যত, আর যত ভূতাশ্রিত,<br>
+কুষ্ঠ রোগী কত শত, মুক্ত কৈলেন নিজ বলেতে।<br><br>
+
+২।<br>
+বোবা-বধির যত ছিল, বলতে শুনতে শক্তি পেল, <br>
+পঞ্চ রুটির ভোজ হইল, খাইল পঞ্চ সহস্রেতে।<br><br>
+
+৩। <br>
+সমুদ্রের জলোপরি, পদব্রজে গমন করি,<br>
+ধমকে বায়ু নিবারি, শকতি দেখান জগতে।<br><br>
+
+৪।<br>
+মৃতে জীবন দান করি, হইলেন মৃত্যুহারী,<br>
+এ প্রকার ভুরি ভুরি লিখিত আছে শাস্ত্রেতে!
+`,
+  },
+
+  {
+    id: 70,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "70",
+    title: "পৰ্ব্বতে বসিয়া যীশু শিক্ষা",
+    author: "",
+    language: "Bengali",
+    lyrics: `পৰ্ব্বতে বসিয়া যীশু শিক্ষা দেন-২ শিষ্যগণকে শিক্ষা দেন, সুমিষ্ট স্বরে শিক্ষা দেন; শিক্ষা দেন, শিক্ষা দেন, যীশু শিক্ষা দেন-২। শিষ্যগণকে শিক্ষা দেন, সুমিষ্ট স্বরে শিক্ষা দেন।
+১ “দীনাত্মা লোকেরা ধন্য শিক্ষা দেন-২
+“স্বর্গ তাদের শিক্ষা দেন সুমিষ্ট স্বরে শিক্ষা দেন।
+২ “শােকার্ত লোকেরা ধন্য শিক্ষা দেন-২
+“শান্তি তাদের শিক্ষা দেন, সুমিষ্ট স্বরে শিক্ষা দেন। ৩ “মৃদুশীল লোকেরা ধন্য শিক্ষা দেন-২
+“দেশটি তাদের শিক্ষা দেন সুমিষ্ট স্বরে শিক্ষা দেন। ৪ “ধর্ম-ক্ষুধিতেরা ধন্য শিক্ষা দেন-২
+“তৃপ্তি তাদের শিক্ষা দেন সুমিষ্ট স্বরে শিক্ষা দেন। ৫ “দয়ালু লোকেরা ধন্য শিক্ষা দেন-২
+| “দয়া পাইবে” শিক্ষা দেন-সুমিষ্ট স্বরে শিক্ষা দেন। ৬ “নির্মল চিত্তেরা ধন্য শিক্ষা দেন-২
+“দর্শন পাইবে,” শিক্ষা দেন-সুমিষ্ট স্বরে শিক্ষা দেন। ৭ “মিলনকারীরা ধন্য শিক্ষা দেন-২
+“সন্তান তারা শিক্ষা দেন- সুমিষ্ট স্বরে শিক্ষা দেন। ৮ “ধৰ্ম্মে তাড়িতেরা ধন্য শিক্ষা দেন- ২
+“স্বর্গ তাদের শিক্ষা দেন- সুমিষ্ট স্বরে শিক্ষা দেন।
+- বিজয় নাথ সরকার`,
+  },
+
+  {
+    id: 71,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "71",
+    title: "আমি আর সইতে পারি না",
+    author: "",
+    language: "Bengali",
+    lyrics: `e | নূক ২৩ঃ৪৮ ভাটিয়াল-ঠুংরী।
+ম আমি আর সইতে পারি না,
+আমার ত্রাণ নাথ আজ ক্ৰশেতে। ১। পথে লোক যাচ্ছে সারি সারি হে
+তারা দেখিয়া কেউ দেখে না। ২। নিষ্ঠুর সেনাগণে বর্শা হানে হে –
+তারা কারুর বারণ শুনে না।
+৩। প্রভুর পিপাসা হয়েছে ভারী হে –
+একটু জল চেয়ে তা পেলেন না। ৪। খেদে পর্বতগণ বিদীর্ণ হইল হে = তছে হেরে ত্রাণনাথের যাতনা। ৫। যীশু তোমার জন্য এত সহিলেন হে | তোমার কঠিন মন কি গলে না।।
+| বিন্দুনাথ সরকার ও কৈলাশচন্দ্র সরকার (১৮৮৯)`,
+  },
+
+  {
+    id: 72,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "72",
+    title: "এক স্রোত আছে শােণিতের",
+    author: "",
+    language: "Bengali",
+    lyrics: `১। এক স্রোত আছে শােণিতের, তায় পাপী ডুবিলে,
+যায় সব কলঙ্ক পাতকের সেই স্রোত ইম্মায়েলের।। ধূয়াঃ- মোর বিশ্বাস যীশু ক্রুশেতে করিলেন রক্ত দান,
+পাপী যে আমি শােণিতে পাই যেন পরিত্রাণ । ২। সেই স্রোতঃ দেখি দস্যুর মন মরণে শান্তি পায়;
+হইলেও মোর সেই পাপ জীবন পবিত্র হব তায়। ৩। শােণিতের, শক্তি “হত মেষ”, ফুরায় না কিছুতে
+যাবৎ হয় শেষ ভক্তের প্রবেশ স্বর্গ মন্ডলীতে।
+৪। সেই স্রোতঃ হেরি বিশ্বাসে, তুলেছি প্রেমের গান,
+আজীবন গাইব হরষে, তোমারই কৃত ত্রাণ ।। ৫। যাক এই নিস্তেজ রসনা বাক শূন্য কবরে, । তুলব সেই গান এই বাসনা স্বর্গে মধুর স্বরে।
+W. Carey (1990)`,
+  },
+
+  {
+    id: 73,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "73",
+    title: "ইম্যানুয়েল কুক্ষি হতে বহিছে",
+    author: "",
+    language: "Bengali",
+    lyrics: `. There is a fountain filled with blood
+C. H. 163, S. 273 ১। ইম্যানুয়েল কুক্ষি হতে বহিছে রুধির স্রোত!
+ডুবিলে পাপী ঐ স্রোতে, হয় সব পাপ হতে ধৌত। ২। ক্রুশে বিদ্ধ দস্যু ঐ স্রোত, হেরী হয় পুলকিত ;
+তার তুল্য আমি অধম জন, হই এখন প্ৰক্ষালিত। ৩। হাঁ, বিশ্বাস করি আমি তা, সর্বান্তঃকরণে ;
+তাঁর রক্তে মম পরিত্রাণ, স্থির বুঝিলাম মনে। ৪। তব অমূল্য রুধিরে, হে হত বলি মেষ,
+ত্রাণ পায় ভক্তে এই জীবনে, নাই তাহার শক্তির শেষ । ৫। বিশ্বাসে হেরিয়া তব সেই ক্ষত রক্ত-স্রোত, গাহি তব অপূর্ব প্রেম, গাইব জীবন যাবৎ। OD B O -W. Cowper.`,
+  },
+
+  {
+    id: 74,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "74",
+    title: "গেৎশিমানী বনে, নিকুঞ্জ কাননে, নিকুঞ্জ",
+    author: "হেমচন্দ্র কবিরাজ",
+    language: "Bengali",
+    lyrics: `১। <br>
+গেৎশিমানী বনে, নিকুঞ্জ- কাননে, <br>
+প্রভু কি কারণে  বসেছ একাকী<br>
+কিসের লাগিয়ে, নগর ত্যজিয়ে,<br>
+এখানে আসিয়ে মুদিয়াছ আঁখি?<br><br>
+
+২।<br>
+তিক্ত পানপাত্র, দেখি তব গাত্র, <br>
+শিহরয়ে সত্য, ওহে ত্রাণপতি<br>
+তাহারি কারণ, হয়ে ক্ষুন্ন মন, <br>
+আসিয়া বিজন, ভাবিতেছ নাকি?<br><br>
+
+৩।<br>
+মম পাপ তরে, নিজ কলেবরে, <br>
+এত কষ্ট ধ’রে করিছ এন্দন,<br>
+আহা নাথ মম তরে, মম পাপ ক্ষম, <br>
+আমি তোমা সম, কেহ নাহি দেখি।<br><br>
+
+৪। <br>
+ওহে পাপহারি ,তব দুঃখ স্মরি, <br>
+চক্ষে বহে বারি, সস্বরিতে নারি।<br>
+অভাজন আমি, দয়া কর স্বামী, <br>
+মম ত্রাতা তুমি, তব পদে থাকি।<br>
+`,
+  },
+
+  {
+    id: 75,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "75",
+    title: "তব প্রেম দেখে আমি যীশু\n",
+    author: "বিন্দুনাথ সরকার ",
+    language: "Bengali",
+    lyrics: `তব প্রেম দেখে আমি- যীশু মনে হলেম হতজ্ঞান;   <br>
+তুমি প্রাণ দিয়া নাথ, প্রাণ কিনেছ,<br>
+তাই ত প্রাণের প্রাণ,<br><br>
+
+১। <br>
+আহা দারুণ ক্রুশেতে, প্রেক শলাকাঘাতে<br>
+আমার প্রাণ কাঁপিছে থর থর <br>
+করে ক্রুশ ধ্যান।<br><br>
+
+২। <br>
+আমি ক্ষুদ্রানুক্ষদ্র,  জ্ঞানে হয়েছি আর্দ্র,<br>
+আমার ক্ষুদ্র মনে থাকে যেন,<br>
+দয়াল যীশুর নাম।<br><br>
+
+৩। <br>
+একি শুভ সমাচার, প্রাণের যীশুই আমার ,<br>
+প্রিয় যীশুর বরে, পিতার করে<br>
+আঁকা আমার নাম।<br><br>
+
+৪। <br>
+আমি পাপী নগণ্য, যীশুর হয়েছি গণ্য,<br>
+তাই যীশু ধন্য, যীশু ধন্য<br>
+গায় মম প্রাণ।<br>
+`,
+  },
+
+  {
+    id: 76,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৭৬",
+    title: "ক্রুশের কাছে রাখ হে",
+    author: "মূলঃ এফ. জে. ক্রসবী   অনুবাদঃ নৃপালচন্দ্র বিশ্বাস",
+    language: "Bengali",
+    lyrics: `১। <br>
+ক্রুশের কাছে রাখ হে, যীশু নিত্য আমায়,   <br>
+বহুমূল্য স্বাস্থ্যকর স্রোতঃ বহে তথায়।<br><br>
+ধূয়া- ক্রুশেতে ক্রুশেতে শ্লাঘার বিষয় আমার,<br>
+তারি গুণে নির্ভয়ে যাব নদীর ওপার।<br><br>
+
+২। <br>
+ক্রুশেতে কাছে পাইল, প্রেশ ও দয়া আমায়,<br>
+তথায় প্রভাত-তারাটী আলো দিল আমায়।<br><br>
+
+৩। <br>
+ক্রুশের কাছে রহিলাম, দেখাও শোভা আমায়,<br>
+রাখ তাবৎ পথে নাথ, তার ছায়াতে আমায়।<br><br>
+
+৪। <br>
+ক্রশের কাছে জাগিব, বিশ্বাস প্রেম আশায়,<br>
+যাবৎ নাহি পৌঁছিব, স্বর্গ কুলে সবায়।<br>
+`,
+  },
+
+  {
+    id: 77,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৭৭",
+    title: "যে ক্রুশে গৌরব অধিশ্বর",
+    author: "মূলঃ আইজ্যাক্ ওয়ট্স    অনুবাদঃ মদন মোহন বিশ্বাস",
+    language: "Bengali",
+    lyrics: `১।<br>
+যে ক্রুশে গৌরব অধীশ্বর    <br>
+বিসর্জন করেন কলেবর, <br>
+সেই ক্রুশটি যখন করি ধ্যান,  <br>
+বিস্ময়ে মুগ্ধ হয় এ প্রাণ। <br><br>
+
+২। <br>
+মোর পার্থিব লভ্য মহীয়ান <br>
+সকল লোষ্ট্রবৎ করি জ্ঞান <br>
+সব গর্বের উপর অনুক্ষণ <br>
+অবজ্ঞা করি বরিষণ। <br><br>
+
+৩। <br>
+হে প্রভু, প্রসাদ কর দান, <br>
+খ্রীষ্ট রক্তে শ্লাঘা করুক প্রাণ; <br>
+সেই রক্ত বিনা কিছু আর <br>
+না শ্লাঘার বিষয় হোক আমার। <br><br>
+
+৪। <br>
+ঐ দেখা তাঁহার শির ও হাত, <br>
+তাঁর পায়ে কর দৃষ্টিপাত <br>
+তা হইতে প্রেম  ও দুঃখচয় <br>
+মিশ্রিত হইয়া পতিত হয়। <br><br>
+
+৫। <br>
+এই প্রেম ও দুঃখের বিমিশ্রণ <br>
+হইয়াছে কি আর কদাচন? <br>
+এই রূপ অমূল্য কন্টকময় <br>
+কিরীট কি কভু, সজ্জিত হয়? <br><br>
+
+৬। <br>
+এবিশ্বমন্ডল সমুদয় <br>
+যদ্যপি আমার লব্ধ হয়, <br>
+তা আমার পক্ষে ক্ষুদ্রতম <br>
+উপহার বলি হয় গণন। <br><br>
+
+৭।<br>
+এ অদ্ভুত ঐশিক-প্রেম অপার, <br>
+আকর্ষি লহে প্রাণ মন আমার,<br>
+মোর আত্মা জীবন সর্বস্ব, <br>
+করিতে চাহে নিজস্ব।।
+
+`,
+  },
+
+  {
+    id: 78,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "78",
+    title: "ভাটিয়ালী পাপী একবার দেখ রে",
+    author: "",
+    language: "Bengali",
+    lyrics: `ভাটিয়ালী পাপী একবার দেখ রে, ত্রাণমণির দুঃখ। ১। কালভেরীর শিলাপরে, ত্রাণমণি ঝুলেন হায় রে,
+দরবিগলিত ধারা, প্রেম ধারা ধরায় ধারা দেখিল নাকো । ২। নিৰ্ম্মল কিরণ-জ্যোতি, সুবিমল প্রেম ভাতি,
+সেই উজ্জ্বল দিনের আলো, হরে নিল, ঘোর তিমিরে সূৰ্য্য দেখ।। ৩। যীশু প্রেমের মূর্ত-ছবি, কে নিবি সে ক্রুশ-ছবি,
+হাতে পায়ে প্ৰেক গাথা, কাটায় গাঁথা রুধিরে ভাসিছে মুখ । ৪। কে আছিস, আয় এসংসারে, দুঃখিত ব্যথিত অন্তরে, পাপের জ্বালা, মনের ময়লা, এই বেলা দূরে যাবে ব্যথার দুঃখ।
+- সন্তোষ কুমার হালদার। `,
+  },
+
+  {
+    id: 79,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৭৯",
+    title: "আমার প্রাণ কাঁদে তাঁর তরে\n",
+    author: "",
+    language: "Bengali",
+    lyrics: `আমার প্রাণ কাঁদে তাঁর তরে, বড় ভালবাসি তারে,<br>
+তাঁরে রাখব আমার অন্তরে (যত্ন করে, ত্রাণেশ্বরে)।। <br><br>
+
+১।<br>
+সেদিন তাঁরে দেখেছিলাম গো, দারুণ ক্রুশের উপরে <br>
+সেদিন আমার মন ভুলেছে গো, ঐ রূপ জেগেছে মোর অন্তরে।<br>
+(নগরবাসী, দেখ আসি)। <br><br>
+
+২।<br>
+পাপীর কারণ যীশুর মরণ গো, দেখলাম ক্রুশের উপরে গো, <br>
+আছেন বর্শাতে বিধান ত্রাণনাথ, রক্ত বিন্দু বিন্দু ঝরে গো!<br>
+(পাপ ধুতে, কুক্ষি হতে)। <br><br>
+
+৩।<br>
+প্রেম করে পাপীর তরে গো, প্রাণ দিলেন ক্রুশোপরে গো, <br>
+এমন প্রেম আর কে করেছে গো, তাঁরে দেখতে ইচ্ছা করে গো,<br>
+(নয়ন ভরে দেখব তাঁরে)।<br><br>
+
+৪।<br>
+যীশুর প্রেম অনুপম গো, এমন মিলবে না সংসারে গো, <br>
+আমি গাব যীশুর প্রেম গাথা গো, সদা ফিরি দ্বারে দ্বারে গো,<br>
+(যীশুর প্রেমে, পাগল হয়ে)।।<br>
+`,
+  },
+
+  {
+    id: 80,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৮০",
+    title: "শোন পাপী প্রাণ খুলে, যীশু কাঁদেন ",
+    author: "",
+    language: "Bengali",
+    lyrics: `শোন পাপী প্রাণ খুলে, যীশু কাঁদেন তোর তরে,<br>
+হাতে পায়ে পেরেক গাঁথা, যাতনা পান অন্তরে ।। <br><br>
+
+১।<br>
+দু:খ কি লাগে না তোর, তাঁরে দেখে ক্রুশপর,<br>
+তোর তরে ঐ গাছেতে প্রাণ দেন অকাতরে ;<br>
+যীশু যীশু যীশু বলে কাঁদ পাপী প্রাণ ভরে। <br><br>
+
+২।<br>
+পিপাসায় তাঁর প্রাণ যায়, দর দর রক্ত ধায়,<br>
+সর্ব অঙ্গে বয়ে যায়, নয়ন মেলে দেখরে !<br>
+পাপীর বন্ধু প্রাণের যীশুর একি দশা হল রে। <br><br>
+
+৩।<br>
+নরক দু:খ বড় দায়, জেনে যীশু দয়াময়,<br>
+ব্যস্ত-ভাবে কন পিতায়, মরিব পাপীর তরে,<br>
+আমার দু:খে যেন পাপীর সুখ হয় পিত: অচিরে। <br><br>
+
+৪।<br>
+পাপী বাঁচ পাপ হতে, এড়াও নরক দায় হতে, <br>
+নাচ জয় উল্লাসে, একেবারে পাপ ছেড়ে ;<br>
+প্রাণ দিয়ে বাঁচালেন প্রাণ, যীশু মরি’ ক্রুশ’পরে।<br>
+`,
+  },
+
+  {
+    id: 81,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৮১",
+    title: "হরষিত মনে ভক্ত ক্রুশ কাঁধে লও\n",
+    author: "মদনমোহন বিশ্বাস",
+    language: "Bengali",
+    lyrics: `হরষিত মনে ভক্ত, ক্রুশ কাঁধে লও,  <br>
+যে পথে গিয়াছেন যীশু, সেই পথে ধাও,<br>
+ফিরি সবার দ্বারে দ্বারে, ক্রুশ-সঙ্গীত গাও।<br><br>
+
+১। <br>
+অপূর্ব ক্রুশের কথা, সবারে শুনাও,<br>
+প্রেমময়ের প্রেম-ফল পাপীরে বিলাও।<br><br>
+
+২। <br>
+নিজে মাতি যীশুর প্রেমে অপরে মাতাও,<br>
+আশাহীনে সযতনে ক্রুশের কথা কও।<br><br>
+
+৩। <br>
+ক্রুশে বিদ্ধ শান্তি-রাজে পাপীরে দেখাও,<br>
+ক্রুশে প্রাণ ক্রুশে ত্রাণ ঘরে ঘরে গাও<br>
+`,
+  },
+
+  {
+    id: 82,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "82",
+    title: "সুর “আমার যত মনের দুঃখ।”",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর “আমার যত মনের দুঃখ।” তোমার ক্রুশের কথা জগৎ ত্রাতা ভুলব না কখন,
+তুমি আমার জন্য নিজ প্রাণ করেছ অর্পণ। ১। তুমি দূর করেছ মম ভ্রান্তি, সহিয়াছ সব ক্লান্তি,
+আমার জন্য পূর্ণ শান্তি, করেছ স্থাপন। তুমি যে ক্রুশে হয়েছ হত, সেই ক্রুশে আমারে গাঁথ,
+মরি যেন তোমার মত, বাঁচাতে জীবন। ৩। তোমার ক্রুশ পানে যে চাহিবে, তার মহাপাপের মুক্তি পাবে, অনায়াসে চলে যাবে, পিতার ভবন।
+- কার্তিক চন্দ্র সরকার।`,
+  },
+
+  {
+    id: 83,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৮৩",
+    title: "মোর তারক হইলেন বলিদান",
+    author: "অক্ষয় কুমার মুখোপাধ্যায় ",
+    language: "Bengali",
+    lyrics: `১। <br>
+মোর তারক হইলেন বলিদান,  <br>
+ধন্য প্রিয় হত মেষ!<br>
+ভাই আইস করি তাঁহার গান,<br>
+ধন্য প্রিয় হত মেষ!<br><br>
+
+ধূয়াঃ<br>
+সেই মেষ, সেই মেষ, সেই হত মেষ,<br>
+সেই যীশু নাম মোর প্রিয় নাম;<br>
+মোর কেবল তাঁহে মনস্কাম,<br>
+ধন্য প্রিয় হত মেষ;<br><br>
+
+২। <br>
+পাপ, শাপ, লাজ মোর বহিলেন,<br>
+ধন্য প্রিয় হত মেষ;<br>
+নিজ রক্তেই আমায় তারিলেন,<br>
+ধন্য প্রিয় হত মেষ।<br><br>
+
+৩। <br>
+সব পাপ মোর জানি বিমোচন<br>
+ধন্য প্রিয় হত মেষ;<br>
+আর পাইলাম স্বর্গ সুখ এখন,<br>
+ধন্য প্রিয় হত মেষ।<br>
+`,
+  },
+
+  {
+    id: 84,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৮৪",
+    title: "মোরা যীশুর রক্তে শুচি হলাম",
+    author: "",
+    language: "Bengali",
+    lyrics: `১। <br>
+মোরা যীশুর রক্তে শুচি হলাম,   <br>
+মোদের ভয় আর নাই,<br>
+মোরা প্রভুর মহা দয়া পেলাম,<br>
+মোদের ভয় আর নাই।<br><br>
+
+ধূয়াঃ<br>
+ ধন্য মোরা ধন্য, প্রভুর প্রেমে ধন্য (২)<br>
+মোদের ভয় আর নাই(২)<br><br>
+
+২। <br>
+তাঁহার চরণ সেবিব<br>
+সুসমাচার কহিব,<br>
+খ্রীষ্ট জীবন যাপিব,<br>
+মোদের ভয় আর নাই।<br><br>
+
+৩। <br>
+সারা জগৎ মাঝে<br>
+মোরা সকল কাজে,<br>
+খ্রীষ্ট নাম প্রচারিব,<br>
+মোদের ভয় আর নাই।<br>
+`,
+  },
+
+  {
+    id: 85,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৮৫",
+    title: "এমন সুহৃদ এাতার কদাচ",
+    author: "লক্ষ্মীনারায়ণ দাস ",
+    language: "Bengali",
+    lyrics: `এমন সুহৃদ এাতার কদাচ না ভুলিব, <br>
+বিপদে-সম্পদে প্রভুর সঙ্গ নাহি ছাড়িব। <br>  <br>
+
+১। <br>
+যিনি মম এাণ লাগি, দুরূহ যাতনাভাগী, <br>
+রোগ-শোকে-তাপে আমি, তাঁর সেবা করিব। <br>  <br>
+
+২। <br>
+যে জন আমার তরে, প্রাণ দিলেন ক্রুশোপরে, <br>
+আমি সে জীবনেশ্বর, অপ্রেমে কি ত্যজিব? <br>  <br>
+
+৩। <br>
+ক্রুশ লয়ে স্কন্ধোপরে, মুক্তকণ্ঠে উচ্চৈঃস্বরে, <br>
+প্রেমানন্দে প্রেমময়ের, প্রেম গুণ গাইব। <br>  
+`,
+  },
+
+  {
+    id: 86,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "86",
+    title: "আসিতেছি ক্রুশ পানে",
+    author: "",
+    language: "Bengali",
+    lyrics: `I am coming to the cross
+C. H. 600 ১। আসিতেছি ক্রুশ পানে, দীন, দুর্বল অন্ধজন ;
+সমুদয় লােষ্ট্র জ্ঞানে, পাইতে পূর্ণ মুক্তিধন। ধ্রুবক-ভরসা রাখি তােমাতে, হে প্রিয় কালভেরী মেষ ;
+তব ক্রুশে প্রণতি, যীশু তার সম্প্রতি। ২। বহুকাল মোর হৃদয়ে, পাপ ও শােক বাস করেছে;
+যীশু কহেন আদরে, ধু’ব পাপ হতে তোমায় । ৩। সঁপি সব তোমায় এখন, বন্ধু, কাল ও পার্থিব ধন ;
+আর এই দেহ এ এই প্রাণ, কেবল তোমার চিরন্তন। ৪। প্রতিজ্ঞায় বিশ্বাস করি, তাই পাই এখন রক্তের হিত ;
+ধূলাশায়ী নর আমি, যীশুর সহ ক্রুশার্পিত। আসছেন যীশু তৃপ্তিকর, প্রেমে পূর্ণ হই বিশেষ ; আর হই নীরােগ অতঃপর, ধন্য ধন্য প্রিয় মেষ।
+৬। তবু ভরসা তােমাতে, হে প্রিয় কালভেরী মেষ ; তব ক্রুশে প্রণতি, যীশু তারেণ এখনি।
+-W. McDnald
+Tr. অক্ষয় কুমার মুখোপাধ্যায়`,
+  },
+
+  {
+    id: 87,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "87",
+    title: "ঝিঝিট রীরিক শান্তিরাজ",
+    author: "",
+    language: "Bengali",
+    lyrics: `ঝিঝিট রীরিক
+শান্তিরাজ, শান্তিরাজ্য আন, শীঘ্র এ ধরায়
+(ওহে) কাতরে বিনতি করি, তোমার যুগল পায়।। ১। অপূর্ব প্রেম তোমার, জগতে হউক প্রচার,
+(আহা!) যেন সৰ্ব্ব নারী নর, তোমার শরণ লয়। ২। প্রেম প্রতাপ তোমার, যেন দেখে সৰ্ব্ব নর,
+স্বার্থ ত্যাগ চমৎকার, দেখে ক্রুশতলে যায়। ৩। কাঁটার মুকুট শিরে, বেত্রাঘাত পৃষ্ঠোপরে,
+প্রেক গাথা ঐ করে, যেন হৃদয়ে ধেয়ায়। ৪। তুমি নাথ রক্ত দানে, কিনিয়াছ সর্বজনে, প্রকাশ সবার প্রাণে, প্রেম-মূৰ্ত্তি জ্যোতির্ময়।
+- সত্যনাথ সরকার।`,
+  },
+
+  {
+    id: 88,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৮৮",
+    title: "পাপী কোথায় যাও, কোথায় যাও",
+    author: "রাজেন্দ্রলাল মুখোপাধ্যায়",
+    language: "Bengali",
+    lyrics: `পাপী, কোথায় যাও, কোথায় যাও,   <br>
+ঐ ক্রুশের দিকে চাও,<br>
+যীশুর কাছে এসে, এক নিমিষে,<br>
+দুঃখ ও শোক মিটাও।<br><br>
+
+১। <br>
+পাপে ভারাক্রান্ত, পথভ্রান্ত, আর কেন বেড়াও,<br>
+দেখ আসছে নিশা, ঘোর দুর্দশা, এই বেলা পালাও।<br><br>
+
+২। <br>
+তুমি সুখহারা, শান্তি-ছাড়া, কোথায় ধাবিত হও,<br>
+মিছে মরছ ঘুরে, ঘানির ফেরে, এখন মন ফিরাও।<br><br>
+
+৩। <br>
+তোমার তাপিত হৃদে, কেঁদে কেঁদে , পাপ দূর ক’রে দাও,<br>
+থেকে যীশু-পদে, নিরাপদে, শেষ জীবন কাটাও।<br><br>
+
+৪। <br>
+দেখ স্বর্গানন্দে, সুখের গৃহে, বিশ্রাম-সুখ লও,<br>
+দূতের সাথে মিলে, ক্রুশ-তলে, ক্রুশ ও যীশু গাও।<br><br>
+
+৫। <br>
+যীশু যীশু গান, সর্বক্ষণ, প্রাণ খুলে গাও,<br>
+প্রাণের আশা মত, মিলবে মধু, ঐ পায়ে লুটাও।<br>
+`,
+  },
+
+  {
+    id: 89,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "89",
+    title: "খ্রীষ্ট রক্ত ও পুণ্য পরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr.- My Hope is Built on Nothing Less
+3 Church Hymnal 581 ১। খ্রীষ্ট রক্ত ও পুণ্য পরে সংস্থাপিত মোর প্রত্যাশা,
+নাই বিশ্বাস অন্য কাহারে, খ্রীষ্ট নামে কেবল ভরসা। ধ্রুবক-খ্রীষ্ট গিরি পরে দন্ডায়মান; চোরাবালি সম অন্য স্থান। ২। না হেরি যখন তার প্রেম মুখ, তার সত্যতায় করি বিশ্রাম;
+হাঁ, জানি ইহা সুনিশ্চয়, তার সত্য অটল অবিরাম। ৩। তার নিয়ম অঙ্গীকার, রক্ত, পরীক্ষায় রক্ষা করে প্রাণ।
+সব বন্ধু যখন করে ত্যাগ, একমাত্র যীশু আশ্রয় স্থান। হায়! যখন তাহার আগমন, তার ভক্ত গণ্য যেন হই, তাঁর রক্তে হইয়া পুণ্যবান, সিংহাসন সনে নিত্য রই।।
+- E. Mote`,
+  },
+
+  {
+    id: 90,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "90",
+    title: "নানা গ্রন্থ পুস্তক ভরা",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর- নানা গ্রন্থ পুস্তক ভরা। এমন বন্ধু কোথাও খুঁজে পাবে নাকো তুমি সকল বন্ধুর সেরা সে যে যীশু ত্রাণমণি। সে যে যীশু ত্রাণমণি, সে যে যীশু ত্রাণমণি ।
+১। নানা শিক্ষায় জীবন গড়া, কত গুরু আছে ধরা
+তাদের সবার সেরা যিনি আছেন সর্বোপরি ।
+সে যে প্রভু যীশু বিশ্বপতি সর্ব অধিকারী। ২। পরিত্রাণ করেন দান, কোথা আছে হেন জন।
+খুঁজে কভু পাবে নাকো সর্ব ত্রিভুবনে।
+যে যে প্রভু যীশুর কৃপাগুণে নিশ্চিত এক্ষণে। ৩। এমন বন্ধু পাবে কোথায় ত্রাণকৰ্ত্তা ও প্রেমময়;
+কে দানিবে মৃত জনে অনন্ত জীবন।
+সে যে প্রভু যীশুর অনুগ্রহ মোদের কারণ। ৪। এমন শক্তি পাবে কোথায় বল আজি এ দুনিয়ায়।
+জিনিবারে পাপ অরি দুর্দান্ত দুর্মতি সে যে প্রভু যীশুর শক্তি বিনা নাহি অন্য গতি।
+-সুরেন্দ্র নাথ দাশ। I`,
+  },
+
+  {
+    id: 91,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "91",
+    title: "পাপ বোঝা মুক্ত হও",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr. - There is power in the blood ১। পাপ বোঝা মুক্ত হও বাসনা কি? সে বল্ শােণিতে, বল শােণিতে,
+মন্দ পরে জয়ী হও ইচ্ছা কি? সে শােণিতে অপূর্ব বল্। ধুয়া- আছে বল্ বল, অদ্ভুত কার্য বল, শােণিতে শােণিতে,
+আছে বল, বল্, অদ্ভুত কার্য বল, হত মেষের শােণিতে বল।। ২। ইচ্ছা কি গর্ব, কি ক্রোধ মুক্ত হও? সে বল শােণিতে, বল শােণিতে,
+যাও কালভেরীতে ধৌত হইবারে, সেই শােণিতে, আশ্চর্য বল্ ।। ৩। ইচ্ছা কি তুষার হইতেও সাদা হও, সে বল শােণিতে, বল শােণিতে
+প্রাণদায়ী স্রোতে সব পাপের দাগ ধােও, সেই শােণিতে আশ্চর্য বল। ৪। ইচ্ছা কি যীশুরই দাস হইতে চাও? সে বল শােণিতে বল শােণিতে,
+ইচ্ছা কি দিন দিন, তাহার গৌরব গাও? সেই শােণিতে আশ্চর্য বল'`,
+  },
+
+  {
+    id: 92,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৯২",
+    title: "আজ মহা পরিত্রাণ, ভাই",
+    author: "ইউসুফ বিশ্বস",
+    language: "Bengali",
+    lyrics: `আজ মহা পরিত্রাণ ভাই আজ মহা পিরত্রাণ  <br>
+যীশু উঠেছেন দেখ পাপীরে করিতে ত্রাণ।<br><br>
+
+১। <br>
+চেয়ে দেখ কবর পানে যীশুর দেহ নাই সেখানে,<br>
+(শুধু ) বস্ত্রগুলি পড়ে আছে দূতে করে সাক্ষ্যদান।<br><br>
+
+২। <br>
+বিশ্বাসী যদিও মরে, তবু সে উঠিবে পরে,<br>
+(ও ভাই) মৃত্যুঞ্জয়ী যীশু সেই সত্যের চির প্রমাণ।<br><br>
+
+৩। <br>
+যীশু আগে স্বর্গে গিয়ে, স্বর্গ দুয়ার দিলেন খুলে,<br>
+(আমরা ) যাব যাব স্বর্গে  যাব যীশু- রক্তে পেয়ে ত্রাণ।<br><br>
+
+৪। <br>
+নেচে নেচে তালে তালে ,সবে মিলে বাহু তুলে;<br>
+(এখন) জয় যীশু জয় যীশু বলে কর তাঁহার গুণকীর্তন।<br>
+`,
+  },
+
+  {
+    id: 93,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "93",
+    title: "কি মহানন্দ উপস্থিত",
+    author: "",
+    language: "Bengali",
+    lyrics: `The Great Physician now is near
+church Hymnal 530 ১। কি মহানন্দ উপস্থিত!
+প্রভাতী তারা প্রকাশ পায়, কি জয় যীশুর উত্থানে!
+প্রভুর পুনরুত্থানে, পাপ অন্ধকার হয় অন্তর্হিত, ঐ ত্রাণ-সূর্য দেখা যায়, কাল নিশি অবসানে!।
+তাঁহার স্বর্গারােহণে। ধুয়াঃ- হাল্লিলুয়া, বল জয়!
+যীশু হইলেন মৃত্যুঞ্জয়! পাপীর জন্য ত্রাণােদয়,
+ধন্য, ধন্য, ধন্য। ৩। তায় গেল মৃত্যুর অধিকার ৪। ঐ স্বর্গে দূতগণে গায়। কি শান্তি ত্রিভুবনে।
+পুণ্য, পুণ্য, পুণ্য। আর খােলা হইল স্বর্গ-দ্বার,
+আর প্রতিধ্বনি এই ধরায়। আনন্দ পাপীর মনে।
+| ধন্য, ধন্য, ধন্য।`,
+  },
+
+  {
+    id: 94,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "94",
+    title: "তেওরা মরণজয়ী হে বীর",
+    author: "",
+    language: "Bengali",
+    lyrics: `জৌনপুরী- তেওরা মরণজয়ী হে বীর তোমায় প্রণাম করি, প্রণাম করি । বিশ্ব ভুবন উঠুক জেগে অমর প্রেমিক তোমায় স্মরি । মরণ আজি তোমার কাছে, জীবন পেয়ে লুটিয়ে আছে,
+| তোমার দুটি চরণ ধরি। তোমার প্রেমের অভয় বাণী পাঠিয়ে দিও ধরায় আজি, তাহার মধুর পরশ পেয়ে সবার হৃদয় উঠুক বাজি। পাপ অবিচার হিংসা দ্বেষ,যাতনা আর দুঃখ ক্লেশ, |
+যায় যেন আজ সকল মরি।
+-প্রীতিময় বিশ্বাস। `,
+  },
+
+  {
+    id: 95,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "95",
+    title: "হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া!",
+    author: "",
+    language: "Bengali",
+    lyrics: `Christ the Lord is Risen Today
+Curch Hymnal 134
+হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া!
+। অদ্য যীশু উঠিলেন।
+ইহা কেমন শুভ দিন, খ্রীষ্টের আত্মবলিদান,
+সাধে মোদের পরিত্রাণ, ২।। আইস আমরা হৃষ্ট হই,
+স্বর্গ রাজ্যের কীর্তি গাই, ক্রুশে যিনি মরিলেন, তিনি নিত্য জীবন দেন,
+হাল্লিলুয়া!
+৩। আহ্লাদ কর ভক্তগণ,
+খ্রীষ্টের নামে সর্বক্ষণ, মৃত্যুচ্ছায়া হইল নাশ, জীবন-দীপ্তি পায় প্রকাশ,
+হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া! হাল্লিলুয়া!
+৪। আমরা যেন সৰ্ব্বদাই,
+হাল্লিলুয়া! যীশুর অনুগামী রই,
+| হাল্লিলুয়া! | শেষে মৃত্যু করে জয়, হাল্লিলুয়া!
+হইয়া উঠি তেজোময়, হাল্লিলয়া! ন)
+- চার্লস ওয়েসলী (১৭৩৯)`,
+  },
+
+  {
+    id: 96,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "96",
+    title: "যীশু আশ্রয় গিরি হে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr.- Rock of ages cleft for me
+C. 11. 474, S.9
+১। যীশু আশ্রয় গিরি হে, লুকাও আমায় তােমাতে,
+তব পার্শ্ব নির্গত বারি বয় আর শােণিত;
+ঘুচাও পাপের দায় ও বল—আমায় কর তায় নিৰ্ম্মল ! ২। বৃথা শ্রম চেষ্টা হে, তোমার বিধি পালিতে;
+হোক মোর যতন অবিরল, পড়ক নিত্য নেত্রজল
+তায় না হবে মুক্ত প্রাণ—তোমা বিনা নাহি ত্রাণ। ৩। হাতে কিছু নাই আমার, ধরি কেবল ক্রুশ তোমার;
+বস্ত্রহীনকে দেও বসন, নিরুপায়কে কৃপাধন।
+মলিন, আমি স্রোতে ধাই, ধােয়াও পাছে মরে যাই। ৪। জীবন থাকে যতদিন, কাল নিদ্রায় শক্তিহীন;
+পাব যখন দরশন, তোমার বিচার সিংহাসন, নিত্য আশ্রয় গিরি হে, রেখ আমায় লুকায়ে ।
+- A M. Toplady Tr.- W. Carey`,
+  },
+
+  {
+    id: 97,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "97",
+    title: "মল্লার খেমটা যীশু থাক",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুরট- মল্লার খেমটা যীশু থাক শান্তি রাখ, সর্পের পথ বন্ধ করে, মান অভিমান, সব ছাড়িলাম, তব আত্মা পাবার তরে।।
+১।
+২।
+আমার পালক, করে আলোক, থাক এ হৃদয় মাঝারে। তোমার আমি বাঁধ আমায়, মধুমাখা প্রেম-ডােরে। সদা কালে, নেত্রজলে, কাঁদাবে কে আর আমারে, পায়ে ধরি যীশু আমায়, দূতগণ লয়ে থাক ঘেরে। নামের গুণ, প্রতিদিন, শিখাও তব ভাষা মোরে, নূতন প্রার্থনা শিখাও, গান করিব ঘরে ঘরে।
+৩।
+-রাজন ফকীর (১৮৯২)`,
+  },
+
+  {
+    id: 98,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "98",
+    title: "(যীশু) তোমা ছাড়ি আমি কোথা যাব",
+    author: "",
+    language: "Bengali",
+    lyrics: `লক্ষৌ গজল --ইংরী
+লক্ষো গজল--ঠুংরী | (যীশু) তোমা ছাড়ি আমি কোথা যাব?
+(হেন) গুণনিধি আর কোথা পাব?
+১। বন্ধু তোমা সম, প্রাণ প্রিয়তম, | খুঁজি দেশে দেশে কারে নাহি পাব।
+২। নিজ প্রাণ দিয়াছ, প্রাণ বাঁচায়েছ, | ক্রুশ-মৃত্যুগুণে স্বর্গধামে যাব। ৩। তব রক্ত-স্রোতঃ বহে অবিরত,
+তাহে পাপ প্রাণ আমি ধুয়ে লব । ৪। পরিত্রাণ পেয়েছি, প্রাণে বাঁচিয়াছি,
+আমি যুগে যুগে তব গুণ গাব। ৫। যাব ঘরে ঘরে, ফিরি দ্বারে দ্বারে,
+মধুমাখা নাম সকলে বিলাব।
+- প্রেম চাদ দাশ`,
+  },
+
+  {
+    id: 99,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "99",
+    title: "প্রভু রাখ মোরে পদ তলে",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল-কাহারবা
+প্রভু রাখ মোরে পদ তলে। তুমি বাচায়েছ ধরে সংকটে মোরে নিজগুণে কৃপা বলে । করুণার আধার নাই তব পারাবার। অসীম অনন্ত তুমি। ওহে জগত স্বামী পাতকি আমি।
+ফেল না কাঙ্গাল বলে।। ২। ওহে দয়া ধার ত্রিভূবন তোমার
+(তব) কৃপাতে জীবগণ বাঁচে দেখি সম্মুখে পিছে সবখানে আছে। তোমারই করুণা ঢেলে ।
+অতুল চন্দ্র বল`,
+  },
+
+  {
+    id: 100,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১০০",
+    title: "যীশু বিনে কেহ নাই এ সংসারে\n",
+    author: "",
+    language: "Bengali",
+    lyrics: `যীশু বিনে কেহ নাই এ সংসারে ,    <br>
+এই মহা পাপের দায় কে উদ্ধার করে?<br><br>
+১। <br>
+এই জগত মাঝে , যত জন আছে,<br>
+তারা সবে দোষী হবে, নিজ পাপ ভারে। <br><br>
+২। <br>
+পিতা মাতা সুত, ভাই বন্ধু যত <br>
+তারা আমার পাপের ভার, নিতে নাহি পারে।<br><br>
+৩। <br>
+ওরে আমার মন, ধর যীশুর চরণ, <br>
+যিনি তোমার পাপের ভার নিলেন শিরোপরে।<br>    
+`,
+  },
+
+  {
+    id: 101,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "101",
+    title: "শুধু তোমারি মুখ চাহিয়া",
+    author: "",
+    language: "Bengali",
+    lyrics: `১০১
+১।
+শুধু তোমারি মুখ চাহিয়া নাথ সকলি ভুলি হে,
+সকল ব্যথায় চাহি ফিরে তাই, পরাণ তুলি হে।। তোমারই প্রেম এ জীবনে স্মরিয়া,
+সহিব সব হে জীবন ভরিয়া।। তব আশা বাণী প্রাণে ধরিয়া, মরিব হর্ষে হে ধূলায় সকলই ত্যজিব পাইতে চরণ ধূলি হে।। যত যা বেদনা যা কিছু আঘাত,
+সব অত্যাচার সকলই ব্যাঘাত। জানি তােমাতে হে অন্তিম নাথ, ফুরাবে অন্তে হে, করুণাধারে উঠিবে ফুটিয়া, বাসনা গুলি হে।
+- ধীরেন্দ্র কুমার বিশ্বাস।`,
+  },
+
+  {
+    id: 102,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "102",
+    title: "প্রভু যীশু নাম অশেষ গুণধাম",
+    author: "",
+    language: "Bengali",
+    lyrics: `প্রভু যীশু নাম অশেষ গুণধাম, .
+গাই এস সবে মিলিয়ে।। ১। যেতে ভব-পারে, দয়াল যীশু বিনা উপায় নাই রে ।। ২। পাপী চেয়ে দেখ রে, ঐ যে পাপের বোঝা যীশুর শিরে ।।
+ও তুই চলে আয় রে, ঐ দেখ স্বর্গীয় মেষ পাপ হরে । ৪। এই ভব মাঝে, যীশু নাম বিনা আর, কি ধন আছে।
+- মথর নাথ বসু |`,
+  },
+
+  {
+    id: 103,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "103",
+    title: "যীশুর কাছে যাইব, আলোতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `যিশা ২৪৫ ১. যীশুর কাছে যাইব, আলোতে আলোতে,
+তাহার সঙ্গে চলিব, উজ্জ্বল আলোতে, পাপের ক্ষমা পাইব, আলোতে, আলোতে, পাপ সমস্ত ছাড়িব, প্রভুর আলোতে।
+ধূয়া- আমরা চলি আলোতে, আলোতে, আলোতে,
+আমরা চলি আলোতে, প্রভুর আলোতে ।। যীশুর কাৰ্য্য করতে চাই, আলোতে, আলোতে, বল ও শক্তি আমি পাই, প্রভুর আলোতে, শয়তান কি আর করিবে? আলোতে, আলোতে,
+মোর কি নিকট আসিবে? প্রভুর আলোতে। ৩। যখন মৃত্যু আসিবে, আলোতে, আলোতে,
+আমার ভয় না হইবে, প্রভুর আলোতে, স্বর্গে প্রবেশ করিব, আলোতে, আলোতে, ছি চিরকাল থাকিব, প্রভুর আলোতে।
+- জন পেঙ্গ ওয়ের্ণ জোন্স`,
+  },
+
+  {
+    id: 104,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "104",
+    title: "যীশু আমার! দে ও প্রাণ",
+    author: "",
+    language: "Bengali",
+    lyrics: `যীশু আমার! দে ও প্রাণ বাঁচাইয়া, প্রাণ বাঁচাইয়া যীশু আমার! যে পাপী তব চরণে আইসে, প্রভু! দে ও তারে মুক্তি পরাইয়া-২ দীননাথ! হে অনাথের বন্ধু, হও প্রভু আমার, পাপ মুছাইয়া-২ নদী গভীর, নৌকা পুরানাে, প্রভু! দেও মোরে পার করাইয়া-২ তােমাতে হই আমি বিজয়ী, আশিষ দেও প্রভু শক্তি যােগাইয়া-২ ভক্তকে প্রভু! স্মরণে রেখ অন্তকালেও ভুলে না যাইয়া-২
+| - উইলিয়াম কেরী`,
+  },
+
+  {
+    id: 105,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১০৫",
+    title: "যীশু মোদের কেমন বন্ধু,",
+    author: "",
+    language: "Bengali",
+    lyrics: `১. <br>
+যীশু মোদের কেমন বন্ধু, বহেন পাপ ও তাপের ভার ;<br>
+মনের কথা ঈশ্বর সনে, বলিলে হয় সুখ অপার ।। <br>
+হায়! কি শান্তি আমরা হারাই, বৃথা সহি দু:খ ক্লেশ ;<br>
+পিতার কাছে নাহি জানাই, মোদের অভাব সবিশেষ ।। <br><br>
+
+২. <br>
+যখন হয় ভীষণ পরীক্ষা, কিম্বা দু:খ যাতনা,<br>
+হও তাতে ভগ্ন আশা, কর তখন প্রার্থনা। <br>
+হেন পরম বন্ধু কোথায়, মোদের দু:খের ভাগী হয় ?<br>
+যীশু জানেন মমাদের দশায়, ধর তাকে প্রার্থনায়। <br><br>
+
+৩. <br>
+যখন আমরা শ্রান্ত ক্লান্ত, ভয়ে অবসন্ন প্রায়,<br>
+যীশু সহায় অবিশ্রান্ত, ধর তাঁকে প্রার্থনায়। <br>
+প্রিয়বর্গ যখন নির্দয়, তখন কর প্রার্থনা ; <br>
+যীশুর কোলে নাই কোন ভয়, তথায় পাইবে সান্ত্বনা।।<br>
+`,
+  },
+
+  {
+    id: 106,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "106",
+    title: "কেন রে ভাবনা, কিসের",
+    author: "",
+    language: "Bengali",
+    lyrics: `বিভাস একতালা ১। কেন রে ভাবনা, কিসের ভাবনা।
+পিতা সর্বাধিপ, তাহা কি জান না? ভ্রাতা তার দক্ষিণে, তোমার কারণে,
+করিছেন মিনতি, নাহি রে ভাবনা। ২। তিনি যে সঙ্কটে অতিশয় নিকটে,
+আসি করেন দূর সকল যন্ত্রণা; কেবল প্রত্যুষে, দুখ রাত্রি শেষে। আসি নিজ দাসে করেন সান্ত্বনা।
+৩। পৃথিবী স্বগের, শকতি অপার,
+হয়েছে অপিত যাহার উপর; সৃজন কারণ, ঈশ্বর নন্দন। সঙ্গে সেই যীশু নাহি রে ভাবনা।
+- মধুর নাথ বসু`,
+  },
+
+  {
+    id: 107,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১০৭",
+    title: "আমার রাখাল কভু ঘুমান না",
+    author: "মধুসূদন সরকার",
+    language: "Bengali",
+    lyrics: `আমার রাখাল কভু ঘুমান না,   <br>
+আমার আর কিসের ভাবনা। <br><br>
+
+১। <br>
+তিনি তৃণ- ভূষিত স্থানে চরান হে----- <br>
+আমার অসুসার আর হইবে না। <br><br>
+
+২। <br>
+আমি সর্বশক্তিমানের মেষ, হে--- <br>
+কেহ কেড়ে নিতে পারবে না। <br><br>
+
+৩। <br>
+আমার চতুর্দিকে অগ্নি প্রাচীর, হে--- <br>
+কেন্দুয়া ছুঁইতে পারবে না। <br><br>
+
+৪। <br>
+আমার নাম ধরে ডাকেন সদা, হে--- <br>
+আমি আর কারও রব শুনব না। <br><br>
+
+৫। <br>
+তিনি রোগ -শোক-সঙ্কট-কালে হে--- <br>
+সদা করেন আমায় সান্ত্বনা। <br><br>
+
+৬। <br>
+যিনি নিজ রক্তে কিনিয়াছেন, হে— <br>
+তাঁরে কখনও ছাড়িব না। <br>
+`,
+  },
+
+  {
+    id: 108,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১০৮",
+    title: "সদা তুমি আছ কাছে, এ বিশ্বাস",
+    author: "কালীপ্রসন্ন মুখোপাধ্যায়",
+    language: "Bengali",
+    lyrics: `সদা তুমি আছ কাছে, এ বিশ্বাস দেহ দাসে,   <br>
+কি আলোকে কি আঁধারে, কি রজনী কি দিবসে।<br><br>
+১। <br>
+পাপ চিন্তা এলে মনে, যেন প্রভু সেই ক্ষণে,<br>
+তোমায় উপস্থিত জেনে , হৃদয়েরে রাখি বশে।<br><br>
+২। <br>
+পাপাত্মা যখন মোরে, ফেলাইতে চায় ফেরে,<br>
+যেন তোমা পানে ফিরে, রাখি দৃষ্টি তব ক্রুশে।<br><br>
+৩। <br>
+একা হলেও একা নহি,এ বিশ্বাস আমি চাহি,<br>
+থাক ওহে ক্রুশবাহী, এ পাপীর হৃদয়াকাশে।<br>
+`,
+  },
+
+  {
+    id: 109,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "109",
+    title: "প্রাণের প্রিয় যীশু হে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr. - Jesus Lover of My Soul
+Church Hymnal 402 ১। প্রাণের প্রিয় যীশু হে, তব ক্রোড়ে দে ও আশ্রয়,
+যখন তুফান সম্মুখে, দেখি ভীষণ অতিশয়; লুকাও আমায় ত্রাতা হে, যাবৎ ঝড় না চলে যায়, তোমা বিনা কেমনে বাচি আমি অসহায়?
+২। নাহি মম আর আশ্রয়, দিলাম তোমায় মনঃপ্রাণ,
+ছেড়াে নাকো দয়াময়, দুঃসময়ে কদাচন, । যত ভার সব তােমাতে, করিতেছি সমর্পণ
+তব পক্ষ ছায়াতে, কর মোরে সংগােপন। ৩। কত রুগ্ন স্বাস্থ্য পায়, অন্ধ চলে সুপথে,
+খঞ্জ কেমন দৌড়ে যায়, তোমার মহা দয়াতে, ‘ধাৰ্ম্মিকতা' তোমার নাম, আমি কিন্তু ধর্মহীন;
+তুমি সত্য কৃপাময়, পাপে মম মন মলিন। ৪। ঢাকিবারে আমার পাপ, প্রচুর কৃপা তােমাতে,
+শান্তি স্রোতে মনস্তাপ, শীতল কর দয়াতে; তুমি জীবন-প্রস্রবন, বহ আমার হৃদয়ে, থাকে যেন প্রাণ ও মন, শুদ্ধ সর্ব সময়ে।
+-Charles Wesley Tr.- নৃপাল চন্দ্র বিশ্বাস`,
+  },
+
+  {
+    id: 110,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১১০",
+    title: "চল সকলে যাই যীশুর ",
+    author: "মধুরানাথ বসু",
+    language: "Bengali",
+    lyrics: `চল সকলে যাই যীশুর সদনে,<br>
+ডাকিতেছেন দয়াল যীশু মধুর বচনে।<br><br>
+
+(১)<br>
+ওহে পরিশ্রান্ত ভরাক্রান্ত সর্ব পাপী জন,<br>
+আমার নিকটে আইস পাবে শান্ত মন;<br>
+মোর জোয়ালি সহজ ভার লঘু-বহনে।<br><br>
+
+(২)<br>
+আমার নিকটে আইলে ক্ষুধা নাহি রয়,<br>
+আমাতে বিশ্বাসী হইলে পিপাসা পালায়,<br>
+বহে আনন্দ অমৃত নদী সতত মনে।<br><br>
+
+(৩)<br>
+যে জন সতত যীশুর বচন মানে,<br>
+তাঁহার প্রেমের মাহাত্ম্য কেবল সে জানে;<br>
+যীশু নিরন্তর করেন স্থিতি তাহার মনে।
+`,
+  },
+
+  {
+    id: 111,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "111",
+    title: "দুস্তর সাগর, নীরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `দুস্তর সাগর, নীরে, তুমি নাথ তরাইও,
+অকুলে ভেসেছ হৃদি, তুমি কোলে তুলে নিও। ১। আছ তুমি ধ্রুবতারা, তবু হই যে দিশাহারা,
+তোমারই নয়ন বন্ধে, বেঁধে আখি ফিরাইও। ২। যেন সব সুরে গানে কি বাসনা জাগে প্রাণে,
+বুঝাইতে নারি যাহা, তুমি সব বুঝে নিও।। ৩। দেখ নাথ দুঃখের মাঝে, যেই দুঃখ হৃদে জাগে,
+তুমি আমার একই আশা, তরাইও, তরাইও। ৪। তব কাছে, তব দেশে, মিলিব গাে যবে শেষে, | স্নেহ ক্রোড়ে তুলে নিয়ে, তুমি অশ্রু মুছে দিও।
+- ধীরেন্দ্র কুমার বিশ্বাস`,
+  },
+
+  {
+    id: 112,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "112",
+    title: "আমা বিনা তব অন্য",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল-দারা। আমা বিনা তব অন্য কেহ না রহুক দেবতা। ক্ষোদিত প্রতিমা নির্মাণ কোর না
+| আমি জীবন দাতা। |
+কেহ না রহুক দেবতা ॥ ১। করিও না মম নাম অমান্য ।
+পাল বিশ্রামদিন, সেদিন পুণ্য। পালন কর আজ্ঞা মোর লহ নাম অযথা।
+কেহ না রহুক দেবতা ।। ২। কর সমাদর পিতা ও মাতার
+নরহত্যা না কর ব্যভিচার। চুরি নাহি কর কোন কিছু কার ভুলিও না একথা ।
+| কেহ না রহুক দেবতা ॥ ৩। মিথ্যা তব না হোক বাক্য
+তব প্রতিবাসী বিরােধী সাক্ষ্য প্রতিবাসী গৃহে লােভে কোর না হে ।
+ইহাই ব্যবস্থা। |
+কেহ না রহুক দেবতা ।।
+- অতুল চন্দ্র বল।`,
+  },
+
+  {
+    id: 113,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১১৩",
+    title: "আমার জীবন পথের আলো যীশু",
+    author: "",
+    language: "Bengali",
+    lyrics: `আমার জীবন পথের আলো যীশু, সাথে সাথে চল ! <br>
+গহন বনে একলা যেতে; পথ যে না পাই কোন মতে, <br>
+আমার জীবন পথদর্শক যীশু! পথ দেখিয়ে চল।। <br>
+সাথীরা সব যায় যে ফেলে, আঁধার ঘিরে এল, <br>
+ব্যথার ব্যথী যীশু এসো, নইলে এ প্রাণ গেল ; <br>
+আমার জীবন পথের সম্বল যীশু ! হাত ধরে নিয়ে চল।। <br>
+জীবন নদীর তুফান ঝড়ে, হাল ভেঙ্গে যায় পাল যে হেঁড়ে, <br>
+যীশু মাঝি বস হালে, নইলে তরি ডুবলো ; <br>
+আমার জীবন তরীর মাঝি যীশু! হাল ধরে নিয়ে চল।।<br>
+`,
+  },
+
+  {
+    id: 114,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "114",
+    title: "এক আশ্চর্য ত্রাণকর্তা যীশু",
+    author: "",
+    language: "Bengali",
+    lyrics: `A wonderful Saviour is Jesus my Lord
+| C 11. 651 এক আশ্চর্য ত্রাণকর্তা যীশু আমার | এক আশ্চর্য ত্রাতা মম,
+মম প্রাণ লুকান ঐ পর্বত শিখায়।
+শান্তি নদী ঐ দেখা যায় । ধূয়া- লুকান মম প্রাণ ঐ পর্বত শিখায়।
+সুশীতল ছায়া যেথায় লুকান মম প্রাণ গভীর প্রেম ছায়ায় । রাখেন পক্ষ নিচে আমায়-২ এক আশ্চর্য ত্রাণকর্তা, যীশু আমার । দূর করেন সব বোঝা আমার তুলে লন আমায়, আমি টলব না আর, দেন প্রতিদিন শক্তি আমায়। অগণিত আশীর্বাদ প্রতিক্ষণে, পূর্ণ করেন আত্মদানে গাই আনন্দ গান, প্রভু গৌরব তোমার। ত্রাণকর্তা হে তুমি আমার।।
+ধার্মিকতার বস্ত্র পরে উঠব আমি, সাক্ষাৎ করতে মেঘ রথে, তাঁর পুণ্য মুক্তি আরাে আশ্চর্য প্রেম সুরে সুরে মালয়ে গহ।
+Fanny J. Crosby |
+Tr. এন এন, সরকার |`,
+  },
+
+  {
+    id: 115,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১১৫",
+    title: "খ্রীষ্ট নামে কত সুধা",
+    author: "সন্তোষকুমার পাত্র",
+    language: "Bengali",
+    lyrics: `খ্রীষ্ট নামে কত সুধা জানতে যদি ভাই,<br>
+মধুর প্রেমে বাঁধা তাঁহার রইতে যে সদাই।<br>
+স্বর্গ যাঁহার সিংহাসন<br>
+সত্য পথের মুক্তি বাণী  প্রেমের সুরে ধরায় আনি<br>
+গাইল সে রাজন;<br>
+তাঁর প্রেমের তুল্য নাই,<br>
+জানতে যদি ভাই।<br><br>
+তাঁর দিব্য গুণের পুণ্য আলো<br>
+ছড়িয়ে যখন গেল,<br>
+সইল না আর নিঠুর প্রাণে-প্রতিদানে<br>
+তাই দিল ক্রুশের মরণ।<br><br>
+সত্যের জয় সবখানে<br>
+ছিন্ন করি মৃত্যু বাঁধন        জয় করে সে অমর জীবন<br>
+পাপীর পরিত্রাণে;<br>
+সে যে ডাকেছে সবায় তাই,<br>
+-জানতে যদি ভাই।<br>
+`,
+  },
+
+  {
+    id: 116,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১১৬",
+    title: "ধর লও রে ঈশ্বরের প্রেম",
+    author: "নবীন বিশ্বাস\n",
+    language: "Bengali",
+    lyrics: `ধর লও রে ঈশ্বরের প্রেম যীশু ডাকেন আয়   <br>
+আমার যীশু ডাকেন, আয়, আমার প্রভু ডাকেন আয়।<br><br>
+১। এ প্রেম যে বা নিল মুক্ত হ’ল সকল পাপ দায়।<br><br>
+২। এ প্রেম স্বর্গপুরে মর্ত্যপুরে সকলে মাতায়।<br><br>
+৩। এ প্রেম হৃদয় ভরে নিলে পরে সকল দুঃখ যায়।<br><br>
+৪। এ প্রেম ভবে এসে মানুষ বেশে পাপীরে তরায়।<br><br>
+৫। এ প্রেম কলসী কলসী ঢাল তবু না ফুরায়।<br><br>
+৬। এ প্রেম যে পেয়েছে সেই মজেছে, কিছু নাহি চায়।<br><br>
+৭। যীশু আপনি মালী মাথায় ডালি, প্রেম-ধন বিলায়।<br><br>
+৮। তাঁকে ধর যদি বাঁচবে তুমি হ’তে নরক-দায়।<br>
+`,
+  },
+
+  {
+    id: 117,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "117",
+    title: "যীশু প্রেম করেন ছােট্ট",
+    author: "",
+    language: "Bengali",
+    lyrics: `Jesus Loves the Little Ones Like Me যীশু প্রেম করেন ছােট্ট এই আ-মা-কে। যীশু প্রেম করেন ছােট্ট এই আ-মা-কে এই টুক ছােটকে রেখে হাটুতে । যীশু প্রেম করেন ছােট্ট এই আ-মা-কে ।। যীশু প্রেম করেন বড় এই তাে-মা-কে যীশু প্রেম করেন বড় এই তাে-মা-কে। বড় তোমার ন্যায়, ভালবাসেন তায় । যীশু প্রেম করেন বড় এই তাে-মা-কে ।
+৩।
+যীশুর কথা লেখা আছে বাইবেলে যীশুর কথা লেখা আছে বাইবেলে বাধ্য যেন রই, সদা সদয় হই যীশুর কথা লেখা তাই মোর বাইবেলে । যীশুর কথা লেখা আছে বাইবেলে যীশুর কথা লেখা আছে বাইবেলে । শিখবাে ইহা রােজ হবে মোর সাহস যীশুর কথা লেখা তাই মোর বাইবেলে ।
+৪।`,
+  },
+
+  {
+    id: 118,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "118",
+    title: "বল সে প্রাচীন কথা",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tell me the old old story
+Church líymnal 524 ১। বল সে প্রাচীন কথা, সেই স্বর্গ-বিবরণ,
+খ্রীষ্ট যীশু ও তার প্রতাপ এবং প্রেম পদর্শন। বল তা সহজ কথায় আমি যে মূর্খ জন, আর দুর্বল শিশুর তুল্য, নিরাশ্রয় সর্বক্ষণ।
+ধ্রুবক-বল সে প্রাচীন কথা, বল সে প্রাচীন কথা,
+বল সে প্রাচীন কথা, খ্রীষ্ট যীশু ও তার প্রেম।
+২।।
+বল তা ধীরে ধীরে, অন্তরে বুঝি সার, আশ্চৰ্য্য উদ্ধার সাধন ও পাপের প্রতীকার; বল তা' বারে বারে, শীঘ্র যে ভুলে যাই;
+প্রত্যুষের নীহার তুল্য মধ্যাহ্নে তা' আর নাই।। ৩। বল তা' কোমল ভাবে, এ জানি মনেতে
+যে, পাপীর জন্য যীশু আসিলেন ভবেতে; সে কথা বল নিত্য, তায় মহৎ উপকার
+আর সঙ্কটকালে মম সান্ত্বনার একাধার ।। ৪। বল সে প্রাচীন কথা নির্ভয়ে আমারে,
+দুর্দশা দৈন্য মম যাই ঘটুক মম অন্তিমে স্বর্গে গৌরব, বােধহয় মোর সবিশেষ; বলি ও প্রাচীন কথা, “সেই যীশুর প্রেম অশেষ।”
+- Katherine llanker`,
+  },
+
+  {
+    id: 119,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "119",
+    title: "খ্রীষ্ট শরীর আত্মার চিকিৎসক",
+    author: "",
+    language: "Bengali",
+    lyrics: `The Great Physician louis Wear
+Church Hymnnal 530
+১। খ্রীষ্ট শরীর আত্মার চিকিৎসক, প্রাণ শীতলকারী যীশু;
+শােক, ব্যাধি, দুঃখ, বিনাশক, প্রেমসুধা পূর্ণ যীশু। ধূয়াঃ- মধুর নাম দূতগণে গায়, মধুর নাম মর্ত্য জিহ্বায়,
+মধুর সঙ্গীত এ ধরায়, যীশু প্রাণের যীশু। ২। পাপ তাপ সব করেন বিমােচন, পাতকীর বন্ধু যীশু,
+দেন দীনে স্বর্গ নিকেতন, স্বৰ্গনাথ প্রভু যীশু। ৩। আজ শুন তাহার নিমন্ত্রণ, ডাকিছেন তোমায় যীশু,
+পরিত্রাণ লয়ে অনুক্ষণ, দাঁড়ায়ে আছেন যীশু। ৪। হোক তোমার স্তব হে বলিমেষ, হে বিশ্বাস পাত্র যীশু।
+তোমার ঐ নামের গুণ অশেষ, প্রাণ ভালবাসেন যীশু।
+৫। হয় দেব যবে বিসর্জন, হেরিব নেত্রে যীশু, করিব তাহার সংকীৰ্ত্তন, জয় যীশু প্রাণের যীশু |
+| Tr- যাকোব কান্তি বিশ্বাস`,
+  },
+
+  {
+    id: 120,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১২০",
+    title: "আমি দু:খে সুখে সদা তারি মুখ",
+    author: "",
+    language: "Bengali",
+    lyrics: `আমি দু:খে সুখে সদা তারি মুখ চেয়ে রই,<br>
+এ সংসারে কেবা আমার প্রিয় যীশু বই ।। <br><br>
+
+১. <br>
+দু:খের সময় হলে, তাঁরি কাছে যাই চলে,<br>
+চক্ষু দুটি মুছে দিলে, সবই ভুলে রই। <br><br>
+
+২. <br>
+হয়ে সুখী সুখকালে, ডাকি তারে যীশু বলে,<br>
+মন কথা তাঁরে বলে, আরও সুখী হই। <br><br>
+
+৩. <br>
+যীশু আমার সুখে সুখী, যীশু আমার দুঃখে দুঃখী <br>
+যীশুর কাছে যত থাকি, তত সুখ পাই।।<br>
+`,
+  },
+
+  {
+    id: 121,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "121",
+    title: "আহা কি মধুর তব প্রেম পরশ",
+    author: "",
+    language: "Bengali",
+    lyrics: `বেহাগ মিশ্র-কাওয়ালী (কর্ণাটিক)
+আহা কি মধুর তব প্রেম পরশ
+যীশু মম, প্রিয়তম, পরমেশ, হৃদয়েশ ১। তোমারে কহিব মনের কথা, তোমারে জানাব প্রাণের ব্যথা।
+যীশু মম, প্রিয়তম, পরমেশ, হৃদয়েশ। ২। কে আর নাশিবে শােক তাপ মম, সান্তুনা করিবে তোমারি সম,
+যীশু মম প্রিয়তম, পরমেশ, হৃদয়েশ। ৩। বিপদে আপদে তোমারেই ডাকি সতত চরণে তাই পড়ে থাকি
+যীশু মম, প্রিয়তম, পরমেশ হৃদয়েশ।`,
+  },
+
+  {
+    id: 122,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "122",
+    title: "সিন্ধু কাফি-যৎ কেন",
+    author: "",
+    language: "Bengali",
+    lyrics: `সিন্ধু কাফি-যৎ কেন তার প্রেম ভুলে, ডুবিছ হে পাপ নীরে। ডাকছেন যীশু তারিবারে পশ্চাৎ বারেক চাহ ফিরে মন সপ তার পায়ে, চির সুখে সুখী হবে স্বর্গানন্দ হৃদে পাবে, শয়তানের জয় করে। সুমধুর আলিঙ্গনে, চুম্বিবেন বারে বারে পুত্র-কন্যা সম্বােধনে পরাবেন মুকুট শিরে ।
+- সত্যেন্দ্রনাথ মুখোপাধ্যায়`,
+  },
+
+  {
+    id: 123,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১২৩",
+    title: "আনন্দ ধরে না মনে",
+    author: "মধুসূদন সরকার",
+    language: "Bengali",
+    lyrics: `আনন্দ ধরে না মনে,  <br>
+প্রিয় নাথের প্রেমালাপনে;<br>
+(মোরা) যীশুর প্রেমে বাদাম তুলে,<br>
+চলে যাব সিয়োন।<br><br>
+
+১। <br>
+(শুন) শুভ সমাচার, (যীশু) খুলে স্বর্গ-দ্বার<br>
+জীবন-মুকুট হস্তে লয়ে ডাকেন বারে বারে,<br>
+(ওহে) যুদ্ধেতে বিজয়ী ভক্ত, স্বর্গ তোমার কারণে।<br><br>
+
+২। <br>
+(স্বর্গ) পিতার ভবন, (অসংখ্য) সাধু দূতগণ,<br>
+নাচিছে গাহিছে সদা প্রফুল্ল বদন,<br><br>
+
+৩। <br>
+(আছে) জীবন -বৃক্ষের ফল,(আর শান্তি- নদীর জল,<br>
+আহার পানে তৃপ্ত সব ভক্ততের দল,<br>
+(আমরা) তাহাদের সঙ্গে রব, চেয়ে যীশুর মুখপানে।<br>
+`,
+  },
+
+  {
+    id: 124,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "124",
+    title: "প্রাণ বেদনা তারে কহিও",
+    author: "",
+    language: "Bengali",
+    lyrics: `বেহাগ- কাওয়ালী । প্রাণ বেদনা তারে কহিও, চরণে বসেছ যাহার, (তুমি) বলিও, কহিও, শােক দুঃখ যত, প্রাণেতে আছে যা তোমার। ১। দুঃখে, শােকে আর আঁধার আলোকে,
+কান্নাকাটি তুমি যবে কর শােকে, ও চরণ-চাহিয়া, রহিও বসিয়া, তার মত বন্ধু কে-বা আর । | ২। ধন, জ্ঞান, বল বুদ্ধি যত, সে সকলই হয় তাহারই প্রদত্ত।
+পিতা, মাতা-সূত, ভাই বন্ধু যত, হয় না তারা আপনার। যার আদেশে রহিলা এদেশে, নন কি তিনি তব পাশে পাশে। দুটি চক্ষু মেলিয়া, দেখনা চাহিয়া, কে আছে নিকটে তোমার। বেদনা নাশক, শােক-দুখ-হারক,
+তিনিই-ত হন, তোমার আমার তারক ডাকের মত ডাকে, পাইবে তাহাকে, ডেকে দেখ না একবার ।
+- পূর্ণ চন্দ্র দে`,
+  },
+
+  {
+    id: 125,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "125",
+    title: "যীশুর হৃদয়েতে তোমার জন্য",
+    author: "",
+    language: "Bengali",
+    lyrics: `"In The heart of Jesus"
+Church Hymnal 318
+১। যীশুর হৃদয়েতে
+তোমার জন্য প্রেম, পূত প্রেম ও মধুর। গভীর ও সত্য; কেন থাকবে একা আর বন্ধু বিহীন, যখন যীশু হৃদে প্রেম আছে প্রচুর।
+২। যীশু তোমার জন্যে
+ভাবেন সর্বদা। গ্রীষ্মের সূর্য রশ্মি প্রাতের শিশির সম, হইবে কেন ভীত। কেন চিন্তিত ভাবেন যীশু তার জন্য যারা তাঁর ক্রীত
+৩। যীশুর কার্যক্ষেত্রে ৪। যীশুর আলয়ে। কাজ আছে তোমার
+স্থান আছে তোমার। এমন কি দূতগণে
+গৌরবময় আনন্দময় উফুল্ল হয় তায়।
+স্নিগ্ধ শান্তিময় আলস্যে কেন কাটাও কেন যাযাবরের ন্যায় জীবনের কার্যে
+বেড়াও শ্রান্ত মনে যখন যীশুর ক্ষেত্রে।
+যখন যীশুর আলয়ে। তোমার হস্ত চায় ।
+তোমার স্থান হবে।
+Tr. - এন, বাড়ৈ `,
+  },
+
+  {
+    id: 126,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "126",
+    title: "ক্লান্তি আছে?",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr.-" \\re You Weary. Are You Heavy Hearted."
+Christ in Song. 515
+১। ক্লান্তি আছে? মনে দুঃখ আছে? যীশুকে বল, যীশুকে বল,
+আমােদ গেছে? গেছে তোমার সুখ? যীশুকে বল এখন।
+০
+ধ্রুবক-যীশুকে বল, যীশুকে বল, তিনি ত বন্ধু পরম;
+তোমার আর নাই এমন বন্ধু হে ভাই, যীশুকে বল এখন ।। ২। তোমার অশ্রুধারা বহিতেছে? যীশুকে বল, যীশুকে বল,
+গুপ্ত পাপ কি মনে রহিতেছে! যীশুকে বল এখন।। ৩। দুঃখের ঝড়ে ভয় পাইতেছ? যীশুকে বল, যীশুকে বল;
+কালের বিপদ মনে ভাবিতেছ? যীশুকে বল এখন।। ৪। মরণ কালের চিন্তা ভারী আছে, যীশুকে বল, যীশুকে বল, । পাপের জন্য বুক ফেটে যাচ্ছে, যীশুকে বল এখন ।
+- J. R. Rankin
+Tr. - II. R. Wyman `,
+  },
+
+  {
+    id: 127,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "127",
+    title: "ক্রুশ যাহার সুপরিচয় সত্য",
+    author: "",
+    language: "Bengali",
+    lyrics: `ভাটিয়াল-টুংরী | ক্রুশ যাহার সুপরিচয় সত্য সাধন সার;
+প্রেমের যীশু ত্যাগের গুরু, বন্ধু এ যাত্রার ॥
+১। অঙ্গে যাহার-রিক্ত পথিক-চির দৈন্য বেশ,
+দীনের সেবায় বিলাল তাই ভুলে দুঃখ ক্লেশ,
+সদাই সে যে ব্যাকুল রে ভাই, - লইতে বোঝার ভার । ২। অন্তর যার পূর্ণ সুধায় পুণ্য পরশ গন্ধ,
+সুন্দর তার শ্রীমুখ খানি ধেয়ানের আনন্দ, জীবন মরণ--স্বার্থক রে ভাই,--সঙ্গ লাভি তার ।
+[]
+- সন্তোষ কুমার পাত্র`,
+  },
+
+  {
+    id: 128,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "128",
+    title: "আর কোন বন্ধু কি",
+    author: "",
+    language: "Bengali",
+    lyrics: `"There's not a friend like the Lowly Jesus"
+| Christ in Song 57. (G. 241 ১। আর কোন বন্ধু কি যীশুর মত? কেহই নাই, কেহই নাই;
+আর কে-বা সারিবে প্রাণের ক্ষত, কেহই নাই, কেহই নাই।। ধ্রুবক- যীশু মোদের সব দুঃখ জানেন, তাহার করুণা নিত্য-স্থায়ী;
+আমাদের দয়ালু যীশুর মত, কেহই নাই, কেহই নাই। ২। আছে কে তার মত নম্র-চিত্ত? কেহই নাই, কেহই নাই;
+কে আছে তার মত সুপবিত্র? কেহই নাই, কেহই নাই।
+৩।
+অগ্রাহ্য কে যীশুর কাছে এলে? কেহই নাই, কেহই নাই; কোন অনুতাপী তার অপ্রেম পাবে? কেহই নাই, কেহই নাই। আর কোন ধন আমার যীশুর মত? কিছুই নাই, কিছুই নাই; ভবে কি সুখ এমন স্বর্গে যত? কিছুই, কিছুই নাই।।
+- মেথডিষ্ট গীতাবলী`,
+  },
+
+  {
+    id: 129,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "129",
+    title: "তুরী উঠাও, জোরে বাজাও",
+    author: "",
+    language: "Bengali",
+    lyrics: `Lift up the trumpet. and loud let it ring
+Church llymnal 541 তুরী উঠাও, জোরে বাজাও, যীশু আসছেন পুনরায় জয়ধ্বনি কর, প্রশংসা কর, যীশু আসছেন পুনরায় ।
+ধ্রুবকঃ- আসছেন আবার, আসছেন আবার।
+যীশু আসছেন পুনরায় । ২। পর্বত সব বল, সমতল বল, যীশু আসছেন পুনরায়।
+গৌরবে আসছেন, হত মেষশাবক, যীশু আসছেন পুনরায় ।। ৩।।
+সমুদ্র বল, তরঙ্গ বল, যীশু আসছেন পুনরায় বল বালুভূমি, যথা সাগর চুমে, যীশু আছেন পুনরায় ।। বল ধ্বংসস্তুপ সব, ছিন্ন জনতা, যীশু আসছেন পুনরায়, ঘূর্ণীয় বায়ু, জয়ধ্বনি কর, যীশু আসছেন পুনরায় ।। জাতিগণ ক্রুদ্ধ, তদ্বারা জানি, যীশু আসছেন পুনরায়, জ্ঞানের বৃদ্ধি হয়, লোক দৌড়ে সদাই, যীশু আসছেন পুনরায় ।।
+- Jessie E. StroutTr.- সুরেন্দ্র নাথ দাস`,
+  },
+
+  {
+    id: 130,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "130",
+    title: "প্রহরী হে সিয়ােনের",
+    author: "",
+    language: "Bengali",
+    lyrics: `Watchman. Tell Me. Does the Morning
+Church Hymnal 180) প্রহরী হে সিয়ােনের, হল নাকি সুপ্রভাত? আগমনের লক্ষণগুলি, পথে কিহে প্রতিভাত? হাঁ, হে যাত্রিক চেয়ে দেখ, আধার ঘুচে হ’ল ভাের। বিবাহের বস্ত্র পর, উঠ, উঠ, হ’ল ভাের। প্রহরী ঐ আলোক জ্যোতিঃ পথ উজ্জ্বল করিছে, লক্ষণগুলি ভূরী ভূরী, আগমন দিন জানাইছে। যখন বাজবে যােবেল তূরী, উঠবে প্রভুর দাসদাসী, যে সব সাধু নিদ্রিত ভবে, অক্ষয় হয়ে উঠিবে ।। প্রহরী ঐ জ্যোতিঃ উঠছে প্রকাশি ত্রাণ ভানু, সবে উচ্চরবে বলছে পাত হে সব জানু। যাত্রী! দেখ ঐ সম্মুখে কনান-গৌরব সমীপে, শালেমও দেখায় উর্ধ্বে, গগণস্পর্শী হইয়ে ।।
+৪ |
+প্রহরী ঐ সোনার রাজ্যে, বসে শ্বেত-সিংহাসনে, সিয়ােন-রাজ রাজ-বসনে, দৃশ্য মরি কি বাহার! সুন্দর সুন্দর গিরিমালা, ফটিক জলের স্রোতমালা, জীবন জলের নদীনালা, সুন্দর পুষ্পের কি বাহার।
+প্রহরী ঐ নূতন পৃথ্বী, ফল ও ফুলে শােভিত, | সকলেরে করবে সুখী, এদন এই প্রকৃত।
+শুন! ঐ দূত-গীতি, সকলে করে মোহিত দূত সঙ্গে সাধু মিলি, ঈশ-নরে মিলিত ।
+- Sidney S. Brewer | Tr.- লালগােপাল মুখোপাধ্যায়।`,
+  },
+
+  {
+    id: 131,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "131",
+    title: "বর আসিবে, শীঘ্র আসিবে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tune "Sound the Battle Cry."
+Church llymnal 499 বর আসিবে, শীঘ্র আসিবে, এস সঙ্গীগণ প্রস্তুত হই,
+উঠ, চল, প্রদীপ জ্বাল, ত্বরা সকলে যাই। ধ্রুবকঃ- উঠ, চল, পথ করি আলো, শ্রীঘ্র চল বর সঙ্গে যাই,
+পাছে দ্বার, হইবে রুদ্ধ কেমনে বল ভিতরে যাই।
+সুবুদ্ধির মত, হয়ে প্রস্তুত, থাক সঙ্গিগণ সতত, নির্বুদ্ধির মত, হইলে ভ্রান্ত, হবে বিপদ একান্ত ! প্রার্থনায় রত, থাকলে সতত, বিপদ-আপদ না হবে, নির্ভয়ে সবে, প্রবেশ করিবে, বর সঙ্গেতে যাইবে।
+-পূর্ণ চন্দ্র দে`,
+  },
+
+  {
+    id: 132,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "132",
+    title: "নাথ দেও দেখা দেও",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর-"নাথ দেও দেখা দেও”। যীশু তোমার অপেক্ষায়, উর্ধ্ব পানে চেয়ে আছি আমরা সবায়।
+১।
+২।।
+বলেছ নাথ দূতের দ্বারা, তুমি আসবে জগতে ত্বরা, বিশ্বাস ভরে তাই আমরা আছি প্রতীক্ষায়। অভিজ্ঞান দিবে নানা, পূৰ্ব্বাবধি, আছে জানা জানে তোমার ভক্ত জনা, ঘটছে সমুদয়। সূৰ্য্য, চন্দ্র, তারকাতে, উক্ত ছিল যা শাস্ত্রেতে, আগমনের পূর্ব হতে, সকল সফল হয়। দুরভিক্ষ মহামারী, ভূ-কম্প আর যুদ্ধ ভারী, স্থানে স্থানে বিরাজ করি, আগমন জানায়। আজ্ঞা-পালক-সাক্ষ্যধারী, দেহ তাদের আশীষ-বারি, আগমন-অপেক্ষাকারী, যাহারা ধরায়।
+" চন্দ্র দে`,
+  },
+
+  {
+    id: 133,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "133",
+    title: "প্রভুর কথা তিনি আসিবেন",
+    author: "",
+    language: "Bengali",
+    lyrics: `Sweet Promise I will come Again.
+১। প্রভুর কথা তিনি আসিবেন, এই ভুবন মাঝারে
+এ শুভ সমাচার জানাও, ডেকে বল সবারে। ধ্রুবক- শুভদিন, এস সুদিন, সে সুদিন ত্বরা করে,
+এস প্রভু থাকতে পারিনে, কাদছি তব তরে ।। ২। হেরে তোমারে ধাৰ্মিক জন, করবে সুখে স্বর্গে গমন,
+শয়তান-প্রভু হাজার বৎসর, রবে দুঃখ আগারে। ৩। স্বরগ্ মাঝা লইয়া যাইয়া, দুষ্টবানে শান্তি দানিয়া,
+ভয়ঙ্কর ধায়ে যাবে জ্বলিয়া, যত পাপীর হৃদয় রে ।। ৪। সব হৃদয় ভরিবে পুণ্য, উজ্জ্বল মহিমা, অবতীর্ণ, পাপ, মৃত্যু, দুঃখ রবে নাক, হেরে নয়ন তারে।।
+F. E. Belden. Tr.- লালগােপাল মুখোপাধ্যায়`,
+  },
+
+  {
+    id: 134,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "134",
+    title: "যীশুর আলো কি উজ্জ্বল",
+    author: "",
+    language: "Bengali",
+    lyrics: `ঝিঝিট মিশ্র-টুংরী। | সুর- যীশুর আলো কি উজ্জ্বল । যীশুর আগমন যে দিন, সেদিন হবে কেমন,
+তুমি বারেক ভাব অন্তরে, সে দিনের ভাবন। ১। লইয়ে সব বাহিনী, রাজাধিরাজ আপনি,
+(শুন) দূতগণের গীত ধ্বনি, কাপাইবে গগন। ২। চড়ি যীশু মেঘ-যানে, বসিয়ে প্রতাপাসনে,
+(শুন) বাজাবে দূর গগনে, সে মহাত্রী বাদন। ৩। সে দিন অতি ভয়ঙ্কর, হবে পাপীদের উপর,
+(শুন) কিন্তু যীশুর প্রজাদের, হবে গৌরবের দিন।। ৪।।
+পশু ছাব ধারণকারী, কষ্ট তাদের হবে ভারী,
+আঘাত সকল হয়ে অরি, জ্বালাইবে জীবন। ৫। আজ্ঞা পালনকারী যারা, যীশুর সাক্ষ্য দিবে তারা, (দেখ) দূত যােগে নীত হবে, শ্ৰীযীশুর নিকেতন।
+- পূর্ণ চন্দ্র দে ।। `,
+  },
+
+  {
+    id: 135,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "135",
+    title: "ত্বরা এস, এস, যীশু",
+    author: "",
+    language: "Bengali",
+    lyrics: `ত্বরা এস, এস, যীশু, প্রাণের বন্ধু,
+যীশু প্রাণের বন্ধু আমার হৃদয়ের বন্ধু । ১। ত্বরায় আসিবে বলে প্রাণ নাথ রহিলে ভুলে।
+দহে তাহে প্রেমানল হৃদয়ে ধূ ধূ। ২। চাতক প্রায় আশা করি, পিতে প্রেম নব বারি | পিয়াও সুধা প্রাণ ভরি, শ্রীচরণ মধু। ৩। এস, নাথ, হৃদয়পুরে, হেরি তোমায় নয়ন ভয়ে,
+দেখাও তোমার রূপ মাধুরী-বদন বিধু। ৪। গেঁথেছি তোমারি তরে, ভকতি কুমুস হারে, পরাইয়ে প্রেম করে, তুষিব শুধু।
+- আলাউদ্দিন খাঁ ।।`,
+  },
+
+  {
+    id: 136,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৩৬",
+    title: "খ্রীষ্টবর আসছেন বলে",
+    author: "",
+    language: "Bengali",
+    lyrics: `খ্রীষ্টবর আসছেন বলে<br>
+কুতূহলে, রঙ্গ ফেলে সবাই চল।।<br><br>
+
+১।<br>
+ঐ শুন, গুড় গুড় করি বাজছে তুরী,<br>
+কি মুরই শোভে আলো,<br>
+অদূরে দিচ্ছেন দেখা প্রাণের সখা;<br>
+বসে থাকা আর কি ভাল?<br><br>
+
+২।<br>
+নিববে না কোনমতে সধুম শলতে<br>
+ভাঙ্গবে না তোর থেঁৎলা নল;<br>
+আর যারা পরিশ্রান্ত ভারাক্রান্ত,<br>
+বিশ্রাম পাবে আর বল।<br>
+
+৩।<br>
+লয়ে সব তৈল বাতি দিবারাতি,<br>
+নিরন্তর অন্তরে জ্বাল;<br>
+তবে সেই বরের সাথে, নিয়মমতে,<br>
+বিবাহেতে হবে মিল।<br><br>
+
+৪।<br>
+খেদেতে চক্ষের ধারা, ফেলছে যারা,<br>
+মুছবেন তাদের আঁখি জল;<br>
+অন্তরের ময়লা কালি, ধুয়ে ফেলি,<br>
+জ্বালিয়ে দিবেন শান্তির আলো।।<br>
+`,
+  },
+
+  {
+    id: 137,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "137",
+    title: "সদা প্রাণ কাঁদিছে যীশু",
+    author: "",
+    language: "Bengali",
+    lyrics: `ভাটিয়ালি । সদা প্রাণ কাঁদিছে যীশু যীশু বলে, কবে জীবন মুকুট মাথায় করে বসব প্রিয়ের দলে। ১। আমার প্রেমিক ত্রাতা, কত দুঃখ কত ব্যথা– দেহে সহিলে,
+শেষে প্রাণ দিয়ে ক্রুশােপরে, স্বর্গ দিলে খুলে। ২। প্রিয়নাথ পুনৰ্ব্বারে, নিতে আসিবেন আমারে— দূতগণ মিলে,
+আমরা মেঘরথে চড়ে যাব, জয়ের নিশান তুলে।
+৩। ব্যথা, বিলাপ আর হবে না, নেত্র-বারি আর রবে না যাইবে ভুলে।
+আমার প্রিয় মুখে চুম্বন দিয়ে, লবেন তুলে কোলে। ৪। আত্মীয় বান্ধব কত, যারা তাঁহার রক্তে ক্রীত— সকলে মিলে, আমরা নাচিব গাহিব গীত দুই বাহু তুলে।
+- মধু সূদন সরকার।`,
+  },
+
+  {
+    id: 138,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "138",
+    title: "কবে তোমার দেখা পাব",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর- ভাটিয়ালী | কবে তোমার দেখা পাব জুড়াবে মোর আঁখি। তুমি উড়াল দিয়ে গেছ চলে গাে
+আবার আসবে ফিরে নাকি। ধুয়াঃ- দেখে জুড়াবে মোর আঁখি। ১। যে দেশেতে গেছ তুমি সে চির আনন্দ ভূমি হায়রে
+মোরা থাকব গিয়ে যে ভবনে গাে| তাহা গােড়ছাে সেথায় থাকি। ২। এ দেশেতে নাইকো জানি তােমাসম গুণমণি হায় রে আছে তােমাসম দরদী কে গাে->
+আমি যারে পাই সংকটে ডাকি। ৩। নিজে ম'লে ক্রুশ পরে
+| মুক্তি দিতে পাপী নরে হায় রে নিজ প্রাণ দিয়ে যে ভালবাসে গােভবে এমন প্রেমিক আর না দেখি।
+NIDOS ৪। আসবে তুমি মেঘ রথে
+শমশে । অগণিত দূত সাথে হায় রে আমি দেখবাে তোমার শ্রীমুখ খানি গাে আছে সে দিনের আর কয়দিন বাকী।
+AN HET | অতুল চন্দ্র বলছে`,
+  },
+
+  {
+    id: 139,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "139",
+    title: "জেগে থাক বলেন যীশু",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর- পুরিয়া-কাওয়ালী
+।
+জেগে থাক বলেন যীশু, কর হে সদা প্রার্থনা আগমন তার চোরের মত, কখন হবে তা জান না।
+১। সরল মনে বিশ্বাসেতে, জেগে থাক প্রার্থনাতে,
+দেখা হবে বরের সাথে বঞ্চিত কভু হবে না। ২। ধৰ্ম্ম শাস্ত্রে প্রমাণ আছে, দেখহে দশ কন্যার কাছে,
+তৈল বাতি লয়ে হাতে, নিরাশ হ’ল কত জনা । ৩। দীনহীনের এই বাসনা, প্রভু অধমকে ছেড় না, দেও সতত চেতনা, যেন পাপেতে পড়ি না।
+গগনচন্দ্র দত্ত। `,
+  },
+
+  {
+    id: 140,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "140",
+    title: "সে যে আমার জন্মভূমি",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর- “সে যে আমার জন্মভূমি ১। নানা গ্রন্থ পুস্তকভরা, আমাদের এই বসুন্ধরা ।
+তাহার মাঝে আছে বই এক সকল গ্রন্থের সেরা,
+সে যে ঈশ্বর-নিঃশ্বসিত পুস্তক, সাধুগণের লেখা। ধ্রুবক- এমন গ্রন্থ খুঁজে কোথাও পাবে নাকো তুমি,
+সকল গ্রন্থের সেরা সে যে প্রিয় বাইবেলখানি। আমার প্রিয় বাইবেলখানি, সে যে আমার বাইবেলখানি।। পরিত্রাণের তত্ত্ব জানায় এমন গ্রন্থ পাবে কোথায়,
+মানব পরিকল্পিত গ্রন্থ পারে না বলিতে, | কেবল ঈশ্বর-নিঃশ্বসিত পুস্তক পারে তা বর্ণিতে! ৩। এমন সুন্দর নামটি কাহার? “সুপবিত্র শাস্ত্র-কলাপ,”
+জীবন্ত ঈশ্বরের বাক্য, জীবনদায়ক কথা,
+পরম অনুগ্রহের বাক্যসুন্দর বিশ্বাসের বারতা। ৪।
+তীক্ষ দ্বিধার খড়গ চেয়ে কাৰ্য্য সাধক মৰ্ম্মে গিয়ে, চিত্তের চিন্তা, বিবেচনার বিচার করে সদা, তাতে ঈশ্বরের লোক পরিপক্ক বিজ্ঞ হয় সৰ্ব্বদা। অল্প বুদ্ধির জ্ঞানদায়ক, প্রাণ আত্মার স্বাস্থ্য-জনক, জীবন দায়ক খাদ্য সুন্দর আনন্দ দেয় মনে, সে যে মধুর চেয়ে সুমধুর মিষ্ট আস্বাদনে।
+- খ্রীষ্ট সঙ্গীত`,
+  },
+
+  {
+    id: 141,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৪১",
+    title: "বাইবেল ভালবাসি",
+    author: "জন পেনগোয়েন জোন্স",
+    language: "Bengali",
+    lyrics: `১। <br>
+বাইবেল ভালবাসি;  <br>
+ঈশ্বর দত্ত বই,<br>
+যীশুর বিষয় বলে—<br>
+তিনি স্বর্গের মই।<br><br>
+
+ধুয়া-  <br>
+বাইবেল ! বাইবেল !<br>
+বাইবেল ভালবসি;<br>
+বাইবেল ! বাইবেল !<br>
+ঈশ্বর দত্ত বই।<br><br>
+
+২। <br>
+যীশুর প্রেমের কথা<br>
+শাস্ত্রে লেখা ,তাই <br>
+ক্রুশে জীবন দিলেন,<br>
+আমরা মুক্তি পাই।<br><br>
+
+৩। <br>
+বাইবেল আমরা পড়ি , <br>
+মনে রাখিব;<br>
+দিনে দিনে যীশুর<br>
+প্রেম দেখাইব।<br>
+`,
+  },
+
+  {
+    id: 142,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৪২",
+    title: "আবার গাও, মিষ্টস্বরে গাও",
+    author: "",
+    language: "Bengali",
+    lyrics: `১. <br>
+আবার গাও, মিষ্টস্বরে গাও, জীবনদায়ী বাক্য।<br>
+তাহা আমায় আরও শিখাও, জীবনদায়ী বাক্য।<br>
+ঈশ্বরের ঐ উক্তি, শিখায় বিশ্বাস ভক্তি ! <br><br>
+
+ধূয়া- <br>
+সুন্দর বাক্য! মধুর বাক্য! জীবনদায়ী বাক্য ! <br><br>
+
+২. <br>
+খ্রীষ্ট যীশু দেন মানব সবে, জীবনদায়ী বাক্য ;<br>
+ও ভাই! শুন প্রেমের রবে, জীবনদায়ী বাক্য ;<br>
+দত্ত, বিনা দামে, লওয়ায় স্বর্গধামে। <br><br>
+
+৩. <br>
+কিবা শুভ সংবাদ ধ্বনি, জীবনদায়ী বাক্য ;<br>
+ক্ষমা, শান্তি তাহে শুনি, জীবনদায়ী বাক্য। <br>
+যীশু জীবন-দাতা, যীশু পরিত্রাতা।।<br>
+`,
+  },
+
+  {
+    id: 143,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৪৩",
+    title: "মন মানলে না (৩) রে",
+    author: "অমৃতলাল নাথ",
+    language: "Bengali",
+    lyrics: `মন মানলে না (৩) রে   <br>
+এত ক’রে বুঝই তোরে, তবু শুনলে না (৩) রে।<br><br>
+১। <br>
+দিন তো ফুরায়ে গেল, রজনী আগত হইল,<br>
+কি উত্তর দিবে বল, ভজন হ’ল না (৩) রে।<br><br>
+২। <br>
+কালসর্পের মালা গলে, পরিয়াছ কুতূহলে,<br>
+জ্বলিছে প্রাণ হলাহলে, ভেবে দেখলে না (৩) রে<br><br>
+৩। <br>
+ভেবেছ কি এই ভাবে, চিরদিন রবে ভবে,<br>
+সে স্বপন মিছা হবে, এ দিন রবে না (৩) রে।<br><br>
+৪। <br>
+যীশুর চরণ ধর, যীশুতে বিশ্বাস কর,<br>
+মরণে দেখে তোমার, ভয় হবে না (৩) রে<br>
+`,
+  },
+
+  {
+    id: 144,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "144",
+    title: "মন মানলে না",
+    author: "",
+    language: "Bengali",
+    lyrics: `২।।
+বারোরা-তেতালা, মন মানলে না ৷৩৷ রে,। এত করে বুঝাই তােরে, তবু শুনলে না ৷৩৷৷ রে।। দিন তাে ফুরায়ে গেল, রজনী আগত হইল, কি উত্তর দিবে বল, ভজন হল না ৷৩৷৷ রে ।। কাল সর্পের মালা গলে, পরিয়াছ কুতূহলে, জ্বলিছে প্রাণ হলাহলে, ভেবে দেখলে না ॥৩৷৷ রে। ভেবেছ কি এই ভাবে, চিরদিন রবে ভবে, সে স্বপন মিছা হবে, এ দিন রবে না ৷৩৷৷ রে।। যীশুর চরণ ধর, যীশুতে বিশ্বাস কর, মরণ দেখে তোমার, ভয় হবে না ॥৩৷৷ রে।।
+- অমৃতলাল নাগ।`,
+  },
+
+  {
+    id: 145,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "145",
+    title: "পাপ মহাব্যাধি, দূর কর যদি",
+    author: "",
+    language: "Bengali",
+    lyrics: `কীৰ্ত্তনের সুর-একতালা । পাপ মহাব্যাধি, দূর কর যদি, যীশু নাম গুণ গাওরে; গাও পাপী নরে, সুমধুর স্বরে, শান্তি পাবে অন্তরে।। ১। ঐ যীশু নাম, কর সুধাপান।
+পাপীর তাপিত প্রাণ শীতল হবে; , ঐ সুধার ভান্ড, করিয়া খন্ড,
+অমৃত সুধা পিও রে! ২। যীশু পাপীর জীবন, হৃদে কর ধারণ,
+ঐ নাম দিবানিশি বল সবে; তিনি তোমারে আমারে, সংসার মাঝারে,
+তারিবেন যত পাপীরে। ৩। প্রভু দয়া করে, এই নরের তরে,
+দীনহীনের বেশে ভবে এসে, এসে ভুবন মাঝে, শান্তি-রাজে, প্রেমে মজে ডাকেন তোমারে।
+- ফকিরচাদ দাস`,
+  },
+
+  {
+    id: 146,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "146",
+    title: "শােন্ পাপী প্রাণ খুলে আয়",
+    author: "",
+    language: "Bengali",
+    lyrics: `সিন্ধু-আড়ঠেকা
+সুর- শােন্ পাপী প্রাণ খুলে আয় পাপী, আয় সবে, যীশু ডাকেন সুস্বরে,
+(যত) পরিশ্রান্ত ভারাক্রান্ত, বিশ্রাম পাবে অন্তরে। ১। বল, পাপী, পাপ করে, কিবা লাভ হয় সংসারে?
+পাপের সুখ ক'দিন থাকে? অশেষ দুঃখ পায় পরে; পুড়তে হবে মনস্তাপে নরকে চিরতরে ।
+২। বল, পাপী কাহার দায়, ক্রুশে ঝােলে যীশুর কায়?
+শত্রু তরে জীবন যায়, দারুণ ব্যথা বলি তায়।
+হেন বন্ধুর কাছে আসি, পরিত্রাণ লও সত্বরে। ৩। তাপিত হৃদে কাদিয়া, দাও যীশুর ধােয়াইয়া ।
+প্রীতি চুলে মুছাইয়া, প্রেম চুম্বন দাও সকলে;
+সুবাসিত ভক্তি-তেলে, পূজ শ্রীপদ অন্তরে। ৪। পাপী, ফির পাপ হতে, যেও না আর কুপথে, ফির ফির সুপথে, মরবে কেন পাপেতে? পাপের ক্ষমা যীশুতে লও, পাবে শান্তি অন্তরে।।
+শলােমন শান্তি নাথ বিশ্বাস`,
+  },
+
+  {
+    id: 147,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৪৭",
+    title: "আয় চলে আয়, দিন বয়ে",
+    author: "রাজচন্দ্র সরকার ও ফুলসাহা বিশ্বাস",
+    language: "Bengali",
+    lyrics: `আয় চলে আয়, দিন বয়ে যায় , যাবে যদি নিত্য ভবনে,  <br>
+সংসার অসার , কেন ভুলে আছ মায়াবন্ধনে ? <br><br>
+
+১। <br>
+বুঝে দেখ ভাই সকলি অনিত্য,<br>
+যীশু খ্রীষ্ট স্বয়ং সনাতন সত্য,<br>
+সেই নামে , অধমে , ভরে শান্তি পায় ইহ জীবনে।<br><br>
+
+২। <br>
+ভীষণ মরণ সতত নিকটে,<br>
+পদে পদে তেমায় ঘেরে হে সঙ্কটে, <br>
+বিপদে , অবাধে , পাপী নিরাপদ হয় চরণ স্মরণে।<br><br>
+
+৩। <br>
+ধর ধর ভাই যীশু প্রাণকান্তে , <br>
+নিরাপদ হবে জীবন অন্তে,<br>
+মরণ ভয়, নাই সেথায় , হবে নিত্য সুখে সুখী সেখানে।<br>
+`,
+  },
+
+  {
+    id: 148,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৪৮",
+    title: "যীশুর আলো কি উজ্জ্বল",
+    author: "রাজেন্দ্রলাল মুখোপ্যাধ্যায় ",
+    language: "Bengali",
+    lyrics: `যীশুর আলো, কি উজ্জল, দেখাই খুলে প্রাণে কারে,   <br>
+(দেখ) সূর্য লাগে কোথায়, তাঁর আলোর কাছে সব হারে। <br>  <br>
+
+১। <br>
+ঐ আলো মোর অন্তর, ভাল মন্দের বিচার করে, <br>
+(তাই) সদা জেগে থাকি আমি, নির্ভর যীশুর উপরে। <br>  <br>
+
+২। <br>
+এত জ্ঞান যীশুতে পাই, ভাষা নাহি সে সব বুঝাই, <br>
+তাই যীশুর গান আপনি গাই, যীশুর আলোয় তান ধরে। <br>  <br>
+
+৩। <br>
+ভক্ত সকল সাবধান হও, যীশুর আলোয় প্রাণ মিলাও, <br>
+(সদা) চল, মাঝে থেম নাক, সর্বপূর্ণতার তরে। <br>  
+`,
+  },
+
+  {
+    id: 149,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "149",
+    title: "শুন গাে শুভ সমাচার মহানন্দে",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল, ঢিমে--তেতালা ।
+১।
+২।।
+শুন গাে শুভ সমাচার মহানন্দে মাতি সবে জয়-মঙ্গল গাও ত্রাণকর্তার ।
+মং-সিংহাসন, জগতে এসেছেন দেখ, শান্তির রাজন, কেবল পাপীর পাপ মােচন কারণ, ঈশ হলেন আসি নরাকার মৃদু স্বরে বলেন পাপীরে,
+| পাপী তোমার পাপের বোঝা দেহ আম। আমি তব সাজা লইয়া শিরে, ক্রুশে দিয়াছি এই কলে মরিয়াছি তোমার কারণ, বিশ্বাস যদি কর তুমি, আম তবে যাবে সেই অমর-ভুবন, যারে বলে আনন্দের
+৩।
+ল আনন্দের বাজার।
+- মধুসূদন সরকার`,
+  },
+
+  {
+    id: 150,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "150",
+    title: "বাজ রে হৃদয়-বীণে",
+    author: "",
+    language: "Bengali",
+    lyrics: `সিন্ধু-আড়াঠেকা
+বাজ রে হৃদয়-বীণে, অবিশ্রান্ত যীশু বলে,
+নাচ রে আত্মা মন, সেই সঙ্গে তালে তালে । ১। প্রেম-সুধা করে পান, মাত রে আমার প্রাণ,
+ছাড় ঈশ-গুণ তান, ওরে মন কুতূহলে। ২। যে প্রেম ঈশ-নন্দনে, দেখালেন গেৎশিমানে,
+সেই প্রেম নানা তানে, প্রকাশ জগতীতলে ।। ৩। ক্রুশের যাতনা যত, রে মম কঠিন চিত,
+প্রেমে হয়ে বিগলিত, জানাও পাতকীকুলে ।। ৪। যে শােণিতে পরিষ্কৃত, হ’ল তব পাপ যত,
+সে শােণিতের গুণ কত, বল রে হৃদয় খুলে। ৫। বিদল স্বদল মাঝে, সাজ আজি নানা সাজে, উড়াও প্রেমের ধ্বজে, শ্ৰীযীশুর জয় বলে।
+- অমৃত লাল নাথ।`,
+  },
+
+  {
+    id: 151,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৫১",
+    title: "হৃদয়ে জ্বালাও যীশু \n",
+    author: "বিন্দুনাথ সরকার",
+    language: "Bengali",
+    lyrics: `হৃদয়ে জ্বালাও যীশু তব অনলে    <br>
+জ্বালাও জ্বালাও প্রাণ, দগ্ধ কর এ প্রাণ,<br>
+পাপ তৃণ কুটা সব নাশ সমূলে।<br> <br>
+
+১। <br>
+ভগ্ন কর হৃদয় ,চূণ কর আমায়,<br>
+ধ্বংস কর হে দয়াময়!<br>
+ফুকারি তব অনলে, হৃদয়ের অন্তঃস্থলে,<br>
+প্রবেশ কর হে যীশু, তব প্রেম-বলে।<br> <br>
+
+২। <br>
+অগ্নিময় দেহ ধ্যান, অগ্নিময় বাক্য জ্ঞান<br>
+অগ্নিময় হউক আমার প্রাণ;<br>
+এসে অগ্নিময় রথে, প্রবেশ কর হে চিতে,<br>
+জয় ঘোষি যীশু তব দূত নরে মিলে।<br> <br>
+
+৩। <br><
+অনলে সুবর্ণ রুপ , হায়! অতি অপরুপ,<br>
+সেই রুপ প্রদান আমায়;<br>
+অনলেতে খাঁটি কর , ওহে যীশু দয়াধার,<br>
+এই চির নিবেদন তব পদতলে।<br> 
+`,
+  },
+
+  {
+    id: 152,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "152",
+    title: "দেখ গগনে আর বেলা নাই",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+দেখ গগনে আর বেলা নাই
+যীশুর নামে তরী বাধ ভাই সম্মুখে জামিনী তমসি ঘেরা। কেনরে হইবি দুকুল হারা ধর হাল তুল পাল।
+গেল কাল বিফলে। | দেখ----
+২।
+|
+যীশু নামে নিশান ধরে তুল। যীশু যীশু যীশু বদনে বল। যীশু বল যীশু বল যীশু বল মন আমার
+দেখ----৷৷ জীবন তরী অতল শলিলে ডুবু ডুবু হল পড়ি বিকলে যে নামে তরিবে বিপদ সাগর । |
+দেখ-----।
+৩।
+অজ্ঞাত`,
+  },
+
+  {
+    id: 153,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "153",
+    title: "কেন থাক অচেতনে ওরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `কেন থাক অচেতনে ওরে মন ভােলা গেলরে গেলরে দিন ফুরালাে বেলা। যীশু নাম মধু নাম, গাও নাম অবিরাম যত চাহি তত হয় প্রাণ যে উতলা।
+১।
+যীশু নামে মার ডঙ্কা দূরে যাবে
+।
+সব আশঙ্কা।
+৩।
+যীশু নামে পাড়ী ধর থাকিতে বেলা। যীশু নামে কর নেশা, দূরে যাবে সব তৃষা। যীশু নামে ঘুচে যাবে পাপের জ্বালা। যীশুর নামে মহৌষধি, দূর করে দ্বেষ পাপব্যাধি শ্রবনে সেবনে দেও কাটায়ে বেলা।
+- অতুল চন্দ্র বল (১৯৪২)`,
+  },
+
+  {
+    id: 154,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "154",
+    title: "আমি জানিতাম না আগে",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+>
+২।
+রাগিনী খাম্বাজ-আড়খেটা । আমি জানিতাম না আগে,
+যীশু মুক্ত করেন সব পাপ থেকে। এ সংসারের দুঃখ যত, শয়তান সেবায় বাড়ে তত ; মনঃপীড়া বাড়ে এত, উপায় নাহি দেখে । এক এক সময় হয় গাে মনে, কেন থাকি অচেতনে ; কাদি একাকী নির্জনে, বাচিনে পাপ শােকে। অনেক বার তাে মনে করি, আত্মঘাতী হয়ে মরি ; বলেন যীশু আমায় ধরি, দেখরে তুই আমাকে। শমরীয়ার তৃষিত জনা, হয়ে প্রফুল্লিত মনা ; আমার নিকট আসি ত্বরা, জীবন বারি চাখে।।
+৫। বিলম্বে আর কাজ কি তোমার, জগতের তাে সকল অসার।
+যীশু লয়ে তাের পাপ ভার, রাখবেন তােরে বুকে।
+- রাজন ফকীর`,
+  },
+
+  {
+    id: 155,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৫৫",
+    title: "না ঘুচিলে মনের মলা",
+    author: "মধুসূদন সরকার",
+    language: "Bengali",
+    lyrics: `না ঘুঁচিলে মনের মলা,  <br>
+ও সেই সত্য পথে যায় না চলা।<br><br>
+
+১। <br>
+মন পরিঙ্কার কর আগে, অন্তর বাহির হইক খোলা;<br>
+তবে যত্ন হ’লে রত্ন পাবে, এড়াবে সংসারের জ্বালা।<br><br>
+
+২। <br>
+স্নানাদি বস্ত্র পরিস্কার, অঙ্গে ছাপা জপমালা;<br>
+দেখ এ সকলি ভ্রান্তি, কেবল লোক দেখান ছেলেখেলা।<br><br>
+
+৩। <br>
+ভবনদী তরবে যদি, তার যোগাড় কর এই বেলা;<br>
+যীশুর অসীম প্রেমে মগ্ন হলে, ঘুঁচে যাবে মনের মলা।<br>
+`,
+  },
+
+  {
+    id: 156,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "156",
+    title: "দূর হও হিংসা, লােভ",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+দূর হও হিংসা, লােভ, ক্রোধ, দূর হও সৰ্ব্ব পাপামােদ। দূর হও কুচিন্তা দুর্গন্ধ, দূর হও আজ পাপ অগাধ। যা, যা, শয়তান তােরে চাইনা, যা, যা, পার্থিব বাসনা, তাের কথায় আর ভুলি না, কভু মুখ তাের দেখা না । ক্ষম মোরে ঈশ পিতা, ক্ষম মোরে ত্রাণকর্তা; ক্ষম মোরে পুণ্য আত্মা, পূজিব না আর কু-আত্মা। দাও মহিমা আনন্দ, দাও, স্বর্গীয় আমােদ; মোরে পিতা আত্মা পুত্র, তিনে কর হে আশীর্বাদ।
+৩।`,
+  },
+
+  {
+    id: 157,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "157",
+    title: "(আহা) এমন চেতনা",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+(আহা) এমন চেতনা হয় তাে আর পাবে না,
+| তুমি কি বুঝবে না হে; । জান এ সুদিন, দিয়াছেন আত্মন, ত্রাণ ফেলে থেক না হে। দেখ এই দন্ডে ত্রাণ, না হয় মরণ, তুমি ঠিক দিতেছ হে। যা কর বিচার, লিখিবেন ঈশ্বর, দুয়ের এক পুস্তকে হে।। তুমি, জানিয়ে, শুনিয়ে, আত্মনে তাড়িয়ে, বিপদ কি ঘটাবে হে ; পাষাণের চেয়ে, কঠিন হয়ে, যাবে মন তোমার হে। ' শুন, আত্মার বচন, করহ পালন, পলাবে শমন হে ; পাপ এক এক করে, দাও স্বীকার করে, বিন্দু বিষ রেখ না হে। দেখ যীশু প্রাণ নিকটে, হৃদয় কবাটে, দাড়িয়ে আছেন হে ; ভিক্ষুকের মতন, সাধেন ত্রাণ এখন, এদিন যে ফিরবে না হে।।
+- রাজন ফকীর।`,
+  },
+
+  {
+    id: 158,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "158",
+    title: "(প্রভু) এই আমার বাসনা",
+    author: "",
+    language: "Bengali",
+    lyrics: `রােমীয় ২০২০
+| খাম্বাজ- আড়খো (প্রভু) এই আমার বাসনা, আমি পাপের পথে আর যাব না,
+আমার পাপের তরে, প্রিয় যীশু!
+নিজ প্রাণে সহিলে কত যাতনা। ১। পাপ সম্বন্ধে আমি মৃত, তব সঙ্গে কুশার্পিত
+তব জীবনে জীবিত, প্রিয় যীশু! |
+(এমন) সুখের জীবন যেন আর ছাড়ি না। ২। মলিন ছিলাম ধৌত হলাম, অন্ধ ছিলাম দৃষ্টি পেলাম,
+তব রক্তে শুচি হলাম, প্রিয় যীশু! | পাপ পঙ্কে যেন আর ডুবি না।
+৩। শয়তানের প্রজা ছিলাম, তব রাজ্যে স্থান পেলাম,
+বন্দী ছিলাম মুক্ত হলাম, প্রিয় যীশু! |
+পাপের বেড়ি যেন আর বেড়ে না। ৪। বিদায় হই রে জগৎ মায়া, বিদায় হই রে, পাপের ছায়া,
+জন্মের মত বিদায় হই রে ও পাপাত্মা! তােদের বলে আমায় আর ভাবি না।
+- প্রেমচাদ নাথ`,
+  },
+
+  {
+    id: 159,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "159",
+    title: "বুঝিনু এবার সকলই অসার।",
+    author: "",
+    language: "Bengali",
+    lyrics: `২।
+বুঝিনু এবার সকলই অসার। ঘুরে ফিরে তাই এসেছি আবার। ৩ কত দাসদাসী চলে ফেরে বসি। ভোগে কত সুখ গৃহেতে পিতার তবে কেন আমি হয়ে দুঃখগামী রহি এবে ভুলি সুখের আগার। ৩ ত্যাজি কত সুখ ভুগি নানা দুঃখ মিলি বন্ধুসনে কত না প্রকার ভ্রমি নানা দেশ চলেছি স্বদেশ পাব কি গাে স্থান গৃহেতে আবার । ৩ যাব ফিরে ঘরে বলিব পিতারে করিয়াছি পপি বিরুদ্ধে তোমার। যােগ্য নহি আর তনয় তোমার রাখ মোরে পিতঃ ভৃত্যের আকার। ৩
+- সুরেন্দ্র নাথ দাশ`,
+  },
+
+  {
+    id: 160,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "160",
+    title: "খ্রীষ্ট প্রভু আমার পালক",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৬০
+১।
+খ্রীষ্ট প্রভু আমার পালক, আমি তাহার ক্রীত মেষ,
+চলি তার পিছে পিছে, তাই তাে সুখের নাহি শেষ। জগৎ এখন পাপাগুণে, জ্বলে পুড়ে প্রায়ই শেষ, ভ্রান্তির নানা মিথ্যা জালে, পড়ে আছে কত মেষ। পাপের দোলায় দোলে সবে, ঘুমিয়ে আছে অনিমেষ, . চেয়ে দেখ, মৰ্ত্তবাসী, বৃথা সহে দুঃখ ক্লেশ। খ্রীষ্ট আসছেন সগৌরবে ধারণ করি বরের বেশ, লইতে তাহারই ভাৰ্য্যায়, অতি সুন্দর পরিবেশ। খ্রীষ্ট প্রভু ডাকেন তোমায়, এস আমার ভ্রান্ত মেষ, এস, এস, শীঘ্র এস প্রবেশিবে স্বৰ্গদেশ ॥
+২।
+৩।
+৪||`,
+  },
+
+  {
+    id: 161,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "161",
+    title: "পাপ সঙ্গে কোন ভাব",
+    author: "",
+    language: "Bengali",
+    lyrics: `মিশ্র ঝিঝিট- একতালা ।
+১।।
+পাপ সঙ্গে কোন ভাব আর না রাখিব, যীশু যেই পথগামী (আমি) সেই পথে যাইব। নাথ তুমি মম স্বামী, তোমায় না ভুলিব আমি; নাথ তব পদচিহ্ন, (এই) জীবনে না ছাড়িব ।। কে আছে তোমার সম, মম প্রাণ-প্রিয়তম; তোমার ক্রুশীয় প্রেম, (আমি) কেমনে ভুলিব । তব তরে মম প্রাণ, করিয়াছি সমর্পণ; তোমায় ছেড়ে দেহ লয়ে, (আমি) বল কি করিব।
+- মধুসুদন সরকার (গােপালগঞ্জ)
+২।`,
+  },
+
+  {
+    id: 162,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "162",
+    title: "হে যীশু আমার, মুছে",
+    author: "",
+    language: "Bengali",
+    lyrics: `হে যীশু আমার, মুছে পাপের আঁধার, কোলে তুলে নাও পাপীরে।
+২ শয়তানকে জয় করতে, ১ পাপে আমি মৃত, সদাই পীড়িত,
+তোমার পথে চলতে, জীবনের আশা নাই আমার। নাই কোন সাধ্য আমার। ৩ স্ত্রী পুত্র পরিবার
+৪ পথ চলে ক্লান্ত, ধন-দৌলত অহংকার,
+অতি পরিশ্রান্ত, কিছু সংগে যাবে না আমার। বোঝা নেবার কেহ নাই আমার।।
+- বাসন্তী দাশ`,
+  },
+
+  {
+    id: 163,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "163",
+    title: "দয়াল প্রভাে, তোমায় চাই",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr.- I Need Thee Every Hour
+C. H. 258, G. 45 ১। দয়াল প্রভাে, তোমায় চাই সর্বক্ষণ;
+কেবল তুমি আমায় দেও শান্তিধন। ধ্রুবক-তোমায় চাই, হাঁ, তোমায় চাই, সর্বক্ষণ তোমায় চাই;
+রাখ আমায় সর্বক্ষণ ক্রুশেরই ঠাই। ২। থাক হৃদে, তোমায় চাই সর্বক্ষণ,
+তুমি থাকলে পলায় পাপ প্রলােভন। ৩। সুখ বা দুঃখে তোমায় চাই সর্বক্ষণ;
+হইলে সহায় নিষ্ফল জীবন। ৪। তোমায় চাই সর্বক্ষণ, ইষ্ট শিখাও; তোমার অঙ্গীকার সব আমাতে পূরাও।
+- Mrs. A. S. Hawks Tr.- মেথডিস্ট গীতাবলী ৯৪`,
+  },
+
+  {
+    id: 164,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "164",
+    title: "যীশু, মম ক্রুশ লয়েছি",
+    author: "",
+    language: "Bengali",
+    lyrics: `| ১৬৪
+। ১
+। Tr. Jesus, I My Cross Have Taken
+( Church Hymnal 267 ১। যীশু, মম ক্রুশ লয়েছি, তব পশ্চাৎ চলিব,
+উলঙ্গ, দীন, তুচ্ছ, ত্যক্ত, তুমি আমার সর্বস্ব হোক বিফল সব পার্থিব বাঞ্ছ, আশা ও যত্ন আমার,
+আমার কেমন সুখের দশা, ঈশ্বর, স্বর্গ, সব আমার! ২। করুক জগৎ ত্যাগ ও তুচ্ছ! তুমি তাদের গ্রাহ্য নও;
+মানব প্রবঞ্চনা করুক, সুবিশ্বস্ত তুমি রও। তুমি যখন কর দয়া, প্রতাপ প্রজ্ঞা প্রেমেশ্বর,
+শত্রু মিত্র করুক ঘৃণা; দেখাও শ্রীমুখ, প্রেমাকার! ৩। যাও, হে পার্থিব যশ ও বিভব! আইস নিন্দা, যন্ত্রণা!
+প্রভুত্র সেবায় যন্ত্রণা সুখ, ক্ষতি লভ্য গণনা। ডাকি তোমায় “আব্বা পিতা”, হৃদয় তোমায় সমর্পণ;
+দুঃখ ঝড় যদি প্রবল বয়, করিবে সব হিত সাধন।। ৪। দিউক মানব আমায় দুঃখ, তোমার বক্ষে আশ্রয় লই;
+মহা বিপদ ধরুক আমায়, স্বর্গের বিশ্রাম প্রাপ্ত হই। তব প্রেম-সুখ প্রাপ্ত হইলে দুঃখেও আমার ক্ষতি নাই! তোমা বিহীন সুখানন্দে সুখী নাহি হইতে চাই।
+|- H A. Lyte
+Tr.-J. Biswas`,
+  },
+
+  {
+    id: 165,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "165",
+    title: "যতদিন যায় জানি জানি",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৬৫
+যতদিন যায় জানি জানি প্রভু
+হইতেছি কোথা পার। কোথায় এসেছি কত আজ দূরে
+তোমারি সে গৃহ দ্বার৷
+১।
+ডুবে গেছে রবি কত শত বার
+হৃদয় ছাপিয়া এসেছে আঁধার হারায়ে হারায়ে খুঁজেছি এবার।
+তোমারি সে গৃহ দ্বার-- || কাদিয়া করেছি পারি না যে আর পার কিনা নাথ বহু বেদনার হারায়ে হারায়ে খুঁজেছি এবার।
+তোমারি সে গৃহ দ্বার---৷৷ পূর্ণ করিয়া সকলি তোমার দেই যেন এই বাসনা আমার তাই কাছে পেয়ে চির সাধনায়।
+- চিত্ত রঞ্জন বল`,
+  },
+
+  {
+    id: 166,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "166",
+    title: "গেছি ঈশ্বর হতে দূরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `"I have wondered far away from God"
+C. 56() । ১। গেছি ঈশ্বর হতে দূরে, ঘরে ফিরি এখন,
+পাপের পথে অনেক দূরে প্রভু আসি এখন। ধ্রুবক ও গৃহে আসি এখন, ঘুরব না এমন,
+বাহু তব প্রসারিত, প্রভু আসি এখন। ২। কেটেছে বহু বছর হায়, ঘরে ফিরি এখন,
+অনেক কেঁদে ফিরেছি হায়, প্রভু আসি এখন। ৩||
+পাপে ক্লান্ত, পথ ভ্রান্ত, প্রভু আসি এখন, ভরসা তোমারই প্রেমে, প্রভু আসি এখন।। মম আশা ও বিনতী, ঘরে ফিরি এখন, মরলেন যীশু মমলাগি, প্রভু আসি এখন।
+৪।
+চাই তার নির্মলকারী শােণিত, ঘরে ফিরি এখন, কর আমায় কর হে ধৌত, প্রভু আসি এখন।
+William J. Kirpatrick | |
+Tr.- এন, এন, সরকার।`,
+  },
+
+  {
+    id: 167,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৬৭",
+    title: "ওহে ক্ষুদ্র মেষপাল, ভেবে ব্যাকুল",
+    author: "মধুসূদন সরকার",
+    language: "Bengali",
+    lyrics: `ওহে ক্ষুদ্র মেষ-পাল, ভেবে ব্যাকুল হইও না, <br>
+তোমারে রাজ্যটি দিতে , পিতার আছে বাসনা।<br><br>
+
+১। <br>
+যেই সব দুঃখ তোমার , তাতে পিতার প্রেম ব্যবহার,<br>
+করিতে তোমায় পরিষ্কার , ঘটেছে এসব ঘটনা।<br><br>
+
+২। <br>
+জেনো আমি কোণের পাথর , তুমি গাঁথা তাহার উপর <br>
+বহুক বন্যা মহা ঝড় তবু তুমি নড়িবে না।<br><br>
+
+৩। <br>
+দুষ্টদের যে মন্ত্রণা , পিতার সব আছে জানা<br>
+ঘুটক নাকো যে ঘটনা , মঙ্গল বই কিছুই হবে না।<br><br>
+
+৪। <br>
+মাতাও ভুলিতে পারে, দুগ্ধপায়ী স্বশিশুরে,<br>
+নাম লেখা পিতার করে, তিনি কখনো ভুলেন না।<br>
+`,
+  },
+
+  {
+    id: 168,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "168",
+    title: "কত সুধা ভরা, তুমি তা",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৬৮
+কত সুধা ভরা, তুমি তা জেনেছি, কত যে আপন।
+| কত তাপ হারা।। জেনেছি, বুঝেছি, গলেছি, মজেছি, চাহিনা হে যীশু
+চাহি না এ ধরা। ১। তুমি যে আমারি সাথে সাথে থাকা,
+[ তুমি যে আমারি ভুলাইয়া রাখা, পুলকে, হরষে, সরসিয়া ডাকা, বেদনে, রােদনে
+আঁখি নীর ঝরা।
+২। অসাধ্য অভাব যেথা মম জাগে,
+| জাগিছ সেথা তুমি মম আগে, তোমারে পরাণে তাই ভালাে লাগে
+ভুলিয়ে ভুলিনে ফিরে চাহি ত্বরা।
+৩। জীবন জুড়িয়া যত তৃষা-আশা , হৃদয় ছাপিয়া
+যত ভালবাসা, সবেতে চলিছে তব যাওয়া আসা, | সবেতে তুমি হে চিরসুখী করা।
+- ধীরেন্দ্র কুমার বিশ্বাস`,
+  },
+
+  {
+    id: 169,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৬৯",
+    title: "সকলই ত্যাজিয়ে আমি গ্রহিণু",
+    author: "যদুনাথ সোম ",
+    language: "Bengali",
+    lyrics: `সকলই ত্যজিয়ে আমি গ্রহিনু ক্রুশ তোমার,  <br>
+নিন্দিত তাড়িত হ’তে নাহি ভাবি কিছু আর।<br><br>
+
+১। <br>
+জগত যদি আমারে ঘৃণাভাবে পরিহরে,<br>
+যদিও বন্ধু-বান্ধবে, কেহ নাহি হেরে;<br>
+তবু তুমি ও স্বরগ রহিলে আমার<br><br>
+
+২। <br>
+মানবে যত যাতনা, দুঃখ অপবাদ নানা,<br>
+দিবে দিতে পারে, তাহে নাহি করি মানা;<br>
+বুক পাতি লব নাথ, কারণে তোমার ।<br><br>
+
+৩। <br>
+তুমি হে সব আমার, ধন-মান জীবন সার,<br>
+আশা-লতা তব পদে, রাখিনু এবার;<br>
+নাথ তুমি চিরকাল, রহিলে আমার।<br>
+`,
+  },
+
+  {
+    id: 170,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৭০",
+    title: "প্রভু যীশুর মত ভাই",
+    author: "",
+    language: "Bengali",
+    lyrics: `প্রভু যীশুর মত ভাই , আর কেহ নাই (২)   <br>
+পাপীর তরে , ক্রুশের পরে, <br>
+যীশু দিলেন প্রাণ(২)।<br><br>
+
+১। <br>
+ভব-নদী ভারী দুস্তর পাড়ি <br>
+তাঁর নামে ভাই চালাও তরী <br>
+নামের বৈঠা বাহিয়া চল<br>
+যীশু করবেন পার(২)<br><br>
+
+২। <br>
+যীশু পরম দয়ালু করুণাময়, <br>
+তাঁর করুণার সীমা নাই, সীমা নাই <br>
+পাপীর তরে ক্রুশের পরে,<br>
+যীশু দিলেন প্রাণ(২)।<br><br>
+
+৩। <br>
+যে জন ডাকে যীশুর নামে <br>
+সে জন যাবে অমর ধামে <br>
+থাকিবে সেখানে অমর হয়ে<br>
+প্রভু যীশুর ঠাঁই(২)<br>   
+`,
+  },
+
+  {
+    id: 171,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "171",
+    title: "সুন্দর ত্রাণেশ্বর যীশু পাপ-হারী",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৭১ সুন্দর ত্রাণেশ্বর যীশু পাপ-হারী। তুমি সত্য তুমি সিদ্ধ স্বরগ বিহারী। পাপীকূল তারিবারে ভবে অবতরী । মুক্তি মূল্যে দিলে প্রাণ ক্রুশের উপরি তার হে আমায় প্রভু, আমি পাপী ভারী। ভব সাগরের কুলে আছি পথ চেয়ে কেমনে ওপারে যাব ভাঙ্গা তরী নিয়ে। কাল রাতে আলো হাতে এস গাে কান্ডারী।
+- চিত্তরঞ্জন বল ।`,
+  },
+
+  {
+    id: 172,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৭২",
+    title: "পরিত্রাণ চাহ যদি, মান, মান",
+    author: "প্রেমচাঁদ নাথ",
+    language: "Bengali",
+    lyrics: `পরিত্রাণ চাহ যদি মান, মান এই কথা,  <br>
+যীশুতে বিশ্বাসী হ’লে সত্যই ঘুঁচে মনের ব্যথা।<br><br>
+১। <br>
+যদি বল কি দেখিয়ে, তাঁতে বিশ্বাসিব গিয়ে?<br>
+আছে আছে চিহ্ন আছে, হাত-পা তাঁর প্রেকেতে গাঁথা।<br><br>
+২। <br>
+রাজার রাজা বল তাঁরে, তাঁর কি সোনার মুকুট আছে?<br>
+আছে আছে মুকুট আছে, সোনার নয় তা কাঁটায় গাঁথা।<br><br>
+৩। <br>
+কেমনে জানিব আমি, আমায় ডাকিতেছেন তিনি?<br>
+ক্রুশে প্রসারিত বাহু, ডাকিছেন তোমারে তথা।<br><br>
+৪। <br>
+লোকে তাঁরে বিশ্বাস ক’রে, কি ফল লভে এ সংসারে?<br>
+পরকালে নিত্য সুখ, যদিও ক্রন্দন হেথা।<br><br>
+৫। <br>
+মহা দুরাচার আমি, আমায় কি তারিবেন তিনি?<br>
+সত্য সত্যই তারবেন তিনি, এ কথার নাহি অন্যথা।<br>
+`,
+  },
+
+  {
+    id: 173,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "173",
+    title: "মোর জন্য যীশু মরিলেন",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৭৩
+Christ has for sin atonement made.
+| C. 11. 644, G. 3) ১। মোর জন্য যীশু মরিলেন- কেমন আশ্চৰ্য্য ত্রাতা!
+প্রায়চিত্ত তিনি করিলেন- কেমন আশ্চর্য্য ত্রাতা! ধ্রুবক-কেমন আশ্চর্য্য ত্রাণকর্তা, যীশু মোর যীশু,
+কেমন আশ্চর্য্য ত্রাণকর্তা মোর যীশু হে।
+২। তার নাম প্রশংসা করতে চাই- কেমন আশ্চৰ্য্য ত্রাতা!
+তার মৃত্যুর দ্বারা মুক্তি পাই কেমন আশ্চর্য্য ত্রাতা! ৩। মোর হৃদয় তিনি ধুইলেন- কেমন আশ্চৰ্য্য ত্রাতা!
+ও আমায় শাসন করিলেন- কেমন আশ্চর্য্য ত্রাতা! মোর সঙ্গে চলেন প্রতিদিন- কেমন আশ্চৰ্য্য ত্রাতা!
+দেন শক্তি যখন শক্তিহীন- কেমন আশ্চৰ্য্য ত্রাতা! ৫। জয় শত্রুগণকে করিলেন- কেমন আশ্চর্য্য ত্রাতা! ও তদ্রপ শক্তি আমায় দেন- কেমন আশ্চর্য্য ত্রাতা!
+৬। সব জীবন তাকে দিতে চাই- কেমন আশ্চর্য্য ত্রাতা! ও থাকব শেষে তাহার ঠাই- কেমন আশ্চর্য্য ত্রাতা!
+99 - Elisha A. Hoffman. S
+u e Tr.- J. Jones`,
+  },
+
+  {
+    id: 174,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "174",
+    title: "প্রভু যীশু নাম সমগ্র জগতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৭৪
+প্রভু যীশু নাম সমগ্র জগতে
+যাতে মোরা পাই পরিত্রাণ আকাশের নীচে মনুষ্যদের মধ্যে।
+আর কোন নাম দও নাই (কেবল) প্রভু যীশু নাম সমগ্র জগতে
+যাতে মোরা পাই পরিত্রাণ । তিনি পৃথিবীতে এলেন রক্ত বহাইলেন, পাপের জন্য মূল্য দিলেন। আমাদের বাঁচাতে মুক্তি দিতে যীশু ক্রুশে প্রাণ দিলেন। যে বিশ্বাস করিবে প্রভু যীশুর নামে জীবিত রবে সর্বদাই। তিনি পথ, তিনি সত্য, তিনিই অনন্ত জীবন।।`,
+  },
+
+  {
+    id: 175,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "175",
+    title: "(এখন) জয় যীশু জয় যীশু",
+    author: "",
+    language: "Bengali",
+    lyrics: `বাউলের সুর-খেমটা
+(এখন) জয় যীশু জয় যীশু বল সবে বদনে, যীশু থাকতে মোরা সবে ভাবিব কেনে। মোদের যত পাপ-ভার, লয়ে নিজ শিরোপর মলেন যীশু ক্রুশােপরে, মোদের কারণে। আমাদের যত দেনা, ছিল ঈশ্বরের পাওনা, শুধিলেন সে সব দেনা, স্বীয় মরণে।
+৩ পাপ তাপ দূরে গেল, স্বর্গ-সুখ হৃদে এল, | ভয়ে মৃত্যু পলাইল, হেরি জীবনে।
+চল হে খ্রষ্টিীয় ভাই, চল মোরা ত্বরা যাহ, বলি এ শুভ বারতা, জগত-সন্তানে।
+-মরণ ঘোষ`,
+  },
+
+  {
+    id: 176,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "176",
+    title: "উঠ উঠ, ভাই ভগ্নী",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৭৬_ 19 ঝিঝিকাওয়ালী ৫ উঠ উঠ, ভাই ভগ্নী, উঠ মোহ দ্রিা পরিহরি,
+হেরি মাতৃভূমি দশা, নয়নে বহে নাকি বারি ! দেখ গাে দেখ ত্রাণ ছাড়ি, ভূরি ভূরি,
+বিপথে চলিছে কত নর নারী ॥ ধ্রুবক- সু-সংবাদ লয়ে শিরোপরে,
+যাও গ্রামে গ্রামে প্রতি নগরে, ঘোষণা কর, বল প্রতি জনারে। “যীশু মরেছেন তােরই তরে রে ॥ পর পর, সযতনে, পর ঈশ-দত্ত রণ সজ্জা, বীর সম রণ ক্ষেত্রে, ধেয়ে চল ত্যাজি সব লজ্জা, তোমার আকুল আহ্বানে, প্রাণে প্রাণে, নব প্রেরণা জাগিবে পুনঃ হর্ষে ॥ খ্রীষ্ট-নাম ধ্বজা লয়ে, ক্রুশ ব্রত সাধ প্রাণপণে; বাধা বিঘ্ন যত হবে, সুদূরে পালাবে নাম শুনে, ত্রাসিত হবে শয়তানে, দরশনে, ঈশ তেজ প্রতিভাত পৃথিবীতে ।
+- রসময় বিশ্বাস (১৯০৭)`,
+  },
+
+  {
+    id: 177,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "177",
+    title: "চলাে চলাে চলাে ওরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল-দা
+চলাে চলাে চলাে ওরে, চলাে যাই ঘরে ঘরে ত্রাতা যীশু আসবেন ত্বরা বলব সকলারে।। লয়ে সু-সমাচার সাথে গীতিমালা হাতে নগরে নগরে পল্লী মাঝারে যাব সবার দ্বারে।।
+১।
+প্রভুর আদেশে যাব দেশে দেশে
+টলব না মোরা দুঃখ ক্লেশে জানাব জগতে আছে যত প্রাণী
+শাস্ত্রে লিখিত সব ভাববাণী পিতা-পুত্র আত্মার বরে
+দীক্ষা দিব প্রতি নারী নরে
+বাঁধব সবায় প্রেম ডােরে। স্বরগ রাজ্যের বিচার কালে।
+কি দিবে জবাব জিজ্ঞাসিলে শূন্যহাতে যাবে কি সবে
+যােগাড় কিছু করনি তবে একটি প্রাণও এনে থাক টেনে
+পিতার প্রেমের রাজ্যপানে। অজয় মুকুট পাবে শিরে ।
+- অতুল চন্দ্র বল।`,
+  },
+
+  {
+    id: 178,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "178",
+    title: "প্রাতে, দ্বিপ্রহরে, কিংবা",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr. Sowing in the Morning C. . 621, G. 36. S, 29
+১।
+প্রাতে, দ্বিপ্রহরে, কিংবা সায়ংকালে বুনি ধৰ্ম্ম বীজ সব, যত্ন করিয়া ; শস্য সংগ্রহণে, ছেদনের সময়ে, আসিব আনন্দে আঁটি লইয়া।।
+ধ্রুবক- আঁটি লইয়া! আঁটি লইয়া!
+আসিব আনন্দে আঁটি লইয়া ॥ | ২।
+উদয়াস্ত কালে, গ্রীষ্মে কিংবা শীতে, বুন অবিশ্রান্ত, নির্ভয় হইয়া; ফুরাইবে ক্রমে সৰ্ব্ব পরিশ্রমে,
+আসিব আনন্দে আঁটি লইয়া। ৩। চল তবে সবে রােদনপূৰ্ব্বক বুনি,
+ক্ষেত্র স্বামীর কারণ কষ্ট ভুগিয়া ; যবে দুঃখ যাবে, প্রভু ডাকবেন সবে আসিব আনন্দে আঁটি লইয়া!
+- K. Show
+Tr.- V. C. Biswas | `,
+  },
+
+  {
+    id: 179,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "179",
+    title: "ক্রুশ ধ্বজা লয়ে চল",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৭৯। ক্রুশ ধ্বজা লয়ে চল প্রভুর কাৰ্য ক্ষেত্রে যাই।
+| চল যাই, চল যাই, চল যাই, চল যাই। ১। ঐ যে, যীশু আগেতে মোরা যাব পিছেতে
+কি ভয় আছে বল তাই ।
+চল যাই২। দূর্গম পথ বা কি মরুতে
+প্রভু হননা ক্ষান্ত তাতে।
+লক্ষ্য জনরে বাঁচাতে চল যাই ----৷৷ ৩। শক্তি তব আছে যা যীশুর সেবায় লাগাও তা।
+ত্বরা করে র্যাচ তাই । চল যাই
+৪। দীনমনি অস্ত প্রায়, ভাের তিমিরও এলাে হায়
+ত্বরা করে এবে তাই। চল যাই -
+--
+- শমূয়েল কুমার বৈরাগী`,
+  },
+
+  {
+    id: 180,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "180",
+    title: "দেখব যীশু ত্রাতার সনে",
+    author: "",
+    language: "Bengali",
+    lyrics: `CH. 545- Face to face with Christ my Saviour ১। দেখব যীশু ত্রাতার সনে
+দেখব আশ্চৰ্য্য কি হয়! S *
+) মহানন্দে তাঁকে দর্শন
+খ্রীষ্ট মরলেন আমার তরে। ধূয়া- দেখব নয়ন ভরে তাকে
+তারার উর্ধ্বে আকাশে। দেখব নয়নে তার গৌরব
+|
+তাকে দেখব চিরকাল।
+২। কেবল হতাশ হই তায় দেখে
+কাল পর্দার মাধ্যমে গােরবােজ্জ্বল দিন আছে
+তার গৌরব সবে হেরিবে। 31 কি উল্লাস তার উপস্থিতি নয় দুঃখ ব্যথায় অবসান, | বক্র পথ সরল হবে।
+পাপের ময়লা শুভ্র হবে। ৪। দেখব আহ্ কি স্বর্গীয় সুখ
+জানব ত্রাতায় সম্মুখে
+আমার ত্রাতা মুক্তি দাতা। । যীশু আমায় প্রেম করেন।
+- Tr.- এন, বাড়ৈ`,
+  },
+
+  {
+    id: 181,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "181",
+    title: "আনন্দে গাহ যীশু গান",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৮১ | তাল-ঢিমে তেতালা
+- আনন্দে গাহ যীশু গান। পুনরায় আসবে ধরায় নূতন এদন-কানন।
+১। মরুভূমি না থাকিবে আর, প্রান্তর শ্যামল ক্ষেত্র হইবে আবার,
+তথা রােগ, শােক না রহিবে আর, সবে গাবে ঈশ গুণগান।
+২। দুঃখীর দুঃখ হইবে মােচন, বধির পাবে শ্রবণ-শক্তি অন্ধে সুনয়ন।
+আর সুস্থ হবে সব খঞ্জ জন, গোগা গাবে যীশু গুণগান।।
+৩। পলাইবে খেদ আর্তস্বর, আমােদ ও আনন্দের দেখ হইবে বাজার, পুণ্য জীবন মুকুট শিরেতে সবার, পাপ তাপের হবে অবসান।।
+- শীতলচন্দ্র মধু`,
+  },
+
+  {
+    id: 182,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৮২",
+    title: "আমার জুড়াল প্রাণ এসে",
+    author: "প্রিয়নাথ বৈরাগ",
+    language: "Bengali",
+    lyrics: `আমার জুড়াল প্রাণ এসে যীশুর পায়,  <br>
+এসে দয়াল যীশুর শ্রীচরণতলে, আমার ঘুঁচল ভবের ভয়। <br><br>
+
+১।<br>
+ঐ চরণে নাইরে দুঃখ ক্লেশ, <br>
+নাইরে ভবের জ্বালা পাপ অশান্তির লেশ, <br>
+বুঝি দুগ্ধমধুপ্রবাহী সেই দেশ, আছে ঐ চরণ তলায়। <br><br>
+
+২। <br>
+মনে আমি করেছি মনন, প্রভুর ঐ চরণে থাকব সর্বক্ষণ, <br>
+আমার এই পাপ দেহে যাবৎ রয় জীবন, রব ঐ চরণ সেবায়। <br><br>
+
+৩। <br>
+সময় যে দিন ফুরাবে আমার, <br>
+সে দিন যেতে হবে ছেড়ে এ সংসার, <br>
+আমি হ’য়ে যাব মৃত্যু নদী পার, প্রভুর ঐ চরণ নৌকায়-- <br>
+`,
+  },
+
+  {
+    id: 183,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "183",
+    title: "শুনিলাম যীশুর মধুর রব",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৮৩
+Tr.- I Heard The Voice of Jesus Say
+Church Hymnal 225 ১। শুনিলাম যীশুর মধুর রব, “হে পরিশ্রান্ত জন,
+মোর মাথায় রাখি তব ভার, বিশ্রান্ত হও এখন।
+২। যাদৃশ ক্লান্ত দুঃখময় দশায় আমি ছিলাম,
+খ্রীষ্ট যীশুর কাছে আসিয়া সুশান্তি পাইলাম ।। ৩। শুনিলাম যীশুর মধুর রব,- “এস হে! তৃষিত জন,
+অমনি দিব জীবন-জল, যা পানে হয় জীবন। ৪। তখনি আসি তার কাছে পান করিনু সে জল,
+মোর তৃষ্ণা হইল নিবারিত, খ্রীষ্ট যীশুতে কেবল ।। ৫। শুনিলাম যীশুর মধুর রব যে,--“আমি ভবের দীপ,
+মোর প্রতি চেয়ে দেখে যে, তার নিত্য উজ্জ্বল দিন।” ৬। এ শুনি চেয়ে দেখিলাম তার শোভা চমৎকার;
+মোর তারা এবং প্রভাকর, যাবৎ জীবন আমার। ERSTE
+& Tr.- N. C. Biswas
+- H. Bonar`,
+  },
+
+  {
+    id: 184,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৮৪",
+    title: "এই লভিনু সঙ্গ তব সুন্দর হে ",
+    author: "",
+    language: "Bengali",
+    lyrics: `এই লভিনু সঙ্গ তব সুন্দর হে সুন্দর, <br>
+পুণ্য হ’ল অঙ্গ মম ধন্য হ’ল অন্তর ।। <br><br>
+
+১।<br>
+আলোকে মোর চক্ষু দুটি, মুগ্ধ হয়ে উঠল ফুটি <br>
+হৃদগগনে পবন হ’ল, সৌরভেতে মন্থর। <br><br>
+
+২।<br>
+এই তোমারি পরশ রাগে, চিত্ত হ’ল রঞ্জিত,<br>
+এই তোমারি মিলনসুধা, রইল প্রাণে সঞ্চিত। <br><br>
+
+৩।<br>
+তোমার মাঝে এমনি করে, নবীন করি লও যে মোরে,<br>
+এই জনমে ঘটালে মোর, জন্ম-জনমান্তর।।<br>
+`,
+  },
+
+  {
+    id: 185,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩৩৯",
+    title: "আনন্দে বন্দি দীনবন্ধু",
+    author: "প্রিয়নাথ বৈরাগী",
+    language: "Bengali",
+    lyrics: `আনন্দে বন্দি দীনবন্ধু , তোমার রাঙ্গা পায়,   <br>
+আমি গা’ব তোমার ঐ যীশু নাম আমার দেহে যাবৎ জীবন রয় ॥<br><br>
+
+১। <br>
+দিয়া দেখা দুঃখের দুর্দিনে, তুমি করলে উদ্ধার এ অধীনে আপন গুনে,<br>
+তুলে বসালে এই কাঙ্গালে তোমার চরণে,<br>
+(আমি) ভুলিব না এই করুণা কভু, ভুলিব কেমন হায় ॥<br><br>
+
+২। <br>
+এই ভিক্ষা আজ মাগে দীনহীন , তোমার ঐ পাদপদ্মে<br>
+চিত্ত যেন নিত্য থাকে লীন,<br>
+করি আকিঞ্চন ওহে ত্রানধন মনে নিশিদিন , <br>
+আমার ফুরাইয়া যাক সকল আশা, যেন এ আনন্দ ন ফুরায় ॥<br>
+`,
+  },
+
+  {
+    id: 186,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "186",
+    title: "ঐ যীশু বিনা, প্রাণ বাচে না",
+    author: "",
+    language: "Bengali",
+    lyrics: `আলেয়া-একতালা।
+ঐ যীশু বিনা, প্রাণ বাচে না, মোর সর্বক্ষণ। ১ মোর গত পাপ-জীবন, মনে করি হে যখন,
+পারি বুঝতে তখন, আমি তার ব্যথার কারণ।
+২ তার কি আশ্চর্য্য বল, ভাবিলে হই পাগল,
+মোর আত্মা ও চিত্ত সকল, চায় কেবল যীশু ধন।। ৩ এখন ধর্মাত্মন, শুনান মধুর বচন,
+সদা যীশুর সাক্ষ্য, ক্রুশ দুঃখ, চিন্তা আকা মন।। ৪ মোর সকল চিন্তায়, দেখি যীশু হন উদয়, এ প্রাণে তাই, সদা চাই, ঐ যীশুর আচরণ।
+| -রাজন ফকীর।।`,
+  },
+
+  {
+    id: 187,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "187",
+    title: "নাথ, দাও প্রেম দাও",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+২।
+নাথ, দাও প্রেম দাও, তব প্রেম বারি দানে পিপাসা মিটাও। তোমার শ্রীমুখ দেখবাে বলে, দয়াল কত আশা প্রাণে খেলে;
+রেখেছি হৃদয় খুলে, আসি প্রাণ জুড়াও। মোদের অভাব আছে যত, দয়াল নয়ত তোমার অবিদিত;
+দেও প্রভু আশীৰ্বাদ, অভাব পূরাও। অন্ধকারময় জীবন-পথে, দয়াল থাক সদা তুমি সাথে; হাতখানি ধরে হাতে ধীরে লয়ে যাও।
+-খ্রীষ্ট সঙ্গীত`,
+  },
+
+  {
+    id: 188,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "188",
+    title: "(যীশু) পরিষ্কার কর আমারে",
+    author: "",
+    language: "Bengali",
+    lyrics: `ভৈরবী-আড়খেমটা (যীশু) পরিষ্কার কর আমারে, ধােয়াও আমারে আপন রুধিরে, যে রুধির ক্ষরে কালভেরী পরে।। পাপেতে মলিন হইয়াছে মন, কৃষ্ণবর্ণ তাহা হেরি সর্বক্ষণ, কর কর নাথ, নিজ রক্ত দান, যে রক্তেতে পাপীর সর্বপাপ হরে।। সংহারক দূত আসিবে হে যবে, আমারে ছুইতে কভু না পারিবে। ত্যজিয়ে আমারে, অন্যত্র যাইবে, হেরে তব রক্ত মম অন্তরে।।
+-রামচরণ ঘোষ।`,
+  },
+
+  {
+    id: 189,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "189",
+    title: "আজ আনন্দ হইল অপার।",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর- “আজ আনন্দ হইল অপার।"
+|
+হে আমাদের স্বর্গস্থ পিতঃ গ
+১। তব নাম মান্য হোক এ ধরায়, ।
+তোমার রাজত্ব আসুক ত্বরায়, তোমার ইচ্ছা যেমন, সিদ্ধ হোক তেমন, স্বর্গে ও ধরায় হোক সতত।
+২। খাওয়া পরা মোদের যাহা প্রয়োজন।
+দাও প্রভু তাহা, দাও প্রতিদিন, ক্ষমা করি যেমন, ক্ষমা কর তেমন,
+আমাদের অপরাধ যত। ৩। এনাে না পরীক্ষা, করি নিবেদন
+মন্দ হইতে রক্ষা কর সর্বক্ষণ, রাজ্য পরাক্রম, মহিমা গৌরব যুগে যুগে তোমার হোক শাশ্বত। ।
+শীতল চন্দ্র মধু`,
+  },
+
+  {
+    id: 190,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৯০",
+    title: "প্রভুতে ভ্রাতা ভগ্নি-গণ সদা জেগে",
+    author: "মধুসূদন সরকার",
+    language: "Bengali",
+    lyrics: `প্রভুতে ভ্রাতাভগ্নীগণ, 
+সদা জেগে থাক প্রার্থনাতে।  <br><br>
+
+১। <br>
+শয়তান সিংহের মত, গর্জিছে অবিরত;<br>
+জেগে থাক সতত, নাহি পড় পরীক্ষাতে।<br><br>
+
+২। <br>
+শাস্ত্রপাঠ আলোচনা, ধর্মগীত ও প্রার্থনা,<br>
+করিতে নাম ঘোষণা, ভুলিও না কোন মতে।<br><br>
+
+৩। <br>
+শদ্রক অগ্নি ভিতরে, যোনা মৎস্যের উদরে,<br>
+নিত্য প্রার্থনা ক’রে, সান্ত্বনা পেল মনেতে।<br><br>
+
+৪। <br>
+দায়ূদ সৈন্য মাঝারে, প্রেরিত পৌল কারাগারে,<br>
+জেগে প্রার্থনা করে, দানিয়েলও  সিংহের খাতে<br>
+`,
+  },
+
+  {
+    id: 191,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৯১",
+    title: "তোমায় ভালবেসেছি, প্রভু",
+    author: "পিটার পি. সরকার",
+    language: "Bengali",
+    lyrics: `তোমায় ভালবেসেছি, প্রভু তোমায় জীবন দিয়েছি<br>
+আমি পাপের পথে আর ফিরব না কোনদিন।। <br><br>
+
+১. <br>
+আসে সম্মুখপানে যদি তুফান ভারী<br>
+জানি তোমার নামেতে পার হতে পারি <br>
+আমি তোমারি নাম ধরে বেয়ে যাব<br>
+জীবন তরণী চিরদিন। <br><br>
+
+২. <br>
+রাখি তোমার চরণ দু’টি হৃদয় মাঝে<br>
+পথ হারায় নাকো কভু সকাল সাঁঝে <br>
+আমি তোমার নামেতে পার হয়ে যাব,<br>
+জীবন সাগর একদিন। <br><br>
+
+৩. <br>
+যদি মরণ আমার কভু সামনে আসে,<br>
+আমি জানবো তুমি তো প্রভু রয়েছে পাশে, এ<br>
+মনি করে যেন পার হয়ে যায়,  <br>
+জীবনের বাকী কটা দিন।।<br>
+`,
+  },
+
+  {
+    id: 192,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "192",
+    title: "যীশু, আরাে তোমায় চাই",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৯২
+| বিশ্বাসীর জীবন
+Tr. More about Jesus ১। যীশু, আরাে তোমায় চাই, জীবনে তোমায় দেখাই,
+আরাে আত্মার পূর্ণ দান, কর আমারে প্রদান।
+ধূয়াঃ- আরাে চাই তোমারে, আরাে চাই তোমারে
+আরাে তোমায় হৃদে চাই, আরাে প্রেমে ডুবে যাই।
+২। আরাে তব অভিলাষ, কর হে নাথ প্রকাশ,
+তুমি মম নেতা হও, হৃদে বিরাজিত রও।
+৩।
+আরাে হোক সুধাময়, তব বাক্য সমুদয়
+শুনে স্বর্গসুখ পাই, আরাে মম প্রাণ জুড়াই। ৪। আরাে তোমারি গৌরব, তোমারই পুণ্য প্রভাব জুড়ে যাক চরাচর যুগে যুগে নিরন্তর।
+- অজ্ঞাত`,
+  },
+
+  {
+    id: 193,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "193",
+    title: "তব মুখে রাগ-বাক্য এনাে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tune: Angry Words, O Let them Never ১। তব মুখে রাগ-বাক্য এনাে না, মোর এ বিনয়
+মনের মধ্যে চেপে রাখ, পাছে জিভ অশুচি হয়। ধূয়া- সকলে কর প্রেম, পরস্পর প্রেম,
+যীশুর নূতন আজ্ঞা পালিও; সকলে কর প্রেম, পরস্পর প্রেম, স্বর্গ পিতার সন্তান হও। প্রেম পবিত্র, অতি নির্মল, বন্ধুভাব কি মিষ্ট নয়?
+কিন্তু ক্রোধানলে সকল এক নিমিষে নষ্ট হয়। ৩। কত কথা রাগে বলি! ভ্রাতার হৃদয় ব্যথা পায়, স্বর্ণ সন্ধি ভেঙ্গে ফেলি, একটি বাক্য বলে হায়!
+- উইলিয়াম কেরী ১৯৪`,
+  },
+
+  {
+    id: 194,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৯৪",
+    title: "উজ্জ্বল জ্যোতি জ্বালাই",
+    author: " ডবলিউ, কেরী ",
+    language: "Bengali",
+    lyrics: `১। <br>
+উজ্জল জ্যোতি জ্বালাই, যীশুর আজ্ঞাতে!   <br>
+প্রদীপ যেমন জ্বরে, ঘরে রাত্রিতে; <br>
+অন্ধকারের মধ্যে আলো করি দান— <br>
+স্ব-স্ব স্থানে হই তাই দীপ্তিমান! <br>  <br>
+
+২। <br>
+উজ্জল জ্যোতি জ্বালাই, যীশুর জন্যেতে, <br>
+নিবে গেলে, পড়বে তাঁহার দৃষ্টিতে; <br>
+স্বর্গ থেকে দেখেন মোদের দীপ্তি দান— <br> <br>
+
+৩। <br>
+উজ্জল জ্যোতি জ্বালাই, চারিদিকে রয়! <br>
+অন্ধকারের মধ্যে যাদের অভাব হয়, <br>
+দীন- দুঃখীর জন্যে করি প্রেমদান— <br>
+স্ব স্ব স্থানে হই তাই দীপ্তিমান। <br>  
+`,
+  },
+
+  {
+    id: 195,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "195",
+    title: "শ্রম কর, রাত্রি আসছে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr.- Work for the Night is Coming
+C. H. 446, G. 17
+১। শ্রম কর, রাত্রি আসছে, শ্রম কর প্রত্যুষে;
+শ্রম কর সুযােগ থাকতে তেজস্কর প্রাতে; শ্রম কর, প্রভুর জন্যে, শ্রম কর তার বলে।
+শ্রম কর, রাত্রি আসছে শ্রম অন্ত হবে। ২। শ্ৰম কর মধ্য দিনে, শ্রম কর তাপ থাকতে
+শ্রম কর হৃষ্ট মনে, প্রার্থনা করে, শ্রম কর, অন্য লোককে আনতে যীশুর কাছে:
+শ্রম কর, রাত্রি আছে, কাজ হয় না তবে। ৩। শ্ৰম কর অপরাহে, শ্রম কর প্রাণপণে;
+শ্রম কর, দীন দুঃখীরে সান্ত্বনা দিতে; | শ্রম কর, মনুষ্যকে রক্ষিতে পাপ হতে; শ্রম কর, দিন থাকিতে, দিনের শেষ হবে।
+৪। শ্ৰম কর সন্ধ্যাকালে, বিশ্বাস, ভক্তি প্রেমে;
+শ্রম কর প্রভুর জন্যে আনন্দ পাবে; শ্রম কর, সুখে, দুঃখে, সদা সর্বস্থানে; শ্রম কর, শীঘ্র পাবে সুবিশ্রাম স্বর্গে।
+- Annie L. Walker
+1917
+Tr.- J. P. Meik`,
+  },
+
+  {
+    id: 196,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "196",
+    title: "আলো, আলো, এতটুকু আলো",
+    author: "",
+    language: "Bengali",
+    lyrics: `আলো, আলো, এতটুকু আলো, দাওগো আমায়, পাতকী আমি, পাতকী আমি, যাচিগাে তোমারে,
+তব পথে নাথ, চালাও গাে আমায়। ১। জীবন সমরে, দুঃখের মাঝারে, দেখি যেন তব ঐ শ্রী মুখেরে,
+যত কিছু ব্যথা ভুলিয়া নিজেরে, অঞ্জলি দিব ঐ পদতলে৷৷ ২। ভক্তগণ তব আলোকিত হয়ে গাহে তব গান, এই ধরাতলে, দিনে, দিনে, দিনে, তব পুণ্য নামে, বিভুগুণ গানে।
+মাতিব সবাই।।`,
+  },
+
+  {
+    id: 197,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "১৯৭",
+    title: "প্রেম যে তুমি, আপন তুল্য",
+    author: "সি.ডবল. লীপ",
+    language: "Bengali",
+    lyrics: `১। <br>
+প্রেম যে তুমি, আপন তুল্য আমায় সৃজন করিলে;   <br>
+প্রেম যে তুমি, দিয়া মূল্য আমারে উদ্ধারিলে; <br>
+প্রেম যে তুমি, আমার মন তোমায় করি সমর্পণ।<br><br>
+২। <br>
+প্রেম যে তুমি, সৃষ্টির পূর্বে মম মঙ্গল ভাবিলে, <br>
+প্রেম যে তুমি, নারীর গর্ভে মানুষ হইয়া আসিলে; <br>
+প্রেম যে তুমি, আমার মন তোমায় করি সমর্পণ।<br><br>
+৩। <br>
+প্রেম যে তুমি, ক্রুশোপরে মৃত্যুর দংশন সহিলে, <br>
+প্রেম যে তুমি, আমার তরে ত্রাণের উপায় করিলে; <br>
+প্রেম যে তুমি, আমার মন তোমায় করি সমর্পণ।<br><br>
+৪। <br>
+প্রেম যে তুমি, বল ও জীবন, সত্যের আত্মা আলোকময়; <br>
+প্রেম যে তুমি, মৃত্যুর বিক্রম করিয়াছ পরাজয়; <br>
+প্রেম যে তুমি, আমার মন তোমায় করি সমর্পণ।<br><br>
+৫। <br>
+প্রেম যে তুমি, কবর হইতে মন দেহ উঠাইবে, <br>
+প্রেম যে তুমি, আমার লইতে মহিমাতে আসিবে; <br>
+প্রেম যে তুমি, আমার মন তোমায় করি সমর্পণ।<br>
+`,
+  },
+
+  {
+    id: 198,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "198",
+    title: "দাও যীশু পরম ধন",
+    author: "",
+    language: "Bengali",
+    lyrics: `রাগিনী ভূপালী-খেমটা দাও যীশু পরম ধন, তোমার হাসন, তোমার কাদন, মোরে সর্বক্ষণ।। যীশুতে বিশ্বাস করে, পাপ বোঝা গেল পড়ে, এখন বেড়াই নড়ে চড়ে, সদা হাল্কি মন।। কে বেড়াবে আজি এসে, হাল্কা হয়ে এক নিমেষে, যাইবারে নিজদেশে, মিলি সাধুগণ। যীশু এসে মম প্রাণে, থাকি মম হৃদাসনে, নিত্য নূতন শিক্ষাদানে, দেহ নিগূঢ় জ্ঞান কি হাসি দিয়েছ মনে, কি আমােদ পাই ক্রন্দনে, এ আমােদ সৰ্বদিনে করিছে নূতন।
+- রাজন ফকীর।`,
+  },
+
+  {
+    id: 199,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "199",
+    title: "চরে চলরে চল্",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল ও সুর--কুচকাওয়াজ চরে চলরে চল্‌- সিয়ােন যাত্রীদল | মুক্তির বারতা নিয়ে জীবন পথে চল্।।
+৩। জানে না যে সুসমাচার
+বল গিয়ে কাছে তাহার বিনামূল্যে মুক্তি মিলে আয়-না যাবি চল ।
+১। অগ্রে ঐ পথের আলো
+আলোর পিছে পিছে চল পথ দেখিয়ে নিয়ে যাবে। যাত্রীদের সকল ।। ২। কেউ থাকলে পিছে পড়ে
+লহ তারে সাথে করে চালাও তারে ধীরে ধীরে। যে জন দুর্বল।
+৪। কে আছ ঐ কারাগারে
+পাপের ঘোর অন্ধকারে যীশুর নামে মুক্তি মিলে যীশুর কাছে বল।।
+- অতুলচন্দ্র বল।`,
+  },
+
+  {
+    id: 200,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "200",
+    title: "কি মধুর যীশুতে বিশ্বাস",
+    author: "",
+    language: "Bengali",
+    lyrics: `২০০
+C. H. 588, Tis So sweet to trust in Jesus
+১।
+কি মধুর যীশুতে বিশ্বাস ২। যীশুতে বিশ্বাস কি মধুর গ্রহণ কর তার বাক্যে,
+কর তার রক্তে বিশ্বাস, তার প্রতিজ্ঞায় নির্ভর রাখ । সরল বিশ্বাসে স্নাত হই জানিব প্রভু বলেন ।
+রক্তে শুচি সুস্থ হই । ধূয়া- যীশু যীশু তায় মোর বিশ্বাস।
+জেনেছি তাই বারংবার, যীশু যীশু মহান যীশু
+বিশ্বাসে কৃপা লাভ হয়। কি মধুর যীশুতে বিশ্বাস ৪। সুখী আমি নির্ভর করে স্বার্থ, পাপ বিলুপ্ত হয়,
+যীশু ত্রাতা বন্ধু মোর। যীশু দেন শুধু আমাকে ।
+প্রভু জানি আমার সঙ্গে জীবন বিশ্রাম প্রশান্তি ।।
+সঙ্গে থাকবে আজীবন।
+| - Tr.- এন বাড়ৈ, (সম্পাদিত) ১১৬`,
+  },
+
+  {
+    id: 201,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২০১",
+    title: "প্রিয় যীশু আমার, ধর আমায়",
+    author: "বিন্দ্রনাথ সরকার",
+    language: "Bengali",
+    lyrics: `প্রিয় যীশু আমার! ধর আমায় ধর,<br>
+প্রিয় ত্রাতা শক্তিদাতা শকতি বিতর।<br><br>
+(১)<br>
+দেও তোমার পবিত্রতা, পাপ-জন্য ব্যাকুলতা,<br>
+পরীক্ষাতে সহিষ্ণুতা, দেও সেবাতে আনন্দ,<br>
+প্রার্থনাতে স্বাধীনতা, দেও আরও অশ্রুধার।<br><br>
+(২)<br>
+তব বাক্য বুঝিবারে, তব জ্ঞন দেও আমারে,<br>
+তব রুপ দেখিবারে, দেও নয়ন তোমার;<br>
+তব অনুগামী হতে, দেও চরণ তোমার।<br><br>
+(৩)<br>
+তোমার দুঃখের তরে, সদা অশ্রু দেও আমারে,<br>
+প্রেক, শেল, মনে করে, হউক যাতনা অপার;<br>
+ত্রাণ জন্য হর্ষধ্বনি, দেও মুখেতে আমার।<br><br>
+(৪)<br>
+চির জয় কর দান, শত্রু হউক কম্পমান,<br>
+বিশ্বাস, প্রত্যাশা, প্রেম হউক সতত উজ্জ্বল,<br>
+তব সনে থাকিবারে, দেও সদা ইচ্ছা মোর।<br>
+`,
+  },
+
+  {
+    id: 202,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২০২",
+    title: "কাঙ্গাল ডাকে দ্বারে দাঁড়ায়ে",
+    author: "প্রিয়নাথ বৈরাগী",
+    language: "Bengali",
+    lyrics: `কাঙ্গাল ডাকে দ্বারে দাঁরায়ে।<br>
+চরণধূলা পাবার আশে দয়াল, আছে দুই হাত বাড়ায়ে।<br><br>
+
+(১)<br>
+হৃদয় ভরা আছে ব্যাথা, আছে প্রাণে কত কথা,<br>
+বলবে তোমায় জগত্রাতা, ধরে শ্রীচরণ জড়ায়ে।<br><br>
+
+(২)<br>
+শুনেছি হে ঈশ্বর নন্দন, এলে দ্বারে দুঃখী যে জন,<br>
+শূন্য হাতে তারে কখন, তুমি দাও না প্রভু ফিরায়ে।<br><br>
+
+(৩)<br>
+দিয়ে তারে চরণ তোমার, ঘুঁচাও যত অন্তরের ভার,<br>
+দয়াল তোমার দয়ায় যায় তার, প্রণের সকল জ্বালা জুড়ায়ে।<br><br>
+
+(৪)<br>
+সেই আশাতে এসে দ্বারে, ডাকিতেছি বারে বারে,<br>
+দেও দরশন দয়া করে, দাসে রাখ চরণ আশ্রয়ে।
+`,
+  },
+
+  {
+    id: 203,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২০৩",
+    title: "ব্যথিতেরে কর শান্তি দান",
+    author: "",
+    language: "Bengali",
+    lyrics: `ব্যথিতেরে -- কর  শান্তিদান    <br>
+এসে পাপী তোমার দ্বারে, চাহে জুড়াইতে তাপিত পরাণ।<br><br>
+
+১। <br>
+পাপ পীড়ায় জর্জরিত, ভগ্নদেহ, ভগ্নচিত,<br>
+ভবভয়ে অভিভূত  পাপী, দিশেহারা হতজ্ঞান।<br><br>
+
+২। <br>
+নয়নের জল মুছাইতে, মনের দুঃখ ঘুঁচাইতে,<br>
+কে আর আছে এ জগতে, মিছে বন্ধু- বান্ধব- ধন ও মান।<br><br>
+
+৩। <br>
+তুমি বিনে জগত্রাতা,  কে বুঝে ব্যথিতের ব্যথা?<br>
+তোমার কোলে রেখে মাথা, কর সকল জ্বালার অবসান।<br><br>
+
+৪।<br>
+তোমার কোলে রেখে মোচন, করে তোমার রক্ত সেচন,<br>
+তোমার দয়ায় পেয়ে জীবন, পাপী গাবে তোমার গুণগান।<br><br>
+
+৫।<br>
+তোমার কীর্তি ভূমন্ডলে, গাবে ভেসে চক্ষের জলে,<br>
+রেখে তোমার চরণতলে, বান্ধা দেহ আত্মা মন ও প্রাণ।।<br>
+`,
+  },
+
+  {
+    id: 204,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "204",
+    title: "বিশ্বাস মোর দেখে বেশ",
+    author: "",
+    language: "Bengali",
+    lyrics: `Church Hymnal 246 ১। বিশ্বাস মোর দেখে বেশ, তোমায় কালভেরী মেষ, ত্রাণেশ্বর হে।
+শুন মোর নিবেদন, হর দোষ অগণন, কর তোমার এখন একেবামে ' ২। দিয়া প্রসাদ তোমার, দুর্বল হৃদে আমার, দেও ভক্তি বল।
+মরিলে মোর কারণ, আমার হউক প্রেম তেমন, নিৰ্ম্মল অক্ষয় যেমন, জীবৎ অনল।
+৩। ভবের ফেরে যখন, চলি দুঃখে বেষ্টন পথ দর্শক হও।
+আঁধারকে দিন করে, দুঃখের অশ্রু হর, আমার দুরান্তর হইতে না দেও।
+- Ray Palmer |
+Tr- অক্ষয় কুমার মুখোপাধ্যায়`,
+  },
+
+  {
+    id: 205,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "205",
+    title: "ডুবে যেন থাকে তোমার",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+ডুবে যেন থাকে তোমার রূপেতে আঁখি। হৃদয় আমার চাহে অনিবার ঐ রূপ হৃদয়ে রাখি সাজায়ে রেখেছি হৃদয়, মন্দির তোমার আশায়ে থাকি, আমার হৃদয়ে দোলকে দোলাব তােমাকে চরণ ছুটি হৃদয়ে রাখি। কোথা থাক তুমি জানিনাক আমি কি বলে তাে মারে ডাকি আমার কি আছে সম্বল বিনা নয়ন জল হে প্রভু কোমল আঁখি।
+হে যীশু কমল আঁখি। ৩। শয়নে স্বপনে কি বা জাগরণে সদা যেন তোমারে ডাকি আমি পথ ভ্রান্ত হে প্রাণকান্ত তোমার সন্তানে দিও না ফাঁকি।
+তোমার সন্তানে দিও না ফাঁকি। সি
+সি - চিত্তরঞ্জন বল`,
+  },
+
+  {
+    id: 206,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২০৬",
+    title: "আমি তোমার নাথ, আছি চিরকাল",
+    author: "",
+    language: "Bengali",
+    lyrics: `১. <br>
+আমি তোমার নাথ, আছি চিরকাল,<br>
+তোমা ছাড়া কারও নই ; <br>
+থাকি বিশ্বাসে তব সন্নিধান, বাসনা এ নিয়তই । <br><br>
+
+ধূয়া: <br>
+আমায় ডাক, ডাক, ডাক যীশু হে,<br>
+ক্রুশের আরও সন্নিধান ! <br>
+দেহ আমায়, আমায়, আমায় প্রভু হে,<br>
+তব কুক্ষিদেশে স্থান! <br><br>
+
+২. <br>
+অনুগ্রহরূপ তৈলে আমারে, অভিষিক্ত কর নাথ !<br>
+তোমার পবিত্র পরিচর্যাতে, থাকি যেন দিন ও রাত।। <br><br>
+
+৩. <br>
+প্রার্থনাতে পাই কত আনন্দ, যখন শুনি তব রব ;<br>
+প্রাণের বন্ধু প্রায় শুনেছেন সদাই, আমার কাতরোক্তি সব। <br><br>
+
+৪. <br>
+তব সুগভীর প্রেমের মহিমা, বুঝে সাধ্য আছে কার ?<br>
+বুদ্ধির অতীত উচ্চ স্বর্গসুখ, বর্ণনা নাহিক তার । <br><br>
+
+৫. <br>
+যবে যাব নাথ, স্বর্গকাননে, মৃত্যুনদীর পূরপার,<br>
+তখন বুঝিব প্রেমের মাহাত্ম্য, স্বর্গসুখ কি চমৎকার।<br>
+`,
+  },
+
+  {
+    id: 207,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "207",
+    title: "ত্রাতঃ পশ্চাৎ যাব তোমার",
+    author: "",
+    language: "Bengali",
+    lyrics: `২০৭ ਨੇ | ਫ਼ ) ਹਾਲ ਹੀ HK Tr.- I will follow Thee my Saviour P 1
+C. II. 266 ১। ত্রাতঃ পশ্চাৎ যাব তোমার, যেথায় আমি থাকিব,
+তুমি যেথায়, আমি সেথায়, তোমার দয়ায় যাইব। ধ্রুবক-ত্ৰাতঃ পশ্চাৎ যাব তোমার পাছে, রক্তপাত করেছ যে,
+যদি সবে তোমায় ত্যজে, আমি নাহি ছাড়িব ।। ২। যদি হয় পথ অতি দুর্গম, সাগর সম দুরূহ,
+তুমি নাথ গিয়াছ প্রথম, হর্ষে আমি যাইব। ৩।
+যদি পরীক্ষায় হই বেষ্টিত, আরও কষ্টে দিন কাটাই,
+হয়ে তোমার দুঃখে দুঃখিত, প্রভু তোমার পশ্চাৎ যাই। ৪। যদি কষ্ট মধ্যে পড়ে, দুঃখী পরিত্যক্ত হই,
+তুমি সদা ছিলে দুঃখে, অতঃ পশ্চাৎ তোমার যাই। ৫। যদি গভীর শীতল নদীর মধ্যে মোরে লইয়া যাও, তথাচ নাথ আমি তোমার পশ্চাৎ কভু ছাড়ব না।। *
+- J. Lowson Tr.- অক্ষয় কুমার মুখোপাধ্যায়`,
+  },
+
+  {
+    id: 208,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "208",
+    title: "এ অন্তর আমার আর নয়",
+    author: "",
+    language: "Bengali",
+    lyrics: `২০৮
+Sল
+এ অন্তর আমার আর নয় । দিলাম যীশু তোমারে; প্রাণ সঁপিলাম সত্য আমি তোমার ঐ ক্রুশােপরে। ক্রুশ দুঃখ না সহিলে
+কেমনে তোমায় মিলে, র শরীর আত্মা দিই সকলে। ত। পাপ রবে না সংসারে।
+যে শরীরের বশে চলে অনুবস্ত্রে থাকে ভুলে অসার সংসারের গােলে প্রভু হতে যায় দূরে। পার্থিব ভাবে যে আসক্ত।
+( আসক্ত মৃত্যুমুখে হয় নিযুক্ত প্রভুকে করে বিরক্ত শেষে সে প্রাণে মরে।। আয় আত্মার ভাব চলি আয় কেবল ভাবে আত্মার বিষয়। মোদের কোন দন্ডাজ্ঞা নাই
+সেই প্রীতিকর ঈশ্বরে।। যে আত্মায় যীশু করেন বাস। কি আহার বিহারে প্রায় প্রকাশ,
+দূতগণে গায় গৌরব গৌরব কি সেও গায় ঐ প্রকারে।
+|`,
+  },
+
+  {
+    id: 209,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "209",
+    title: "আমারে কর তোমারই",
+    author: "",
+    language: "Bengali",
+    lyrics: `২০৯
+কাফি-খাম্বাজ কাওয়ালী আমারে কর তোমারই, (ওহে নাথ) আপনা হ’তে আমারে তার হে করুণা করে, করহে মম হৃদয় একেবারে তােমাময় ; তোমারি পরশে যেন আপনারে পাশরি। মোহ কুহকে পড়ি আপনারি ছলনায়, আমারে নাহি বসাই যেন আসনে তোমার ; যেন করমে তোমার না পড়ে ছায়া আমার, নাহি গ্রাসে আমায় সদা আপন চিন্তায়,
+তোমারি প্রশংসা ছলে না গাই গুণ আমারি। ২ খর্ব কর আমারে গর্ব সব নাশিয়ে,
+কর মোরে অবনত তব ক্রুশে দলিয়ে, ধূলি সহ চিরতরে মিশাইয়া দেও মোরে; হই হে বিলীন আমি, প্রকাশিত থাক তুমি, তোমারি প্রেম-কাহিনী এ জীবনে প্রচারি।
+- আলাউদ্দীন খান ।`,
+  },
+
+  {
+    id: 210,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২১০",
+    title: "উঠ ভক্ত উঠ বীর, খ্রীষ্ট চরণে",
+    author: "যতীন্দ্রকুমার বিশ্বাস",
+    language: "Bengali",
+    lyrics: `উঠ ভক্ত, উঠ বীর,  <br>
+খ্রীষ্ট চরণে, প্রণত করিয়া শির,<br>
+প্রেমের মন্ত্র, সেবাব্রত লহ, সকল ধরিত্রীর।<br>
+যেথায় বেদনা বাজে সেথা বুক দিবে পাতি;<br>
+তোমার প্রাণের আলো উজলিবে মোহ-রাতি;<br>
+আনো আনন্দ, ঘুঁচাও বন্ধ, মুছাও অশ্রুনীয়।<br>
+গুরুর প্রণামী দিতে কি দান এনেছো আজ?<br>
+সন্ন্যাসী সে যে গুরু, ভিখারীর মহারাজ,<br>
+সব যে সে চাহে, ভক্তেরা গাহে বিজয় বৈরাগীর।<br>
+`,
+  },
+
+  {
+    id: 211,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "211",
+    title: "যে দশা মোর-নাই কোন",
+    author: "",
+    language: "Bengali",
+    lyrics: `২১১
+Tr.-Just as I am Church Hymnal 222
+১।
+যে দশা মোর-নাই কোন গুণ, দিলে শােণিত আমার কারণ, ডাচ্ছ আমায় তুমি এখন-- তাই যীশু আসিলাম, আসিলাম। যে দশা মোর—পারি না আর, পাপ দাগ দূর করিতে আমার, ধু’তে চাই সব রক্তে তোমারতাইযীশু আসিলাম, আসিলাম।
+| |
+৪।
+যে দশা মোর—গভীর সংশয়, ভীষণ সমরে কত ভয়, অন্তরে বাহিরে উদয়অন্তরে বাহিরে উদয়- সে । তাই যীশু আসিলাম, আসিলাম। যে দশা মোর—অন্ধ দীনহীন। ধন বল জ্ঞান হৃদয় নবীন, তােমাতে সব পাবে এ দীন তাই যীশু আসিলাম, আসিলাম। যে দশা মোর করবে গ্রহণ। পাপ সব মোর করে প্রক্ষালন, তোমায় করি বিশ্বাস এখন তাই যীশু আসিলাম, আসিলাম।
+৫।
+যে দশা মোর প্রেমে তোমার
+ছাত বাঁধ সকল ছিড়িল এবার, হই যেন তোমার অনিবার তাই যীশু আসিলাম, আসিলাম।
+| Tr. বিমলানন্দ নাগ (১৯১১)।`,
+  },
+
+  {
+    id: 212,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২১২",
+    title: "আহা ধন্য সেই জন, তোমার হাতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `আহা ধন্য সেই জন, তোমার হাতে প্রাণ করিয়াছে যেই দান ; <br>
+তুমি চিরদিন তরে, প্রভু হে তাহারে, করেছ অভয় দান।<br>
+(চিরদিন তরে)।। <br><br>
+
+১. <br>
+আহা পাপে কলঙ্কিত মোহে অভিভূত, মৃতপ্রায় যে জীবন ; <br>
+ওহে প্রাণাধার, পরশে তোমার, পায় সে নবজীবন ;<br>
+- (চিরদিন তরে)।<br><br>
+
+২. <br>
+তোমায় লৌহময় প্রাণ, করিলে অর্পণ, সোনার প্রাণ কর দান ; <br>
+আমি সব জেনে শুনে, তোমার চরণে, সঁপি না এ ছার প্রাণ।<br>
+(অন্ধের দশা দেখ)। <br><br>
+
+৩. <br>
+আমায় ঐহিকের সুখ, হবে না বলে, দিলাম না প্রাণ তোমায়, <br>
+আমার এ সংসারের সুখ, তাও তো হল না, দুকুল হারলেম হায় !<br>
+(অন্ধের দশা দেখ)। <br><br>
+
+৪. <br>
+আমার ঘুচাও এ দুর্মতি, দাও শুভমতি, দাও জ্বলন্ত বিশ্বাস ; <br>
+আমি দেহ মন প্রাণ, তোমায় করে দান, হইব হে তব দাস।<br>
+(চিরদিন তরে)।। <br><br>
+`,
+  },
+
+  {
+    id: 213,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "213",
+    title: "সঁপি নাথ প্রাণ মন তব",
+    author: "",
+    language: "Bengali",
+    lyrics: `২১৩
+মিশ্র ভৈরবী- কাওয়ালী সঁপি নাথ প্রাণ মন তব করে,
+আজি হ'তে সমুদয় দিলাম তব সেবায়, ক্রুশােপরে। ১। যা কিছু আছে আমার, সপিনু পদে তোমার,
+কুলশীল, মান, জ্ঞান, অভিমান তব তরেআজি হতে সমুদয় দিলাম তব সেবায়, ক্রুশােপরে।
+২। লহ সুখের বাসনা, লহ হে আত্মকামনা,
+আত্মীয়-স্বজন বন্ধু প্রিয়জন, চিরতরে
+আজি হতে সমুদয় দিলাম তব সেবায়, ক্রুশােপরে। | ৩। অহঙ্কার অবিশ্বাস, নিঃশেষে সব বিনাশ,
+মম এ জীবন কর হে গ্রহণ দয়া করে আজি হতে সমুদয় দিলাম তব সেবায়, ক্রুশােপরে।।
+-অজ্ঞাত`,
+  },
+
+  {
+    id: 214,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২১৪",
+    title: "তোমারি চরণে, রাখ এই",
+    author: "",
+    language: "Bengali",
+    lyrics: `২১৪
+|
+বেহাগ-কাওয়ালী
+তোমারি চরণে, রাখ এই দিনে, দীন সখা দয়াময়,
+রাখিও না মোরে, তোমা হতে দূরে, এই ভিক্ষা তব পায়।। ১। কতবার দূরে গিয়াছি ছাড়িয়া, ফিরায়েছ তুমি ডাকিয়া ডাকিয়া
+| এই বার যেন তব ডাক শুনিয়া, তোমা পানে মন ধায়। ২। যদি কভু আমি বিপথে ফিরি, ধরিও আমায় তব হাত প্রসারি, । প্রেম ডােরে প্রভু, বাধিয়া তোমারি, চিরদিন রেখাে পায়।
+-শীতলচন্দ্র মধু`,
+  },
+
+  {
+    id: 215,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২১৫",
+    title: "কি উপহার দিব প্রভু",
+    author: "প্রাণনাথ সিকদার",
+    language: "Bengali",
+    lyrics: `কি উপহার দিব প্রভু তব চরণ-কমলে,   <br>
+কি দিলে মন তৃপ্ত হবে, (বল) তব প্রেম বদলে।<br><br>
+
+১।<br>
+তুমি ত আমার তরে, আসিয়াছ স্বর্গ ছেড়ে, <br>
+বাঁচাতে দীন পাপীরে, (তুমি) দীন দরিদ্র হ’লে।<br><br>
+
+২। <br>
+এমন কিছু নাহি মম, হয় তব প্রেম সম, <br>
+তোমার দয়া অসীম, (নাথ) তাই ভবে আসিলে।<br><br>
+
+৩। <br>
+স্বর্ণ-রৌপ্য ধন যত, সকলি তব প্রদত্ত, <br>
+এতে যদি হও প্রীত, (আমি) দিই পদযুগলে।<br><br>
+
+৪। <br>
+প্রেম ভক্তি কৃতজ্ঞতা, হৃদয়ের প্রফল্লতা, <br>
+গ্রহণ কর ওহে ত্রাতা, (এখন) দিচ্ছি প্রাণ ঢেলে।
+`,
+  },
+
+  {
+    id: 216,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "216",
+    title: "যীশুকে সৰ্ব্বস্ব দিলাম",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr.- All to Jesus I surrender,
+C. H. 573, G. 32 ১। যীশুকে সৰ্ব্বস্ব দিলাম, হৃষ্ট চিত্তে করি দান,
+তার সম্মুখে নিত্য থাকি, তিনি আমার আশ্রয় স্থান, ধ্রুবক- সব সমর্পিলাম, সব সমর্পিলাম;
+প্রভু যীশুর নিকট আমি, সব সমর্পিলাম। ২। যীশুকে সর্বস্ব দিলাম, নত থাকি তার পায়,
+আমি জগৎ ছাড়ি দিলাম, গ্রহণ কর, নাথ আমায়। ৩। যীশুকে সর্বস্ব দিলাম, তার নিজস্ব হইতে চাই;
+| যিনি সত্য মোর নিজস্ব আত্মার সাক্ষ্য যেন পাই।। ৪। যীশুকে সর্বস্ব দিরাম, তাহায় দিলাম আমার প্রাণ;
+তোমার প্রেম ও সর্বশক্তি, প্রভাে! আমায় কর দান। যীশুকে সৰ্ব্বস্ব দিলাম, অগ্নি আমার অন্তরময়; পূর্ণ মুক্তি কি আনন্দ, ধন্য প্রভু যীশুর জয়!
+- J. W. Van De Venter
+- মেথডিষ্ট গীতাবলী। `,
+  },
+
+  {
+    id: 217,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৫০",
+    title: "প্রভু আমার এই জীবন",
+    author: "",
+    language: "Bengali",
+    lyrics: `১. <br>
+প্রভু আমার এই জীবন, তোমায় করি সমর্পণ ;<br>
+দিন ও দন্ড সর্বক্ষণ, করুক তব সঙ্কীর্তন। <br><br>
+
+২. <br>
+আমার হস্ত পদদ্বয়, গ্রহণ কর দয়াময় ;<br>
+তব প্রিয় কার্যে তা, রত থাকুক সর্বদা। <br><br>
+
+৩. <br>
+লহ মম কণ্ঠস্বর, গাহি স্তুতি নিরন্তর ;<br>
+লও ওষ্ঠ রসনা, করি মুক্তি ঘোষণা। <br><br>
+
+৪. <br>
+স্বর্ণ, রৌপ্য নিঃশেষে, সঁপি তোমার উদ্দেশ্যে ;  <br>
+বল ও বুদ্ধি যা আমার, কর তুমি ব্যবহার। <br><br>
+
+৫. <br>
+লহ আমার ইচ্ছা যে, মিশুক তব ইচ্ছাতে;<br>
+হৃদয় মাঝে সর্বক্ষণ, কর তোমার সিংহাসন। <br><br>
+
+৬. <br>
+প্রীতিভক্তি সমুদয়, অৰ্পণ করি তব পায় ;<br>
+মম দেহ, আত্মা, প্রাণ, গ্রহণ কর দয়াবান।।<br>
+`,
+  },
+
+  {
+    id: 218,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "218",
+    title: "যীশু তোমা সহ বেড়াব",
+    author: "",
+    language: "Bengali",
+    lyrics: `২১৮
+১।
+লুট ঝিঝিট-একতালা। যীশু তোমা সহ বেড়াব, নয়ন ভরে হেরিব। তোমার দক্ষিণ হাত ধরে সদা প্রাণনাথ, করি ভয় দূরীভূত, স্বর্গ-পথে হাঁটিব। দুর্দান্ত দুষ্ট সিংহেতে, চাহে প্রাণ বিদারিতে, তব দত্ত অস্ত্রাঘাতে, দুরাত্মাদল মারিব। বেড়াইলে তব সঙ্গে, করবে কি পাপ-তরঙ্গে, প্রেম-শান্তি ঢেউ সঙ্গে, স্বর্গ দিকে উঠিব।। সদা তব সঙ্গে রর, উন্মুক্ত স্বর্গ দেখিব, ধন্য, ধন্য, ধন্য গাব, মহানন্দে নাচিব।
+- বেঞ্জামিন বাড়ৈ`,
+  },
+
+  {
+    id: 219,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "219",
+    title: "যীশু আমায় ছেড়ে যেয়াে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr.- Pass Me Not O Gentle Saviour
+C. H. 559, G. 26, S.2 , যীশু আমায় ছেড়ে যেয়াে না শুন প্রার্থনা; নাই আর আশ্রয় তোমা বিনে আমায় ছেড়াে না!
+১।
+ধ্রুবক- ত্রাতঃ ত্রাতঃ শুন প্রার্থনা,
+মোর প্রতি করুণা-দৃষ্টি কর অধুনা। তোমার দয়া সিংহাসনে আসি এ সময় । জানুপাতি ভগ্ন-মনে; শান্তি দাও আমায়! | তব রক্তে আস্থা রাখি, ধরি তোমারে; ভগ্ন হৃদয় সুস্থ করি, রক্ষ আমারে। তুমি আমার শান্তির উনুই জীবনের রতন; তোমা বিনা আর কেহ নাই স্বর্গ ও ভুবন।।
+- Fanny J. Crosby
+Tr.- N. C. Biswas `,
+  },
+
+  {
+    id: 220,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "220",
+    title: "আজকে প্রাণের প্রদীপ খানি",
+    author: "",
+    language: "Bengali",
+    lyrics: `২২০
+৪।
+১।
+আজকে প্রাণের প্রদীপ খানি।
+প্রভু মোর জ্বালাে আজকে প্রাণে জ্বালাে ওহে স্নিগ্ধ উজল আলো।
+| আলো ॥ নিবিড় আঁধার মাঝে প্রভু
+হৃদয় রেখ না। একাকী রেখে আড়ালে থেকে।
+চেয়ে দেখ না সঙ্গী দেও আলো, আলোর পরশে ঘুচায়ে ফেল গভীর আঁধার কালাে।
+কালাে ৷
+২।
+জীবন আমার নির্মল প্রভায়
+করহে বিমল আজিকে ফিরে নূতন করে ।
+রাখ গাে আমল। জ্বালাে জ্বালাে হে আধার হিয়ায় প্রদীপ জ্বালি জীবন কর ভাল ।।
+ভাল ।
+- সুনীথ কে, দাশ`,
+  },
+
+  {
+    id: 221,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২২১",
+    title: "আগুনের পরশমণি ছোঁয়াও প্রাণে",
+    author: "",
+    language: "Bengali",
+    lyrics: `আগুনের পরশমণি ছোঁয়াও প্রাণে <br>
+এ জীবন পুণ্য কর, দহন-দানে ।। <br>
+আমার এই দেহখানি তুলে ধর, <br>
+তোমার ওই দেবালয়ের প্রদীপ কর, <br>
+নিশিদিন আলোক-শিখা জ্বলুক গানে।<br>
+আঁধারের গায়ে গায়ে পরশ তব <br>
+সারারাত ফোটাক তারা নব নব । <br>
+নয়নের দৃষ্টি হ’তে ঘুচবে কালো; <br>
+যেখানে পড়বে সেথায় দেখবে আলো, <br>
+ব্যথা মোর উঠবে জ্বলে উৰ্দ্ধ পানে।।<br>
+`,
+  },
+
+  {
+    id: 222,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "222",
+    title: "জাগ, জাগ জাগরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২২২
+জাগ, জাগ জাগরে, খ্রীষ্টায়ান ভাই। দিন তাের গেল চলে মিছামিছি ধূলা খেলে, কাজ কর ত্বরা করে, বেলা বেশী নাই।
+১। বাইবেল হাতে নিয়ে চলে এস যে
+মুক্তির বারতা পায়নি কে, বল তার কাছে গিয়ে বাইবেল দেখিয়ে, ত্বরা প্রভু আসিবেন শাস্ত্রেতে পাই।
+২। নােহের কালে ছিল ভ্রষ্ট ধরা,
+প্লাবনে ডুবে মরে সব যে তারা, যীশুর আগমন কালে, ধরা যাবে পাপে জ্বলে অগ্নি ও গন্ধকে পুড়ে হবে ছাই। খ্রীষ্টের আগমন অতি নিকটে, বাইবেলে যাহা আছে তাহা যে ঘটে, দুর্ভিক্ষ, মহামারী, যুদ্ধ ভুরি ভুরি, বাচাতে প্রাণ আয় যীশুর ঠাই।
+- অতুল চন্দ্র বল`,
+  },
+
+  {
+    id: 223,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "223",
+    title: "জাগ ভাই ও ভগ্নী",
+    author: "",
+    language: "Bengali",
+    lyrics: `২২৩
+সাহানা- কাওয়ালী
+জাগ ভাই ও ভগ্নী, দিন বয়ে যায়। কতকাল আর রবে, অলসের প্রায়? মহা পরিত্রাণ, বিনামূল্যে দান
+করিছেন যীশু, আজি সবায়। ১। দাস রূপে আসি এই ধরা তলে,
+| প্রাণ দেন ক্রুশে দেখ অবহেলে, ত্রাণকাৰ্য্য সাধি কুতুহলে, বাচান যতেক পাপী জনায় ॥
+২। দেখ দীনবেশে হৃদয় দ্বারে,
+আঘাত করিতেছি বারে বারে, খােল পাপী খােল, কঠিন অন্তরে, দূরে ফেলি আজি সব অন্তরায়।
+৩। মাতৃভূমি দেখ যায় রসাতলে,
+} পড়িয়া শয়তানের বিষম ছলে, আপনি জাগিয়া জাগাও সকলে, দেখায়ে ক্রুশের রক্ত ধারায়।
+- রসময় বিশ্বাস`,
+  },
+
+  {
+    id: 224,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২২৪",
+    title: "ধুয়ে নয়নের জলে, ওহে দয়াল",
+    author: "প্রিয়নাথ বৈরাগী",
+    language: "Bengali",
+    lyrics: `ধুয়ে নয়নের জলে ওহে দয়াল যীশু, তোমার চরণ দু’খানি,   <br>
+আমি রাখব সদা হৃদমন্দিরে, পূঁজব দিবা-রজনী।<br><br>
+
+১। <br>
+ঐ চরণের সুশীতল ছায়ায়, আমার তাপিত এ অঙ্গ জুড়ায়,<br>
+জুড়ায় আমার তাপিত্ পরাণী;<br>
+বসে ঐ চরণে পড়ে মনে স্বর্গের সুখের কাহিনী।<br><br>
+
+২। <br>
+বসে আছি সেই দিনের আশায়, দয়াল যেদিন তুমি<br>
+ডাকবে আমার, ওপার হ’তে আসবে তরণী,<br>
+ছেড়ে অসার সংসার যাব ওপার, যথায় তোমার রাজধানী।<br>
+`,
+  },
+
+  {
+    id: 225,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "225",
+    title: "কে আর আছে নাথ",
+    author: "",
+    language: "Bengali",
+    lyrics: `কে আর আছে নাথ, (আমার) তোমা বই স্বর্গ কি ধরায় প্রাণ কারে চায়? আমার হৃদয়ের সুখ দুঃখ তোমা বই আর কারে কই ।। (আমি) কি সম্পদে কি বিপদে, ভাবি বল কার পদে; জাগে কার রূপ রাশি এ হৃদে, পাতকি জীবন, নরের তারণ. (আমি) কার ক্রুশ পানে চেয়ে এ পােড়া আখি জুড়াই?
+২।
+(নাথ) যারে সবে ঘৃণা করে, হেন অধম পাতকীরে, কে বল গাে রাখে সদা অন্তরে; আমার কারণ, কাদে কার মন, (আমি) কার কোলে মাথা রেখে, কেঁদে সদা সুখী হই? (আমার) হৃদয় জ্বলিলে পরে, ডাকি কার নাম ধ'রে, কে তােষে গাে মধুর রবে আমারে; বিপদ সময়, উদ্ধারে আমায়, (আমি) কার রবে অনিবার, রণ মাঝে জয়ী হই?
+- অমত লাল নাথ ।`,
+  },
+
+  {
+    id: 226,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "226",
+    title: "এবে গাহিয়ে উঠিল প্রাণে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২২৬
+১।
+২।
+| কীৰ্ত্তন
+। | এবে গাহিয়ে উঠিল প্রাণে কি গান; বাজিল হৃদয় বীণে, গভীর রাগিণী তানে,
+মরমে পশিল মধুর তান। ছুটিল রুধির পুলকে সবার, ভাবের সাগরে ডাকিল বান, ভীরুতা, জড়তা, দূরে গেল ব্যথা, গভীর পুলকে পূরিল প্রাণ। সাজ, সাজ সবে মাভৈ মাভৈ রবে, নাশিতে দারুণ দূরাত্মন, গেয়ে রণ-গীতি, ক্রুশ সেনা অতি, বুক বেঁধে হও আগুয়ান। বাজাও নামের ডঙ্কা, ঘুচে যাবে শঙ্কা, উড়াও বিজয় ক্রুশ নিশান উঠ গাে জাগিয়া, আলস্য ভাঙ্গিয়া, এই বেলা হও সচেতন। | গাও জগৎ জুড়িয়া, গগন ভরিয়া, সমর সঙ্গীতে ধরিয়া তান, জলদ গম্ভীরে, ভীষণ হুঙ্কারে দ্যাবলের দুর্গ কর পতন।
+- উপেন্দ্র লাল সরকার`,
+  },
+
+  {
+    id: 227,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "227",
+    title: "আমরা প্রভু যীশু খ্রীষ্টের",
+    author: "",
+    language: "Bengali",
+    lyrics: `ঝিঝিট-ঠুংরী
+SIPPE
+>
+তিনি। TO
+উদ্যোগী দল!
+| ১s আমরা প্রভু যীশু খ্রীষ্টের উদ্যোগী দল! | ১। যদি জিজ্ঞাস করে কেহ কারা এ সকল? >>
+বল উদ্যোগী দল। ২। যীশুর সেবায় সুখী থাকি, সবই প্রেমের ফল;
+বল উদ্যোগী দল। ৩। জানি, যীশুর রক্তে হৃদয় আমার হয়েছে অমল;
+বল উদ্যোগী দল । ৪। জ্যোতির্ময় জীবন তেজে মন ও মুখ উজ্জ্বল
+বল উদ্যোগী দল । ৫। জয়ী হব যীশুর জন্যে যদি ও দুর্বল
+বল উদ্যোগী দল। | ৬। প্রভু যীশুর কাছে পাব দিনে দিনে বল;
+বল উদ্যোগী দল। ৭। যীশুর ধ্বজা তুলে চলি জয়ী সেনাদল;
+2)|
+| বল উদ্যোগী দল।
+উইলিয়াম কেরী, (১৮৯২)।`,
+  },
+
+  {
+    id: 228,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "228",
+    title: "সময় এসেছে এবার হতাশার",
+    author: "",
+    language: "Bengali",
+    lyrics: `২২৮
+করি । সময় এসেছে এবার হতাশার কথা ছেড়ে
+- আশার কথা বলার মুক্তির সেই বাণী সবার কাছে দেবার
+খ্রীষ্টকে আজ পেয়ে জগৎ
+নতুন আদেশ পেল, আঁধারের সাথে উদ্বেগ যত
+নিমিষে বিলীন হল।। দ্বিধাহীন তাই মেনেছি মেরা
+মহান প্রেমের নব প্রেরণায়, নতুন পৃথিবী গড়ব মোরা
+জীবনের এই নব ধারায়। সময় এসেছে এবার...
+খ্রীষ্টকে আজ পেয়ে জগৎ
+নতুন ইসারা পেল, আলোর পথে চলতে এবার
+জীবন ধন্য হল । দ্বিধাহীন তাই মেনেছি মোরা
+| মহান প্রেমের নব প্রেরণায় নতুন পৃথিবী গড়ব এবার
+জীবনের এই নব ধারায় । ডি সময় এসেছে এবার...`,
+  },
+
+  {
+    id: 229,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "229",
+    title: "চলরে চল এগিয়ে চল",
+    author: "",
+    language: "Bengali",
+    lyrics: `তাল ও সুর-মাচ্চিং । চলরে চল এগিয়ে চল মীখায়েল সেনা দল।। কাজ কর সব প্রাণপণে পাবে নিজ শ্রম ফল। স্বর্গ রাজের আগমনের নাই বেশী বাকী। ভাববাদীর বাক্য মত চিহ্ন সব দেখি। (প্রায়) ঘনিয়ে এল হমাগিদোন।
+। চারিদিকে কোলাহল। ভাববাণীর রবের কথা লও সাথে সাথে সু-সমাচার ঘরে ঘরে সকলকে দিতে বিলিয়ে এস সকাল করে।
+এলয়ে হয়ে বিকাল।। লুচিফরের যুদ্ধ দেখ হতেছে ভারী
+কত হত আর আহত ভূরি ভূরি শেষে মীখায়েল দাঁড়াবেন উঠি নাশিতে সব অরিদল ।
+- অতুল চন্দ্র বল `,
+  },
+
+  {
+    id: 230,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "230",
+    title: "তুফানের নাহি ভয় চল যাই",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৩০
+নি
+তুফানের নাহি ভয় চল যাই চল যাই - আসিলেও শত বন্যা যতদূর দেখা যায় ঝিকিমিকি অলোকায়। সুন্দর নীলিমায় তোমার রচিত
+শুভ্র আকাশে উড়িছে পতাকা। আসিবে- কি রাত্রি ওগো যাত্রী-(২) অন্তর সলিলে তোমার জীবনে-(২)। আসিবে- কি ঘন রাত্রি (২) ।
+ডেভিড প্রফুল্ল কুমার হালদার`,
+  },
+
+  {
+    id: 231,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "231",
+    title: "যুদ্ধ হইবে শত্রু আসিবে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Sound the Battle cry (CH. 499) ১। যুদ্ধ হইবে শত্রু আসিবে, এস সৈন্য হে প্রস্তুত হও।
+সজ্জ্বা পর, ত্রাতায় হের, বিশ্বাস কর ও শক্তি লও। ধূয়া- উঠ সৈন্য! সাহস করে দাড়াও সােজা দাড়াও সজ্জা পরে লও;
+চল শীঘ্র অগ্রসর হও, সেনাপতি যীশুর সঙ্গে যাও। ২। যদি শক্তি চাও, যীশুর সঙ্গে যাও নির্ভয়ে সবে গাও; যীশুর জয়;
+এক সাথ চলিও, আজ্ঞা পালিও স্তব গান করিও যীশুর জয়'। ৩। সেনাপতি হে! তব শক্তিতে সৈন্য দাঁড়াবে সাহসে; যুদ্ধে জিতিবে, মুকুট পাইবে, স্বর্গে থাকিবে হরষে।
+- পেঙ্গ ওয়ের্ণ জোন্স`,
+  },
+
+  {
+    id: 232,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "232",
+    title: "শােভিছে ঐ পিতৃস্নেহ",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৩২
+Brightly beams our Father's Mercy
+CH. 628, G. 35 ১। শােভিছে ঐ পিতৃস্নেহ, আলোক মঞ্চ হইতে তিনি দেন তার আলো মোদের উপকুল রক্ষিতে।
+ধ্রুবক- ক্ষীণ আলো উজ্জ্বল জ্বালাও পাঠাও রশ্মি তরঙ্গে,
+কোন দুর্বল দুস্ত নাবিক, কর উদ্ধার সমুদ্রে। পাপাধার ঐ নিশাগমন, ক্রুদ্ধ গর্জন তরঙ্গের, আশান্বিত উৎসুক নয়ন, পেতে আলো উপকুল। ক্ষীণ প্রদীপ জ্বালাও সবায়, দুস্ত নাবিক ঝটিকায়, চেষ্টিতে লভিতে আশ্রয়, আধারে (হয়ত) হারাবে প্রাণ ।
+- Tr.- সন্তোষ কুমার হালদার`,
+  },
+
+  {
+    id: 233,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৩৩",
+    title: "আজি প্রণমি তোমারে চলিব নাথ ",
+    author: "",
+    language: "Bengali",
+    lyrics: `আজি প্রণমি তোমারে চলিব নাথ সংসার কাজে<br>
+তুমি আমার নয়নে নয়ন রেখো অন্তর মাঝে ।। <br>
+হৃদয়-দেবতা রয়েছ প্রাণে, মন যেন তাহা নিয়ত জানে,<br>
+পাপের চিন্তা মরে যেন দহি, দুঃসহ লাজে। <br>
+সব কলরবে সারা দিনমান শুনি অনাদি সঙ্গীত গান,<br>
+সবার সঙ্গে যেন অবিরত তোমার সঙ্গ রাজে।। <br>
+নিমেষে নিমেষে নয়নে বচনে সকল কর্মে সকল মননে<br>
+সকল হৃদয়তন্ত্রে যেন মঙ্গল বাজে।।<br>
+`,
+  },
+
+  {
+    id: 234,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "234",
+    title: "চালাও অধীনে নাথ",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুরমল্লার-আড়ঠেকা চালাও অধীনে নাথ, প্রতিপদে প্রতিক্ষণে,
+দুৰ্বল অজ্ঞান আমি, দেখিতে নারি নয়নে। ১। তোমার প্রশস্ত করে, ধর মম ক্ষীণ করে,
+চালাও আমারে ধরে, অমর ভবন পানে।
+২। তুমি জান মম বল, ওহে দুৰ্ব্বলের বল, | তুমি হও আমারি বল, পূর্ণ কর দিব্য জ্ঞানে! ৩। এখন আমি চলব নাথ, ধরিয়া তোমার হাত, | তুমি থাকলে আমার সাথ, ভীত না হইব মনে। ৪। যে করে প্রকান্ড বিশ্বে, চালাইছ বিনা ক্লেশে।
+সে কর প্রতি নিমিষে, অবশ্য রক্ষিবে দীনে।।
+লি নাথ`,
+  },
+
+  {
+    id: 235,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "235",
+    title: "অন্ধকারে বিদেশী যে একা",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৩৫
+তাল কাহাররা। অন্ধকারে বিদেশী যে একা আমি পথহারা। ভাবছি বসে ফিরবাে দেশে না পেয়ে পথ দিশাহারা। কে গাে তুমি পথ ভ্রান্ত, পথ খুজে হয়েছ ক্লান্ত, জীবনের পথ খুঁজলে পাবে, শাস্ত্ৰ-পাঠ প্রার্থনা দ্বারা। নাই কেহ যে এ বিদেশে, দাড়াতে মোর কাছে এসে অসময়ে কেউ কারও নয়, সুসময়ের বন্ধু যারা। প্রহরী ঐ জেগে আছে, ডাকলেই সে আসবে কাছে, সেই তাদের বন্ধু শুধু, ফিরতে চায় নিজ দেশে যারা ।।
+- অতুলচন্দ্র বল (১৯৬০)।`,
+  },
+
+  {
+    id: 236,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "236",
+    title: "হে সব সঙ্গী! দেখ নিশান",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৩৬
+Ilo. Il Comrades. See The Signal
+Singing Youth 172
+১।
+হে সব সঙ্গী! দেখ নিশান উড়ছে গগনে। আসছে পুনঃ ঐ সৈনিকগণ, জয় হবে ক্ষণে ॥
+ধ্রুবক- “রক্ষ দুর্গ, আসছি সহায়” যীশু কহিছেন।
+| “রক্ষা করব তোমার দয়ায় উত্তর দাও এখন ৷৷ ২। দেখ বীর বাহিনী আসছে, শয়তান চালিত।
+| কত যে বীর পার্শ্বে পড়ছে, সাহস প্রায় গত ॥ ৩।
+দেখ উড়ছে উত্তম নিশান, শুন তুরী রব।
+প্রভুর নামে করব নিদান, শত্রু যত সব ॥ ৪।
+সংগ্রাম হচ্ছে অতি ভীষণ, সহায় নিকটে। অগ্রে সেনাপতি আসছেন, হৃষ্ট হও সবে ।।
+-P. P. Bliss Tr.- অক্ষয় কুমার মুখোপাধ্যায়।`,
+  },
+
+  {
+    id: 237,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৩৭",
+    title: "অগ্রসর হও আজি খ্রীষ্টসেনা",
+    author: " যাকোব কান্তিনাথ বিশ্বাস",
+    language: "Bengali",
+    lyrics: `১। <br>
+অগ্রসর হও আজি খ্রীষ্ট সেনা সব,   <br>
+সবে মিলে আইস করি বিজয় রব,<br>
+কর খ্রীষ্টের নামে গৌরব সংঘোষণ,<br>
+দূত ও নরে সবে মিলে কর সষ্কীর্তন!<br><br>
+
+ধূয়াঃ <br>
+অগ্রসর হও আজি খ্রীষ্ট-সেনা সব,<br>
+সবে মিলে আইস করি বিজয় রব,<br><br>
+
+২। <br>
+প্রবল সেনা তুল্য খ্রীষ্টের মন্ডলী;<br>
+ত্রাতার পদ - চিহ্নে সকরে চলি;<br>
+কেহ পৃথক নহি একাঙ্গ সকল,<br>
+একই আশা, একই সত্য, একই প্রেম সম্বল।<br><br>
+
+৩। <br>
+রাজ্য সম্রাট কিরীট কত আসে যায়,<br>
+খ্রীষ্টের মন্ডলী চির বৃদ্ধি পায়,<br>
+নরক দ্বার না পারে পরাজিতে তায়,<br>
+খ্রীষ্টের এ প্রতিজ্ঞা দেখ মানে না বাধায়।<br>
+`,
+  },
+
+  {
+    id: 238,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "238",
+    title: "ঈশ্বর আদেশ পালনে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৩৮
+"Standing By a purpose True"
+C. II. 497, G. 14, S.37
+১। ঈশ্বর আদেশ পালনে যারা অটল হয়,
+সম্মান দেও সে সব জনে! হোক দানিয়েল দলের জয়! ধ্রুবক- হও দানিয়েল মত! নির্ভয়ে দাঁড়াও!
+হও অভয় অটল চিত্ত! সকলে জানাও। ২। অনেক বীর হইল হত, অমান্য দোষে,
+যারা ঈশ্বর অনুগত, সেই দলে মিশে। অনেক বীর ঐ দীর্ঘকায়, বেড়াইছে জাকে। আধােমুখে পড়বে হায়! সেই দলের সম্মুখে ॥ ত্রাণের ধ্বজাটি তুলে, যাও যুদ্ধের আশায়! ক্ষয় করে শয়তান দলে, গাও সেই দলের জয় ।
+- P. P. Bliss Tr.- অক্ষয় কুমার মুখোপাধ্যায়।`,
+  },
+
+  {
+    id: 239,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "239",
+    title: "দাড়াও হে, যীশুর পক্ষে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Tr. -- Stand Up Stand Up for Jesus
+C. 11. 354. G. 9.
+| ১। দাড়াও হে, যীশুর পক্ষে! ক্রুশীয় সৈন্যগণ!
+রাজকীয় ধ্বজা উড়াও উৎসাহে অনুক্ষণ।। সসৈন্য-সঙ্গে খ্রীষ্ট, সব শত্রু দলিবেন ; আর নিজ পরাক্রমে রাজ্যটি লইবেন। দাড়াও হে, যীশুর পক্ষে! আর শুন তুরী-রব ; সংগ্রামে চল আজি নির্ভয়ে সৈন্য সব অগণ্য শত্রু বটে, প্রাণপণে করে রণ ; বিপদে সাহস বাধি, হও অগ্রসর এখন।
+৩। দাঁড়াও হে, যীশুর পক্ষে! তাঁর বলে হও সবল ;
+করিলে আত্ম-নির্ভর হইবে সব বিফল । ঐশ্বরিক সজ্জা পর, আর জাগ প্রার্থনায় ; আসন্ন বিপদকালে সুমঙ্গল হবে তায়।
+৪। দাড়াও হে, যীশুর পক্ষে! এ যুদ্ধ স্থায়ী নয় ;
+আজ হয় তাে যুদ্ধ-ধ্বনি; কাল হবে দিগ্বিজয়। জয় করে যে জন যুদ্ধে, সে জীবন মুকুট পায় ; আর খ্রীষ্টের সঙ্গে নিত্য রাজত্ব করে, হায় ।।
+- Duflield _ Tr.-ফকির চাদ দাস :`,
+  },
+
+  {
+    id: 240,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "240",
+    title: "যখন যীশু থাকেন বাড়ীতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৪০
+১।
+২।
+৩।
+With Jesus in the family যখন যীশু থাকেন বাড়ীতে (সুখী পরিবার ৩৷) যখন যীশু থাকেন বাড়ীতে সুখী পরিবার, সুখী পরিবার। যখন যীশু পিতার হৃদয়ে (সুখী পরিবার ৷৩৷৷)। যখন যীশু পিতার হৃদয়ে সুখী পরিবার, সুখী পরিবার। যখন যীশু মাতার হৃদয়ে (সুখী পরিবার ৷৩৷) যখন যীশু মাতার হৃদয়ে সুখী পরিবার, সুখী পরিবার। যখন যীশু ভাইয়ের হৃদয়ে (সুখী পরিবার ॥৩৷) যখন যীশু ভাইয়ের হৃদয়ে সুখী পরিবার, সুখী পরিবার। যখন যীশু বােনের হৃদয়ে (সুখী পরিবার৷৩৷) যখন যীশু বােনের হৃদয়ে সুখী পরিবার, সুখী পরিবার। যখন যীশু শিশুর হৃদয়ে (সুখী পরিবার ৷৩৷)। যখন যীশু শিশুর হৃদয়ে সুখী পরিবার, সুখী পরিবার।`,
+  },
+
+  {
+    id: 241,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৪১",
+    title: "বুদ্ধিমান বাঁধিল পাষাণে তাঁর ঘর",
+    author: "",
+    language: "Bengali",
+    lyrics: `বুদ্ধিমান বাঁধিল পাষাণে তার ঘর(৩)  <br>
+বৃষ্টি নামিল ঝম ঝম<br>
+বৃষ্টি নামিল , বান আসিল(৩)<br>
+কিন্তু সেই ঘর নড়িল না।।<br>
+বোক বাঁধিল বালুচরে ঘরে(৩)<br>
+বৃষ্টি নমিল ঝম ঝম <br>
+বৃষ্টি নামিল ,বান আসিল(৩)<br>
+কিন্তু সেই ঘর রহির ন॥<br>
+যীশুতে আমি বাঁধিব মোর ঘর(৩)<br>
+বৃষ্টি নমিবে ঝম ঝম<br>
+বৃষ্টি নামিবে , ঢল আসিবে(৩)<br>
+কিন্তু সেই ঘর ভাঙ্গিবে না ॥<br>
+`,
+  },
+
+  {
+    id: 242,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৪২",
+    title: "সব শিশুগণ মিলে আসিয়াছি\n",
+    author: "দুর্গাকান্ত চক্রবর্তী",
+    language: "Bengali",
+    lyrics: `১। <br>
+সব শিশুগন মিলে আসিয়াছি কুতূহলে <br>
+কর প্রভ’ দয়া বিতরণ;<br>
+আমরা দূর্বল অতি, নির্বোধ কোমল মতি,<br>
+এস নাথ মোদের সনদ।<br><br>
+
+২। <br>
+স্বর্গ- সুখ পরিহরি, শিশুগনে প্রেম করি ,<br>
+শিশুদেহ করিলে ধারণ ;<br>
+তাই মোরা ক্ষুদ্রমতি, করিতে তোমারে স্তুতি,<br>
+সমবেত হয়েছি এখন ।<br><br>
+
+৩। <br>
+মাতা-পিতা গুরুজনে, তুষিয়াছ সযতনে,<br>
+বশীভূত থাকি অনুক্ষন;<br>
+করি তাদের আজ্ঞা পালন, দেখাইলে নির্দশন,<br>
+করিযেন পদানুসর।<br><br>
+
+৪। <br>
+আরোহিয়া ক্রুশোপরে বলেছ মধুর স্বরে,<br>
+ক্ষম পিতঃ এদের নাহি জ্ঞান;<br>
+মৃত্যুরে করিয়া জয়, কবরের বল ক্ষয়, <br>
+করিয়াছ স্বরগে প্রয়াণ।<br><br>
+
+৫। <br>
+প্রতিদিন যেন মোরা, রহি তবে প্রমে ভরা, <br>
+তব প্রম করিয়া স্বরণ ;<br>
+প্রেমে যেন কথা বলি প্রেমে করি কোলাকুলি ,<br>
+কর যীশু প্রেম বরিষণ।<br>
+`,
+  },
+
+  {
+    id: 243,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "243",
+    title: "হও চিরসুখী তােমরা দু'জন",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৪৩
+হও চিরসুখী তােমরা দু'জন,
+বিমল প্রেমে মিলে সারাটি জীবন। ১। সুগম এ পথ নহে, নহে মর্মরে পাথরে গাঁথা,
+আছে কাটার জ্বালা প্রতি ধাপে ধাপে, তবু
+(তবু) এগিয়ে যেতে হবে, যেতে হবে সর্বক্ষণ। ২। ধন-রত্ন পাবে না, চিরদিন তা সাথে যাবে না,
+নহে দালান কোঠা কভু গড়তে হবে তােমাদের,
+শান্তির নীড় তােমাদের, রচনা করবে এখন। ৩। বারিধারার মত, অশ্রু ধারা বহিবে কত,
+মেঘের কোলে সুবর্ণ হাসি ফুটবে,
+সুবৰ্ণ হাসি ফুটবে, শেষ হবে না কখন। ৪। পৃথিবী মাঝে স্বর্গ, সৃষ্টি তােমরা কর,
+সুখে দুঃখে পাশে থেকে সদা কর স্বার্থক এ মিলন, হোক স্বার্থক এ মিলন।
+- এন, এন, সরকার`,
+  },
+
+  {
+    id: 244,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "244",
+    title: "আজি এ শুভ দিনে",
+    author: "",
+    language: "Bengali",
+    lyrics: `আজি এ শুভ দিনে মিলেছ তােমরা দু’জন, শুভ বিবাহ বন্ধনে।
+সুন্দর হোক দু'টি জীবন। মনের কাননে এক ফুটল গােলাপ ভ্রমর এসে করে আলাপ একদিন তারা কি ভাবে দু’জন। বিনিময় করে জীবনে জীবন।। বিধির বিধানে যা লেখা ছিল দূরের মানুষ কাছে হল, পর যে ছিল আপন হল সুখের হোক দু'টি জীবন
+এন, এন, সরকার`,
+  },
+
+  {
+    id: 245,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "245",
+    title: "সব শিশুগণ মিলে, আসিয়াছি",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৪৫
+|
+ঝিঝিট মিশ্র-ঠুংরী
+১।
+সব শিশুগণ মিলে, আসিয়াছি কুতূহলে,
+কর প্রভু দয়া বিতরণ; । আমরা দুর্বল অতি, নির্বোধ কোমল মতি,
+এস নাথ মোদের সদন।।
+২।
+স্বর্গ সুখ পরিহরি, শিশুগণে প্রেম করি,
+শিশু দেহ করিলে ধারণ; তাই মোরা ক্ষুদ্র মতি, করিতে তােমাদে স্তুতি,
+সমবেত হয়েছি এখন।
+৩।
+মাতাপিতা গুরুজনে, তুষিয়াছ সযতনে,
+বশীভূত থাকি অনুক্ষণ ; করি তাদের আজ্ঞাপালন, দেখাইলে নিদরশন,
+করি যেন পদানুসরণ।
+৪।
+১।
+প্রতিদিন যেন মোরা, রহি তব প্রেমে ভরা,
+| তব প্রেম করিয়া স্মরণ; । প্রেমে যেন কথা বলি, প্রেমে করি কোলাকুলি, | কর যীশু প্রেম বরিষণ।।
+- দুর্গ-কান্ত চক্রবর্তী`,
+  },
+
+  {
+    id: 246,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "246",
+    title: "আনিয়াছি শিশুগণ, তোমার",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৪৬।
+ঝিঝিট মিশ্র ঠুংরী । আনিয়াছি শিশুগণ, তোমার সদনে,
+| কর প্রভু আশিষ প্রদান ; ছােট ছােট শিশুগণ, তোমার স্নেহের ধন,
+যতনে রাখ সৰ্ব্বক্ষণ।। ধরাতলে ছিলে যবে, দলে দলে শিশু সবে,
+| মিলিয়া করিত আগমন ; সস্নেহে কোলে নিয়ে, কোমল কর শিরে দিয়ে,
+করিতে আশীষ প্রদান। একদা শালেমেতে, শিশুগণ লইয়া সাথে,
+আসিল জননীগণ; আশীষ আশা নিয়ে, তব ক্রোড়ে শিশু দিয়ে,
+স্বার্থক করিল জীবন । সেইরূপ শিশুগণে, এনেছি তব সদনে,
+তব হস্ত কর প্রসারণ ; এই ছােট শিশুগণ, করে তব গুণগান, আন্তে যেন পায় পদে স্থান।
+- শীতল চন্দ্র মধু ১৪৪`,
+  },
+
+  {
+    id: 247,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৪৭",
+    title: "মোরা প্রভুর প্রেমে সুখী হই\n",
+    author: "ডবলিউ, কেরী ",
+    language: "Bengali",
+    lyrics: `১।<br>
+মোর প্রভুর প্রেমে সুখী হই,  <br>
+যেমন মৎস সলিলে <br>
+তাঁর কোমল শিক্ষা মধু লই,<br>
+যেমন ভৃঙ্গ কমলে।<br><br>
+
+ধূয়াঃ<br>
+আমি যীশুকে ভালবাসিব<br>
+প্রভূর সঙ্গে সদা থাকিব,<br>
+তাঁর বিশ্বস্ত শিষ্য হইব। <br><br>
+
+২।<br>
+মোর প্রভূর বাক্যে চলিতে হয়,<br>
+যেমন বাদাম বায়ুতে;<br>
+কজ্বা বিনা দ্বার কিছু নয়,<br>
+তরি ফিরে হালেতে।<br><br>
+
+৩।<br>
+মোর প্রভুর শান্তি নিরমল,<br>
+মম মনে বহিলে,<br>
+সে কেমন শোভা! নদীর জলে<br>
+যেমন জ্যেৎস্না হিল্লোলে। <br><br>
+
+৪।<br>
+চাই যীশুর ক্রুশের ভাগী হই,<br>
+তাঁরই প্রেমে ধরি প্রান,<br>
+নিজ হাতে  ‘প্রেকের চিহ্ন’ লই,<br>
+ভাবি পরের পরিত্রাণ।<br>
+`,
+  },
+
+  {
+    id: 248,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "248",
+    title: "ছােট ছােট জীবন গাড়ী",
+    author: "",
+    language: "Bengali",
+    lyrics: `১। ছােট ছােট জীবন গাড়ী,
+মানুষের তৈরী গাড়ী নয়, সুন্দর সুন্দর জীবন গাড়ী,
+তাহার ভিতরে আত্মা রয়।। ২। ইঞ্জিন ঘােড়া গরু নাই, ৩। দুই ষ্টেশনে গাড়ী থামে, দুই পায়ে চলে যায়,
+নামব নরকে বা স্বর্গে,
+যদি স্বর্গে যেতে চাই, দূর, দূর দূর যাত্রা করে,।
+বাইবেল আমাদের পথ দেখায়। কেমন সুন্দর গাড়ী আছে।। ৪। তোমার টিকেট দরকার হয়, ৫। যা ড্রাইভার না হলে, যীশুর নামে পাওয়া যায়,
+গাড়ী বিপদে পড়ে যাবে, টিকেট কিনতে নাই পার, যখন মৃত্যুর ঘন্টা বাজে, যীশুই বিনা পয়সায় দেন।
+তখনই জীবন গাড়ী থামে।
+`,
+  },
+
+  {
+    id: 249,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "249",
+    title: "ছােট পাখী আলোতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৪৯ ১। ছােট পাখী আলোতে, ৫। ছােট পাখী ফাদেতে, গাহে উড়ি বায়ুতে; ।
+ডাকে রক্ষক বাচাতে ; আমি যীশুর পাখী তাই
+আমি যীশুর পাখী, তাই । | প্রেম-আনন্দে কাল কাটাই। পাপের ফাদে রক্ষা পাই। ২। ছােট পাখী, রাত্রিতে, ৬। ছােট পাখী অনুক্ষণ
+বাসায় ঘুমায় শান্তিতে : তুষে যখন যীশুর মন ; আমি যীশুর পাখী তাই
+কত অধিক, আমাতে, আঁধারেও অভয় পাই ।
+তারই পাওনা, প্রেমেতে ।। ৩। ছােট পাখী পিঞ্জরে, ৭। ছােট পাখী বাসা পায় ;
+পালক পাইলে গান করে ; যীশু পান নাই এ ধরায় ; আমি যীশুর পাখী তাই
+ভেবে সকল কষ্ট তার, দুঃখেতেও শান্তি পাই।
+দিব না কি প্রেম আমার ? ৪। ছােট পাখী ভাবে না । ৮।
+ছােট পাখী জানে বেশ ; তবু খাইতে পায় কি না ।। কোন্ পথে যায় দূর দেশ ; আমি যীশুর পাখী তাই
+আমি যীশুর পাখী তাই তারই হাতে সবই পাই ।। স্বর্গের দিকে চলে যাই ।।
+- উইলিয়াম কেরী`,
+  },
+
+  {
+    id: 250,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "250",
+    title: "যীশুর প্রেমে, যীশুর প্রেমে",
+    author: "ডবলিউ,কেরী",
+    language: "Bengali",
+    lyrics: `১। <br>
+যীশুর প্রোমে, যীশুর প্রেমে <br>
+সুখ ও শান্তি পাই;<br>
+পাশে থাকেন ,দৃষ্টি রাখেন,<br>
+জানি সর্বদাই।<br><br>
+ধূয়া-ভাল বাসেন ,যীশু নাথ আমায়,<br>
+মনে মনে ,প্রতিক্ষণে ,গাইলে প্রাণ জুড়ায়।<br><br>
+
+২। <br>
+যীশুর বরে, যীশুর বলে,<br>
+হৃদয় রক্ষা পায়;<br>
+তাঁরে যখন ডাকি ,তখন <br>
+দুঃখ দূরে যায়।<br><br>
+
+৩। <br>
+যীশুর দয়া ,যীশুর দয়া,<br>
+তার তো সীমা নাই;<br>
+পড়ে গেরে ,ধরেন তুলে,<br>
+পাপের ক্ষমা পাই।<br><br>
+
+৪। <br>
+যীশুর ইচ্ছা ,যীশুর ইচ্ছা ,<br>
+পালন করতে চাই;<br>
+প্রিয় ত্রাতা ,জ্যেষ্ট ভ্রাতা,<br>
+ভালবাসি, তাই।<br><br>
+
+৫। <br>
+যীশুর সেবা ,যীশুর সেবা ,<br>
+ভাল লাগে ভাই;<br>
+সুযোগ পেয়ে , সুখী হয়ে, <br>
+কার্যে কাল কাটাই।<br><br>
+
+৬। <br>
+যীশুর হৃদয় ,যীশুর হৃদয় ,<br>
+ধারণ করতে চাই, <br>
+প্রার্থনাতে , শাস্ত্র পাঠে<br>
+রত থাকি, তাই।<br>
+`,
+  },
+
+  {
+    id: 251,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৫১",
+    title: "প্রভু যীশু, আমি শিশু",
+    author: "বিজয়নাথ সরকার",
+    language: "Bengali",
+    lyrics: `প্রভু যীশু, আমি শিশু, তোমায় বড় ভালবাসি <br>
+তোমার ইচ্ছায় মিলায়ে ইচ্ছা, চলবো বলে সভায় আসি।<br><br>
+
+১। <br>
+শাস্ত্র- পাঠে, সভাস্থলে, উপাসনায় , সান্ডে - স্কুলে,<br>
+নিত্য তোমায় , দেখতে সেথায়, মনে মনে হই প্রয়াসী।<br><br>
+
+২। <br>
+সন্ধ্যা কিম্বা প্রাতঃকালে, বসবো তোমার চরণ তলে,<br>
+এই প্রতিজ্ঞা, যীশুর আজ্ঞা, রক্ষা করব সুখে ভাসি।<br><br>
+
+৩। <br>
+সভায় তোমার রব শুনিব, প্রার্থনা ও গান করিব,<br>
+ইহা ছাড়া, কার্য দ্বারা, তোমার সাক্ষী হব আসি।<br>
+`,
+  },
+
+  {
+    id: 252,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৫২",
+    title: "আমি যীশুর ছছাট মেষ, প্রতিদিন",
+    author: "",
+    language: "Bengali",
+    lyrics: `১. <br>
+আমি যীশুর ছোট মেষ, প্রতিদিন মোর সুখ অশেষ,<br>
+তিনি রক্ষা করেন বেশ; তার ছোট মেষ ! <br><br>
+
+২. <br>
+পাঁচনি সুপথ দেখায়, বাহু প্রেমের চৌকি দেয়,<br>
+সদানন্দে থাকি তায়; তার ছোট মেষ ।। <br><br>
+
+৩. <br>
+শয়তান-সিংহ বলবান, রাখাল দিলেন নিজ প্রাণ ;<br>
+আমায় করতে পরিত্রাণ; তাঁর ছোট মেষ। <br><br>
+
+৪. <br>
+পূর্বে ছিলাম বাহিরে; এখন যীশুর খোয়াড়ে,<br>
+শান্তিবারি পান করে ; তাঁর ছোট মেষ। <br><br>
+
+৫. <br>
+যীশুর পালে থাকিব; রাখাল ভালবাসিব, <br>
+তাঁহার পশ্চাৎ চলিব; তার ছোট মেষ ।।<br>
+`,
+  },
+
+  {
+    id: 253,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "253",
+    title: "(প্রভু) রেখ মতি তোমার চরণে",
+    author: "",
+    language: "Bengali",
+    lyrics: `(প্রভু) রেখ মতি তোমার চরণে। ১ অজ্ঞান বালক/বালিকা মতি, কিবা জানি স্তব স্তুতি,
+নাহি জানি ডাকিব কেমনে-২। ২ শত্রু আদি মোহ মায়া অনিত্য জীবন কায়া,
+এ কথাটি থাকে যেন মনে-২। ৩ সকলের মূলে তুমি, তোমার প্রেরিত আমি,
+ভাবি যেন শয়নে স্বপনে-২।`,
+  },
+
+  {
+    id: 254,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "254",
+    title: "যীশু ছাড়ব না, ছাড়ব",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৫৪
+বারেয়া-তেতালা।। যীশু ছাড়ব না, ছাড়ব না, ছাড়ব না হে,
+আমি এই শিশু কালে করব ভজনা ৩ হে।। ১। ওহে প্রিয় যীশু মোর, আমি ক্ষুদ্র মেষ তোমার, - নাথ সহায় হও মোর, তোমায় ভুলব না ৩ হে।।
+২। ভালবাসি তোমারে, পাপ হতে থাকিব দূরে,
+কভু তব প্রেম ছেড়ে, আমি যাব না ৩ হে।। ৩। আমার এই ক্ষুদ্র মন, করি তোমায় সমর্পণ,
+বাধ্য রেখে সৰ্ব্বক্ষণ, কর সান্ত্বনা ৩ হে। ৪। যখন যে দিকে যাব, তােমাকে হৃদে রাখিব, এরূপে দিন যাপিব, ভয় করব না ৩ হে।।
+|
+- প্রভাত চন্দ্র দাস।`,
+  },
+
+  {
+    id: 255,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "255",
+    title: "সাবধান ছােট হাত যা কর",
+    author: "",
+    language: "Bengali",
+    lyrics: `Be Careful Little llands What vou Do
+১
+।।
+সাবধান ছােট হাত যা কর
+সাবধান ছােট হাত যা কর ধূয়া-স্বর্গের ত্রাতা এক আছেন, কত যে ভালবাসেন।
+সাবধান ছােট হাত যা কর * ২ সাবধান ছােট পা যেথায় যাও-২। ৩ সাবধান ছােট চোখ যা দেখ-২ ৪ সাবধান, ছােট কান যা শুন-২ ৫ সাবধান ছোট মুখ যা বল২ ৬ সাবধান ছােট মন যা ভাবাে-২
+ধূয়ার পদের সহিত সঙ্গতি রাখিয়া গাহিতে হইবে।`,
+  },
+
+  {
+    id: 256,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৫৬",
+    title: "ছোট শিশু মোরা তোমার করুণা",
+    author: "",
+    language: "Bengali",
+    lyrics: `ছোট শিশু মোরা তোমার করুণা হৃদয়ে মাগিয়া লব,<br>
+জগতের কাজে, জগতের মাঝে, আপনা ভুলিয়া রব ।। <br><br>
+
+১. <br>
+ছোট তারা হাসে আকাশের গায়, ছোট ফুল ফুটে গাছে,<br>
+ছোট বটে তবু তোমার জগতে আমাদেরো কাজ আছে।। <br><br>
+
+২. <br>
+দাও তবে প্রভু হেন শুভ মতি, প্রাণে দাও নব আশা,<br>
+জগৎ মাঝারে যেন সবাকারে দিতে পারি ভালবাসা। <br><br>
+
+৩. <br>
+সুখে দুঃখে শোকে অপরের লাগি’ যেন এ জীবন ধরি,<br>
+অশ্রু মুছায়ে বেদনা ঘুচায়ে মোরা জীবন সফল করি।।<br>
+`,
+  },
+
+  {
+    id: 257,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৫৭",
+    title: "কি শুভ দিন হে ত্রাণেশ্বর যে দিনে ",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।<br>
+কি শুভ দিন হে ত্রাণেশ্বর যে দিনে মন হইল স্থির;<br>
+বাসনা সব তোমার উপর, করিনু স্থাপন হইয়া ধীর।।<br><br>
+
+ধূয়াঃ  <br>
+শুভ দিন। শুভ! ধুলেন যীশু মোর পাপ যে দিন।<br>
+আর শিক্ষা দিলেন জাগিতে, প্রার্থনায় রত থাকিতে!<br>
+শুভ দিন! শুভ দিন! ধুলেন যীশু মোর পাপ যে দিন।<br><br>
+
+২।<br>
+সে উল্লাসে মোর মন ও প্রাণ, তদ্দিনের কীর্তি গায় বিস্তর;<br>
+তোমাকে সব করিয়া দান, আহ্লাদে নাচে মোর অন্তর।<br><br>
+
+৩।<br>
+কি সুখের যোগ, মোর মানত সব যদ্বারা মুদ্রাঙ্কিত হয়;<br>
+তায় ব্যাপ্ত হোক, এহৃদে স্তব ও সঙ্কীর্তন আনন্দময়।<br><br>
+
+৪।<br>
+এ হইল স্থির, যে আমি তাঁর, তিনি আমার হলেন নিশ্চয়;<br>
+যাবজ্জীবন, রে মন আমার, বিশ্রান্ত রহ সব সময়।।<br>
+`,
+  },
+
+  {
+    id: 258,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "258",
+    title: "ও তাের সকল পাপ আজ",
+    author: "",
+    language: "Bengali",
+    lyrics: `কীর্তন-তাল একতালা ও তাের সকল পাপ আজ, ক্রুশেতে, মেরে দে । (ও পাপ) ১। যদি যীশুর আত্মায় প্রাণ বাঁচাবি- ক্রুশেতে মেরে দে,
+যদি শতানেরে জয় করিবি২। যদি যীশু আনন্দে বেড়াবি
+যদি যীশু শান্তি ঢেউয়ে ভাসিবি৩। যদি স্বর্গ সুখ ভােগ করিবি
+যদি স্বর্গ প্রাণে সদা চাখবি৪। যদি যীশু-প্রেম বাতাস খাবি
+যদি হেসে খেলে স্বর্গে যাবি৫। যদি স্বর্গ ফল মূল আহার করিবি- "
+যদি দূতের নৃত্য গান শিখিবি৬। যদি যীশু আলোয় সুশ্রী হবি
+যদি স্বর্গ ভাষায় পন্ডিত হবি। ” যদি ধৰ্ম্ম আত্মায় পূর্ণ হবি
+যদি অজয় মুকুট মাথায় পরবি৮। যদি যীশু মুখের চুম্বন খাবিযদি পিতায় আজ আলিঙ্গন করবি- ”
+-রাজন ফকীর।`,
+  },
+
+  {
+    id: 259,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "259",
+    title: "দেহ পুণ্য আত্মার মন্দির",
+    author: "",
+    language: "Bengali",
+    lyrics: `রামপ্রসান সুর-
+এ
+ত
+দেহ পুণ্য আত্মার মন্দির, ইহা শাস্ত্রের বাণী জেনো হে স্থির
+১।
+২।
+ঈশ্বর স্বয়ং দেহ মাঝে, সদা সর্বদা বিরাজে, সবে পাইবে হে সাজা পাছে, নষ্ট করলে এই মন্দির। বিষ প্রয়ােগে, তামাক পানে, মদ্য গাঁজা ভাং সেবনে, অশুচি হয় দেহ মনে, শাস্ত্রে বলে বারে বার । ঈশ্বর পিতা সিদ্ধ যেমন, সিদ্ধ রাখ দেহ তেমন, ভাই উভয়ে হইলে মিলন, স্বর্গে পাবে অধিকার ।
+- শীতল চন্দ্র মধু`,
+  },
+
+  {
+    id: 260,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "260",
+    title: "শান্তি তরঙ্গে সদা নাচে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬০
+। সুর- "শান্তি তরঙ্গে সদা নাচে অন্তর” চল মোরা সবে মিলে শাব্বাথ স্কুলে যাই, কিবা আনন্দ রে ভাই। (গিয়ে) ধীর পদে, শান্ত হয়ে বসবাে আসনে, যীশুর জয় গান গাব, মিলে এক সনে, প্রার্থনায় নীরব বর, মনে যীশুর চিন্তা করব, মুদিয়া নয়ন; হয়ে নতজানু ভাই ।। যীশুর কথা শিখবাে মোরা গল্পচ্ছলে, রাখিব সে সব কথা হৃদয় কমলে, বলিব আবার সবে, আসিতে যীশুর কাছে, আশীষ কারণ; এমন আশীষ দাতা নাই।
+৬
+। মা,
+ছােট ছােট বন্ধু মোদের আছে যারা, শাব্বাথ স্কুলে আনতে তাদের করিব ত্বরা, শিখিবে যীশুর কথা, রাখিবে মনে সদা, করিয়া যতন; মনে কি আনন্দ তাই। ছােটবেলা শিখলে পরে যীশুর বচন, বড় হলে সে সব কথা থাকবে স্মরণ, হব তীমথিয়ের মত, সাধিব জীবনের ব্রত, করে প্রাণপণ; স্বর্গধামে যেতে ভাই।
+- শীতল চন্দ্র মধু`,
+  },
+
+  {
+    id: 261,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "261",
+    title: "শুভ শাব্বাথ প্রাতে বাইবেল",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬১
+|
+তাল দাদরা শুভ শাব্বাথ প্রাতে বাইবেল হাতে
+| এসেছি যীশুর মন্দিরে। তােরা আয় সবে মিলে এবে কুতূহলে-২
+| গাহি যীশু নাম প্রাণ ভরে ।। ছয়টি দিবস কাটলাে সুখে এ দুরদিনে
+তোমার কৃপারই গুণে। মোরা কৃতজ্ঞ আজ তোমার পায়ে-২
+থেকো মোদের অন্তরে।
+১।
+|
+২।
+৩।
+নূতন সাজে সেজে আজি এসেছ সকলে।
+প্রভুর মন্দির তলে। তোমার হৃদয় কুটির সাজিয়েছ কি-২।
+শ্রী যীশুর ত্বরে । । ভবের মেলায় মায়ার খেলা ফুরায় দু'দিনে
+| পড়ে পাপের তুফানে । প্রভু ঐ তুফানে ডুবতে গেলে-২ রেখ হাতে হাত ধরে।
+অতুল চন্দ্র বল`,
+  },
+
+  {
+    id: 262,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "262",
+    title: "শােন পাপী প্রাণ খুলে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬২
+.
+|
+24
+সূর- “শােন পাপী প্রাণ খুলে আজ প্রিয় প্রভুর দিন, সপ্তাহের সপ্তম দিন, সৃষ্টি-স্থিতি-প্রলয়-কৰ্ত্তা, প্রভু যীশুর বিশ্রাম দিন। ছয়দিন ব্যাপী দয়াময়, বিশ্ব-স্রষ্টা সদাশয়, সৃজিলেন সমুদয়, মনুষ্যের কারণে, চির অভিজ্ঞান হেতু, সৃজিলা এ শাব্বাথ দিন।
+২।
+ওহে শাব্বাথ রাজন, করে শাব্বাথ পালন, তুমি আদর্শ জীবন, দেখাইলে জীবনে, দিনের স্রষ্টা, দিনের রাজা, দীনে কর পদাধীন।
+৩।
+পিতকুল পতিগণ, আরও ঐ ধীবরগণ, প্রতি শাব্বাথে গমন, করিত সমাজগৃহে, দুখে, সুখে কারাকপে, ছিল তব আজ্ঞাধীন।
+৪।
+বড় আশা হে সবার, ওহে যীশু ত্রাতাবর, নূতন এদনে আবার, পালিব বিশ্রাম দিন, (তাই) তব আগমন প্রতীক্ষা করিতেছি দিনে দিন।
+- পূর্ণ চন্দ্র দে`,
+  },
+
+  {
+    id: 263,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "263",
+    title: "পবিত্র, পবিত্র, পবিত্রময়",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬৩
+১।
+সূর- “পবিত্র, পবিত্র, পবিত্রময় পিতা।” (শুভ) শাব্বাথ-দিন, প্রভুর দিন, সৃষ্টিকর্তার বিশ্রাম দিন,
+আশীৰ্বাদ অভিবাদ, তাহে সমীচীন; (ইহা) পবিত্র যথার্থ, ঈশ্বরের প্রেমের বিধান,
+যতনে, পালনে, স্বাস্থ্য লভে প্রাণ। (পেয়ে) বিশ্রামবার, পুনৰ্ব্বার কৃতজ্ঞতা সহকার,
+সমর্পিব সকলের প্রীতি উপহার; |
+(এস) যতনে, কায়মনে, পূজি পিতার চরণে,
+জীবন-ভার বহি যার করুণা গুণে। (প্রভু) বিশ্রামবার, তোমার বার, পরিবর্তন নাহি তার।
+শক্তি দাও যতনে পালি, দয়াধার, |
+(এসে) প্রেমময়, এ সময়, হৃদি মাঝে হও উদয়, যেন সব পাপ আঁধার বিদূরিত হয়।
+৩।
+(ওহ) শান্তি-রাজ, কর আজ, সবার হৃদয়ে বিরাজ,
+তোমারই প্রেরণায় করি সকল কাজ; (যবে) নিবে যায়, মাটির এই জীবন-প্রদীপ আমার হায় । অনন্তে যেন প্রাণ চরণে স্থান পায়।
+- অজ্ঞাত`,
+  },
+
+  {
+    id: 264,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "264",
+    title: "দাও যীশু পরম ধন",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬৪
+সুর- "দাও যীশু পরম ধন ।"
+| আজ “সদাপ্রভুর দিন, পূজার দিন, পবিত্র দিন, শুভ শাব্বাথ দিন। ১। প্রভাে! তব আজ্ঞা সনে,
+স্থাপন করিলা এ দিনে, যেন পালে মানবগণ, (এই) পুণ্য বিশ্রামদিন। ২। কার্য্যের ছয় দিন হইতে,
+| শাব্বাথ পৃথক রাখাতে, (হল) মানব তব মাঝেতে, চির চিহ্নের দিন।।
+৩। বিশ্রাম দিনের আশীষদানে, (প্রভু) পূর্ণ কর প্রতি জনে, কি সমবেত এ সদনে, আজিকার দিন।
+- পূর্ণচন্দ্র দে (পরিবর্তিত)`,
+  },
+
+  {
+    id: 265,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "265",
+    title: "সর্ব জন কর ধন্য গান",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬৫
+সূর- “সর্ব জন কর ধন্য গান ।” এস সবে গাহি ধন্য গান, অদ্য এ পুণ্য দিনে। এস ভ্রাতা ভগ্নিগণ, গাহি যীশু স্তব গান, সমবেত এ সভাস্থান, মিলাইয়া সুর একতানে
+২।' পুণ্যদিনের শুভ প্রাতে, বালক-বালিকা সাথে,
+মাতিয়া যীশু প্রেমেতে, লুটাই তাঁহার চরণে । ৩।
+শাব্বাথ স্কুলে ইচ্ছা সবার, লভিব শকতি অপার,
+শুদ্ধ করি এই অন্তর, তপ্ত কর আশীষ দানে । ৪। ডাকি তারে এক স্বরে, হিংসা দ্বেষ ফেলি দূরে, পেয়ে সবে আত্মার বরে, সফল করি জীবনে।
+শীতল চন্দ্র মধু`,
+  },
+
+  {
+    id: 266,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "266",
+    title: "সুধা নিবি আয়, সময়",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+২।
+সুধা নিবি আয়, সময় বয়ে যায়, যীশুর নামে হাট বসেছে অমনি পাওয়া যায় । শুন মন বলি তােরে হাট মিলেছে বিশ্রাম বারে সেই বারে জীবন খাদ্য বিনামূল্যে দেয় । পাবি জিনিষ মনের মত কে জানে তার দাম যে কত, কাঙ্গাল গরীব দেখে মালিক অমনি সব বিলায় । সময় থাকতে হাটে চল, বেচা কেনার সময় গেল, রাত্রি হলে মহাজনে দিবেন যে বিদায়। ভবের হাটের বেচা কেনা ফুরিয়ে গেলে আর পাবে না, নিয়ে যাবে সকল জনা হবি নিরুপায় ।
+৩।
+৪।
+- অজ্ঞাত`,
+  },
+
+  {
+    id: 267,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "267",
+    title: "আনন্দময় বিশ্রাম দিন",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬৭
+O Day of Rest and Gladness
+Church Ilumnal 463 আনন্দময় বিশ্রাম দিন, সুখময় উজ্জ্বল দিন দুঃখ বিষাদ রবে না, মধুময় সুন্দর দিন সিংহাসন সম্মুখে, প্রণমি সকলে। গাই পুণ্য পুণ্য পুণ্য, শাশ্বত ঈশ্বরে
+২।
+সুরক্ষিত বন্দর প্রবল ঝড়ের মাঝে, জীবন নদী প্রবাহে মনােরম এদনে, শুষ্ক নিরস জীবনে শীতল বারিধারা, (যেন) পীসগা পৰ্বত হইতে হেরী স্বর্গ মোরা। কি মনােরম মধুময়, স্নেহ মাখা দিন ভাই ঐহিক বাসনা ছাড়ি, স্বর্গের ভাবনায় কাটাই নূতন করুণা লভি, এস এ-ই দিনে, যাচি অপার শান্তি, যা আছে স্বর্গেতে।
+Tr.- এন, এন, সরকার`,
+  },
+
+  {
+    id: 268,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "268",
+    title: "জেগে থাক বলেন যীশু",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬৮
+সুর- “জেগে থাক বলেন যীশু
+ওহে প্রভু! তব আজ্ঞা পালিব মনে বাসনা,
+দেহ শক্তি, দেহ ভক্তি, বিশ্বাসে করি সাধনা।। ১। তব আজ্ঞা পথের আলো, প্রাণে তাহা লাগে ভালো,
+পালিব তা চিরকাল, কর মোরে এ করুণ । ২। তব বিধি ফেলি দূরে, পড়েছিনু অন্ধকারে,
+(আজি) হৃদে দিলে আলো করে, পাইতে সত্যে সান্ত্বনা । ৩। তব অজ্ঞা নূতন জ্ঞানে, পালিব তা নূতন মনে,
+আশীষ দেহ এই দীনে, (আর) পূর্ণ কর এ বাসনা। ৪। তব শাব্বাথ পুণ্যদিন, যে পালে সে লভে পুণ্য,
+ঈশ-নরে এই চিহ্ন কখনও লুপ্ত হবে না। ৫। যে জন আজ্ঞা মান্য করে, ডাকলে উত্তর দেও তারে।
+(আর) আমোদিত কর তারে, শাস্ত্রে আছে প্রমাণ নানা। ৬। তব শাব্বাথ কেমন মান্য, যে পালে সে হয় ধন্য,
+(তার) আশীৰ্ব্বাদে গৃহ পূর্ণ, (প্রভু) তুমি কর এ করুণা।
+৭। (প্রভু) দেহ ভক্তি, দেহ জ্ঞান, পালিতে সে পুণ্য দিন, রাখ তব আজ্ঞাধীন, প্রদান আশীষ কণা। |
+বিপিন বিহারী সরকার`,
+  },
+
+  {
+    id: 269,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "269",
+    title: "প্রেম কর পরস্পর",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৬৯
+প্রেম কর পরস্পর, প্রেম সম সুধা নাই রে,
+প্রেমই সত্য, প্রেমই মধুর রে, ও ভাই, প্রেমে হিংসা ক্রোধ হরে।। প্রেম স্বরূপ স্বর্গের পিতা, প্রেমে যীশু ক্রুশে গাধা, প্রেমেই মোরা ভগ্নী ভ্রাতা রে, ও ভাই হয়েছি যীশুর বরে ।
+২ ভ্রাতাকে যে ঘৃণা করে, এখনও সে অন্ধকারে,
+প্রেম নাই তার অন্তরে রে,
+ও সে পড়ে আছে অন্ধকারে। | ৩ প্রেমেতে বাস ভ্রাতায় ভ্রাতায়, করিলে কি সুন্দর দেখায়,
+একেই বলে মৃত্যুকে জয় রে,
+ও ভাই, প্রেম বিনা আর ধের না রে। ৪ প্রেমাবতার প্রেম করে, প্রেম বিলালেন ঘরে ঘরে,
+প্রেমে পাপাচ্ছন্ন করে রে,
+ও ভাই, প্রেমই সত্য সুখী করে । ৫ ইহকালে পরকালে, প্রেমের লােপ নাই কোন কালে,
+শাস্ত্রে বলে, ভক্তে বলে রে, ও ভাই! প্রেমােকৃষ্ট সর্বোপরে।
+- খ্রীষ্ট সঙ্গীত`,
+  },
+
+  {
+    id: 270,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৭০",
+    title: "কি মোর পাপ পারে ধুতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `১। <br>
+কি মোর পাপ পারে ধুতে? কেবল মাএ যীশুর রক্ত  <br>
+কি পারে নির্মল করতে? কেবল মাএ যীশুর রক্ত <br>  <br>
+
+ধূয়াঃ<br>
+ অমূল্য এই স্রোত, যা করে শুক্লবৎ— <br>
+এতে হই আমি ধৌত, কেবল মাএ যীশুর রক্ত। <br> <br>
+
+২। <br>
+পাপের প্রায়শ্চিত এই, কেবল মাএ যীশুর রক্ত; <br>
+মোর সৎকর্ম পারে নাই, কেবল মাএ যীশুর রক্ত। <br> <br>
+
+৩। <br>
+এতে আমি ক্ষমা পাই, কেবল মাএ যীশুর রক্ত, <br>
+এতে আমি সাধু হই, কেবল মাএ যীশুর রক্ত। <br> <br>
+
+৪। <br>
+এতে সুখ ও শান্তি পাই, কেবল মাএ যীশুর রক্ত, <br>
+এতে আমি নির্মল হই, কেবল মাএ যীশুর রক্ত। <br>  
+`,
+  },
+
+  {
+    id: 271,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "271",
+    title: "যদি যীশুর শক্তি পেতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `ঝিঝিট-একতালা । যদি যীশুর শক্তি পেতে চাও, অতি নম্র হও, ধর সত্য উপায়, জগত্ৰাতায় দেখাইলেন,
+নত হয়ে সবার প্রাণ ফাটাও। ১। ক্রুশেতে উথিত হইলেন, আকর্ষণ করিলেন,
+তাই মোদের তারিলেন, নিজে হলেন নত, বিধিমত ভাইরে ;
+কেন ঐ আশীৰ্বাদ ফেলে যাও। ২। হায়! উপদেশ আর খাটে না, কঠিন প্রাণ ফাটে না,
+তায় পাপী গলে না, মনের কথা বল, বোঝা ফেল, একেবারে, বল, প্রভু যীশু প্রাণ বাঁচাও ।।
+৩। শুন ধন্য বলেন যীশু তায়, স্ত্ৰ মন যার আশ্রয়।
+| সে ধরা করে জয়, দুঃখে বুক ঠেটে যায়, থাকতে উপায় যীশু রে, সাথী না করিতে সদা চাও।
+|
+রাজন ফকীর।`,
+  },
+
+  {
+    id: 272,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "272",
+    title: "দশমাংশ আন সবে",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+২।
+বাউলের খেমটা দশমাংশ আন সবে প্রভুর ভান্ডারে, (আন) প্রভুর ভান্ডারে, ও ভাই প্রভুর ভান্ডারে ।। যে না দেয় দশমাংশ, সে হরে প্রভুর অংশ, রাখে ঈশ পুণ্য অংশ, নিজ অধিকারে । দশমাংশ যে জন দিবে, তার কোন অভাব না হইবে, কোন কষ্ট না থাকিবে, এই সংসারে ।। গ্রাসক ভর্ৎসিত হবে, ভূমির শস্য না খাইবে, অকালে ফল না ঝরিবে দিলে তাহারে। স্মরে প্রভুর অঙ্গীকার, ও ভাই আন আন উপহার, পাবে ধন শস্য আরাে, এই সংসারে । দশমাংশ উপহার দিয়ে প্রভুর পরীক্ষা কর, দিবেন খুলে স্বর্গ-দ্বার, আশীষ সবারে ।
+- শীতল চন্দ্র মধু।`,
+  },
+
+  {
+    id: 273,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "273",
+    title: "দশমাংশ আন সবে ভান্ডারে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৭৩
+তাল দাদা।
+দশমাংশ আন সবে ভান্ডারে আমার
+আরাে আন উপহার। স্বর্গ দুয়ার খুলে আমি দিব তোমায় বর
+কর পরীক্ষা আমার ।।
+তােমরা আমায় না ঠকালে
+গ্রাসক যাবে দূরে চলে। | অকালে ক্ষেত্রের ফল ঝরবে না তোমার। কর পরীক্ষা আমার।
+- অতুল চন্দ্র বল`,
+  },
+
+  {
+    id: 274,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৮৯",
+    title: "পড়ে, পড়ে ঝন ঝন",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৭৪
+১।।
+পড়ে, পড়ে ঝন ঝন করে, শুন পয়সার গান? আমরা যীশুর তরে সবই করি দান। । শুন! পয়সা পড়ে, পয়সা করে গান। আমরা যীশুর তবে সবই তিনি পান । ছােট হাতে পড়ে পয়সা করে গান, প্রভু যীশুর তরে ছেলে মেয়ের দান। আমরা শিশু এখন নহি ধনবান, বড় হব যখন, করব প্রচুর দান। যদিও নাই অর্থ, প্রেম আছে দিবার; নিবেন হেসে, নাথ, মোদের উপহার।
+৩।
+৪।`,
+  },
+
+  {
+    id: 275,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৭৫",
+    title: "আয় মন চল যাই সেই",
+    author: "বিন্দুনাথ সরকার\n",
+    language: "Bengali",
+    lyrics: `আয় মন চল যাই সেই নিত্যানন্দ ধামে;   <br>
+যথা শান্তি নদী উথলিছে সদা যীশুর নামে<br>
+আনন্দের আর সীমা নাইরে।<br><br>
+
+১। <br>
+তথা মূর্তিমান ত্রাণকর্তা পিতা যাঁর বামে;<br>
+(নয়ন হেরিব সকলে)<br><br>
+
+২। <br>
+তাঁর প্রেক-  বিদ্ধ হস্তপদ হেরিব গো প্রেমে;<br>
+(প্রেমধারা ফেলে নয়নে)<br><br>
+
+৩। <br>
+সব দুঃখ তাপ ভুলে গিয়ে থাকিব আড়ালে;<br>
+(আনন্দের দিন কবে হবে রে)<br><br>
+
+৪। <br>
+ঐ যে পাপের জ্বালা না রহিবে সে আনন্দ ধামে;<br>
+(চিরসুখে সুখী হবে গো)<br><br>
+
+৫। <br>
+মোরা শমন ভয়ে ভীত নাহি হইব সেখানে;<br>
+(শমন ভয় দূরে যাবে গো)<br><br>
+
+৬। <br>
+তথা সদানন্দে রব মোরা যীশুর গুণ গানে;<br>
+(যীশু মোদের সঙ্গে থাকবেন গো)<br>
+`,
+  },
+
+  {
+    id: 276,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "276",
+    title: "আমরা স্বর্গের যাত্রী হই",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৭৬
+আমরা স্বর্গের যাত্রী হই- জয় হাল্লিয়া,
+বিজয় গানে দেশ মাতাই- জয় জয় হাল্লিলুয়া । ১। তাহার কাৰ্য্য করিব-জয় হাল্লিলুয়া,
+প্রতিদিন জয় করিব- জয় জয় হাল্লিলুয়া। ২। যীশুর কাছে শক্তি পাই-জয় হাল্লিয়ালুয়া,
+তাহার জন্যে জয়ী হই- জয় জয় হাল্লিয়া ।। ৩। শয়তান কি আর করিবে- জয় হাল্লিলুয়া,
+ক্রুশ দেখিলে পলাবে-জয় জয় হাল্লিলুয়া, ৪। নূতন সঙ্গীত গাহি-জয় হাল্লিলুয়া।
+মহানন্দে নাচিব- জয় জয় হাল্লিয়া। ৫। তাকে হর্ষে হেরিব- জয় হাল্লিয়া। তার সদৃশ্য হইব- জয় জয় হাল্লিয়া।
+| (পরিবর্তিত) অজ্ঞাত`,
+  },
+
+  {
+    id: 277,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "277",
+    title: "স্বার্থক হউক মোদের এই",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৭৭
+|
+বাউলের সুর-খেষ্টা
+১।।
+স্বার্থক হউক মোদের এই সম্মিলন, মোদের এই সম্মিলন প্রভু, এই সম্মিলন। তুমি না আসিলে হেথা, মোদেরও যে আসা বৃথা; জানাই তোমায় এ বারতা, কর আগমন।
+২।
+তোমার আশীষ পাবার তরে, এসেছি তোমার দ্বারে; দাও সবে পূর্ণ করে দিয়ে আশীষ দান।।
+তোমার সত্য প্রচারিতে, মোদের এ জগতে; উদ্দীপ্ত কর প্রেমেতে, এই দীনগণ ।
+৪।
+সত্যের নিশান জয়ভরে, উঠুক প্রতি ঘরে ঘরে; গাহুক সবে এক স্বরে, তোমার জয়গান ।। সে দিন দেখাও দয়াময়, থাকবে তব প্রতীক্ষায়; (সবে) আনন্দেতে মিলি তোমায়, করবাে অভ্যর্থন।
+- শীতল চন্দ্র মধু`,
+  },
+
+  {
+    id: 278,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "278",
+    title: "হের গাে নাথ, আজি সম্মিলিত",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৭৮
+।
+১।
+|
+|
+|
+২।
+হের গাে নাথ, আজি সম্মিলিত
+দীন জন তব চরণ সেবায় । প্রীতি নব রাগে, নবীন সােহাগে,
+আজি শুভযােগে বরিব তোমায়। ঘৃণা হিংসা দ্বেষ, করি সব নাশ,
+দেহ অনিমেষ, একতা সবায় ।। ধূলিমাখা দেহে এসেছি এ গেহে।
+ত্যাজিও না ওহে প্রভু দয়াময়।। সব ধূলা ফেলি, লহ কোলে তুলি,
+রাখ সবে ভুলি, দুঃখ বেদনায় । করিয়াছি কত, পাপ শত শত,
+| মোরা অবিরত চলি এ ধরায়। ক্ষমা ভিক্ষা দানে, রাখ এই দীনে,
+তোমারি চরণে করি এ বিনয় ।।
+৪।
+আত্মার ভিখারী মোরা নরনারী,
+- দেখ সারি সারি চরণে তোমার । লভিয়া শকতি, আত্মার মুকতি, ফিরি যেন প্রতি গৃহেতে আবার ।
+- সুরেন্দ্র নাথ দাস। U TO`,
+  },
+
+  {
+    id: 279,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "279",
+    title: "বড় প্রেমানন্দ মনে হে",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৭৯
+বড় প্রেমানন্দ মনে হে, বড় প্রেমানন্দ মনে,প্রেমানন্দ মনে এখন ধন্যবাদ জানাই চরণে।।
+১। তুমি করেছ দয়া, রেখেছ আশ্রয় দিয়া,
+দিতেছ চরণ ছায়৷ কি রাতে কি দিনে ।। আহার বস্ত্র যােগাইতেছ কাঙ্গাল দীনহীনে, (দয়াময়) যত আত্মবন্ধুর স্নেহ দয়া- সে সকল তোমার বিধানে ।। রােগের করেছ তত্ত্ব—যােগাইয়া ঔষধ পথ্য, স্বাস্থ্য সুখ তোমার দত্ত সার জেনেছি মনে ।। কাদি যখন দুঃখে পড়ে, ধারা বয় নয়নে, (দয়াময়)
+এসে নিজ হাতে মুছাও চক্ষের জল সান্ত্বনা দিয়া অজ্ঞানে ।। ৩। জগতের দুঃখ শােকে, আঁধার দেখি দুই চক্ষে,
+দেখা দিয়া সম্মুখে, লও নিকটে টেনে । এক মুখে ঐ দয়ার কথা, বলিব কেমনে, (দয়াময়)
+যদি থাকত শত সহস্র মুখ, হার মানতাম দয়া-বর্ণনে । ৪। পাঠাইলে আপন নন্দন, এই পাপীর মুক্তির কারণ,
+তিনি প্রায়শ্চিত্ত সাধন কল্লেন জীবন দানে । জীবন মূল্যে কিনিয়াছ, আমার এই জীবনে, (দয়াময়) মনে আশা আছে, অবশেষে স্থান পাব অভয় চরণে !
+৫। কাঙ্গালের এই আকিঞ্চন যত দিন রয় এই জীবন,
+তোমার নাম গুণ সংকীৰ্ত্তন, করব নিশিদিনে, দেশ বিদেশে, সুখ দুঃখে আর জীবনে মরণে (দয়াময়) আমি গাব তোমার ধন্যবাদ গান দিন কেটে যাক গানে গানে।
+-প্রিয়নাথ বৈরাগী`,
+  },
+
+  {
+    id: 280,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "280",
+    title: "ভুলিয়া না যাই- যেন ভুলিয়া",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৮০
+ক
+মিশ ভৈরবী-জং
+১1
+ভুলিয়া না যাই- যেন ভুলিয়া না যাই,
+মি অফুরন্ত দয়া তোমার অনন্তকাল স্থায়ী । তোমার যত দয়া এ জীবনে, দেশে দেশে ও ভূবনে দন্ডে দন্ডে নিশি দিনে, সর্বক্ষণে পাই। আমি কেবল মাত্র তোমার দয়ায়, পিতা হে চিনেছি তোমায় পেয়েছি ঐ পায়ে আশ্রয়, চির কালের ঠাই । যেন তোমার দয়ার কথা, চির দিন রয় প্রাণে গাথা কৃতজ্ঞতা যেন প্রাণে থাকে সর্বদাই ।
+২।
+৩।
+প্রিয়নাথ বৈরাগী`,
+  },
+
+  {
+    id: 281,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৮১",
+    title: "ভুলিতে কি পারি তাঁরে",
+    author: "যাকোব কান্তিনাথ বিশ্বাস\n",
+    language: "Bengali",
+    lyrics: `ভুলিতে কি পারি তাঁরে,    <br>
+যিনি নিজ প্রাণ দিয়া তারিলেন অভাগারে।<br><br>
+১। <br>
+সেই নাথ মহীয়ান, মম চিন্তা মম ধ্যান,<br>
+জীবন থাকিতে আমি, ভুলিতে কি পারি তাঁরে।<br><br>
+২। <br>
+অপূর্ব করুণা তাঁর, নাহিক তুলনা যাঁর,<br>
+খুঁজিলে এমন প্রেম, কোথা পাব এ সংসারে।<br><br>
+৩। <br>
+নাহি চাহি কোন ধন, পেয়েছি যে প্রিয় জন,<br>
+কন্ঠহার করি আমি, রাখিব নিয়ত তাঁরে।<br>
+`,
+  },
+
+  {
+    id: 282,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৮২",
+    title: "প্রভুর ধন্যবাদ কর \n",
+    author: "",
+    language: "Bengali",
+    lyrics: `প্রভুর ধন্যবাদ কর ভ্রাতৃগণ,<br>
+একচিত্তে গাও সবে তাঁহার গুণগান।<br><br>
+
+(১)<br>
+তাঁহার নামে যত জনে, উপস্থিত হয় একই স্থানে,<br>
+প্রভু আসি সেই খানে, হয়েন অধিষ্ঠান।<br><br>
+
+(2)<br>
+পূর্বকালে শিষ্যগণে, মিলিত হয়ে একই স্থানে,<br>
+পুলকিত হইল সবে পেয়ে আত্মা দান।<br><br>
+
+(৩)<br>
+সে আশাতে এই স্থানে আসিয়াছি সর্বজনে,<br>
+প্রভু, আশীর্দানে পুর্ণ কর সবার মন।
+`,
+  },
+
+  {
+    id: 283,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "283",
+    title: "চেয়েছি যা পেয়েছি সব",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৮৩
+বেহাগ-কাওয়ালী
+চেয়েছি যা পেয়েছি সব,কিছুই বাকী নাই আর এখন,
+তোমার মহা দয়ার দানে ভরিয়া দিয়েছ ভূবন । ১। খুলিয়া দিয়া তোমার, সোনার পূরীর ভান্ডারের দ্বার,
+পূর্ণ করিয়াছ আমার, ছিল যা অভাব অনটন। ২। পেয়ে তোমার করুণার দান, উথলিয়া উঠিছে প্রাণ।
+জাগিতেছে আনন্দ গান, আলোড়িত করিয়া মন। ৩। প্রাণের বোঝা গেছে নেমে, ভাবনা ভয় গেছে থেমে। আকুল হৃদয় তোমার প্রেমে, তোমার দানে ধন্য জীবন।
+৪। জাগিছে প্রত্যাশা মনে, যত দিন থাকি ভুবনে,
+পাব তোমার ঐ চরণে, যখন আমার যা প্রয়োজন।
+৫। ধন্য ধন্য ধন্য পিতা; ধন্য ধন্য জগত্রাতা, | ধন্য ধন্য পুণ্য আত্মা, ধন্য হে সত্য সনাতন।
+-প্রিয়নাথ বৈরাগী।`,
+  },
+
+  {
+    id: 284,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "284",
+    title: "জাগ ভাই ও ভগ্নি",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৮৪
+সুর-“জাগ ভাই ও ভগ্নি”, মহাবিচারের দিন সমাসীন প্রায়! (যবে) অবাধ্য পাতকী কুল হবে নিরুপায় !! সহ দূতগণ, ঐ বিচার কারণ,
+আসিতেছেন যীশু প্রতাপে ত্বরায় ।। ১। অতি নিকটে দিন, বিকট ভীষণ,
+যে দিনে মানব হবে ত্রাসে অচেতন,। করে ধরি মহা ব্যবস্থা বিধান,
+পুরস্কার প্রতিফল দিবেন সবায়। ২। অগ্নি, রক্ত, ধূমস্তম্ভ, পৃথিবী কম্পন,
+দুর্ভিক্ষ, মহামারী, যুদ্ধ ঘন ঘন, সমুদ্র প্লাবনে আর তারকা পতন
+জানাইছে সমাচার জগত জনায়। ৩। সূর্য, চন্দ্র, অন্ধকার ক্লেশের সেদিন,
+আকাশের পরাক্রম চঞ্চল গগন, বলে উচ্চনাদে প্রতি জনায়, আসিছে অচিরে যাতনা ধরায় ।
+৪। গ্রীষ্ম সমাগমে যথা বৃক্ষ মুকুলিত,
+সেরূপে প্রভুর দিন দ্বারে উপনীত, আকাশ ও ধরণী তলে নমুনা কত, দিন দিন প্রকাশিত জগতে জাগায়।
+- রামাচরণ নাথ।`,
+  },
+
+  {
+    id: 285,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "285",
+    title: "শেষের সে দিবস ভয়ঙ্কর",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৮৫
+রামকেলী- একতালা ।
+শেষের সে দিবস ভয়ঙ্কর, (ভেবে দেখ একবার,)। | দূতগণ সাথে, যীশু মেঘরথে,
+আসিয়া মর্ত্যেতে করিবেন বিচার
+১| |
+স্মরণ পুস্তক, তখন খােলা যাবে, গুপ্ত বিষয় যত প্রকাশিত হবে, (সকলে দেখিবে)
+(তখন) ভন্ড সাধু যত, হইবে দুষিত, (ও পাপী) আজনের মত, করবে হাহাকার। ২। গত পাপ যত হইবে স্মরণ, পাপানলে হৃদি জ্বলিবে তখন, (অনিবার হুতাশন)
+(বলবেন) যাও নরকেতে, শয়তানের সাথে, (ও পাপী) তোমার জন্যেতে, এই অধিকার। ৩। এস আমার ভক্ত বস আমার দলে, দুঃখের শান্তি ভােগ কর এই স্থলে, (তােমরা সকলে)।
+দূরে গেছে ক্লেশ, নাহি দুঃখ লেশ, (আমার) অঙ্গীকৃত দেশ, কর অধিকার।
+- মধু সুদন সরকার।`,
+  },
+
+  {
+    id: 286,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "286",
+    title: "জাগ ভাই ও ভগ্নী দিন",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৮৬
+. . . সুর- “জাগ ভাই ও ভগ্নী দিন বয়ে যায়।” মহান তুরীর বাদন, বাজিবে যখন, আসিবে সহ দূতগণ, শ্ৰীযীশু রাজন; গৌরবে পিতার, সগৌরবে আর,
+আকাশ উপর দিবে দরশন। ১। মুপ্ত ধরণীতল কম্পিত সঘনে,
+মহাকম্প ভূমিকম্প হইবে সেদিনে, জীব-জগত যত, হইবে মুচ্ছিত, নিদ্রিত প্রভুর লোক জাগিবে তখন ।। জাগিয়া উঠিয়া ধাৰ্ম্মিক সুজনে, করি আরােহণ, দূতগণ যানে, বসি প্রভু-সনে, গৌরব আসনে, গৌরব বসন করিবে গ্রহণ। |
+পূর্ণ চন্দ্র দে । . ভ২৮৭ Doper`,
+  },
+
+  {
+    id: 287,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "287",
+    title: "জাগ ভাই ও ভগ্নী",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুর-“জাগ ভাই ও ভগ্নী...।” আসিছে ক্রোধের দিন ভীষণ আকার, (যবে) আকাশ ধরণী পুড়ে হবে ছারখার, সময় থাকিতে, জীবন বাঁচাতে, ব্যবস্থার মতে, কর ব্যবহার।
+।
+|
+১। রবি শশি, গ্রহ, তারকা আদি
+ভূতলে খসিয়া পড়িবে যদি যথা ডুমুরের ফল, ঝরিয়ে সে সকল
+|
+জলন্ত অনলে, হবে ভস্মসার।
+২। দ্বীপ, উপদ্বীপ, গিরি, পাহাড় বৃক্ষরাজি, পক্ষী, পশু, ইতর। নদ-নদী আর সমুদ্র সাগর, উত্তাপে অগ্নির, হবে একাকার।
+৩। অসংখ্য দূতসহ প্রতাপে পিতার,
+ব্যবস্থা মতে করিয়া বিচার, রাজ-দন্ড-ধারী যীশু এবার, পুরস্কার প্রতিফল দিবেন সবার।
+৪। ভীরু, অবিশ্বাসী, দুরাচারগণ,
+অগ্নি ও গন্ধকে পড়িয়া তখন, দাহনে ভীষণ, হইয়ে দহন, দ্বিতীয় মরণে, হইবে সংহার ।
+৫। ভকত-বৎসল শ্ৰীযীশু রাজন,
+সৃজন করিয়া নব ভুবন, করি আবাহন, এস প্রিয়গণ, অঙ্গীকৃত রাজ্য,লও হে পিতার ।
+- পূর্ণ চন্দ্র দে।`,
+  },
+
+  {
+    id: 288,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "288",
+    title: "যষ্টি হাতে, দ্রুতবেগে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৮৮
+১। যষ্টি হাতে, দ্রুতবেগে
+কোথা যাহ যাত্রিগণ? রাজকীয় আজ্ঞামতে চলিতেছি সৰ্ব্বজন; | গিরি, গুহারণ্য ছাড়ি, যাচ্ছি সবে রাজবাড়ী, স্বর্গবাসী পিতার বাড়ী, সেই সুন্দর সিয়ােনে।
+২। বল দেখি, কিসের আশে
+যাইতেছ সেখানে? নিৰ্ম্মল বস্ত্র গৌরব মুকুট পাব ত্রাতার সদনে; জীবন নদীর জল পানে পরিতৃপ্ত হব প্রাণে, নিত্য রইব ঈশ-সনে
+সেই সুন্দর সিয়ােনে। 
+৩। ভাল, এরূপ নির্জন পথে, ৪। ওহে প্রিয় যাত্রিবর্গ! চলিতে না শঙ্কা হয়?
+আমরা যেতে পারি কি, ; অদৃশ্য মিত্রবর্গ
+তােমাদেরই অনুসঙ্গে নিত্য চতুর্দিকে রয়;
+যথা উজ্জ্বল পুরীটী? খ্রীষ্ট নেতা রক্ষাকারী,
+এস এস শীঘ্র এস, আমা সবার সহচারী।
+আমাদের এ দলে মেশ, লয়ে যান সব হাতে ধরি
+করি সবে সুপ্রবেশসেই সুন্দর সিয়ােনে।
+সেই সুন্দর সিয়ােনে। ORDO DE
+- নৃপালচন্দ্র বিশ্বাস`,
+  },
+
+  {
+    id: 289,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "289",
+    title: "উর্ধ্বে এক রম্য দেশ",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৮৯
+There is a happy land. Church Hymnal 301
+১। উর্ধ্বে এক রম্য দেশ দূর অতি দূর;
+নাই তথা দুঃখের লেশ, সে অমরপুর ।। সাধুর সে অধিকার, শােক ও ব্যথা নাহি আর;
+নাই সেথা অন্ধকার, নাই মৃত্যু নূর। | গায় তথা অমরগণ
+৩। হে প্রিয় কনান দেশ মেষশাবক নাম;
+মোর ইষ্ট স্থান, যিহােবার সঙ্কীৰ্ত্তন
+তোমারি সুখ অশেষ হয় অবিশ্রাম।
+মোর নিত্য ধ্যান। নাই সুখের অবসান,
+এ মর্ত্য- জীবনে
+। সদানন্দে মগ্ন প্রাণ।
+হেরি তোমার নয়নে সম্পূর্ণ সিদ্ধির স্থান,
+তোমারি কারণে সে স্বর্গ ধাম।
+।
+লালায়িত প্রাণ।
+- অজ্ঞাত`,
+  },
+
+  {
+    id: 290,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "290",
+    title: "মোরা এ দেশের নহি গাে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৯০ কী ছিল?
+ਨਵ , | A
+মোরা এ দেশের নহি গাে, | মোরা ছাড়িয়া এ দেশ, যাইব স্বদেশ | পরবাসে আর রব না গাে।
+| | ১। সুরম্য সে পুরী, আহা মরি মরি,
+যিহােবার হাতে গড়া গাে, (মোরা) যাইব সে দেশে, মনের উল্লাসে
+পাশরিয়া ভবের দুঃখ গাে । ২। দুদিনের তরে আসিয়া সংসারে
+ভাসিলাম অশ্রুনীরে, শােক ব্যথা যাবে, কোলে তুলে নেবে;
+মুছাইবে অশ্রুজল গাে । ৩। ঐহিকের সুখ কিবা প্রয়োজন,
+(মোদের) যীশুই অনন্তজীবন, ক্রুশ প্রেম রাশি কালভেরী ভাসি; মোদের পাপরাশী মুছাবে গাে। "
+- সন্তোষ কুমার হালদার।`,
+  },
+
+  {
+    id: 291,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "291",
+    title: "আমরা মিলব নদীর তীরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `১৯১
+Tr- Shall we gather at the river
+Church Hymnal 555
+১। আমরা মিলব নদীর তীরে, তথায় উজ্জ্বল দূত পথে
+বহে স্বচ্ছ জোয়ার যেথায়, ঈশ্বর সিংহাসন সাথে। বক- হা মোরা মিলব নদীর তীরে, সুন্দর সুন্দর প্রস্রবনে।
+সাধু সঙ্গে হবে মিলন, ঈশ্বর সিংহাসন পাশে। সেই যে নদীর ধারে গিয়ে, ধুয়ে রূপালী ধারায়। আমরা সেবা করব তারে সুখে স্বর্ণময় দিনে।
+৩।
+৪।
+উজ্জ্বল নদীর কাছে এলে দুঃখের হবে অবসান শান্তি আত্মার হবে বর্ষণ, ত্রাতার মুকুট পাইবে। পৌছে উজ্জ্বল নদীর তীরে, যাত্রীর যাত্রা হবে শেষ হৃদয় সুখী হবে সবার, শান্তির মধুর সঙ্গীতে।
+- Robert Lowry
+না Tr.- চিত্তরঞ্জন বল |`,
+  },
+
+  {
+    id: 292,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "292",
+    title: "দিনাপেক্ষা উজ্জ্বল ঐ",
+    author: "",
+    language: "Bengali",
+    lyrics: `There's a land that is fairer than dav
+Church Hymnal 551
+১। দিনাপেক্ষা উজ্জ্বল ঐ যে দেশ,
+বিশ্বাস চক্ষে দেখতে পাই দূরে।। পথপানে পিতা করেন নির্দেশ,
+মোদের সবের আবাসের তরে। ধ্রুবক- আনন্দে, ক্ষণেক পর।
+আমরা মিলব সেই সুন্দর তীরে।। আনন্দে, ক্ষণেক পর, .
+আমরা মিলব সেই সুন্দর তীরে। ২।
+আমরা গাব সেই সুন্দর তীরে, সাধুদের মধুমাখা সঙ্গীত, আর ভাসিব না দুঃখ নীরে, আর হইবে না আক্ষেপ কিঞ্চিৎ । স্বর্গবাসী বদান্য পিতায়, আমরা দিব স্তুতির উপহার। তার অপূৰ্ব্ব প্রেম বর কারণ,- যার মোদের যাবজ্জীবন হয় সংস্কার ।
+- S. F. Bennett Tr,- অক্ষয় কুমার মুখোপাধ্যায়`,
+  },
+
+  {
+    id: 293,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "293",
+    title: "শঙ্কা নাই যীশুর কোলে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৯৩,
+Safe in the arms of Jesus
+Church Hymnal 615 ১। শঙ্কা নাই যীশুর কোলে, তার কোমল বক্ষে ত্রাণ; | তথায় তার প্রেমাশ্রয়ে, সুখে রবে মোর প্রাণ।
+শুন এইটি দূতদের গান, শুনাইছে আমারে;
+প্রতাপশীল ক্ষেত্রোপরে, মণির সিন্ধু পারে। ধ্রুবক শঙ্কা নাই যীশুর কোলে, তার কোমল বক্ষে ত্রাণ;
+তথায় তার প্রেমাশ্রয়ে, সুখে রবে মোর প্রাণ ॥ ২। শঙ্কা নাই যীশুর কোলে, ত্রাণ পাই ক্ষয়কর চিন্তায়;
+বচি ভবের লােভ হ’তে, পাপ হানতে নারে তায়। দুঃখে জ্বালায় পেলাম পার, সংসার ভয় নাই আমার;
+আছে আর কিছু উৎপাত, আর কিছু অশ্রুপাত । ৩। যীশু প্রিয় প্রাণাশ্রয়, মরিলেন মোর জন্যে;
+সেই নিত্যাচল শৈলােপর, সদা নির্ভর হবে। হেথায় অপেক্ষায় র’ব, যাবৎ রাত না পােহায়; ও প্রভাত না দেখিব কাঞ্চন তীরে উদয়৷৷
+- Fanny J. Crosby |
+Tr.- অক্ষয় কুমার মুখোপাধ্যায়।`,
+  },
+
+  {
+    id: 294,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "294",
+    title: "কি সুখের প্রেম-বন্ধন",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৯৪
+Tr. Blest be the tie that binds
+(Church Hymnal 432) ১। কি সুখের প্রেম-বন্ধন, স্বর্গীয়গণের ন্যায়!
+খ্রীষ্টিয় সবার প্রাণ ও মন, রয় মিলে নিত্য যার। ১। এক পিতা সকলের, যার সিংহাসনের ঠাই, উৎসর্গ করি আমাদের প্রার্থনা সর্বদাই ।
+৩। এক অন্যের ক্লেশভার, রই মোরা পরস্পর,
+এক অন্যের দুঃখে অশ্রুধার, আঃ, বহাই নিরন্তর ৪। যদিও বিচ্ছেদ হয়, মরণের সময়ে? হয় ব্যথা তাহে অতিশয়, আমাদের হৃদয়ে।
+- I Fawcett SSK
+S T -N. C. Biswas`,
+  },
+
+  {
+    id: 295,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৯৫",
+    title: "ঘরে যাও, সঙ্গে লও\n",
+    author: "প্রেমানন্দ সরকার",
+    language: "Bengali",
+    lyrics: `ঘরে যাও, সঙ্গে লও, প্রিয় যীশুর হস্ত ধ’রে, <br>
+(প্রিয়) যীশুসহ গৃহবাসে; থাক প্রফুল্ল অন্তরে।<br><br>
+
+১। <br>
+ঘটুক বিপদ, কিম্বা সম্পদ, থেকো যীশুর পদে পড়ে,<br>
+সুখের কথা, মনের ব্যথা, প্রাণ খুলে বলো তাঁরে।<br><br>
+
+২। <br>
+তব সুখে কিম্বা দুঃখে র্স্বকালে পাবে তাঁরে,<br>
+দুঃখ কালে, করে কোলে, সান্ত্বনা দিবেন তোমারে।<br><br>
+
+৩। <br>
+যীশু সম করে প্রেম, এমন প্রেমিক নাই সংসারে,<br>
+সর্বগুণ-সাগর যীশু, যাও যাও লয়ে ঘরে।<br><br>
+
+৪। <br>
+পিতার প্রেম, অনুপম, যীশুর কৃপা সহকারে,<br>
+আত্মার সাহায্য সদা, বর্তুক আমাদের উপরে।<br>
+`,
+  },
+
+  {
+    id: 296,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "২৯৬",
+    title: "দেখা হবে যে আবার",
+    author: "",
+    language: "Bengali",
+    lyrics: `দেখা হবে যে আবার—   <br>
+(আজ) বিদায়ের ক্ষণে, শুধু জাগে মনে<br>
+সে কথাটি বারে বার।<br><br>
+দু’দিনের তরে এসেছিনু হেথা, দু’দিনের মেলামেশা<br>
+রহিবে অটুট এই সুখ-স্মৃতি, জাগাবে নূতন আশা।<br>
+এক ব্রতে ব্রতী এক আহবান<br><
+মুছে গেছে সব বাধা ব্যবধান<br><br>
+সবার হৃদয় এক প্রেম বাঁধা, বুঝেছি এ মনে সার<br>
+দেখা হবে যে আবার ।<br><br>
+জীবন-নদীর এ পারেতে যদি দেখা নাহি হয় আর<br>
+নাহি দুঃখ তায়, জানি যে মিলিব মৃত্যু-নদীর পার;<br>
+সে অনন্ত মিলনে মিলি এক প্রাণে,<br>
+সে আনন্দ ধামে-জয় জয় গানে,<br><br>
+শ্রী-যীশু চরণ ঘেরিয়া দাঁড়াবে অযুত ভক্ত তাঁর<br>
+দেখা হবে যে আবার।<br>
+`,
+  },
+
+  {
+    id: 297,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "297",
+    title: "দেখা হবে যে আবার",
+    author: "",
+    language: "Bengali",
+    lyrics: `বেহাগ-মিশ্র
+দেখা হবে যে আবার
+TEST (আজ) বিদায়ের ক্ষণে, শুধু জাগে মনে। সে কথাটি বারে বার। দু’দিনের তরে এসেছিনু হেথা, দুদিনের মেলামেশা রহিবে অটুট এই সুখ-স্মৃতি, জাগাবে নূতন আশা। এক ব্রতে ব্ৰতী এক আহ্বান মুছে গেছে সব বাধা ব্যবধান
+ত সবার হৃদয় এক প্রেমে বাধা, বুঝেছি এ মনে সার
+দেখা হবে যে আবার। জীবন-নদীর এপারেতে যদি দেখা নাহি হয় আর নাহি দুঃখ তায়, জানি যে মিলিব মৃত্যু-নদীর ওপার; অনন্ত মিলনে মিলি এক প্রাণে। সে আনন্দ-ধামে জয় জয় গানে, শী-যীশু চরণ ঘেরিয়া দাঁড়াবে অযুত ভক্ত তার
+| দেখা হবে যে আবার।
+- অজ্ঞাত`,
+  },
+
+  {
+    id: 298,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "298",
+    title: "যাবৎ সাক্ষাৎ না হয় পুনরায়",
+    author: "",
+    language: "Bengali",
+    lyrics: `২৯৮
+১।
+God be with you till we meet again "
+we meet agam
+Church Hymnal 35 যাবৎ সাক্ষাৎ না হয় পুনরায়, ঈশ্বর থাকুন তোমার সহায়! আপন পালে রাখুন তোমায়, ধরি চালান স্বীয় মন্ত্রণায় ।
+ধ্রুবক- যাবৎ নাহি হয় পুনঃ সাক্ষাৎ, শুভ সাক্ষাৎ যীশুর চরণে,
+যাবৎ নাহি হয় পুনঃ সাক্ষাৎ, ঈশ্বর থাকুন তোমারই সহায়! ২। যাবৎ সাক্ষাৎ না হয় পুনরায়, ঈশ্বর রক্ষা করুন তোমায়,
+তৃপ্ত রাখুন দৈনিক মান্নায়, ঈশ্বর থাকুন তোমারই সহায় । ৩। যাবৎ সাক্ষাৎ না হয় পুনরায়, জীবনের ঘোর বিপদকালে,
+রাখুন প্রেমের অন্তরালে, ঈশ্বর থাকুন তোমারই সহায় । ৪। যাবৎ সাক্ষাৎ না হয় পুনরায়, রাখুন প্রেমের নিশানতলে, খন্ডন করুন মৃত্যুর বলে, ঈশ্বর থাকুন তোমারই সহায় ।
+- Jeremiah, E. Rankin
+Tr. - অজ্ঞাত`,
+  },
+
+  {
+    id: 299,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "299",
+    title: "উঠে আয়রে বৎসরের শেষে",
+    author: "",
+    language: "Bengali",
+    lyrics: `কীৰ্ত্তনের সুর-খো । উঠে আয়রে বৎসরের শেষে আর কত ঘুমাও,
+ও ভাই আর কত ঘুমাও উঠে যীশু নাম গাও । ১। গাইছে বনের পাখী, শাখায় থাকি, তোমারা আসি গাও। ২। হল মলিন নিশি ডুবলাে শশী, তোমা যীশু গাও । ৩। সবাই উঠলাে জেগে, তােমরা আগে, জাগ আর জাগাও। ৪। ভবের ঘুচলাে আধার, মনের আধার এই বেলা ঘচাও। ৫। মাতি মোহমদে, কি আমােদে, মিছে কাল কাটা। ৬। এখানে মুক্তি মিলে, বিনামূল্যে, আর কিবা ধন ভাত ৭। এ বর্ষে দিন ফুরাল, কদিন বল ছেলে খেলা চাও । ৮। এবারে নৃতন বর্ষে, সকাল সকাল যীশুকে মন দেও।
+-অক্ষয় কুমার মুখোপাধ্যায় ।`,
+  },
+
+  {
+    id: 300,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩০০",
+    title: "স্বর্গের সিঁড়ি বেয়ে তুমি",
+    author: "",
+    language: "Bengali",
+    lyrics: `স্বর্গের সিঁড়ি বেয়ে তুমি, তুমি এসেছিলে<br>
+এসেছিলে মাটির ঘরে,<br>
+অবশেষে ভালবেসে, ক্রুশপরে জীবন দিলে ।।<br>
+এ আকাশ, এ বাতাস, পাখীরা যে গান গেয়ে যায়,<br>
+তারা তোমার জন্মবারতা শোনায়,<br>
+মেরীর কোলে গোয়ালঘরে, মানুষ বেশে জন্ম নিলে।<br>
+জানি না, মানি না, আমি অন্য কিছু তো জানি না,<br>
+তোমায় ছাড়া কিছুই ভাবি না।<br>
+আমার দু’হাত ধরে, তোমার করে,<br>
+তুমি তো আপন করে নিলে ।।<br>
+`,
+  },
+
+  {
+    id: 301,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩০১",
+    title: "স্বর্গের সিড়ি বেয়ে তুমি",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩০০
+স্বর্গের সিড়ি বেয়ে তুমি
+তুমি এসেছিলে, এসেছিলে মাটির ঘরে অবশেষে ভালবেসে ক্রুশপরে জীবন দিলে-২ স্বর্গের সিড়ি বেয়ে তুমি... এ আকাশ এ বাতাস পাখিরা যে গান গেয়ে যায় তারা তোমার জন্ম বারতা শােনায় মেরীর কোলে, গােয়াল ঘরে মানুষ বেশে জন্ম নিলে-২ স্বর্গের সিড়ি বেয়ে তুমি... জানি না-মানি না আমি অন্য কিছু তাে জানি না} তোমায় ছাড়া কিছুই ভাবি না । আমার দু’হাত ধরে-তোমার করে তুমি তাে আপন করে নিলে-২ স্বর্গের সিঁড়ি বেয়ে তুমি... | তুমি এসেছিলে, এসেছিলে মাটির ঘরে। অবশেষে ভালবেসে ক্রুশােপরে জীবন দিলেস্বর্গের সিঁড়ি বেয়ে তুমি...
+২। আছ অনল অনিলে, চির নভােনীলে, ভূধরে সলিলে গহনে,
+আছ বিটপী লতায়, জলদের গায়, শশী তারকায় তপনে; আমি নয়নে বসন বাঁধিয়া, বসে আঁধারে মরিণু কাদিয়া; আমি দেখি নাই কিছু, বুঝি নাই কিছু, দেও হে দেখায়ে বুঝায়ে।
+- রজনীকান্ত সেন `,
+  },
+
+  {
+    id: 302,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩০২",
+    title: "আজি গানে গানে প্রাচারিব প্রভু\n",
+    author: "",
+    language: "Bengali",
+    lyrics: `আজি গানে গানে প্রাচারিব প্রভু, তোমারই সুসমাচার<br>
+সে গানের সু ভাসিয়া চলিবে দেশান্তরের পার।<br>
+বিশ্বভুবন শুনিবে সে গান কন্ঠ শিলাবে আর,<br>
+দেশান্তরের পার।।<br>
+তব জনমের মহান বারতা দিকে দিকে আজ ঘুচাবে জড়তা<br>
+তুমি যে এসেছ হে মুক্তিদাতা, ঘুচাতে পাপের ভার।<br>
+দেশান্তরের পার।<br>
+সুরে ছন্দে রচিব হে নাথ, তোমারই মাহা প্রেমগাথা<br>
+সে মহা প্রেমের বাণী যে আজিকে জুড়াবে দুঃখ ব্যথা।<br>
+গানে গানে মোরা প্রচারিব প্রভু, তব জনমের শুভ সমাচার।<br>
+বিশ্বভুবন শুনিবে সে গান কন্ঠ মিলাবে আর।<br>
+দেশান্তরের পার।।<br>
+`,
+  },
+
+  {
+    id: 303,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "303",
+    title: "দিনমণি অবসান",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩০৩
+দিনমণি অবসান।
+সন্ধ্যা আরতি গান। খুলে দেও পিতা, খুলে দেও বাহু ডােরপ্রণয় তোমার মিছে নয় মিছে নয়
+ত্রাণ মণি হবেন দেখ অচিরে উদয়
+ত্রাণবাণী দিব দিব সব জনায় পর পারে হবে ভাের।
+আশা তােমাদের বিফল নয় বিফল নয়। হবে জনম সফল সফল এই দুনিয়ার জিনিব অরি লভিব বিজয়
+দুঃখ নিশি হবে ভাের
+- এস এন দাশ`,
+  },
+
+  {
+    id: 304,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "304",
+    title: "মাকে ভুলি নাই আমি",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩০৪
+।
+তাল-দাদরা - মাকে ভুলি নাই আমি মাকে ভুলি নাই। কিত মায়ের এমন ভালবাসা তার তুলনা নাই।। ১।
+মায়ের মুখের মধুর হাসি
+|- মধুর চেয়ে মিষ্ট ভাষী ।। মায়ের এমন কোমল কোলে >র
+স্বর্গ ভুলে যাই। ২। রােগে ক্লেশে দুঃখে মা মোর
+ভেবে হােত কতই বিভাের ঘুম হােতনা রজনীতে
+মায়ের আমার তাই। ৩। মা গিয়েছে আমায় ফেলে
+মা গিয়েছে আমায় ভুলে তবু মাকে মনের মাঝে
+আজও দেখি ভাই।
+| - অতুল চন্দ্র বল`,
+  },
+
+  {
+    id: 305,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "305",
+    title: "সিভি আমি ফুলের মত",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩০৫ ১৯।
+সিভি আমি ফুলের মত ঝরে পড়িব ধরায় বিশ্বের কল্যানে সাধিব পর সেবায় অঞ্জলি হব আমি প্রতি সেবায় বিশ্বের কল্যানে......।
+১। ফুলের মালিক যিনি সাজান ফুলে | তুমি তাহারে কখন যেওনা ভুলে ৷৷
+২। বেদনার ভারে যার প্রাণ কাঁদে।
+তারে অমিয় সঙ্গীত দিব এনে৷৷
+৩। প্রাণ সূৰ্য্য যেদিন অস্ত যাবে। আমি ভূতলে লুটিব অমনি হেসে ৷৷
+- শমূয়েল কুমার বৈরাগী`,
+  },
+
+  {
+    id: 306,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "306",
+    title: "আজি এ গােধুলি বেলায়",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।
+আজি এ গােধুলি বেলায়
+: কে হায় । (২) নীরবে চলিছে পথ, বেদনায় উদ্যানে হায়
+আজি এ গােধুলি বেলায় ।। তব হৃদয়ের নিভৃত কোণে
+কোন বেদনা সুর আজি এতে বাজে। (২) প্রাণ (ফেটে যায়) (২) দেখে তোমায়
+নেমে এল দুঃখ প্রভুর বুকে সেই চাদনী হাসিনী জ্যোৎস্না রাতে
+| উদ্যান পথে । (২) সোনার তনু ঢুলে ঢলে পড়ে
+সেই গহন গােপন দুঃখ বনে। তার প্রাণেরই ব্যথা, প্রাণেরই ব্যথা কেবা জানে। | অশ্রু মানিক ঝরে যায় ঝরে যায়।
+তুমি লুয়েছ বোঝা অতি ভারী।
+পাপীরে বাঁচাতে হে কান্ডারী
+গলগাথায় এলে তাই নামি। প্রণমি তোমারে হে নাথ (প্রভু) তাই।
+- শমূয়েল কুমার বৈরাগী`,
+  },
+
+  {
+    id: 307,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩০৭",
+    title: "আঁধারে ঘেরা দু:খেতে ভরা জীবন",
+    author: "",
+    language: "Bengali",
+    lyrics: `আঁধারে ঘেরা দু:খেতে ভরা জীবন ছিল মোর <br>
+এমন জীবনে যীশুর আগমনে রাত্রি হল ভোর।। <br>
+অন্ধ ছিলাম, দেখিতে পেলাম সুন্দর প্রভু মোর, <br>
+তোমার দয়ায় চিনেছি তোমায়, মুছে দিলে আঁখিলোরে।<br>
+রাত্রি হল ভোর ।।। <br>
+সকাল সন্ধ্যে দিবাতে বা রাতে চলিলাম ঐ পথে ; <br>
+অন্ধ আমি, দয়া কর স্বামী, ভিক্ষা দাও গো হাতে। <br>
+দু:খের রাতি ঘুচালে তুমি, কেটে গেল সব ঘোর ; <br>
+তোমার আলোকে নূতন পুলকে যাত্রা শুরু মোর।<br>
+রাত্রি হল ভোর।।<br>
+`,
+  },
+
+  {
+    id: 308,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "308",
+    title: "ভক্তি বিহীন সম্বল হীন",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩০৮
+ভক্তি বিহীন সম্বল হীন দুঃখী আমরা তোমার প্রেমের স্পর্শ লাগি, মুক্তি পাব আজি মোরা। সুদূর প্রান্তে উড়ছে মোদের বিজয় পতাকা ২
+রি হা----- হা-----গলগাথা
+ਸੀਚ ਤਲ ' জগতে দুঃখ ভয়, মোদের সঙ্গী নয় । দুঃস্থের সাথী খ্রীষ্ট মোদের নাহি কো হিংসা নাহি কো দ্বেষ ।
+| মুক্তি কামনায় লড়ছি মোরা।
+PRETO লভিব স্বর্গ দেশ।
+ਨਾ ਲਾਗੇ হা----- হা----- গলগাথা। জানাব সবারে মোদের কামনা। নাই কো মোদের ভিন্ন বারতা খ্রীষ্ট মোদের রণ সেনাপতি হব মোরা ভাই নির্ভিক সৈনিক এস এস ভাই সবে মিলে গাই একই সম্বল একই বারতা ক্রুশতলে যে মোদের ঠাই হা---- হা---- গলগাথা।
+- ডেভিড প্রফুল্ল কুমার হালদার`,
+  },
+
+  {
+    id: 309,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "309",
+    title: "বল দাও মোরে বল দাও প্রাণে",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩০৯
+ভৈরবী- একতালা
+বল দাও মোরে বল দাও, | প্রাণে দাও মোর শকতি; সকল হৃদয় লুটায়ে ।
+| তোমারে করিতে প্রণতি; ১। সরল সুপথে ভ্রমিতে
+৩। তব কাজ শিরে বহিতে, সব অপকার ক্ষমিতে,
+সংসার তাপ সহিতে সকল গৰ্ব্ব দমিতে
+ভব কোলাহলে রহিতে, | খৰ্ব্ব করিতে কমতি!
+নীরবে করিতে ভকতি! ২। হৃদয়ে তোমারে বুঝিতে, ৪। তোমার বিশ্ব-ছবিতে,
+জীবনে তোমারে পূজিতে, তব প্রেমরূপ লভিতে, তোমার মাঝারে খুঁজিতে
+গ্রহ তারা শশী রবিতে, চিত্তের চিরবসতি!
+হেরিতে তোমার আরতি! ৫। বচন মনের অতীতে,
+ডুবিতে তোমার জ্যোতিতে, সুখে দুখে লােভে ক্ষতিতে, শুনিতে তোমার ভারতী!
+- রবীন্দ্রনাথ ঠাকুর।`,
+  },
+
+  {
+    id: 310,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "৩১০",
+    title: "আমার জীবন বীণারে",
+    author: "",
+    language: "Bengali",
+    lyrics: `আমার জীবন বীণারে, <br>
+তুমি এমনি করে বাঁধ যেন তোমারই সুর ঝঙ্কারে,<br>
+শুধু তোমারই সুর ঝঙ্কারে।। <br>
+আমি বিশ্বমাঝে এ বীণা লয়ে <br>
+সদা ফিরব সবার দ্বারে দ্বারে, মধুর তোমার নাম গেয়ে, <br>
+তোমার ক্রুশের কথা প্রেম বারতা বলবো ডেকে সবারে, <br>
+যেন আমার মত অধম যে জন-পায় সে প্রভু তোমারে।।<br>
+`,
+  },
+
+  {
+    id: 311,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "311",
+    title: "এস মাধুরী প্রভাতে অতিথী",
+    author: "",
+    language: "Bengali",
+    lyrics: `২) কঠি
+> perriere এস মাধুরী প্রভাতে অতিথী বন্ধু
+মঙ্গল আশীষ শিরে ।। ত্যাজি সুদূর মার্কিন এলে এই স্থান লয়ে মঙ্গলে প্রদীপ জ্বাল জ্বাল এখন তব অমল হাসী দিয়ে যাক ঢালি
+মঙ্গল আশীষ শিরে।
+টি এস---- - ফিরি কাননে কাননে তুলিয়াছি ফুল গাথিয়াছি হার পরাতে গলে তোমার আজি পর হে অতিথি পর পর হার।
+পরহে সােহাগ ভরে ।
+|
+এস---
+| এন, এন, ব্যানার্জী`,
+  },
+
+  {
+    id: 312,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "312",
+    title: "এস গাে এস গাে অতিথি",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩১২
+ਝਣ ਏ ਤਾਂ ਜੋ তাল-কাহারবা এস গাে এস গাে অতিথি সুজন। রেখেছি তোমার লাগি পাতিয়া আসন।
+১। সাজায়ে রেখেছি নব আসনখানা
+তব তরে গাঁথিয়াছি নূতন মালা। বসি তব নিজাসনে নব পুলকিত মনে। কর কর নবাগত এ মালা গ্রহণ।
+২। ওহে প্রভু ত্রাণ ধন স্বরগ রাজন। | তব পদে এ মিনতি এস হে এখন। প্রভু এ আসরে এসে ভকত হৃদয়ে বসে কর ভকতের আশীষ বরিষণ।
+- অতুল চন্দ্র বল
+গােপালগঞ্জ S`,
+  },
+
+  {
+    id: 313,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "313",
+    title: "হে অতিথি আজ এ সময়",
+    author: "",
+    language: "Bengali",
+    lyrics: `হে অতিথি আজ এ সময় কি দিয়ে তোমারে করি সম্বর্ধন, জানাই স্বাগতম। আমরা দীন দরিদ্র অতি নাইকো মোদের কোন শকতি ভক্তি সম্বল এই ফুল-হার দিব তব গলে এই মনস্কাম জানাই স্বাগতম।`,
+  },
+
+  {
+    id: 314,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "314",
+    title: "ভক্তি চন্দনে মাখিয়া কুসুমে",
+    author: "",
+    language: "Bengali",
+    lyrics: `ভক্তি চন্দনে মাখিয়া কুসুমে গাঁথিয়া এনেছি মালা শ্রদ্ধা অঞ্জলি ভরিয়া গাঁথিয়া এনেছি মালা লও হে তুলিয়া এ ক্ষুদ্র উপহার স্নেহাশীষ মোদের করগাে দান
+মোদের এই আশা হউক সফল পরানে দাওগো আশা। লও লও তুমি কৃপা বিতরণে যতনে গেথেছি মালা।`,
+  },
+
+  {
+    id: 315,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "315",
+    title: "প্রভুর সৌন্দর্য প্রকাশ আমাতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩১৫
+/
+Let the beauty of Jesus প্রভুর সৌন্দর্য প্রকাশ আমাতে তব অপার দয়া ও পুণ্যেতে, তব শক্তিদানে শুধি অধম জনে, প্রভুর সৌন্দর্য প্রকাশ আমাতে।`,
+  },
+
+  {
+    id: 316,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "316",
+    title: "স্বর্গীয় জ্যোতি স্বর্গীয় জ্যোতি",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩১৬
+Heavenly Sunshine স্বর্গীয় জ্যোতি স্বর্গীয় জ্যোতি
+আজি পূরিল চিত্ত মম, স্বর্গীয় জ্যোতি স্বর্গীয় জ্যোতি
+হাল্লেলুয়া যীশু মম ।`,
+  },
+
+  {
+    id: 317,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "317",
+    title: "যীশুর সঙ্গে সতত যাব",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩১৭ ||
+SD
+|
+Following Jesus যীশুর সঙ্গে সতত যাব, সঙ্গেতে তিনি ভয় নাহি রে, আলোক ছায়া থাকুক যাহা, মুকতি দাতা যীশু রক্ষিবেন। |
+- Tr. সুরেন্দ্র নাথ দাশ`,
+  },
+
+  {
+    id: 318,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "318",
+    title: "যীশুকে চাই, যীশুকে চাই",
+    author: "",
+    language: "Bengali",
+    lyrics: ` ৩১৮
+I need Jesus যীশুকে চাই, যীশুকে চাই, যীশুকে চাই সতত সুখের সময় চাই, দুঃখের সময়ে চাই সৰ্ব্বদা সৰ্ব্ব পথে, হাঁ যীশুকে চাই।।
+- Tr.- সুরেন্দ্র নাথ দাশ`,
+  },
+
+  {
+    id: 319,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "319",
+    title: "যীশু হে, তুমি আমারই",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩১৯
+.
+Christ for me যীশু হে, তুমি আমারই ত্রাণকর্তা পাপহারী করি গান উল্লাসেতে, যীশু হে তুমি আমারই আছ সদা তুমি সাথে প্রভু আমার হে। |
+Tr.- সুরেন্দ্র নাথ দশ`,
+  },
+
+  {
+    id: 320,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "320",
+    title: "করব তোমায় মানুষধারী",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩২০
+I will make you fishers of man করব তোমায় মানুষধারী, মানুষধারী, মানুষধারী, করব তোমায় মানুষধারী চল মোর পিছে। চল মোর পিছে, চল মোর পিছে। করব তোমায় মানুষধারী চল মোর পিছে।`,
+  },
+
+  {
+    id: 321,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "321",
+    title: "ছেলে-মেয়েকে ভালবাসেন",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩২১
+Ho
+y eros INI Jesus loves the little children ছেলে-মেয়েকে ভালবাসেন, যীশু জগতের সকল ধূসর, পীত, ভ্র, কাল, সবে তাহার কাছে ভাল চল আমরা সবে তার কাছে কাছে যাই।`,
+  },
+
+  {
+    id: 322,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "322",
+    title: "গিয়াছে, গিয়াছে, গিয়াছে",
+    author: "",
+    language: "Bengali",
+    lyrics: `Rolled away, rolled away গিয়াছে, গিয়াছে, গিয়াছে, আমার হৃদয়ের সব ভার গিয়াছে, মোর পাপ গিয়াছে, কালভেরী স্রোত নীচে, হাল্লেলুয়া! | গিয়াছে, গিয়াছে, গিয়াছে, আমার হৃদয়ের সব ভার গিয়াছে।
+O N; Tr.. সুরেন্দ্র নাথ দাশ`,
+  },
+
+  {
+    id: 323,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "323",
+    title: "প্রাতের আলো, প্রাতের আলো",
+    author: "",
+    language: "Bengali",
+    lyrics: `It is morning it is morning in my heart প্রাতের আলো, প্রাতের আলো, মনে মোর। দিলেন যীশু, দূর করিলেন আঁধার ঘোর গাই এবে আনন্দ গান, করেন যীশু মোর রাজন । প্রাতের আলো প্রাতের আলো, হৃদে মোর।
+১ -Tr.- সুরেন্দ্র নাথ দাশ `,
+  },
+
+  {
+    id: 324,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "324",
+    title: "হাসিবে, যদি নাহি বাণী",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩২৪
+You can smile হাসিবে, যদি নাহি বাণী, হাসিবে, যদি নাহি শুন হাসিবে, দুখে কিম্বা সুখে, হাসিবে, সবকালে সবস্থানে।
+- Tr.- সুরেন্দ্র নাথ দাশ ৩২৫
+Wide wide as the ocean
+সাগর সম ব্যাপ্ত, স্বর্গ সম উন্নত সাগর সম গভীর ত্রাতার প্রেমধারা। যােগ্য নাহি হলেও আমি হই তাহার সন্তান তার বাক্যে শিক্ষা পাই আছে প্রেম মোর জন্যে যথা যা-ই।
+Tr.- সুরেন্দ্র নাথ দাশ `,
+  },
+
+  {
+    id: 325,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "325",
+    title: "",
+    author: "",
+    language: "Bengali",
+    lyrics: ``,
+  },
+
+  {
+    id: 326,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "326",
+    title: "মোর হৃদয়ে, মোর হৃদয়ে",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩২৬
+Into my heart মোর হৃদয়ে, মোর হৃদয়ে, মোর হৃদয়ে এস যীশু আজি এস, এসে থাক মম হৃদয়ে এস যীশু | হৃদয় হতে, হৃদয় হ'তে দীপ্তিমান হও প্রভু যীশু আজি জ্বল, সদা জ্বল মোর হৃদয় হ'তে জ্বল যীশু।`,
+  },
+
+  {
+    id: 327,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "327",
+    title: "কষটো যীশুকে বল",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩২৭
+।
+_Heart Aches কষটো যীশুকে বল, আজ যাও তার কাছে দেরী করে না কাজে কষ্ট আছে যীশুকে বল । নেবেন তিনি সব দুঃখ তুলে ।।`,
+  },
+
+  {
+    id: 328,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "328",
+    title: "কপাট খুল তবে, কপাট",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩২৮
+You must open the door কপাট খুল তবে, কপাট খুল তবে। কারণ যীশু এলে নিবেন সদলে, কপাট খুল তবে।`,
+  },
+
+  {
+    id: 329,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "329",
+    title: "আজি বাজিল একটি গান প্রাণে",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩২৯
+In my heart there rings a melody আজি বাজিল একটি গান প্রাণে, একটি গান প্রাণে, স্বর্গীয় তানে, আজি বাজিল একটি গান প্রাণে, একটি প্রেমের গান- প্রা-ণে।`,
+  },
+
+  {
+    id: 330,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "330",
+    title: "আশ্চৰ্য্য, আশ্চর্য্য ত্রাতা",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩০
+Wonderful wonderful Jesus আশ্চৰ্য্য, আশ্চর্য্য ত্রাতা, নাহিকো তুলনা। আমি আশ্চৰ্য্য, আশ্চর্য্য ত্রাতা তব সম কারে নাহি পাই। আশ্চৰ্য্য, আশ্চর্য্য ত্রাতা আত্মার প্রিয় প্রভু।
+অপরূপ সুন্দরতম মোর প্রিয় যীশু হে। ਜਮੀਨ ਦੀ ਨਿਵ ਜੀ , ਹ ਈ || চিলি |"`,
+  },
+
+  {
+    id: 331,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "331",
+    title: "জগৎ পশ্চাতে ক্রুশ সম্মুখে",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩১
+No turning back
+জগৎ পশ্চাতে ক্রুশ সম্মুখে ৷৩৷৷
+ফিরিব না ॥২॥ যদিও কেহ নাই সঙ্গে আমার ॥৩৷৷
+ফিরিব না ॥২॥`,
+  },
+
+  {
+    id: 332,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "332",
+    title: "আমার এ ছােট দীপ",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩২
+This little light of mine আমার এ ছােট দীপ, উজ্জ্বল রাখিব ॥২৷৷
+রাখিব, রাখিব, রাখিব। কাঠার নীচে রাখব না, উজ্জ্বল রাখিব, ॥২৷৷
+রাখিব, রাখিব, রাখিব । শয়তানকে ফু দিতে দিব না, উজ্জ্বল রাখিব, ॥২॥
+রাখিব, রাখিব, রাখিব। পৃথিবীতে আমার দীপ, উজ্জ্বল রাখিব ॥২৷৷
+রাখিব, রাখিব, রাখিব।। যীশুর জন্য আমার দীপ, উজ্জ্বল রাখিব, ॥২৷৷
+রাখিব, রাখিব, রাখিব ।
+৪।`,
+  },
+
+  {
+    id: 333,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "333",
+    title: "যীশু এমন জল দেন যা",
+    author: "",
+    language: "Bengali",
+    lyrics: `যীশু এমন জল দেন যা’ কূপে ছিল না (২)। <br>
+সে গাইতে গাইতে গেল অন্যদের নিয়ে এল (২) <br>
+সে জল পাবার জন্য যা কূপে ছিল না (২)। <br>
+যীশু সুশান্তি দেন যা জগৎ দিবে না (২). <br>
+তিনি ক্রুশে জীবন দিলেন মুক্তির উপায় করলেন (২) <br>
+পাপী, যীশুর এই শান্তি কেন গ্রহণ কর না ? (২)<br>
+`,
+  },
+
+  {
+    id: 334,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "334",
+    title: "যীশুর মত হতে চাই",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩৪
+Be like Jesus
+যীশুর মত হতে চাই সকল স্থানে সর্বদাই ঘরে স্কুলে কাজে তাই যীশুর মত হইব।
+Tr.- এন, এন, সরকার
+Saim to dil stad TESTAJE`,
+  },
+
+  {
+    id: 335,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "335",
+    title: "যীশু নামটি বড়ই মধুর ভাই",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩৫ )
+Jesus is the sweetest name I know যীশু নামটি বড়ই মধুর ভাই, নামটি পবিত্র, তিনি সে-মত।
+ভাল বাসি আমি তাঁকে তাই | হাঁ, যীশু নামটি বড়ই মধুর ভাই। |
+Tr.-এন, এন, সরকার`,
+  },
+
+  {
+    id: 336,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "336",
+    title: "আমি জীবন ভক্ষ্য খাইতেছি",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩৬
+I am feeding on the Living Bread আমি জীবন ভক্ষ্য খাইতেছি, ঐ উনুয়ে পান করিতেছি, কারণ যীশু বলেন যে পান করে। সে কভু তৃষিত হইবে না। প্রশ্ন- “কি, তৃষিত হইবে না? উঃ- “না, তৃষিত হইবে না।” (সকলে) কারণ যীশু বলেন যে পান করে সে কভু তৃষিত হইবে না।`,
+  },
+
+  {
+    id: 337,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "337",
+    title: "তোমার প্রশংসা, তোমার প্রশংসা",
+    author: "",
+    language: "Bengali",
+    lyrics: `তোমার প্রশংসা, তোমার প্রশংসা, তোমার প্রশংসা করি <br>
+হে যীশু ত্রাণকারী, হে যীশু ত্রাণকারী।। <br>
+তুমি হে ত্রাণধন, তুমি হে জীবন, তুমিই ঈশ্বরনন্দন। <br>
+হে যীশু ত্রাণকারী, হে যীশু ত্রাণকারী। <br>
+তুমি হে আমার, আমি হে তোমার, তুমিই মুক্তিদাতা হে। <br>
+হে যীশু ত্রাণকারী, হে যীশু ত্রাণকারী। <br>
+হাল্লেলুয়া হাল্লেলুয়া হাল্লেলুয়া- আমেন।।<br>
+`,
+  },
+
+  {
+    id: 338,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "338",
+    title: "তুমি চেষ্টা কর আমার",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩৮
+তুমি চেষ্টা কর আমার ধার্মিকতা
+আমার রাজ্যের বিষয়...। আমি করব পূরণ, তোমার যত প্রয়োজন জীবনের উপচয়।
+`,
+  },
+
+  {
+    id: 339,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "339",
+    title: "তােমরা প্রভুতে সর্বদা",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৩৯
+,
+Rejoice in the Lord Always তােমরা প্রভুতে সর্বদা ,
+আনন্দ কর তােমরা প্রভুতে সর্বদা।
+আনন্দ করা আনন্দ, আনন্দ।
+আনন্দ কর ।
+(ফিলিপীয় ৪ঃ৪)]
+দিন )`,
+  },
+
+  {
+    id: 340,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "340",
+    title: "এই তাে সে দিন",
+    author: "",
+    language: "Bengali",
+    lyrics: `This is the Day এই তাে সে দিন, এই তাে সে দিন, প্রভু দিয়েছেন, প্রভু দিয়েছেন আনন্দ করবাে, আনন্দ করবাে। তাতে খুশী হবাে, তাতে খুশী হবাে, এই তাে সে দিন প্রভু দিয়েছেন। আনন্দ করবাে তাতে খুশী হবাে এই তাে সে দিন, এই তাে সে দিন
+প্রভু দিয়েছেন। - (গীতসংহিতা ১১৮:২৪)`,
+  },
+
+  {
+    id: 341,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "341",
+    title: "পাপাত্মা দুর্গ ভেঙ্গে কর",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৪১
+পাপাত্মা দুর্গ ভেঙ্গে কর নাশ কর নাশ। পাপাত্মা দুর্গ ভেঙ্গে কর নাশ, কর নাশ। শক্তি ও রাজ্য তার কর হে চুরমার, পাপাত্মা দুর্গ ভেঙ্গে কর নাশ।
+গৌরব স্তুতি প্রভু যীশুর সম্মান শক্তি প্রভু যীশুর গৌরব স্তুতি, সম্মান শক্তি চিরতরে প্রভু যীশুর ॥`,
+  },
+
+  {
+    id: 342,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "342",
+    title: "দিয়াছ আহার দয়াতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৪২
+দিয়াছ আহার দয়াতে পিতঃ আশিস দেও সঙ্গেতে, আধ্যাত্মিক খাদ্য প্রভু দেও, হৃদে কৃতজ্ঞতা জন্মাও।`,
+  },
+
+  {
+    id: 343,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "343",
+    title: "কখনও না, না, কখনও",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৪৩
+, কখনও না, না, কখনও না, প্রতিজ্ঞা করেছেন যীশু আমাকে ছাড়িবেন না;
+, কখনও না, না, কখনও না, প্রতিজ্ঞা করেছি আমি যীশুকে ছাড়িব না।`,
+  },
+
+  {
+    id: 344,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "344",
+    title: "পরিবর্তন নূতন জন্মের পরে",
+    author: "",
+    language: "Bengali",
+    lyrics: `পরিবর্তন নূতন জন্মের পরে (৩)<br>
+আমার পরিবর্তন হয়েছে।। <br><br>
+
+১. <br>
+আগে যে গান গাইতাম এখন গাই না (3)<br>
+আমার পরিবর্তন হয়েছে। <br><br>
+
+২. <br>
+যে সত্য ছিল এখন সে সত্য নাই (৩)<br>
+আমার পরিবর্তন হয়েছে। <br><br>
+
+৩. <br>
+যীশু আমার পাপের জন্য (৩)<br>
+ক্রুশে মরণ ভুগেছেন। <br><br>
+
+৪. <br>
+যীশুর জন্য আমি সাক্ষ্য দিব (৩)<br>
+আমার পরিবর্তন হয়েছে।<br>
+`,
+  },
+
+  {
+    id: 345,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "345",
+    title: "মনস্থ করেছি যীশুতে চলিব",
+    author: "",
+    language: "Bengali",
+    lyrics: `১।<br>
+মনস্থ করেছি যীশুতে চলিব (৩)।<br>
+ফিরিব না ফিরিব না । <br><br>
+
+২।<br>
+ জগৎ পশ্চাতে ক্রুশ সম্মুখে (৩)।<br>
+ফিরিব না ফিরিব না। <br><br>
+
+৩।<br>
+যদিও কেহ না যায় সঙ্গে (৩)<br> 
+ফিরিব না ফিরিব না।।<br>
+`,
+  },
+
+  {
+    id: 346,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "346",
+    title: "যীশু আমার আমি তাহার",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৪৬
+যীশু আমার আমি তাহার,
+তিনি আমায় কিনিলেন। আমি আমার নই, আমি তার ক্রীতদাস (২) তাঁর তরে বাঁচিব, তার কাহিনী গাব, is তার ধন্যবাদ করিব।
+তার ধন্যবাদ করিব। তার রক্তের গুণে মহাপাপী সুপরিষ্কার হয় (২)
+তাই আমি সাক্ষ্য দিই (৩)।`,
+  },
+
+  {
+    id: 347,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "347",
+    title: "যীশুর নামেতে, যীশুর নামেতে",
+    author: "",
+    language: "Bengali",
+    lyrics: `যীশুর নামেতে, যীশুর নামেতে, মোরা বিজয়ী হই। <br>
+যীশুর নামেতে, যীশুর নামেতে, শয়তান দূরে পলায় <br>
+প্রভু যীশুর বিজয়ী নামে প্রতিরোধ করতে পারে কে ?<br>
+প্রভু যীশুর বিজয়ী নামে, মোরা বিজয়ী হই।।<br>
+`,
+  },
+
+  {
+    id: 348,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "348",
+    title: "রক্ত দিয়ে যীশু কিনেছেন আমায়",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৪৮
+রক্ত দিয়ে যীশু কিনেছেন আমায়।
+দাবী নেই কারাে আর-২
+আমি যে তার ।। অন্ধকারে চলতে পথ > ভয় হবে না আর
+আমি যে তার।`,
+  },
+
+  {
+    id: 349,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "349",
+    title: "সুখ ও শান্তি কেমন করে",
+    author: "",
+    language: "Bengali",
+    lyrics: `সুখ ও শান্তি কেমন করে পাই
+যীশু আমার বোঝা নিয়ে যান। নিজের পাপের ভারও নিতে পারি নি যীশু নিলেন ভার ও দিলেন সুখ-শান্তি এখন তার প্রশংসা গাহিব যীশু আমার বোঝা নিয়ে যান।`,
+  },
+
+  {
+    id: 350,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "350",
+    title: "হে যীশু আমার মুছে",
+    author: "",
+    language: "Bengali",
+    lyrics: `২
+হে যীশু আমার মুছে পাপের আঁধার কোলে তুলে নাও পাপীরে ।। পাপে আমি মৃত, সদাই পীড়িত জীবনের আশা নাই আমার । শয়তানকে জয় করতে, তোমার পথে চলতে নাই কোন সাধ্য আমার । স্ত্রী-পুত্র পরিবার, ধনদৌলত অহঙ্কার কিছুই সঙ্গে যাবে না আমার। পথ চলে ক্লান্ত অতি পরিশ্রান্ত বোঝা নেবার কেহ নাই আমার।।`,
+  },
+
+  {
+    id: 351,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "351",
+    title: "যে ব্যক্তি পরাৎপরের অন্তরালে",
+    author: "",
+    language: "Bengali",
+    lyrics: `যে ব্যক্তি পরাৎপরের অন্তরালে থাকে,<br>
+সে সর্বশক্তিমানের ছায়াতে বসতি করে। <br>
+আমি সদাপ্রভুর বিষয়ে বলিব, তিনি<br>
+আমার আশ্রয়, আমার দূর্গ, আমার <br>
+ঈশ্বর, আমি তাহাতে নির্ভর করিব।।।<br>
+`,
+  },
+
+  {
+    id: 352,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "352",
+    title: "গান কর সদাপ্রভুর উদ্দেশ্যে",
+    author: "",
+    language: "Bengali",
+    lyrics: `গান কর সদাপ্রভুর উদ্দেশ্যে, বীণা সহকারে<br>
+বীণা সহকারে ও গানের রবে।। <br>
+তুরী ও ভেরীবাদ্য সহকারে<br>
+রাজা সদাপ্রভুরও সম্মুখে, জয়ধ্বনি কর।।<br>
+`,
+  },
+
+  {
+    id: 353,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "353",
+    title: "হরিণী যেমন জলস্রোতের আকাঙ্খ ",
+    author: "",
+    language: "Bengali",
+    lyrics: `হরিণী যেমন জলস্রোতের আকাঙ্খ করে। <br>
+তেমনি, হে ঈশ্বর আমার প্রাণ, তোমার আকাঙ্খা করিতেছে। <br>
+ঈশ্বরের জন্য, জীবন্ত ঈশ্বরেরই জন্য আমার প্রাণ তৃষ্ণার্ত।।<br>
+
+`,
+  },
+
+  {
+    id: 354,
+    songBookId: SONG_BOOKS.BANGLA_CHRISTIAN_SONGS,
+    categoryId: CATEGORIES.CONGREGATIONAL_WORSHIP,
+    number: "354",
+    title: "কেননা পাপের বেতন",
+    author: "",
+    language: "Bengali",
+    lyrics: `৩৫৪
+কেননা পাপের বেতন মৃত্যু ॥৩৷৷
+হায় পাপী আজও জান না! কিন্তু ঈশ্বরের অনুগ্রহ দান ৷৩৷৷
+প্রভু খ্রীষ্টে অনন্ত জীবন ।।
+|
+বাংলা, বাংলা মোদের জন্মভূমি বাংলাদেশ।
+কোটি কোটি সন্তান পায়নি কো পরিত্রাণ >> হাহাকার করে অবিরত।
+সুনয়নে কে দিল গাে আঁখিজল | নয় কি সে শয়তান, নয় দিয়াবল
+পাপানলে চারিধার, করেছে হে ছারখার কে নিভাবে এ আগুন, কে নিবে ব্রত। চেয়ে দেখ একবার বঙ্গমাতা সম্মুখে তোমার কে ক্রুশেতে গাঁথা। তোমার তরে কত রক্ত ঝরে কত রক্ত ঝরে, (২) তব তরে বহে অবিরত।`,
   },
 ];
 

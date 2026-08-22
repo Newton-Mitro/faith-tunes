@@ -160,7 +160,7 @@ async function initializeApp() {
 
     router();
 
-    console.log("Song Library initialized successfully.");
+    console.log("Faith Tunes initialized successfully.");
   } catch (error) {
     console.error("Application initialization failed:", error);
 
@@ -191,7 +191,7 @@ async function initializeApp() {
                                 font-bold
                             "
                         >
-                            Unable to Load Song Library
+                            Unable to Load Faith Tunes
                         </h1>
 
                         <p

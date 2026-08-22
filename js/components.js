@@ -112,7 +112,7 @@ function renderHeader() {
 
                     <div>
                         <h1 class="font-bold">
-                            Song Library
+                            Faith Tunes
                         </h1>
 
                         <p
@@ -291,7 +291,7 @@ function renderFooter() {
 
                 <div>
                     <p class="font-semibold">
-                        Song Library
+                        Faith Tunes
                     </p>
 
                     <p
@@ -313,7 +313,7 @@ function renderFooter() {
                         dark:text-slate-400
                     "
                 >
-                    © 2026 Song Library
+                    © 2026 Faith Tunes
                 </p>
 
             </div>
@@ -344,6 +344,8 @@ function navLink(url, label) {
 function songCard(song) {
   const category = getCategory(song.categoryId);
   const book = getBook(song.bookId);
+
+  console.log(song);
 
   return `
         <a
@@ -391,7 +393,7 @@ function songCard(song) {
                         group-hover:text-emerald-600
                     "
                 >
-                    ${escapeHtml(song.title)}
+                    ${escapeHtml(song?.title || "No title")}
                 </h3>
 
                 <p
@@ -651,6 +653,7 @@ function bookCard(book) {
 
 function categoryCard(category) {
   const count = getCategorySongs(category.id).length;
+  console.log(category);
 
   return `
         <a

@@ -127,13 +127,11 @@ function loadCategories() {
     return result[0].values.map((row) => ({
       id: Number(row[0]),
 
-      bookId: Number(row[1]),
+      name: row[1] ?? "",
 
-      name: row[2] ?? "",
+      description: row[2] ?? "",
 
-      description: row[3] ?? "",
-
-      icon: row[4] ?? "🎵",
+      icon: row[3] ?? "🎵",
     }));
   } catch (error) {
     console.error("Failed to load categories:", error);
@@ -156,7 +154,7 @@ function loadApplicationData() {
   songs = loadSongs();
 
   console.log("================================");
-  console.log("Song Library Data");
+  console.log("Faith Tunes Data");
   console.log("================================");
 
   console.log("Books:", books);

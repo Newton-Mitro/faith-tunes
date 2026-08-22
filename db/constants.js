@@ -1,6 +1,6 @@
 /* =========================================================
    SONG BOOK CONSTANTS
-   Bangladesh Christian Song Library
+   Bangladesh Christian Faith Tunes
 ========================================================= */
 
 const SONG_BOOKS = Object.freeze({
