@@ -55,6 +55,8 @@ CREATE TABLE IF NOT EXISTS songs (
 
     author TEXT,
 
+    tune TEXT,
+
     language TEXT DEFAULT 'English',
 
     lyrics TEXT NOT NULL,

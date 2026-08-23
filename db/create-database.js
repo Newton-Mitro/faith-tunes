@@ -74,10 +74,11 @@ async function createDatabase() {
         number,
         title,
         author,
+        tune,
         language,
         lyrics
       )
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
 
     /* =========================================================
@@ -138,6 +139,7 @@ async function createDatabase() {
         song.number,
         song.title,
         song.author,
+        song.tune,
         song.language,
         song.lyrics,
       ]);
