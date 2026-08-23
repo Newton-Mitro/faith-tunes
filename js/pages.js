@@ -537,6 +537,8 @@ function categoryPage(id) {
     return notFoundPage();
   }
 
+  console.log(category);
+
   const categorySongs = getCategorySongs(category.id);
 
   return `
