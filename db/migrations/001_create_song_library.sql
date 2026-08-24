@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS songs (
         REFERENCES categories(id)
         ON DELETE RESTRICT,
 
-    UNIQUE (song_book_id, number)
+    UNIQUE (song_book_id, id)
 );
 
 -- =========================================================

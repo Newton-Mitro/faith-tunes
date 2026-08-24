@@ -965,7 +965,7 @@ function songPage(id) {
                                 sm:flex
                             "
                         >
-                            ${escapeHtml(song.number)}
+                            ${toBangla4Digit(song.number)}
                         </div>
 
                     </div>
@@ -993,7 +993,7 @@ function songPage(id) {
 
                         ${songMeta("Language", song.language)}
 
-                        ${songMeta("Song No.", song.number)}
+                        ${songMeta("Song No.", toBangla4Digit(song.number))}
 
                     </div>
 

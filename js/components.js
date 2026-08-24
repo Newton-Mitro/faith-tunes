@@ -11,6 +11,14 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
+function toBangla4Digit(number) {
+  const banglaDigits = "০১২৩৪৫৬৭৮৯";
+
+  return String(number)
+    .padStart(3, "0")
+    .replace(/\d/g, (digit) => banglaDigits[digit]);
+}
+
 function getBook(id) {
   return books.find((book) => book.id === Number(id));
 }
@@ -381,7 +389,7 @@ function songCard(song) {
                     dark:bg-emerald-950
                 "
             >
-                ${escapeHtml(song.number)}
+                ${toBangla4Digit(song.number)}
             </div>
 
             <div class="min-w-0 flex-1">
